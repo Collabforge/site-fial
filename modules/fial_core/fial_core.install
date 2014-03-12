@@ -1,0 +1,23 @@
+<?php
+
+
+/**
+ * Implements hook_install().
+ */
+function fial_core_install() {
+}
+
+/**
+ * Implements hook_enable().
+ */
+function fial_core_enable() {
+	theme_enable(array('fial_theme'));
+	variable_set('theme_default', 'fial_theme');
+}
+
+/**
+ * Implements hook_disable().
+ */
+function fial_core_disable() {
+
+}

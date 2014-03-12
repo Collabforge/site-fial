@@ -1,0 +1,3 @@
+name = Fial core
+description = Variables and definitions required for FIAL website
+core = 7.x

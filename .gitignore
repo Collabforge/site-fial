@@ -1,0 +1,4 @@
+settings.php
+_build/*-db.sql.*
+files/*
+private/*
