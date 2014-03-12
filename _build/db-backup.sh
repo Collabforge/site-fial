@@ -1,3 +1,4 @@
+#!/bin/sh
 
 echo "Backing up database"
 drush cc all
