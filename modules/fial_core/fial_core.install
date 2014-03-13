@@ -1,5 +1,8 @@
 <?php
-
+/**
+ * @file
+ * Install functions for Fial core module.
+ */
 
 /**
  * Implements hook_install().
@@ -11,8 +14,8 @@ function fial_core_install() {
  * Implements hook_enable().
  */
 function fial_core_enable() {
-	theme_enable(array('fial_theme'));
-	variable_set('theme_default', 'fial_theme');
+  theme_enable(array('fial_theme'));
+  variable_set('theme_default', 'fial_theme');
 }
 
 /**
@@ -20,4 +23,22 @@ function fial_core_enable() {
  */
 function fial_core_disable() {
 
+}
+
+/**
+ * Enable modules, move all dashboard blocks from <front> to 'dashboard and
+ * disable group functionality.
+ */
+function fial_core_update_7100() {
+  // Enable modules.
+  module_enable(array('collabco_dashboard', 'features_override'));
+
+  // Move all dashboard blocks from <front> to 'dashboard'.
+  db_query("UPDATE {block} SET pages=replace(pages, '<front>', 'dashboard') WHERE theme = 'fial_theme'");
+
+  // Grant anonymous users the 'access content' permission.
+  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('access content'));
+
+  // Disable group functionality.
+  module_disable(array('collabco_groups_feature', 'meta_group'));
 }
