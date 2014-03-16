@@ -42,4 +42,20 @@ function fial_core_update_7101() {
       ))
       ->execute();
   }
+
+  $block_update = db_update('block')
+  ->fields(array(
+    `module` => 'collabco_profile_block',
+    `delta` => 'header_user_profile_block',
+    `theme` => 'fial_theme',
+    `status` => 1,
+    `weight` => 0,
+    `region` => 'header_bottom_right',
+    `custom` => 0,
+    `visibility` => 0,
+    `cache` => 1,
+    `css_class` => 'account-menu visible-desktop hidden-phone'
+  ))
+    ->condition('bid', 803, '=')
+    ->execute();
 }
