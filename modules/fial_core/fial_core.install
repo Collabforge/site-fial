@@ -24,3 +24,22 @@ function fial_core_enable() {
 function fial_core_disable() {
 
 }
+
+/**
+ * Allow anonymous users to see the menu blocks.
+ */
+function fial_core_update_7101() {
+  $blocks = array(
+    'menu-meta-secondary-menu' => 'menu',
+    'main-menu' => 'system'
+  );
+  foreach ($blocks as $delta => $module) {
+    db_insert('block_role')
+      ->fields(array(
+        'module' => $module,
+        'delta' => $delta,
+        'rid' => DRUPAL_ANONYMOUS_RID
+      ))
+      ->execute();
+  }
+}
