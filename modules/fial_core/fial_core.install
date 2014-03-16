@@ -26,9 +26,12 @@ function fial_core_disable() {
 }
 
 /**
- * Allow anonymous users to see the menu blocks.
+ * Allow anonymous users to see the menu blocks, add 'dashboard' menu link,
+ * grant authenticated users the 'access collabco dashboard' permission and
+ * update IIN Profile Blocks.
  */
 function fial_core_update_7101() {
+  // Allow anonymous users to see the menu blocks.
   $blocks = array(
     'menu-meta-secondary-menu' => 'menu',
     'main-menu' => 'system'
@@ -43,16 +46,31 @@ function fial_core_update_7101() {
       ->execute();
   }
 
+  // Add 'dashboard' menu link.
+  $menu_link = array(
+    'menu_name' => 'main-menu',
+    'plid' => 0,
+    'link_path' => 'dashboard',
+    'router_path' => 'dashboard',
+    'link_title' => t('Dashboard'),
+    'weight' => -49,
+  );
+  menu_link_save($menu_link);
+
+  // Grant authenticated users the 'access collabco dashboard' permission.
+  user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access collabco dashboard'));
+
+  // Update IIN Profile Blocks.
   db_update('block')
-  ->fields(array(
-    'status' => 1,
-    'weight' => 0,
-    'region' => 'header_bottom_right',
-    'custom' => 0,
-    'visibility' => 0,
-    'cache' => 1,
-    'css_class' => 'account-menu visible-desktop hidden-phone'
-  ))
+    ->fields(array(
+      'status' => 1,
+      'weight' => 0,
+      'region' => 'header_bottom_right',
+      'custom' => 0,
+      'visibility' => 0,
+      'cache' => 1,
+      'css_class' => 'account-menu visible-desktop hidden-phone'
+    ))
     ->condition('module', 'collabco_profile_block', '=')
     ->condition('delta', 'header_user_profile_block', '=')
     ->condition('theme', 'fial_theme', '=')
