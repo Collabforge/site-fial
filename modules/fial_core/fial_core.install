@@ -83,15 +83,24 @@ function fial_core_update_7101() {
     ->condition('delta', 'iin_profile_block')
     ->execute();
 
-  // Update hubs menu link.
-  db_update('menu_links')
+  db_update('block_role')
     ->fields(array(
-      'link_title' => 'Groups'
+      'module' => 'collabco_profile_block'
     ))
-    ->condition('menu_name', 'main-menu', '=')
-    ->condition('link_path', 'hubs', '=')
-    ->condition('router_path', 'hubs', '=')
+    ->condition('module', 'iin_profile_block')
     ->execute();
+
+  db_update('block_role')
+    ->fields(array(
+      'delta' => 'iin_profile_block'
+    ))
+    ->condition('delta', 'iin_profile_block')
+    ->execute();
+
+  // Update hubs menu link.
+  $menu_item = menu_link_load(1310);
+  $menu_item['link_title'] = 'Groups';
+  menu_link_save($menu_item);
 
   // Revert features and flush caches.
   _fial_core_flush_revert();
