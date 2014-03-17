@@ -30,7 +30,8 @@ function fial_core_disable() {
  * the menu blocks, add 'dashboard' menu link, grant authenticated users the
  * 'access collabco dashboard' permission, update Collabco Profile Blocks,
  * update Hubs link to say Groups, update hubs intro text, create 'Contact' page
- * stub and revert features and flush caches.
+ * stub, grant Anonymous users the permission to create Organisations and revert
+ * features and flush caches.
  */
 function fial_core_update_7101() {
   // Enable Views Slideshow Configurable Controls.
@@ -135,40 +136,52 @@ function fial_core_update_7101() {
   // Update News menu link.
   $menu_item = menu_link_load(1007);
   $menu_item['link_title'] = 'Our News';
+  $menu_item['weight'] = 2;
   $menu_item['expanded'] = 1;
   menu_link_save($menu_item);
 
   // Add sub links to Our News
-  menu_rebuild();
-  $item = array(
+  $menu_link = array(
     'link_title' => 'News',
     'link_path' => 'news-update/news',
     'menu_name' => 'menu-meta-secondary-menu',
     'plid' => 1007,
     'weight' => 0,
+    'options' => array(
+      'attributes' => array(
+        'title' => 'News'
+      )
+    )
   );
-  $item['options']['attributes']['title'] = 'News';
-  menu_link_save($item);
+  menu_link_save($menu_link);
 
-  $item = array(
+  $menu_link = array(
     'link_title' => 'Blog',
     'link_path' => 'news-update/blog',
     'menu_name' => 'menu-meta-secondary-menu',
     'plid' => 1007,
     'weight' => 1,
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Blog'
+      )
+    )
   );
-  $item['options']['attributes']['title'] = 'Blog';
-  menu_link_save($item);
+  menu_link_save($menu_link);
 
-  $item = array(
+  $menu_link = array(
     'link_title' => 'Media',
     'link_path' => 'news-update/media',
     'menu_name' => 'menu-meta-secondary-menu',
     'plid' => 1007,
     'weight' => 1,
+    'options' => array(
+      'attributes' => array(
+        'title' => 'Media'
+      )
+    )
   );
-  $item['options']['attributes']['title'] = 'Media';
-  menu_link_save($item);
+  menu_link_save($menu_link);
 
   // Create 'About' page stub.
   $node = new stdClass();
@@ -177,7 +190,6 @@ function fial_core_update_7101() {
 
   $node->uid = 1;
   $node->title = 'About';
-  // TODO: create menu link
   $node->language = LANGUAGE_NONE;
   node_save($node);
 
@@ -187,14 +199,24 @@ function fial_core_update_7101() {
   );
   path_save($path);
 
+  $menu_link = array(
+    'link_title' => 'About',
+    'link_path' => "node/{$node->nid}",
+    'menu_name' => 'menu-meta-secondary-menu',
+    'plid' => 0,
+    'weight' => 1,
+    'expanded' => TRUE,
+  );
+  menu_link_save($menu_link);
+  $about_menu_link = $menu_link;
+
   // Create 'Objectives' page stub.
   $node = new stdClass();
   $node->type = 'basic_page';
   node_object_prepare($node);
 
   $node->uid = 1;
-  $node->title = 'Fial\'s Objectives';
-  // TODO: create menu link
+  $node->title = "Fial's Objectives";
   $node->language = LANGUAGE_NONE;
   node_save($node);
 
@@ -204,6 +226,14 @@ function fial_core_update_7101() {
   );
   path_save($path);
 
+  $menu_link = array(
+    'link_title' => "Fial's Objectives",
+    'link_path' => "node/{$node->nid}",
+    'menu_name' => 'menu-meta-secondary-menu',
+    'plid' => $about_menu_link['mlid'],
+  );
+  menu_link_save($menu_link);
+
   // Create 'Who' page stub.
   $node = new stdClass();
   $node->type = 'basic_page';
@@ -211,7 +241,6 @@ function fial_core_update_7101() {
 
   $node->uid = 1;
   $node->title = 'Who We Are';
-  // TODO: create menu link
   $node->language = LANGUAGE_NONE;
   node_save($node);
 
@@ -221,6 +250,13 @@ function fial_core_update_7101() {
   );
   path_save($path);
 
+  $menu_link = array(
+    'link_title' => 'Who We Are',
+    'link_path' => "node/{$node->nid}",
+    'menu_name' => 'menu-meta-secondary-menu',
+    'plid' => $about_menu_link['mlid'],
+  );
+  menu_link_save($menu_link);
 
   // Revert features and flush caches.
   _fial_core_flush_revert();
