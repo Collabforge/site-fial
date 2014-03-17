@@ -31,6 +31,10 @@ function fial_core_disable() {
  * update IIN Profile Blocks.
  */
 function fial_core_update_7101() {
+
+  // Enable Views Slideshow Configurable Controls
+  module_enable(array('vscc'));
+
   // Allow anonymous users to see the menu blocks.
   $blocks = array(
     'menu-meta-secondary-menu' => 'menu',
@@ -75,4 +79,21 @@ function fial_core_update_7101() {
     ->condition('delta', 'header_user_profile_block', '=')
     ->condition('theme', 'fial_theme', '=')
     ->execute();
+
+  _fial_core_flush_revert();
+}
+
+
+/**
+ * Helper function; Enable dependencies, flush caches and revert features.
+ */
+function _fial_core_flush_revert($modules = array()) {
+  if (!empty($modules)) {
+    foreach ($modules as $module) {
+      $info = system_get_info('module', $module);
+      module_enable($info['dependencies']);
+    }
+  }
+  drupal_flush_all_caches();
+  features_revert();
 }

@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Core functions for the Fial core module.
+ * Code for the Fial Core feature.
  */
+
+include_once 'fial_core.features.inc';
