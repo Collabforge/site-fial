@@ -75,6 +75,7 @@ features[variable][] = menu_parent_homepage_slide
 features[variable][] = node_options_homepage_slide
 features[variable][] = node_preview_homepage_slide
 features[variable][] = node_submitted_homepage_slide
+features[views_view][] = all_users
 features[views_view][] = homepage_news_blocks
 features[views_view][] = homepage_slider
 features_exclude[dependencies][ctools] = ctools
