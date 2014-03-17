@@ -92,5 +92,5 @@ function fial_core_update_7101() {
  */
 function _fial_core_flush_revert() {
   drupal_flush_all_caches();
-  features_revert(array('fial_core'));
+  features_revert(array('fial_core' => array()));
 }
