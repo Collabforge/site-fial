@@ -135,6 +135,7 @@ function fial_core_update_7101() {
   // Update News menu link.
   $menu_item = menu_link_load(1007);
   $menu_item['link_title'] = 'Our News';
+  $menu_item['expanded'] = 1;
   menu_link_save($menu_item);
 
   // Add sub links to Our News
