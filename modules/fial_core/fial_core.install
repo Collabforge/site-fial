@@ -28,8 +28,9 @@ function fial_core_disable() {
 /**
  * Enable Views Slideshow Configurable Controls, allow anonymous users to see
  * the menu blocks, add 'dashboard' menu link, grant authenticated users the
- * 'access collabco dashboard' permission, update Collabco Profile Blocks, update
- * Hubs link to say Groups, Update hubs intro text and revert features and flush caches.
+ * 'access collabco dashboard' permission, update Collabco Profile Blocks,
+ * update Hubs link to say Groups, update hubs intro text, create 'Contact' page
+ * stub and revert features and flush caches.
  */
 function fial_core_update_7101() {
   // Enable Views Slideshow Configurable Controls.
@@ -104,6 +105,32 @@ function fial_core_update_7101() {
 
   // Update text on hubs intro block.
   db_query("UPDATE {block_custom} SET body=replace(body, 'Hubs', 'Groups') WHERE bid = 16");
+
+  // Create 'Contact' page stub.
+  $node = new stdClass();
+  $node->type = 'basic_page';
+  node_object_prepare($node);
+
+  $node->uid = 1;
+  $node->title = 'Contact';
+  $node->language = LANGUAGE_NONE;
+  node_save($node);
+
+  $path = array(
+    'source' => "node/{$node->nid}",
+    'alias' => 'contact',
+  );
+  path_save($path);
+
+  $menu_link = array(
+    'menu_name' => 'menu-meta-secondary-menu',
+    'plid' => 0,
+    'link_path' => 'contact',
+    'router_path' => 'contact',
+    'link_title' => t('Contact'),
+    'weight' => 10,
+  );
+  menu_link_save($menu_link);
 
   // Revert features and flush caches.
   _fial_core_flush_revert();
