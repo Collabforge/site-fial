@@ -103,12 +103,7 @@ function fial_core_update_7101() {
   menu_link_save($menu_item);
 
   // Update text on hubs intro block.
-  db_update('block_custom')
-    ->fields(array(
-      'body' => '<div class=\"title_text container\">\r\n<div class=\"row-fluid\">\r\n<div class=\"header-icon span1\">&nbsp;</div>\r\n\r\n<div class=\"topic_index_intro span7\">\r\n<h1>Continuous Collaboration Groups</h1>\r\n\r\n<p>Continuous Collaboration Groups are spaces for us to join together around a particular challenge, opportunity, or theme to discuss ideas, share insights and generate new projects. <a href=\"/about-hubs\">Learn more about how they work.</a></p>\r\n</div>\r\n\r\n<div class=\"span4\">&nbsp;</div>\r\n</div>\r\n</div>\r\n'
-    ))
-    ->condition('bid', 16)
-    ->execute();
+  db_query("UPDATE {block_custom} SET body=replace(body, 'Hubs', 'Groups') WHERE bid = 16");
 
   // Revert features and flush caches.
   _fial_core_flush_revert();
