@@ -26,13 +26,13 @@ function fial_core_disable() {
 }
 
 /**
- * Allow anonymous users to see the menu blocks, add 'dashboard' menu link,
- * grant authenticated users the 'access collabco dashboard' permission and
- * update IIN Profile Blocks.
+ * Enable Views Slideshow Configurable Controls, allow anonymous users to see
+ * the menu blocks, add 'dashboard' menu link, grant authenticated users the
+ * 'access collabco dashboard' permission, update Collabco Profile Blocks and
+ * revert features and flush caches.
  */
 function fial_core_update_7101() {
-
-  // Enable Views Slideshow Configurable Controls
+  // Enable Views Slideshow Configurable Controls.
   module_enable(array('vscc'));
 
   // Allow anonymous users to see the menu blocks.
@@ -64,36 +64,33 @@ function fial_core_update_7101() {
   // Grant authenticated users the 'access collabco dashboard' permission.
   user_role_grant_permissions(DRUPAL_AUTHENTICATED_RID, array('access collabco dashboard'));
 
-  // Update IIN Profile Blocks.
-  db_update('block')
-    ->fields(array(
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'header_bottom_right',
-      'custom' => 0,
-      'visibility' => 0,
-      'cache' => 1,
-      'css_class' => 'account-menu visible-desktop hidden-phone'
-    ))
-    ->condition('module', 'collabco_profile_block', '=')
-    ->condition('delta', 'header_user_profile_block', '=')
-    ->condition('theme', 'fial_theme', '=')
+  // Update Collabco Profile Blocks.
+  db_delete('block')
+    ->condition('module', 'collabco_profile_block')
     ->execute();
 
+  db_update('block')
+    ->fields(array(
+      'module' => 'collabco_profile_block',
+    ))
+    ->condition('module', 'iin_profile_block')
+    ->execute();
+
+  db_update('block')
+    ->fields(array(
+      'delta' => 'collabco_profile_block',
+    ))
+    ->condition('delta', 'iin_profile_block')
+    ->execute();
+
+  // Revert features and flush caches.
   _fial_core_flush_revert();
 }
 
-
 /**
- * Helper function; Enable dependencies, flush caches and revert features.
+ * Helper function; Flush caches and revert features.
  */
-function _fial_core_flush_revert($modules = array()) {
-  if (!empty($modules)) {
-    foreach ($modules as $module) {
-      $info = system_get_info('module', $module);
-      module_enable($info['dependencies']);
-    }
-  }
+function _fial_core_flush_revert() {
   drupal_flush_all_caches();
-  features_revert();
+  features_revert(array('fial_core'));
 }
