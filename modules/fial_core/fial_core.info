@@ -1,6 +1,6 @@
 name = Fial core
 core = 7.x
-package = Features
+package = Fial
 version = 7.x-1.0
 project = fial_core
 dependencies[] = fe_block
