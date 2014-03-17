@@ -106,6 +106,7 @@ function fial_core_update_7101() {
   // Update text on hubs intro block.
   db_query("UPDATE {block_custom} SET body=replace(body, 'Hubs', 'Groups') WHERE bid = 16");
 
+<<<<<<< Updated upstream
   // Create 'Contact' page stub.
   $node = new stdClass();
   $node->type = 'basic_page';
@@ -131,6 +132,11 @@ function fial_core_update_7101() {
     'weight' => 10,
   );
   menu_link_save($menu_link);
+
+  // Update News menu link.
+  $menu_item = menu_link_load(1007);
+  $menu_item['link_title'] = 'Our News';
+  menu_link_save($menu_item);
 
   // Revert features and flush caches.
   _fial_core_flush_revert();
