@@ -170,6 +170,58 @@ function fial_core_update_7101() {
   $item['options']['attributes']['title'] = 'Media';
   menu_link_save($item);
 
+  // Create 'About' page stub.
+  $node = new stdClass();
+  $node->type = 'basic_page';
+  node_object_prepare($node);
+
+  $node->uid = 1;
+  $node->title = 'About';
+  // TODO: create menu link
+  $node->language = LANGUAGE_NONE;
+  node_save($node);
+
+  $path = array(
+    'source' => "node/{$node->nid}",
+    'alias' => 'about',
+  );
+  path_save($path);
+
+  // Create 'Objectives' page stub.
+  $node = new stdClass();
+  $node->type = 'basic_page';
+  node_object_prepare($node);
+
+  $node->uid = 1;
+  $node->title = 'Fial\'s Objectives';
+  // TODO: create menu link
+  $node->language = LANGUAGE_NONE;
+  node_save($node);
+
+  $path = array(
+    'source' => "node/{$node->nid}",
+    'alias' => 'objectives',
+  );
+  path_save($path);
+
+  // Create 'Who' page stub.
+  $node = new stdClass();
+  $node->type = 'basic_page';
+  node_object_prepare($node);
+
+  $node->uid = 1;
+  $node->title = 'Who We Are';
+  // TODO: create menu link
+  $node->language = LANGUAGE_NONE;
+  node_save($node);
+
+  $path = array(
+    'source' => "node/{$node->nid}",
+    'alias' => 'who',
+  );
+  path_save($path);
+
+
   // Revert features and flush caches.
   _fial_core_flush_revert();
 }
