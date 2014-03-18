@@ -4,4 +4,19 @@
  * Code for the Fial Core feature.
  */
 
+/**
+ * Include additional files.
+ */
+$dirname = dirname(__FILE__) . '/includes';
+$includes = file_scan_directory($dirname, '/.inc$/');
+foreach (module_list() as $module) {
+  $file = "{$dirname}/{$module}.inc";
+  if (isset($includes[$file])) {
+    require_once $file;
+  }
+}
+
+/**
+ * Features include.
+ */
 include_once 'fial_core.features.inc';

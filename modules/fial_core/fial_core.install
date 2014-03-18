@@ -258,6 +258,9 @@ function fial_core_update_7101() {
   );
   menu_link_save($menu_link);
 
+  // Grant Anonymous users the permission to create Organisations.
+  user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('create organisation content'));
+
   // Revert features and flush caches.
   _fial_core_flush_revert();
 }
@@ -266,6 +269,9 @@ function fial_core_update_7101() {
  * Helper function; Flush caches and revert features.
  */
 function _fial_core_flush_revert() {
+  $info = system_get_info('module', 'fial_core');
+  module_enable($info['dependencies']);
+
   drupal_flush_all_caches();
   features_revert(array('fial_core' => array()));
 }
