@@ -261,6 +261,76 @@ function fial_core_update_7101() {
   // Grant Anonymous users the permission to create Organisations.
   user_role_grant_permissions(DRUPAL_ANONYMOUS_RID, array('create organisation content'));
 
+  // Add 'Membership' page stub.
+  $node = new stdClass();
+  $node->type = 'basic_page';
+  node_object_prepare($node);
+
+  $node->uid = 1;
+  $node->title = 'Membership';
+  $node->language = LANGUAGE_NONE;
+  node_save($node);
+
+  $path = array(
+    'source' => "node/{$node->nid}",
+    'alias' => 'membership',
+  );
+  path_save($path);
+
+  $menu_link = array(
+    'link_title' => 'Membership',
+    'link_path' => "node/{$node->nid}",
+    'menu_name' => 'menu-meta-secondary-menu',
+    'expanded' => TRUE,
+  );
+  menu_link_save($menu_link);
+  $membership_menu_link = $menu_link;
+
+  // Modify previous 'Organisations' node.
+  $node = node_load(14);
+  $node->title = 'Founding Members';
+  node_save($node);
+
+  $menu_link = menu_link_load(1005);
+  $menu_link['plid'] = $membership_menu_link['mlid'];
+  $menu_link['link_title'] = 'Founding Members';
+  menu_link_save($menu_link);
+
+  path_delete(array('source' => 'node/14'));
+  $path = array(
+    'source' => "node/{$node->nid}",
+    'alias' => 'membership/our_members',
+  );
+  path_save($path);
+
+  // Add 'Become a member' page stub.
+  $node = new stdClass();
+  $node->type = 'basic_page';
+  node_object_prepare($node);
+
+  $node->uid = 1;
+  $node->title = 'Become a Member';
+  $node->body[LANGUAGE_NONE][0] = array(
+    'value' => '<p><a class="ctools-use-modal ctools-modal-modal-popup-large" href="/modal_forms/nojs/eform/submit/join">Register interest</a></p>',
+    'format' => 'full_html',
+  );
+  $node->language = LANGUAGE_NONE;
+  node_save($node);
+
+  $path = array(
+    'source' => "node/{$node->nid}",
+    'alias' => 'membership/become_a_member',
+  );
+  path_save($path);
+
+  $menu_link = array(
+    'link_title' => 'Become a member',
+    'link_path' => "node/{$node->nid}",
+    'menu_name' => 'menu-meta-secondary-menu',
+    'plid' => $membership_menu_link['mlid'],
+  );
+  menu_link_save($menu_link);
+
   // Revert features and flush caches.
   _fial_core_flush_revert();
 }
