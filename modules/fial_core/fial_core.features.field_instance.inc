@@ -10,6 +10,40 @@
 function fial_core_field_default_field_instances() {
   $field_instances = array();
 
+  // Exported field_instance: 'entityform-join-field_capabilities'
+  $field_instances['entityform-join-field_capabilities'] = array(
+    'bundle' => 'join',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'taxonomy',
+        'settings' => array(),
+        'type' => 'taxonomy_term_reference_link',
+        'weight' => 11,
+      ),
+    ),
+    'entity_type' => 'entityform',
+    'field_name' => 'field_capabilities',
+    'label' => 'Capabilities',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 0,
+      'module' => 'taxonomy',
+      'settings' => array(
+        'autocomplete_path' => 'taxonomy/autocomplete',
+        'size' => 60,
+      ),
+      'type' => 'taxonomy_autocomplete',
+      'weight' => 7,
+    ),
+  );
+
   // Exported field_instance: 'entityform-join-field_join_address'
   $field_instances['entityform-join-field_join_address'] = array(
     'bundle' => 'join',
@@ -290,7 +324,7 @@ function fial_core_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 4,
+      'weight' => 3,
     ),
   );
 
@@ -421,7 +455,7 @@ function fial_core_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 6,
+      'weight' => 5,
     ),
   );
 
@@ -452,7 +486,7 @@ function fial_core_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 7,
+      'weight' => 6,
     ),
   );
 
@@ -670,6 +704,7 @@ function fial_core_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Address');
   t('Are you happy for us to contact you for further information and/or of Fial’s forthcoming events?');
+  t('Capabilities');
   t('Dimensions of banner should be 960px by 400px');
   t('Email');
   t('Nature of business (Select ANZSIC category)');

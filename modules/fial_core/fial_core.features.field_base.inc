@@ -10,6 +10,41 @@
 function fial_core_field_default_field_bases() {
   $field_bases = array();
 
+  // Exported field_base: 'field_capabilities'
+  $field_bases['field_capabilities'] = array(
+    'active' => 1,
+    'cardinality' => -1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_capabilities',
+    'foreign keys' => array(
+      'tid' => array(
+        'columns' => array(
+          'tid' => 'tid',
+        ),
+        'table' => 'taxonomy_term_data',
+      ),
+    ),
+    'indexes' => array(
+      'tid' => array(
+        0 => 'tid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'taxonomy',
+    'settings' => array(
+      'allowed_values' => array(
+        0 => array(
+          'vocabulary' => 'capabilities',
+          'parent' => 0,
+        ),
+      ),
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'taxonomy_term_reference',
+  );
+
   // Exported field_base: 'field_join_address'
   $field_bases['field_join_address'] = array(
     'active' => 1,
@@ -186,25 +221,25 @@ function fial_core_field_default_field_bases() {
     'translatable' => 0,
     'type' => 'text',
   );
-//
-//  // Exported field_base: 'field_join_phone'
-//  $field_bases['field_join_phone'] = array(
-//    'active' => 1,
-//    'cardinality' => 1,
-//    'deleted' => 0,
-//    'entity_types' => array(),
-//    'field_name' => 'field_join_phone',
-//    'foreign keys' => array(),
-//    'indexes' => array(),
-//    'locked' => 0,
-//    'module' => 'phone',
-//    'settings' => array(
-//      'country' => 'au',
-//      'profile2_private' => FALSE,
-//    ),
-//    'translatable' => 0,
-//    'type' => 'phone',
-//  );
+
+  // Exported field_base: 'field_join_phone'
+  $field_bases['field_join_phone'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_join_phone',
+    'foreign keys' => array(),
+    'indexes' => array(),
+    'locked' => 0,
+    'module' => 'phone',
+    'settings' => array(
+      'country' => 'au',
+      'profile2_private' => FALSE,
+    ),
+    'translatable' => 0,
+    'type' => 'phone',
+  );
 
   // Exported field_base: 'field_join_size'
   $field_bases['field_join_size'] = array(
