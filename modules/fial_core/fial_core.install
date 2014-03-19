@@ -35,3 +35,10 @@ function _fial_core_flush_revert() {
   drupal_flush_all_caches();
   features_revert(array('fial_core' => array()));
 }
+
+/**
+ *
+ */
+function fial_core_udpate_7100() {
+  _fial_core_flush_revert();
+}
