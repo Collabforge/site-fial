@@ -15,7 +15,7 @@ function fial_core_context_default_contexts() {
   $context->api_version = 3;
   $context->name = 'layout-about';
   $context->description = '';
-  $context->tag = 'fail::layout';
+  $context->tag = 'fial::layout';
   $context->conditions = array(
     'menu' => array(
       'values' => array(
@@ -41,8 +41,46 @@ function fial_core_context_default_contexts() {
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('fail::layout');
+  t('fial::layout');
   $export['layout-about'] = $context;
+
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'layout-login_pages';
+  $context->description = '';
+  $context->tag = 'fial::layout';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'user' => 'user',
+        'user/register' => 'user/register',
+      ),
+    ),
+    'user' => array(
+      'values' => array(
+        'anonymous user' => 'anonymous user',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'connector-one_click_block' => array(
+          'module' => 'connector',
+          'delta' => 'one_click_block',
+          'region' => 'content_upper',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 1;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('fial::layout');
+  $export['layout-login_pages'] = $context;
 
   return $export;
 }

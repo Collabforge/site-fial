@@ -31,3 +31,12 @@ function fial_core_preprocess_page(&$vars) {
     drupal_add_css(drupal_get_path('theme', 'fial_theme') . '/css/fial.admin.css');
   }
 }
+
+function fial_core_init() {
+//  $user = entity_create('user', array());
+//  $wrapper = entity_metadata_wrapper('user', $user);
+//  $wrapper->mail = 'test@test.com';
+//  $wrapper->field_first_name = 'Bob';
+//  dpm($wrapper->getPropertyInfo());
+//  dpm($user);
+}

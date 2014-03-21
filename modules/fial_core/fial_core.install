@@ -37,8 +37,24 @@ function _fial_core_flush_revert() {
 }
 
 /**
- *
+ * Build OAuthConnector fields and flush caches and revert features.
  */
-function fial_core_update_7100() {
+function fial_core_update_7110() {
+  // Build OAuthConnector fields.
+  module_enable(array('oauthconnector'));
+  $fields = array(
+    'email'     => 'Email',
+    'last_name' => 'Last name',
+  );
+  foreach ($fields as $name => $title) {
+    oauthconnector_fields_save($name, array(
+      'name'        => $name,
+      'title'       => $title,
+      'description' => '',
+      'required'    => 0,
+    ));
+  }
+
+  // Flush caches and revert features.
   _fial_core_flush_revert();
 }
