@@ -4,6 +4,7 @@ package = Fial
 version = 7.x-1.0
 project = fial_core
 dependencies[] = addressfield
+dependencies[] = collabco_ux
 dependencies[] = collabco_mentions
 dependencies[] = email
 dependencies[] = entity
