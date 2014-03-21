@@ -20,3 +20,14 @@ foreach (module_list() as $module) {
  * Features include.
  */
 include_once 'fial_core.features.inc';
+
+/**
+ * Implements hook_preprocess_page().
+ */
+function fial_core_preprocess_page(&$vars) {
+  global $theme;
+
+  if (variable_get('admin_theme', 'seven') == $theme) {
+    drupal_add_css(drupal_get_path('theme', 'fial_theme') . '/css/fial.admin.css');
+  }
+}

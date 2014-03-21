@@ -39,6 +39,6 @@ function _fial_core_flush_revert() {
 /**
  *
  */
-function fial_core_udpate_7100() {
+function fial_core_update_7100() {
   _fial_core_flush_revert();
 }
