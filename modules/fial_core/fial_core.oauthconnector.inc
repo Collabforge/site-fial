@@ -28,35 +28,35 @@ function fial_core_default_oauthconnector_provider() {
   $provider->mapping = array(
     'fields' => array(
       'uid' => array(
-        'resource' => 'https://api.linkedin.com/v1/people/~:(id)',
+        'resource' => 'https://api.linkedin.com/v1/people/~:(id,email-address,last-name,first-name,picture-url)',
         'method post' => 0,
         'field' => 'id',
         'querypath' => FALSE,
         'sync_with_field' => '',
       ),
       'email' => array(
-        'resource' => 'https://api.linkedin.com/v1/people/~:(email-address)',
+        'resource' => 'https://api.linkedin.com/v1/people/~:(id,email-address,last-name,first-name,picture-url)',
         'method post' => 0,
-        'field' => 'email',
+        'field' => 'email-address',
         'querypath' => FALSE,
         'sync_with_field' => 'mail',
       ),
       'last_name' => array(
-        'resource' => 'https://api.linkedin.com/v1/people/~:(last-name)',
+        'resource' => 'https://api.linkedin.com/v1/people/~:(id,email-address,last-name,first-name,picture-url)',
         'method post' => 0,
         'field' => 'last-name',
         'querypath' => FALSE,
         'sync_with_field' => 'field_last_name',
       ),
       'name' => array(
-        'resource' => 'https://api.linkedin.com/v1/people/~:(first-name)',
+        'resource' => 'https://api.linkedin.com/v1/people/~:(id,email-address,last-name,first-name,picture-url)',
         'method post' => 0,
         'field' => 'first-name',
         'querypath' => FALSE,
         'sync_with_field' => 'field_first_name',
       ),
       'avatar' => array(
-        'resource' => 'https://api.linkedin.com/v1/people/~:(picture-url)',
+        'resource' => 'https://api.linkedin.com/v1/people/~:(id,email-address,last-name,first-name,picture-url)',
         'method post' => 0,
         'field' => 'picture-url',
         'querypath' => FALSE,

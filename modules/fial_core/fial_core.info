@@ -74,7 +74,6 @@ features[field_instance][] = node-news_update-field_news_type
 features[node][] = homepage_slide
 features[oauthconnector_provider][] = linkedin
 features[taxonomy][] = capabilities
-features[user_permission][] = connect with oauthconnector_linkedin
 features[variable][] = comment_anonymous_homepage_slide
 features[variable][] = comment_default_mode_homepage_slide
 features[variable][] = comment_default_per_page_homepage_slide
