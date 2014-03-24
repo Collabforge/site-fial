@@ -279,6 +279,8 @@ h6 {
 .nav .dropdown-toggle .caret {
   border-top-color:#007b38;
   border-bottom-color:#007b38;
+  border-top-color:#000;
+  border-bottom-color:#000;
 }
 
 .nav .dropdown-toggle:hover .caret, 
