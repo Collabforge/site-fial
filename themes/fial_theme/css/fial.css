@@ -521,14 +521,25 @@ button {
 ---------------------------------------------
  **/
 
+/* Not logged in - homepage slider --------------*/
+
 .ui-slideshow-block,
 .views-slideshow-controls-bottom {
   text-align: center;
 }
 
-.ui-sl
-.ui-slideshow-block .field-content {
+.ui-slideshow-block {
+  position:relative;
+}
 
+.ui-slideshow-block .field-content { /* slide caption */
+  position: absolute;
+  width:100%;
+  top:50%;
+  padding-top:10px;
+  padding-bottom:10px;
+  background:#fff; /*old browsers*/
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .notifications {
