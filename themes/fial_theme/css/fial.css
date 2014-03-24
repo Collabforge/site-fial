@@ -181,12 +181,13 @@ table thead th {
 h1, h2, h3, h4, h5, h6{
   text-rendering: antialiased;
   -webkit-font-smoothing: antialiased;
-  font-family: 'oleo_script_swash_capsregular';
-  font-weight: 400;
+  font-family: 'ralewaybold';
+  font-weight: normal;
 }
 
-h4, h5, h6{
-  font-family: 'ralewaybold';
+* strong {
+  font-family: 'ralewaybold'; /*makes WYIWYG instance of font the bold embedded version */
+  font-weight: normal;
 }
 
 h1 {
@@ -505,6 +506,16 @@ button {
 
 
 /**
+10. FOOTER
+---------------------------------------------
+ */
+
+.region-footer h3{
+  font-family: 'oleo_script_swash_capsregular';
+}
+
+
+/**
 11. LOG-IN / REGISTER PAGES
 ---------------------------------------------
  **/
@@ -545,6 +556,46 @@ button {
   background:#fff; /*old browsers*/
   background-color: rgba(255, 255, 255, 0.5);
 }
+
+.ui-site-tagline {
+  color:#7fc566;
+  font-family: 'ralewaybold'; 
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.2em;
+  padding:10px 0;
+}
+
+.ui-site-tagline:before,
+.ui-site-tagline:after{
+  color:#ccc;
+  font-size: 2em;
+  font-family:'FontAwesome';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+}
+
+.ui-site-tagline:before{
+  content:"\F10D"; /*Icon quote left*/
+  padding-right: 0.5em;
+}
+
+.ui-site-tagline:after{
+  content:"\F10E"; /*Icon quote right*/
+  padding-left: 0.5em;
+}
+
+
+
+/* News/Media/Blog blocks --------------*/
+
+.view-homepage-news-blocks h2{
+    font-family: 'oleo_script_swash_capsregular';
+}
+
+
+/* Logged in blocks --------------*/
 
 .notifications {
   background-color: #dbfccf; /*Light green / yellow */
