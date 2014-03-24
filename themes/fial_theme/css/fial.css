@@ -248,11 +248,10 @@ h6 {
 
 .menu_primary a{
   color: #007b38; /*Green*/
-  font-family: 'oleo_script_swash_capsregular';
-  font-size: 1.4em;
-  text-transform: capitalize;
+  font-family: 'ralewaybold'; 
   font-weight: normal;
-
+  font-size: 1.25em;
+  text-transform: capitalize;
 }
 
 .menu_primary a:hover {
@@ -547,14 +546,17 @@ button {
   position:relative;
 }
 
-.ui-slideshow-block .field-content { /* slide caption */
+.ui-slideshow-block .views-field-field-slide-caption { /* slide caption */
   position: absolute;
   width:100%;
   top:50%;
+  margin:0 2em;
   padding-top:10px;
   padding-bottom:10px;
   background:#fff; /*old browsers*/
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.35);
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
 }
 
 .ui-site-tagline {
@@ -566,9 +568,9 @@ button {
   padding:10px 0;
 }
 
-.ui-site-tagline:before,
-.ui-site-tagline:after{
-  color:#ccc;
+.ui-site-tagline p:before,
+.ui-site-tagline p:after{
+  color:#7fc566;
   font-size: 2em;
   font-family:'FontAwesome';
   font-weight: normal;
