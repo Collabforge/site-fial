@@ -1,6 +1,6 @@
 /**
 
-FIAL Stylesheet - Please only change fonts, meta-specific fonts sizes, images and background colors using this file
+FIAL Stylesheet - Please only change fonts, Fial-specific fonts sizes, images and background colors using this file
 
 1. BODY & BACKGROUND
 2. HEADER
@@ -213,20 +213,20 @@ h6 {
 
 #logo a,               /*generic pages*/
 .ui-footer .ui-logo a{ /*login page*/
-  background:url('../images/meta-logo.png') no-repeat;
+  /*background:url('../images/meta-logo.png') no-repeat;
   display:block;
   height:54px;
-  width:161px;
+  width:161px;*/
 }
 
 /* Mobile logo */
 
 #tab-container .tab_logo.tab a{
-  background:url('../images/meta-logo.png') no-repeat;
+  /*background:url('../images/meta-logo.png') no-repeat;
   display:block;
   background-size:90px 30px;
   height:30px;
-  width:90px;
+  width:90px;*/
 }
 
 /**
@@ -234,7 +234,7 @@ h6 {
 ---------------------------------------------
  **/
 
-/* Menu stylings for Meta -------------*/
+/* Menu stylings for Fial -------------*/
 
 .menu_primary ul.menu li a.active {
   color: #007b38; /*Green*/
@@ -270,6 +270,15 @@ h6 {
   font-family: 'ralewayregular', helvetica, sans-serif;
 }
 
+.ui-icon-dropdown:after {
+  font-family:'FontAwesome';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  padding-left:0.5em;
+  content:"\F0D7"; /*Caret down icon*/
+}
+
 
  /**
 7. BUTTONS & DROPDOWNS
@@ -278,8 +287,8 @@ h6 {
 
  /* DROPDOWN MENU HIGHLIGHTS - rewrites bootstrap.css -----*/
 
-.dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus,
+.ui-dropdown-menu > li > a:hover,
+.ui-dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
   text-decoration: none;
@@ -294,9 +303,9 @@ h6 {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fc566', endColorstr='#007b38',GradientType=0 ); /* IE6-8 */
 }
-.dropdown-menu > .active > a,
-.dropdown-menu > .active > a:hover,
-.dropdown-menu > .active > a:focus {
+.ui-dropdown-menu > .active > a,
+.ui-dropdown-menu > .active > a:hover,
+.ui-dropdown-menu > .active > a:focus {
   color: #ffffff;
   text-decoration: none;
   outline: 0;
@@ -497,6 +506,11 @@ button {
   font-family: 'oleo_script_swash_capsregular';
 }
 
+.ui-login-forms .form-actions input#edit-submit{
+  text-transform: capitalize;
+}
+
+
 
 /**
 12. LOGGED-IN HOME / DASHBOARD PAGE
@@ -504,11 +518,15 @@ button {
  **/
 
 .notifications {
-  background-color: #FFEFDB; /*Light orange */
+  background-color: #dbfccf; /*Light green / yellow */
 }
 
 .notifications .views-field-title:before{
   color:#007b38; /*Green*/
+}
+
+.dashboard h2 {
+  text-transform: capitalize;
 }
 
 
@@ -537,22 +555,22 @@ button {
 
 /* Dashboard --------------*/
 
-.dashboard { /*COLOR Specific - meta*/
+.dashboard { /*COLOR Specific - fial*/
   background-color: #e0f3ff;
   border-color: #b3d9f2;
 }
 
-.dashboard a { /*COLOR Specific - meta*/
+.dashboard a { /*COLOR Specific - fial*/
   color: #1874CD;
 }
 
-.dashboard h2 { /*COLOR Specific - meta*/
+.dashboard h2 { /*COLOR Specific - fial*/
   color: #1874CD;
   border-color: #b3d9f2;
 }
 
 .dashboard .span4 h4 {
-  font-family: 'ralewayregular', helvetica, sans-serif; /*Font Specific - meta*/
+  font-family: 'ralewayregular', helvetica, sans-serif; /*Font Specific - fial*/
 }
 
 
