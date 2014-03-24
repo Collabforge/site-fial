@@ -548,13 +548,17 @@ button {
 
 .ui-slideshow-block .views-field-field-slide-caption { /* slide caption */
   position: absolute;
-  width:100%;
-  top:50%;
-  margin:0 2em;
+  width:80%;
+  top:45%;
+  margin:0 10%;
   padding-top:10px;
   padding-bottom:10px;
   background:#fff; /*old browsers*/
-  background-color: rgba(255, 255, 255, 0.35);
+  background-color: rgba(255, 255, 255, 0.5);
+  color:#222;
+  font-family: 'ralewaybold'; 
+  font-size: 1em;
+  text-shadow: 0 1px 0 #FFF;
   -webkit-border-radius: 5px;
   border-radius: 5px;
 }
