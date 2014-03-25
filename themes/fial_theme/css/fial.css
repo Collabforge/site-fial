@@ -549,15 +549,15 @@ button {
 .ui-slideshow-block .views-field-field-slide-caption { /* slide caption */
   position: absolute;
   width:80%;
-  top:45%;
+  top:40%;
   margin:0 10%;
   padding-top:10px;
   padding-bottom:10px;
   background:#fff; /*old browsers*/
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.85);
   color:#222;
   font-family: 'ralewaybold'; 
-  font-size: 1em;
+  font-size: 1.2em;
   text-shadow: 0 1px 0 #FFF;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -569,11 +569,10 @@ button {
   font-weight: normal;
   text-align: center;
   font-size: 1.2em;
-  padding:10px 0;
 }
 
-.ui-site-tagline p:before,
-.ui-site-tagline p:after{
+.ui-site-tagline div.content:before,
+.ui-site-tagline div.content:after{
   color:#7fc566;
   font-size: 2em;
   font-family:'FontAwesome';
@@ -582,16 +581,18 @@ button {
   display: inline-block;
 }
 
-.ui-site-tagline p:before{
+.ui-site-tagline div.content:before{
   content:"\F10D"; /*Icon quote left*/
-  padding-right: 0.5em;
 }
 
-.ui-site-tagline p:after{
+.ui-site-tagline div.content:after{
   content:"\F10E"; /*Icon quote right*/
-  padding-left: 0.5em;
 }
 
+.ui-site-tagline p{
+  padding-left:2em;
+  padding-right: 2em;
+}
 
 
 /* News/Media/Blog blocks --------------*/
