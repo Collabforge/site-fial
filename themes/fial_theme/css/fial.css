@@ -116,6 +116,10 @@ table thead th {
     font-size:2.5em;
 }
 
+#page-title {
+  font-family: 'oleo_script_swash_capsregular';
+}
+
 /* System alerts -------------*/
 
 .alert-success {
@@ -583,10 +587,12 @@ button {
 
 .ui-site-tagline div.content:before{
   content:"\F10D"; /*Icon quote left*/
+  float:left;
 }
 
 .ui-site-tagline div.content:after{
   content:"\F10E"; /*Icon quote right*/
+  float:right;
 }
 
 .ui-site-tagline p{
