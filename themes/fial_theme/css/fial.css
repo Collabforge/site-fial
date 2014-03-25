@@ -552,9 +552,9 @@ button {
 
 .ui-slideshow-block .views-field-field-slide-caption { /* slide caption */
   position: absolute;
-  width:80%;
+  width:70%;
   top:40%;
-  margin:0 10%;
+  margin:0 15%;
   padding-top:10px;
   padding-bottom:10px;
   background:#fff; /*old browsers*/
@@ -583,16 +583,20 @@ button {
   font-weight: normal;
   font-style: normal;
   display: inline-block;
+  position: absolute;
+
 }
 
 .ui-site-tagline div.content:before{
   content:"\F10D"; /*Icon quote left*/
-  float:left;
+  top:0;
+  left:0;
 }
 
 .ui-site-tagline div.content:after{
   content:"\F10E"; /*Icon quote right*/
-  float:right;
+  top:0;
+  right:0;
 }
 
 .ui-site-tagline p{
