@@ -63,8 +63,15 @@ Fial Yellow: #f8ec31
 body {
   background-color: #fbfbfb;
   background-image: none;
-  font-family: 'ralewayregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #6a6767;
+}
+
+* {
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
 }
 
 /* Text highlight ------------- */
@@ -94,12 +101,12 @@ a, a:hover, a:active {
 
 p, .p, .p2,                      /* overwrites style.css */
 input, button, select, textarea{ /* overwrites bootstrap */
-  font-family: 'ralewayregular', Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 table thead th {
   font-family: 'oleo_script_swash_capsregular';
   font-size: 1.2em;
+  text-transform: capitalize;
 }
 
 .title_block { /* Topics and News background */
@@ -118,6 +125,60 @@ table thead th {
 
 #page-title {
   font-family: 'oleo_script_swash_capsregular';
+}
+
+/* Page header blocks - pretty pictures -------------*/
+
+.page-node-261 h1#page-title,
+.page-node-262 h1#page-title,
+.page-node-263 h1#page-title,
+.page-node-404 h1#page-title,
+.page-node-14 h1#page-title,
+.page-node-264 h1#page-title,
+.page-node-265 h1#page-title,
+.page-node-7 h1#page-title{
+  width:90%;
+  height: 125px;
+  padding: 0 5%;
+  color:#fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 4em;
+  line-height: 1;
+  text-shadow:0 0 6px #222,  0 3px 0 #732626, 0 0 1px #732626;
+  background-repeat: no-repeat;
+}
+
+.page-node-261 h1#page-title:before,
+.page-node-262 h1#page-title:before,
+.page-node-263 h1#page-title:before,
+.page-node-404 h1#page-title:before,
+.page-node-14 h1#page-title:before, 
+.page-node-264 h1#page-title:before,
+.page-node-265 h1#page-title:before,
+.page-node-7 h1#page-title:before{
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.page-node-261 h1#page-title,
+.page-node-262 h1#page-title,
+.page-node-263 h1#page-title{
+  background:url('../img/fial_about.png');
+}
+
+.page-node-404 h1#page-title{
+  background: url('../img/fial_contact.png');
+}
+
+.page-node-14 h1#page-title,
+.page-node-264 h1#page-title,
+.page-node-265 h1#page-title,
+.page-node-7 h1#page-title{
+  background: url('../img/fial_member.png');
 }
 
 /* System alerts -------------*/
@@ -148,11 +209,11 @@ table thead th {
 
 @font-face {
     font-family: 'ralewayregular';
-    src: url('raleway-regular-webfont.eot');
-    src: url('raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('raleway-regular-webfont.woff') format('woff'),
-         url('raleway-regular-webfont.ttf') format('truetype'),
-         url('raleway-regular-webfont.svg#ralewayregular') format('svg');
+    src: url('../fonts/raleway-regular-webfont.eot');
+    src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff'),
+         url('../fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -275,7 +336,6 @@ h6 {
 
 .dash_nav a, .dash_nav a {
   color: #007b38; /*Green*/
-  font-family: 'ralewayregular', helvetica, sans-serif;
 }
 
 /* Secondary menu --------*/
@@ -290,6 +350,46 @@ h6 {
   border-top-color:#007b38;
   border-bottom-color:#007b38;
 }
+
+/* Right nav --------*/
+
+.ui-sidenav-buttons{
+  margin: 10px 0 1em 0;
+  padding:0;
+}
+
+.ui-sidenav-buttons ul,
+.ui-sidenav-buttons ul li,
+.ui-sidenav-buttons ul li.leaf {
+  list-style: none;
+  margin:0;
+  padding: 0;
+  width:100%;
+  text-align: center;
+}
+
+.ui-sidenav-buttons ul li a{
+  padding:5px 10px;
+  margin: 0 0 0.5em 0;
+  display: block;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border:1px solid #f2f2f2;
+  background:#fff;
+}
+
+.ui-sidenav-buttons ul li a.active{
+  border:1px solid #ddd;
+  color:#555;
+}
+
+.ui-sidenav-buttons ul li a:hover,
+.ui-sidenav-buttons ul li a:active,
+.ui-sidenav-buttons ul li a:focus{
+  border:1px solid #7fc566;
+  background:#dbfccf;
+}
+
 
 
  /**
@@ -561,7 +661,7 @@ button {
   background-color: rgba(255, 255, 255, 0.85);
   color:#222;
   font-family: 'ralewaybold'; 
-  font-size: 1.2em;
+  font-size: 1.25em;
   text-shadow: 0 1px 0 #FFF;
   -webkit-border-radius: 5px;
   border-radius: 5px;
@@ -572,7 +672,8 @@ button {
   font-family: 'ralewaybold'; 
   font-weight: normal;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.25em;
+  text-shadow: 0 1px 0 #ffffff;
   position: relative; /* makes the icons with absolute position work */
 }
 
@@ -601,8 +702,16 @@ button {
 }
 
 .ui-site-tagline p{
-  padding-left:2em;
-  padding-right: 2em;
+  padding-left:3em;
+  padding-right: 3em;
+}
+
+/* Sidebar secondary navigation ------- */
+.sidebar .nav.user-navigation li.ui-navigation-menu.active a,
+.sidebar .nav.user-navigation li.ui-navigation-menu a:hover,
+.sidebar .nav.user-navigation li.ui-navigation-menu a:active,
+.sidebar .nav.user-navigation li.ui-navigation-menu a:focus{
+  background: #007b38; /*Green*/
 }
 
 
@@ -665,14 +774,20 @@ button {
 /* Activity stream --------------*/
 
 .home_activity h2 {
-  font-family: 'ralewayregular', helvetica, sans-serif;
   font-size: 16px;
   color: #6a6767;
 }
 
 .home_activity h2 strong {
+  font-family: 'ralewaybold';
   font-size: 26px;
   font-weight: 400;
+}
+
+/* Hide page title --------*/
+
+.page-dashboard  #page-title{
+  display: none;
 }
 
 /* Dashboard --------------*/
@@ -689,10 +804,11 @@ button {
 .dashboard h2 { /*COLOR Specific - fial*/
   color: #1874CD;
   border-color: #b3d9f2;
+  font-family: 'oleo_script_swash_capsbold';
 }
 
 .dashboard .span4 h4 {
-  font-family: 'ralewayregular', helvetica, sans-serif; /*Font Specific - fial*/
+   /*Font Specific - fial*/
 }
 
 
@@ -792,7 +908,6 @@ ul.inline li.active a{ /*Overwrites system menus*/
 }
 
 li.comment-add {
-  font-family: 'ralewayregular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 .form-item-notify, #edit-notify-type {
@@ -824,7 +939,6 @@ li.comment-add {
 }
 
 .hub-header h1 span.label {
-  font-family: 'ralewayregular', Frutiger, 'Frutiger Linotype', Univers, Calibri, 'Helvetica Neue', Helvetica, Arial, sans-serif;
  /* tweak for H1 style applied to this label */
 }
 
@@ -859,6 +973,25 @@ li.comment-add {
   background-color: #b3d9f2;
 }
 
+
+/**
+27. RESPONSIVE - CONTENT SPECIFIC
+------------------------------------------------------------------
+/*  -------------*/
+
+@media (max-width: 767px) {
+  .page-node-261 h1#page-title,
+  .page-node-262 h1#page-title,
+  .page-node-263 h1#page-title,
+  .page-node-404 h1#page-title,
+  .page-node-14 h1#page-title,
+  .page-node-264 h1#page-title,
+  .page-node-265 h1#page-title,
+  .page-node-7 h1#page-title{
+    font-size: 2em;
+    height: 85px;
+  }
+}
 
 /**
 27. MOBILE RESPONSIVE MENU
