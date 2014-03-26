@@ -613,6 +613,28 @@ button {
 }
 
 
+.ui-tactical-header{
+  background:#31733c;
+  color:#fff;
+  padding:20px;
+  min-height: 220px;
+}
+
+.ui-tactical-header h1,
+.ui-tactical-header h2,
+.ui-tactical-header h3,
+.ui-tactical-header h4,
+.ui-tactical-header h5,
+.ui-tactical-header h6,
+.ui-tactical-header a{
+  color:#fff;
+}
+
+.ui-tactical-footer{
+  border:1px solid #ddd;
+  padding:20px;
+}
+
 /* Logged in blocks --------------*/
 
 .notifications {
@@ -631,12 +653,14 @@ button {
 /* News update --------------*/
 
 .news_update h2 {
-  font-family: 'ralewayregular', helvetica, sans-serif;
+  font-family: 'ralewaybold';
   color: #6a6767;
   font-size: 26px;
-  font-weight: 400;
 }
 
+.news_update h2:before{
+  padding-right: 0.25em;
+} 
 
 /* Activity stream --------------*/
 
