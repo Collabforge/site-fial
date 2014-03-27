@@ -1068,7 +1068,21 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
   text-decoration: underline; /*Tweak the 'current page' style as desired*/
 }
 
-#tabs1-menu ul li .dropdown-menu{
+#tabs1-menu ul li .dropdown-menu,
+#tabs1-menu ul li .dropdown-toggle:active, 
+#tabs1-menu ul li .dropdown-toggle.active, 
+#tabs1-menu ul li .dropdown-toggle.disabled, 
+#tabs1-menu ul li .dropdown-toggle[disabled],
+#tabs1-search ul li .dropdown-menu,
+#tabs1-search ul li .dropdown-toggle:active, 
+#tabs1-search ul li .dropdown-toggle.active, 
+#tabs1-search ul li .dropdown-toggle.disabled, 
+#tabs1-search ul li .dropdown-toggle[disabled],
+#tabs1-profile ul li .dropdown-menu,
+#tabs1-profile ul li .dropdown-toggle:active, 
+#tabs1-profile ul li .dropdown-toggle.active, 
+#tabs1-profile ul li .dropdown-toggle.disabled, 
+#tabs1-profile ul li .dropdown-toggle[disabled]{
   background-color: #999;
   border:none;
   -webkit-box-shadow: none;
@@ -1081,4 +1095,8 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
+}
+
+#tabs1-search input.btn-search {
+  height: 22px;
 }
