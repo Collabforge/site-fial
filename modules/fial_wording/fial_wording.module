@@ -11,5 +11,7 @@ function fial_wording_boot() {
 function _fial_wording_strings() {
   return array(
     //'--Original' => '--Translated',
+    'My Topics' => 'My Forums',
+    'My Hubs' => 'My Groups',
   );
 }
