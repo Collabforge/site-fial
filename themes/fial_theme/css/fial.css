@@ -66,14 +66,6 @@ body {
   color: #6a6767;
 }
 
-* {
-  -webkit-transition: all 200ms ease;
-  -moz-transition: all 200ms ease;
-  -ms-transition: all 200ms ease;
-  -o-transition: all 200ms ease;
-  transition: all 200ms ease;
-}
-
 /* Text highlight ------------- */
 /* Remove text-shadow in selection highlight: h5bp.com/i
  * These selection rule sets have to be separate.
@@ -138,7 +130,7 @@ table thead th {
 .page-node-265 h1#page-title,
 .page-node-7 h1#page-title{
   width:90%;
-  height: 125px;
+  height: 110px;
   padding: 0 5%;
   color:#fff;
   -webkit-border-radius: 5px;
@@ -146,7 +138,9 @@ table thead th {
   font-size: 4em;
   line-height: 1;
   text-shadow:0 0 6px #222,  0 3px 0 #732626, 0 0 1px #732626;
+  background-color: #000;
   background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .page-node-261 h1#page-title:before,
@@ -167,18 +161,18 @@ table thead th {
 .page-node-261 h1#page-title,
 .page-node-262 h1#page-title,
 .page-node-263 h1#page-title{
-  background:url('../img/fial_about.png');
+  background-image:url('../img/fial_about.png');
 }
 
 .page-node-404 h1#page-title{
-  background: url('../img/fial_contact.png');
+  background-image: url('../img/fial_contact.png');
 }
 
 .page-node-14 h1#page-title,
 .page-node-264 h1#page-title,
 .page-node-265 h1#page-title,
 .page-node-7 h1#page-title{
-  background: url('../img/fial_member.png');
+  background-image: url('../img/fial_member.png');
 }
 
 /* System alerts -------------*/
@@ -397,6 +391,27 @@ h6 {
 ---------------------------------------------
  */
 
+/* Brand color button - restyle colors to be appropriate to brand -----*/
+
+.btn-warning {
+    background-color: #007b38;
+    background-image: linear-gradient(to bottom, #007b38, #004720);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning.disabled, .btn-warning[disabled] {
+    background-color: #004720;
+    color: #FFFFFF;
+}
+
+/* Hide double up of side nav buttons  -----*/
+
+#block-fial-core-about-menu {
+  display: none;
+}
+
  /* DROPDOWN MENU HIGHLIGHTS - rewrites bootstrap.css - NB IMPORTANT required b/c css inheritance is wrong -----*/
 
 .dropdown-menu > li > a:hover,
@@ -432,6 +447,15 @@ h6 {
   background-repeat: repeat-x  !important;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fc566', endColorstr='#007b38',GradientType=0 )  !important; /* IE6-8 */
 }
+
+
+.menu_secondary li .dropdown-menu > li,
+.menu_secondary li .dropdown-menu > li a,
+.menu_secondary li .dropdown-menu > li a.active,
+.menu_secondary li .dropdown-menu > li a:hover{
+  border: none;
+}
+
 
 /**
 7. BUTTONS & DROPDOWNS
@@ -623,15 +647,17 @@ button {
 ---------------------------------------------
  **/
 
-.not-logged-in .form-actions h3,
-.not-logged-in .form-actions input#edit-submit {
+.not-logged-in .form-actions h3{
   font-family: 'oleo_script_swash_capsregular';
+}
+
+.not-logged-in .form-actions input#edit-submit {
+    font-family: 'ralewaybold';
 }
 
 .ui-login-forms .form-actions input#edit-submit{
   text-transform: capitalize;
 }
-
 
 
 /**
@@ -737,6 +763,14 @@ button {
 .ui-tactical-header h6,
 .ui-tactical-header a{
   color:#fff;
+}
+
+.ui-tactical-header a:hover,
+.ui-tactical-header a:focus,
+.ui-tactical-header a:active{
+  color:#f8ec31; /* Fial yellow-lime */
+  text-decoration: none;
+  text-shadow: 0 1px 1px #163f1d;
 }
 
 .ui-tactical-footer{
@@ -942,17 +976,26 @@ li.comment-add {
  /* tweak for H1 style applied to this label */
 }
 
+.ui-library-file h2 {
+  font-size: 1.15em;  /* Adjust size to deal with font differences */
+
+}
+
+.ui-library-file a {
+
+}
+
 /* Generic library item styling ------------ */
 
 .ui-library-file {
-  background-color:#FFEFDB;
-  border:1px solid #f9d9b8 !important; /* WTF is there a border:none on this element!??*/;
+  background-color:#dbfccf;
+  border:1px solid #c9f4ba !important; /* WTF is there a border:none on this element!??*/;
 }
 
 .ui-library-file:hover,
 .ui-library-file:focus,
 .ui-library-file:active{
-  background-color: #f9d9b8;
+  background-color: #c9f4ba;
 }
 
 /* Sticky library item styling ------------ */
@@ -990,6 +1033,10 @@ li.comment-add {
   .page-node-7 h1#page-title{
     font-size: 2em;
     height: 85px;
+  }
+  .ui-slideshow-block .views-field-field-slide-caption { /* slide caption */
+    top:20%;
+    font-size: 1em;
   }
 }
 
