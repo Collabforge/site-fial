@@ -1045,14 +1045,21 @@ li.comment-add {
 /*  -------------*/
 
 ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
-  background:#ee6d0a; /*Green highlight - tabs */
+  background:#007b38; /*Green highlight - tabs */
 }
 
+#tabs1-menu ul li a, 
+#tabs1-search ul li a, 
+#tabs1-profile ul li a{
+  font-family: 'ralewaybold';
+  font-weight: 400;
+  font-size: 1em;
+}
 
 #tabs1-menu ul li a:hover, #tabs1-menu ul li a:focus,  #tabs1-menu ul li a:active, 
 #tabs1-search ul li a:hover, #tabs1-search ul li a:focus, #tabs1-search ul li a:active, 
 #tabs1-profile ul li a:hover, #tabs1-profile ul li a:focus, #tabs1-profile ul li a:active{
-  background:#ee6d0a; /*Green highlight - pages */
+  background:#007b38; /*Green highlight - pages */
 }
 
 #tabs1-menu ul li a.active,
