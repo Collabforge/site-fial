@@ -1068,4 +1068,17 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
   text-decoration: underline; /*Tweak the 'current page' style as desired*/
 }
 
+#tabs1-menu ul li .dropdown-menu{
+  background-color: #999;
+  border:none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
 
+#tabs1-menu ul li .dropdown-menu li{
+  border:none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
