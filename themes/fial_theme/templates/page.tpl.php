@@ -1,3 +1,4 @@
+
 <div id="skipnav" class="element-invisible">
   <div class="container">
     <p>Skip to:</p>
@@ -12,37 +13,26 @@
 <!-- /#skipnav -->
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?php
-/**
-
-Mobile markup
-@FIXME: should be moved to a module
-This way:
-   - add all javascript and styles through the module
-   - add a template file for this
-   - add a variable in HOOK_preprocess_page
-   - simply check the variable here and use it
-
-   @see Alexar ;)
+/*
+if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary_nav))) {
+  ?>
+  <div id="admin-shortcuts" class="admin-shortcuts clearfix">
+    <?php print render($secondary_nav); ?> <?php print render($page['admin_shortcuts']); ?>
+  </div>
+  <?php
+}
 */
+
 ?>
+<!-- /#admin-shortcuts -->
+
+
+
+
+<!--
+<script type='text/javascript' src='http://os.alfajango.com/js/jquery-1.9.1.min.js'></script>
+-->
 <script type='text/javascript' src='http://os.alfajango.com/js/jquery.scrollTo.js'></script>
 <script type='text/javascript' src='http://os.alfajango.com/js/jquery.toc.min.js'></script>
 <script type='text/javascript' src='http://os.alfajango.com/js/jquery.sharrre-1.2.0.min.js'></script>
@@ -50,6 +40,10 @@ This way:
 <script type='text/javascript' src='http://os.alfajango.com/js/jquery.easytabs.min.js'></script>
 <script type='text/javascript' src='http://os.alfajango.com/js/raptorize/jquery.raptorize.1.0.js'></script>
 <script type='text/javascript' src='http://os.alfajango.com/js/jquery.easing.1.3.js'></script>
+
+
+
+
 
 <div class="ui-mobile-menu visible-phone hidden-desktop">
 
@@ -81,23 +75,25 @@ This way:
 </div>
 
 <script type="text/javascript">
-  jQuery(document).ready(function($) {
-      $('#tab-container').easytabs({
-        collapsedByDefault: true
-        , collapsible: true
-      }).bind('easytabs:after', function() {
-        $('html, body').animate({
-          scrollTop: $(this).offset().top
-        }, 0);      
-      });
-      $('.ui-tab-content').height($(window).height());
-      $('.ui-mobile-menu .etabs').height('50');
-      //alert('salam');
-  });
+
+jQuery(document).ready(function($) {
+    $('#tab-container').easytabs({
+      collapsedByDefault: true
+      , collapsible: true
+    }).bind('easytabs:after', function() {
+      $('html, body').animate({
+        scrollTop: $(this).offset().top
+      }, 0);      
+    });
+    $('.ui-tab-content').height($(window).height());
+    $('.ui-mobile-menu .etabs').height('50');
+    //alert('salam');
+});
+
 </script>
 
 <style type="text/css">
-
+  
 .ui-mobile-menu {
   position: absolute;
   top: 0;
@@ -118,52 +114,20 @@ This way:
 .ui-mobile-menu li a{
 
 }
+
 .ui-tab-content {
   background-color: gray;
 }
 
 </style>
 
-
-<?php
-/**
- -- END of mobile markup
-*/
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- new Header Top block -->
 <?php if (($page['header_top_middle']) || ($page['search_box']) || ($page['header_bottom_left']) || ($page['header_bottom_right'])): ?>
-  <div id="header" class="clearfix header" role="banner">
+  <div id="header"  class="clearfix header visible-desktop hidden-phone" role="banner">
     <div class="container" id="header_container">
-      <div class="row-fluid" id="header_top" >
-        
-        <div id="logo" class="span4 site-logo"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home">&nbsp;</a>
-        </div>
-        
+      <div class="row-fluid" id="header_top" >       
+        <div id="logo" class="span4 site-logo visible-desktop hidden-phone"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> &nbsp; </a>
+        </div>       
         <?php if ($page['header_top_middle']): ?>
         <div id="header_top_middle" class="span6"> <?php print render($page['header_top_middle']); ?>
         </div>
@@ -179,7 +143,7 @@ This way:
         </div>
         <?php endif; ?>
         <?php if ($page['header_bottom_right']): ?>
-        <div id="header_bottom_right" class="span3 offset3 last"> <?php print render($page['header_bottom_right']); ?>
+        <div id="header_bottom_right" class="span6 last"> <?php print render($page['header_bottom_right']); ?>
         </div>
         <?php endif; ?>
       </div>
@@ -201,6 +165,8 @@ This way:
     <?php if ($breadcrumb): ?>
     <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
+    
+    
     <?php if ($page['main_top']): ?>
     <div id="main-top" class="row-fluid main-top"> <?php print render($page['main_top']); ?> </div>
     <?php endif; ?>
