@@ -1,0 +1,15 @@
+<?php
+
+/**
+ * Implements hook_boot()
+ */
+function fial_wording_boot() {
+  global $conf;
+  $conf['locale_custom_strings_en'][''] = _fial_wording_strings();
+}
+
+function _fial_wording_strings() {
+  return array(
+    //'--Original' => '--Translated',
+  );
+}
