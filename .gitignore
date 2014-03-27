@@ -1,5 +1,4 @@
 settings.php
 _build/*-db.sql.*
-files/*
 private/*
 .DS_Store
