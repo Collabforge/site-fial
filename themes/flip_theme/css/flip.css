@@ -48,14 +48,14 @@ Project Leap Stylesheet - Please only change fonts, Project Leap-specific fonts 
 COLOR GUIDE
 
 Light Grey: #f2f2f2
-Text grey: #6a6767
 Text light grey: #9b9898
-Text dark grey: #646161
 
-Fial Dark Green: #007b38
-Fial Medium Green: #7fc566
-Fial Yellow-Lime: #cadf5f
-Fial Yellow: #f8ec31
+PL Barely red: #ffefef
+PL Light red: #fcdfde
+PL Red: #ee4640
+PL Dark Red: #ea0e07
+PL Med Grey: #444
+PL Dark Grey: #1a1a1a
 
 
 *****************************/
@@ -63,7 +63,7 @@ Fial Yellow: #f8ec31
 body {
   background-color: #fff;
   background-image: none;
-  color: #6a6767;
+  color: #444;
   font-family:'DIN Next W01 Light', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
   font-weight: 300;
 }
@@ -83,15 +83,21 @@ body {
 
 
 /* Brand color */
-.green {
-  color: #007b38; /*Green*/
+.red {
+  color: #ee4640; /*Red*/
 }
 
 /* Global content styles -------------*/
 
-a, a:hover, a:active {
-  color: #007b38; /*Green*/
+a{
+  color: #ee4640; /*Red*/
 }
+
+a:hover, a:active, a:focus {
+  color: #ea0e07; /*Dark Red*/
+  text-decoration: none;
+}
+
 
 p, .p, .p2,                      /* overwrites style.css */
 input, button, select, textarea{ /* overwrites bootstrap */
@@ -109,8 +115,8 @@ table thead th {
 }
 
 .caret {
-  border-bottom-color: #007b38; /*Green*/
-  border-top-color: #007b38; /*Green*/
+  border-bottom-color: #444; /*Grey*/
+  border-top-color: #444; /*Grey*/
 }
 
 .breadcrum h1 {
@@ -201,12 +207,12 @@ h6 {
 /* Menu stylings for Project Leap -------------*/
 
 .menu_primary ul.menu li a.active {
-  color: #007b38; /*Green*/
-  border-bottom: 3px solid #999;
+  color: #1a1a1a; /*Dark Grey*/
+  border-bottom: 3px solid #ee4640; /*Red*/
 }
 
 .menu_primary a{
-  color: #007b38; /*Green*/
+  color: #1a1a1a; /*Dark Grey*/
   font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 400;
   font-size: 1.25em;
@@ -214,7 +220,7 @@ h6 {
 }
 
 .menu_primary a:hover {
-  color:#646161;
+  color:#ee4640; /*Red*/
 }
 
 .menu_secondary a {
@@ -226,24 +232,24 @@ h6 {
 /* User details in-nav block --------*/
 
 .dash_nav .leaf.active-trail {
-  background-color:#007b38; /*Green*/
+  background-color:#ee4640; /*Red*/
 }
 
 .dash_nav a, .dash_nav a {
-  color: #007b38; /*Green*/
+  color: #ee4640; /*Red*/
 }
 
 /* Secondary menu --------*/
 
 .nav .dropdown-toggle .caret {
-  border-top-color:#007b38;
-  border-bottom-color:#007b38;
+  border-top-color:#444;
+  border-bottom-color:#444;
 }
 
 .nav .dropdown-toggle:hover .caret, 
 .nav .dropdown-toggle:focus .caret{
-  border-top-color:#007b38;
-  border-bottom-color:#007b38;
+  border-top-color:#444;
+  border-bottom-color:#444;
 }
 
 /* Right nav --------*/
@@ -281,11 +287,9 @@ h6 {
 .ui-sidenav-buttons ul li a:hover,
 .ui-sidenav-buttons ul li a:active,
 .ui-sidenav-buttons ul li a:focus{
-  border:1px solid #7fc566;
-  background:#dbfccf;
+  border:1px solid #ffefef;
+  background:#fcdfde;
 }
-
-
 
  /**
 7. BUTTONS & DROPDOWNS
@@ -294,16 +298,35 @@ h6 {
 
 /* Brand color button - restyle colors to be appropriate to brand -----*/
 
-.btn-warning {
-    background-color: #007b38;
-    background-image: linear-gradient(to bottom, #007b38, #004720);
-    background-repeat: repeat-x;
-    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-    color: #FFFFFF;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+
+.btn, .btn:hover, .btn:active, .btn:focus,
+.form-btn-success, .form-btn-success:hover, .form-btn-success:active, .form-btn-success:focus,
+input.form-submit.form-btn-success,
+input.form-submit.form-btn-success:hover,
+input.form-submit.form-btn-success:active, 
+input.form-submit.form-btn-success:focus {
+  background-image: none;
+  border:none;
+  box-shadow: none;
+  text-shadow:none;
 }
+
+input.form-submit,
+input.form-submit:hover,
+input.form-submit:active,
+input.form-submit:focus,
+form .field-name-field-file-ref div.entityconnect-add input {
+  background-image: none;
+  background-color: transparent;
+}
+
+.btn-warning {
+    background-color: #ee4640;
+    color: #FFFFFF;
+}
+
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning.disabled, .btn-warning[disabled] {
-    background-color: #004720;
+    background-color: #ea0e07;
     color: #FFFFFF;
 }
 
@@ -321,16 +344,11 @@ h6 {
 .dropdown-submenu:focus > a {
   text-decoration: none  !important;
   color: #ffffff  !important;
-  background-color: #007b38  !important;
-  background-image: -moz-linear-gradient(top, #007b38, #7fc566) !important;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#007b38), to(#7fc566)) !important;
-  background-image: -webkit-linear-gradient(top, #007b38, #7fc566) !important;
-  background-image: -o-linear-gradient(top, #007b38, #7fc566) !important;
-  background-image: -ms-linear-gradient(top, #007b38, #7fc566) !important;
-  background-image: linear-gradient(to bottom, #007b38, #7fc566) !important;
-  background-repeat: repeat-x !important;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fc566', endColorstr='#007b38',GradientType=0 ) !important; /* IE6-8 */
-
+  background-color: #ee4640  !important;
+  background-image: none;
+  border:none;
+  box-shadow: none;
+  text-shadow:none;
 }
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
@@ -338,15 +356,11 @@ h6 {
   color: #ffffff  !important;
   text-decoration: none  !important;
   outline: 0  !important;
-  background-color: #007b38  !important;
-  background-image: -moz-linear-gradient(top, #007b38, #7fc566)  !important;
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#007b38), to(#7fc566))  !important;
-  background-image: -webkit-linear-gradient(top, #007b38, #7fc566)  !important;
-  background-image: -o-linear-gradient(top, #007b38, #7fc566)  !important;
-  background-image: -ms-linear-gradient(top, #007b38, #7fc566)  !important;
-  background-image: linear-gradient(to bottom, #007b38, #7fc566)  !important;
-  background-repeat: repeat-x  !important;
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fc566', endColorstr='#007b38',GradientType=0 )  !important; /* IE6-8 */
+  background-color: #ee4640 !important;
+  background-image: none;
+  border:none;
+  box-shadow: none;
+  text-shadow:none;
 }
 
 
@@ -394,11 +408,11 @@ button {
   -moz-border-radius: 4px;
   border-radius: 4px;
   background-color: #5d5a5a;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#6a6767), to(#5d5a5a));
-  background-image: -webkit-linear-gradient(top, #6a6767, #5d5a5a);
-  background-image: -moz-linear-gradient(top, #6a6767, #5d5a5a);
-  background-image: -o-linear-gradient(top, #6a6767, #5d5a5a);
-  background-image: linear-gradient(to bottom, #6a6767, #5d5a5a);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1a1a1a), to(#5d5a5a));
+  background-image: -webkit-linear-gradient(top, #1a1a1a, #5d5a5a);
+  background-image: -moz-linear-gradient(top, #1a1a1a, #5d5a5a);
+  background-image: -o-linear-gradient(top, #1a1a1a, #5d5a5a);
+  background-image: linear-gradient(to bottom, #1a1a1a, #5d5a5a);
 }
 
 .button:hover,
@@ -482,11 +496,11 @@ button {
   -moz-border-radius: 4px;
   border-radius: 4px;
   background-color: #e65b13;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#007b38), to(#e65b13));
-  background-image: -webkit-linear-gradient(top, #007b38, #e65b13);
-  background-image: -moz-linear-gradient(top, #007b38, #e65b13);
-  background-image: -o-linear-gradient(top, #007b38, #e65b13);
-  background-image: linear-gradient(to bottom, #007b38, #e65b13);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ee4640), to(#e65b13));
+  background-image: -webkit-linear-gradient(top, #ee4640, #e65b13);
+  background-image: -moz-linear-gradient(top, #ee4640, #e65b13);
+  background-image: -o-linear-gradient(top, #ee4640, #e65b13);
+  background-image: linear-gradient(to bottom, #ee4640, #e65b13);
 }
 .orangebutton:hover,
 .orangebutton:visited:hover,
@@ -505,12 +519,12 @@ button {
 }
 .orangebutton:active,
 .orangebutton:visited:active {
-  background-color: #007b38; 
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#e65b13), to(#007b38));
-  background-image: -webkit-linear-gradient(top, #e65b13, #007b38);
-  background-image: -moz-linear-gradient(top, #e65b13, #007b38);
-  background-image: -o-linear-gradient(top, #e65b13, #007b38);
-  background-image: linear-gradient(to bottom, #e65b13, #007b38);
+  background-color: #ee4640; 
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e65b13), to(#ee4640));
+  background-image: -webkit-linear-gradient(top, #e65b13, #ee4640);
+  background-image: -moz-linear-gradient(top, #e65b13, #ee4640);
+  background-image: -o-linear-gradient(top, #e65b13, #ee4640);
+  background-image: linear-gradient(to bottom, #e65b13, #ee4640);
 }
 
 .orangebutton a,
@@ -599,7 +613,7 @@ button {
 }
 
 .ui-site-tagline {
-  color:#7fc566;
+  color:#444;
   font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
   font-weight: 400;
   text-align: center;
@@ -610,7 +624,7 @@ button {
 
 .ui-site-tagline div.content:before,
 .ui-site-tagline div.content:after{
-  color:#7fc566;
+  color:#ccc;
   font-size: 2em;
   font-family:'FontAwesome';
   font-weight: normal;
@@ -642,7 +656,7 @@ button {
 .sidebar .nav.user-navigation li.ui-navigation-menu a:hover,
 .sidebar .nav.user-navigation li.ui-navigation-menu a:active,
 .sidebar .nav.user-navigation li.ui-navigation-menu a:focus{
-  background: #007b38; /*Green*/
+  background: #ee4640; /*Red*/
 }
 
 
@@ -655,8 +669,8 @@ button {
 
 
 .ui-tactical-header{
-  background:#31733c;
-  color:#fff;
+  background:#f1f1f1;
+  color:#444;
   padding:20px;
   min-height: 220px;
 }
@@ -668,15 +682,15 @@ button {
 .ui-tactical-header h5,
 .ui-tactical-header h6,
 .ui-tactical-header a{
-  color:#fff;
+  color:#444;
 }
 
 .ui-tactical-header a:hover,
 .ui-tactical-header a:focus,
 .ui-tactical-header a:active{
-  color:#f8ec31; /* Fial yellow-lime */
+  color:#ee4640; /* Red */
   text-decoration: none;
-  text-shadow: 0 1px 1px #163f1d;
+  text-shadow: 0 1px 1px #fff;
 }
 
 .ui-tactical-footer{
@@ -687,11 +701,11 @@ button {
 /* Logged in blocks --------------*/
 
 .notifications {
-  background-color: #dbfccf; /*Light green / yellow */
+  background-color: #fcdfde; /*Light red */
 }
 
 .notifications .views-field-title:before{
-  color:#007b38; /*Green*/
+  color:#ee4640; /*Red*/
 }
 
 .dashboard h2 {
@@ -704,7 +718,7 @@ button {
 .news_update h2 {
   font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
-  color: #6a6767;
+  color: #1a1a1a;
   font-size: 26px;
 }
 
@@ -716,7 +730,7 @@ button {
 
 .home_activity h2 {
   font-size: 16px;
-  color: #6a6767;
+  color: #1a1a1a;
 }
 
 .home_activity h2 strong {
@@ -757,11 +771,11 @@ button {
 /* News Updates --------------*/
 
 .title_block {
-  color: #6a6767; /*Grey*/
+  color: #1a1a1a; /*Grey*/
 }
 
 .title_text {
-  color: #6a6767; /*Grey*/
+  color: #1a1a1a; /*Grey*/
 }
 
 .submitted-content-posted{ /*Post date*/
@@ -774,7 +788,7 @@ button {
  */
 
  .index_item h3 a:hover { 
-  color:#007b38; /*Green*/
+  color:#ee4640; /*Red*/
 }
 
 /* GENERIC HEADINGS */
@@ -804,8 +818,12 @@ button {
 }
 
 .topic_feature_right h3 a:hover,
-.index_item h3 a:hover {
-  color:#646161;
+.topic_feature_right h3 a:active,
+.topic_feature_right h3 a:focus,
+.index_item h3 a:hover,
+.index_item h3 a:active,
+.index_item h3 a:focus{
+  color:#ea0e07;
 }
 
 .topic_feature_left img{
@@ -833,7 +851,7 @@ button {
 }
 
 .view-recent-activity .activity-details a:nth-child(3){ /*Article label*/
-  color:#6a6767;
+  color:#1a1a1a;
   font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
   font-size: 1.15em;
@@ -845,11 +863,11 @@ button {
  **/
 
 ul.inline li.active{/*Overwrites system menus*/
-  color:#007b38; /* Green */ 
+  color:#ee4640; /* Green */ 
 }
 
 ul.inline li.active a{ /*Overwrites system menus*/
-  color:#007b38; /* Green */
+  color:#ee4640; /* Green */
 }
 
 li.comment-add {
@@ -867,7 +885,7 @@ li.comment-add {
 /* User Profile page --------*/
 
 .profile-page-title {
-  color: #007b38; /*Green*/
+  color: #ee4640; /*Red*/
 }
 
 .profile-page-title p {
@@ -885,7 +903,8 @@ li.comment-add {
 }
 
 .hub-header h1 span.label {
- /* tweak for H1 style applied to this label */
+  text-shadow:none; 
+  /* tweak for H1 style applied to this label */
 }
 
 .ui-library-file h2 {
@@ -900,14 +919,14 @@ li.comment-add {
 /* Generic library item styling ------------ */
 
 .ui-library-file {
-  background-color:#dbfccf;
-  border:1px solid #c9f4ba !important; /* WTF is there a border:none on this element!??*/;
+  background-color:#ffefef;
+  border:1px solid #fcdfde !important; /* WTF is there a border:none on this element!??*/;
 }
 
 .ui-library-file:hover,
 .ui-library-file:focus,
 .ui-library-file:active{
-  background-color: #c9f4ba;
+  background-color: #fcdfde;
 }
 
 /* Sticky library item styling ------------ */
@@ -958,7 +977,7 @@ li.comment-add {
 /*  -------------*/
 
 ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
-  background:#007b38; /*Green highlight - tabs */
+  background:#ee4640; /*Green highlight - tabs */
 }
 
 #tabs1-menu ul li a, 
@@ -972,7 +991,7 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
 #tabs1-menu ul li a:hover, #tabs1-menu ul li a:focus,  #tabs1-menu ul li a:active, 
 #tabs1-search ul li a:hover, #tabs1-search ul li a:focus, #tabs1-search ul li a:active, 
 #tabs1-profile ul li a:hover, #tabs1-profile ul li a:focus, #tabs1-profile ul li a:active{
-  background:#007b38; /*Green highlight - pages */
+  background:#ee4640; /*Green highlight - pages */
 }
 
 #tabs1-menu ul li a.active,
