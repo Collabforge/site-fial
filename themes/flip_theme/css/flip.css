@@ -1,6 +1,6 @@
 /**
 
-PROJECT LEAP Stylesheet - Please only change fonts, Project Leap -specific fonts sizes, images and background colors using this file
+FIAL Stylesheet - Please only change fonts, Fial-specific fonts sizes, images and background colors using this file
 
 1. BODY & BACKGROUND
 2. HEADER
@@ -64,6 +64,7 @@ body {
   background-color: #fff;
   background-image: none;
   color: #6a6767;
+  font-family:'DIN Next W01 Light', Helvetica, Arial, sans-serif;
 }
 
 /* Text highlight ------------- */
@@ -175,17 +176,17 @@ h6 {
 .ui-footer .ui-logo a{ /*login page*/
   background:url('../img/project-leap-logo.svg') no-repeat;
   display:block;
-  height:110px;
-  width:189px;
+  height:56px;
+  width:180px;
 }
 
 /* Mobile logo */
 #tab-container .tab_logo.tab a{
   background:url('../img/project-leap-logo.svg') no-repeat;
   display:block;
-  background-size:52px 30px;
+  background-size:96px 30px;
   height:30px;
-  width:52px;
+  width:96px;
 }
 
 /**

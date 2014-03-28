@@ -41,10 +41,6 @@ if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary
 <script type='text/javascript' src='http://os.alfajango.com/js/raptorize/jquery.raptorize.1.0.js'></script>
 <script type='text/javascript' src='http://os.alfajango.com/js/jquery.easing.1.3.js'></script>
 <script type="text/javascript" src="http://fast.fonts.net/jsapi/edd5a0b1-f0fd-4fd8-a316-5aa9bf5765ed.js"></script>
-<<<<<<< HEAD
-=======
-
->>>>>>> Updates to start theming and embed fonts for Project Leap
 
 
 
@@ -96,6 +92,7 @@ jQuery(document).ready(function($) {
 
 </script>
 
+<link type="text/css" rel="stylesheet" href="https://fast.fonts.net/cssapi/edd5a0b1-f0fd-4fd8-a316-5aa9bf5765ed.css"/>
 <style type="text/css">
   
 .ui-mobile-menu {
