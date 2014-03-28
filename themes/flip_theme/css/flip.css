@@ -1,6 +1,6 @@
 /**
 
-FIAL Stylesheet - Please only change fonts, Fial-specific fonts sizes, images and background colors using this file
+Project Leap Stylesheet - Please only change fonts, Project Leap-specific fonts sizes, images and background colors using this file
 
 1. BODY & BACKGROUND
 2. HEADER
@@ -64,7 +64,8 @@ body {
   background-color: #fff;
   background-image: none;
   color: #6a6767;
-  font-family:'DIN Next W01 Light', Helvetica, Arial, sans-serif;
+  font-family:'DIN Next W01 Light', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+  font-weight: 300;
 }
 
 /* Text highlight ------------- */
@@ -97,7 +98,8 @@ input, button, select, textarea{ /* overwrites bootstrap */
 }
 
 table thead th {
-  font-family: 'oleo_script_swash_capsregular';
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
   font-size: 1.2em;
   text-transform: capitalize;
 }
@@ -112,12 +114,14 @@ table thead th {
 }
 
 .breadcrum h1 {
-    font-family: 'oleo_script_swash_capsregular';
+    font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 400;
     font-size:2.5em;
 }
 
 #page-title {
-  font-family: 'oleo_script_swash_capsregular';
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
 }
 
 /* System alerts -------------*/
@@ -137,13 +141,13 @@ table thead th {
 h1, h2, h3, h4, h5, h6{
   text-rendering: antialiased;
   -webkit-font-smoothing: antialiased;
-  font-family: 'ralewaybold';
-  font-weight: normal;
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
 }
 
 * strong {
-  font-family: 'ralewaybold'; /*makes WYIWYG instance of font the bold embedded version */
-  font-weight: normal;
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; /*makes WYIWYG instance of font the bold embedded version */
+  font-weight: 400;
 }
 
 h1 {
@@ -194,7 +198,7 @@ h6 {
 ---------------------------------------------
  **/
 
-/* Menu stylings for Fial -------------*/
+/* Menu stylings for Project Leap -------------*/
 
 .menu_primary ul.menu li a.active {
   color: #007b38; /*Green*/
@@ -203,10 +207,10 @@ h6 {
 
 .menu_primary a{
   color: #007b38; /*Green*/
-  font-family: 'ralewaybold'; 
-  font-weight: normal;
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 400;
   font-size: 1.25em;
-  text-transform: capitalize;
+  text-transform: uppercase;
 }
 
 .menu_primary a:hover {
@@ -214,7 +218,8 @@ h6 {
 }
 
 .menu_secondary a {
-  font-family: 'ralewaybold';
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
   font-size: 1em;
 }
 
@@ -534,8 +539,9 @@ button {
  */
 
 .region-footer h3{
-  font-family: 'oleo_script_swash_capsregular';
-}
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
+} 
 
 
 /**
@@ -544,11 +550,13 @@ button {
  **/
 
 .not-logged-in .form-actions h3{
-  font-family: 'oleo_script_swash_capsregular';
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
 }
 
 .not-logged-in .form-actions input#edit-submit {
-    font-family: 'ralewaybold';
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
 }
 
 .ui-login-forms .form-actions input#edit-submit{
@@ -582,7 +590,8 @@ button {
   background:#fff; /*old browsers*/
   background-color: rgba(255, 255, 255, 0.85);
   color:#222;
-  font-family: 'ralewaybold'; 
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 400;
   font-size: 1.25em;
   text-shadow: 0 1px 0 #FFF;
   -webkit-border-radius: 5px;
@@ -591,8 +600,8 @@ button {
 
 .ui-site-tagline {
   color:#7fc566;
-  font-family: 'ralewaybold'; 
-  font-weight: normal;
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-weight: 400;
   text-align: center;
   font-size: 1.25em;
   text-shadow: 0 1px 0 #ffffff;
@@ -640,7 +649,8 @@ button {
 /* News/Media/Blog blocks --------------*/
 
 .view-homepage-news-blocks h2{
-    font-family: 'oleo_script_swash_capsregular';
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
 }
 
 
@@ -692,7 +702,8 @@ button {
 /* News update --------------*/
 
 .news_update h2 {
-  font-family: 'ralewaybold';
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
   color: #6a6767;
   font-size: 26px;
 }
@@ -709,9 +720,9 @@ button {
 }
 
 .home_activity h2 strong {
-  font-family: 'ralewaybold';
-  font-size: 26px;
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
+  font-size: 26px;
 }
 
 /* Hide page title --------*/
@@ -734,7 +745,8 @@ button {
 .dashboard h2 { /*COLOR Specific - fial*/
   color: #1874CD;
   border-color: #b3d9f2;
-  font-family: 'oleo_script_swash_capsbold';
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
 }
 
 .dashboard .span4 h4 {
@@ -786,7 +798,8 @@ button {
 /* -- featured item */
 
 .topic_feature_right h3 { 
-  font-family: 'oleo_script_swash_capsregular';
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
   font-size: 1.875em;
 }
 
@@ -807,7 +820,8 @@ button {
 /* -- list items */
 
 .index_item h3{
-  font-family: 'oleo_script_swash_capsregular';
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
   font-size: 1.5em;
 }
 
@@ -820,7 +834,8 @@ button {
 
 .view-recent-activity .activity-details a:nth-child(3){ /*Article label*/
   color:#6a6767;
-  font-family: 'oleo_script_swash_capsregular';
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
   font-size: 1.15em;
 }
 
@@ -856,7 +871,8 @@ li.comment-add {
 }
 
 .profile-page-title p {
-  font-family: 'oleo_script_swash_capsregular';
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 400;
 }
 
  /**
@@ -948,7 +964,7 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
 #tabs1-menu ul li a, 
 #tabs1-search ul li a, 
 #tabs1-profile ul li a{
-  font-family: 'ralewaybold';
+  font-family: 'DIN Next W01 Regular', "HelveticaNeue-Regular", "Helvetica Neue Regular", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-weight: 400;
   font-size: 1em;
 }
