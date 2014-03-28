@@ -20,6 +20,7 @@ function _fial_wording_strings() {
     'My Hubs' => 'My Groups',
     'Hubs' => 'Groups',
     'Host a Topic' => 'Host a Forum',
+    'Your Hubs' => 'Your Groups',
     'Unsubscribe from this Hub' => 'Unsubscribe from this Group',
     'Create a hub from this topic' => 'Create a group from this forum',
     'Edit the Hub' => 'Edit the group',
