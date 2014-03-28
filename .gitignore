@@ -1,8 +1,8 @@
 settings.php
+files/*
+private/*
 _build/*-db.sql.*
-.DS_Store
 themes/flip_theme
 themes/flip_theme/*
 themes/flip_theme/logo.png
-files/*
-private/*
+.DS_Store
