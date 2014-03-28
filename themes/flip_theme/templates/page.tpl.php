@@ -1,4 +1,4 @@
-
+<h1>(*** FLIP THEME ***)</h1>
 <div id="skipnav" class="element-invisible">
   <div class="container">
     <p>Skip to:</p>
