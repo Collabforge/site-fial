@@ -1,0 +1,1084 @@
+/**
+
+FIAL Stylesheet - Please only change fonts, Fial-specific fonts sizes, images and background colors using this file
+
+1. BODY & BACKGROUND
+2. HEADER
+3. SEARCH
+4. FONTS & HEADERS
+5. LOGO, ICONS
+6. NAVIGATION & MENUS
+7. BUTTONS & DROPDOWNS
+8. QUICKTABS
+9. FORMS
+10. FOOTER
+
+~ page-specific  / templates ~
+
+11. LOG-IN / REGISTER PAGES
+12. LOGGED-IN HOME / DASHBOARD PAGE
+13. TOPICS PAGE
+14. TOPIC COMMENTS
+15. TOPIC DETAIL - ARTICLE & COMMENTS
+16. THREADED COMMENTS
+17. USER PROFILE
+18. MEMBER ORGANISATIONS
+19. MEMBER ORGANISATION PROFILES
+20. MEMBERS / THE COMMUNITY
+21. NEWS
+22. ADMIN LOGIN - HOME / DASHBOARD PAGE
+23. KNOWLEDGE FEATURE [UNUSED?]
+24. IE Fixes
+25. Hubs
+
+~ responsive ~
+
+26. RESPONSIVE - CONTENT-SPECIFIC
+27. MOBILE RESPONSIVE MENU
+
+
+---------------------------------------------
+
+ */
+
+
+/*****************************
+1. BODY COLOR & BACKGROUND
+
+COLOR GUIDE
+
+Light Grey: #f2f2f2
+Text grey: #6a6767
+Text light grey: #9b9898
+Text dark grey: #646161
+
+Fial Dark Green: #007b38
+Fial Medium Green: #7fc566
+Fial Yellow-Lime: #cadf5f
+Fial Yellow: #f8ec31
+
+
+*****************************/
+
+body {
+  background-color: #fbfbfb;
+  background-image: none;
+  color: #6a6767;
+}
+
+/* Text highlight ------------- */
+/* Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ */
+
+::-moz-selection {
+  background: #c7def9; /* Change highlight color */
+}
+
+::selection {
+  background: #c7def9; /* Change highlight color */
+}
+
+
+/* Brand color */
+.green {
+  color: #007b38; /*Green*/
+}
+
+/* Global content styles -------------*/
+
+a, a:hover, a:active {
+  color: #007b38; /*Green*/
+}
+
+p, .p, .p2,                      /* overwrites style.css */
+input, button, select, textarea{ /* overwrites bootstrap */
+}
+
+table thead th {
+  font-family: 'oleo_script_swash_capsregular';
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+.title_block { /* Topics and News background */
+  background-color: #f2f2f2;
+}
+
+.caret {
+  border-bottom-color: #007b38; /*Green*/
+  border-top-color: #007b38; /*Green*/
+}
+
+.breadcrum h1 {
+    font-family: 'oleo_script_swash_capsregular';
+    font-size:2.5em;
+}
+
+#page-title {
+  font-family: 'oleo_script_swash_capsregular';
+}
+
+/* Page header blocks - pretty pictures -------------*/
+
+.page-node-261 h1#page-title,
+.page-node-262 h1#page-title,
+.page-node-263 h1#page-title,
+.page-node-404 h1#page-title,
+.page-node-14 h1#page-title,
+.page-node-264 h1#page-title,
+.page-node-265 h1#page-title,
+.page-node-7 h1#page-title{
+  width:90%;
+  height: 110px;
+  padding: 0 5%;
+  color:#fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 4em;
+  line-height: 1;
+  text-shadow:0 0 6px #222,  0 3px 0 #732626, 0 0 1px #732626;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.page-node-261 h1#page-title:before,
+.page-node-262 h1#page-title:before,
+.page-node-263 h1#page-title:before,
+.page-node-404 h1#page-title:before,
+.page-node-14 h1#page-title:before, 
+.page-node-264 h1#page-title:before,
+.page-node-265 h1#page-title:before,
+.page-node-7 h1#page-title:before{
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; /* Adjusts for spacing */
+}
+
+.page-node-261 h1#page-title,
+.page-node-262 h1#page-title,
+.page-node-263 h1#page-title{
+  background-image:url('../img/fial_about.png');
+}
+
+.page-node-404 h1#page-title{
+  background-image: url('../img/fial_contact.png');
+}
+
+.page-node-14 h1#page-title,
+.page-node-264 h1#page-title,
+.page-node-265 h1#page-title,
+.page-node-7 h1#page-title{
+  background-image: url('../img/fial_member.png');
+}
+
+/* System alerts -------------*/
+
+.alert-success {
+  color:#529e52;
+  background-color:#e8f9e0;
+  border-color:#cdeac0;
+}
+
+/**
+4. FONTS & HEADERS
+---------------------------------------------
+ */
+
+
+@font-face {
+    font-family: 'ralewaybold';
+    src: url('../fonts/raleway-bold-webfont.eot');
+    src: url('../fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-bold-webfont.woff') format('woff'),
+         url('../fonts/raleway-bold-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('../fonts/raleway-regular-webfont.eot');
+    src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/raleway-regular-webfont.woff') format('woff'),
+         url('../fonts/raleway-regular-webfont.ttf') format('truetype'),
+         url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oleo_script_swash_capsbold';
+    src: url('../fonts/oleoscriptswashcaps-bold-webfont.eot');
+    src: url('../fonts/oleoscriptswashcaps-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oleoscriptswashcaps-bold-webfont.woff') format('woff'),
+         url('../fonts/oleoscriptswashcaps-bold-webfont.ttf') format('truetype'),
+         url('../fonts/oleoscriptswashcaps-bold-webfont.svg#oleo_script_swash_capsbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'oleo_script_swash_capsregular';
+    src: url('../fonts/oleoscriptswashcaps-regular-webfont.eot');
+    src: url('../fonts/oleoscriptswashcaps-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/oleoscriptswashcaps-regular-webfont.woff') format('woff'),
+         url('../fonts/oleoscriptswashcaps-regular-webfont.ttf') format('truetype'),
+         url('../fonts/oleoscriptswashcaps-regular-webfont.svg#oleo_script_swash_capsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1, h2, h3, h4, h5, h6{
+  text-rendering: antialiased;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'ralewaybold';
+  font-weight: normal;
+}
+
+* strong {
+  font-family: 'ralewaybold'; /*makes WYIWYG instance of font the bold embedded version */
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2.25em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.875em;
+}
+h4 {
+  font-size: 1.4em;
+}
+h5 {
+  font-size: 1.2em;
+}
+h6 {
+  font-size: 1em;
+}
+
+
+/**
+5.  LOGO, ICONS
+---------------------------------------------
+ **/
+
+
+#logo a,               /*generic pages*/
+.ui-footer .ui-logo a{ /*login page*/
+  background:url('../logo.png') no-repeat;
+  display:block;
+  height:110px;
+  width:189px;
+}
+
+/* Mobile logo */
+#tab-container .tab_logo.tab a{
+  background:url('../logo.png') no-repeat;
+  display:block;
+  background-size:52px 30px;
+  height:30px;
+  width:52px;
+}
+
+/**
+6. NAVIGATION & MENUS
+---------------------------------------------
+ **/
+
+/* Menu stylings for Fial -------------*/
+
+.menu_primary ul.menu li a.active {
+  color: #007b38; /*Green*/
+  border-bottom: 3px solid #999;
+}
+
+.menu_primary a{
+  color: #007b38; /*Green*/
+  font-family: 'ralewaybold'; 
+  font-weight: normal;
+  font-size: 1.25em;
+  text-transform: capitalize;
+}
+
+.menu_primary a:hover {
+  color:#646161;
+}
+
+.menu_secondary a {
+  font-family: 'ralewaybold';
+  font-size: 1em;
+}
+
+/* User details in-nav block --------*/
+
+.dash_nav .leaf.active-trail {
+  background-color:#007b38; /*Green*/
+}
+
+.dash_nav a, .dash_nav a {
+  color: #007b38; /*Green*/
+}
+
+/* Secondary menu --------*/
+
+.nav .dropdown-toggle .caret {
+  border-top-color:#007b38;
+  border-bottom-color:#007b38;
+}
+
+.nav .dropdown-toggle:hover .caret, 
+.nav .dropdown-toggle:focus .caret{
+  border-top-color:#007b38;
+  border-bottom-color:#007b38;
+}
+
+/* Right nav --------*/
+
+.ui-sidenav-buttons{
+  margin: 10px 0 1em 0;
+  padding:0;
+}
+
+.ui-sidenav-buttons ul,
+.ui-sidenav-buttons ul li,
+.ui-sidenav-buttons ul li.leaf {
+  list-style: none;
+  margin:0;
+  padding: 0;
+  width:100%;
+  text-align: center;
+}
+
+.ui-sidenav-buttons ul li a{
+  padding:5px 10px;
+  margin: 0 0 0.5em 0;
+  display: block;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  border:1px solid #f2f2f2;
+  background:#fff;
+}
+
+.ui-sidenav-buttons ul li a.active{
+  border:1px solid #ddd;
+  color:#555;
+}
+
+.ui-sidenav-buttons ul li a:hover,
+.ui-sidenav-buttons ul li a:active,
+.ui-sidenav-buttons ul li a:focus{
+  border:1px solid #7fc566;
+  background:#dbfccf;
+}
+
+
+
+ /**
+7. BUTTONS & DROPDOWNS
+---------------------------------------------
+ */
+
+/* Brand color button - restyle colors to be appropriate to brand -----*/
+
+.btn-warning {
+    background-color: #007b38;
+    background-image: linear-gradient(to bottom, #007b38, #004720);
+    background-repeat: repeat-x;
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    color: #FFFFFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active, .btn-warning.disabled, .btn-warning[disabled] {
+    background-color: #004720;
+    color: #FFFFFF;
+}
+
+/* Hide double up of side nav buttons  -----*/
+
+#block-fial-core-about-menu {
+  display: none;
+}
+
+ /* DROPDOWN MENU HIGHLIGHTS - rewrites bootstrap.css - NB IMPORTANT required b/c css inheritance is wrong -----*/
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  text-decoration: none  !important;
+  color: #ffffff  !important;
+  background-color: #007b38  !important;
+  background-image: -moz-linear-gradient(top, #007b38, #7fc566) !important;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#007b38), to(#7fc566)) !important;
+  background-image: -webkit-linear-gradient(top, #007b38, #7fc566) !important;
+  background-image: -o-linear-gradient(top, #007b38, #7fc566) !important;
+  background-image: -ms-linear-gradient(top, #007b38, #7fc566) !important;
+  background-image: linear-gradient(to bottom, #007b38, #7fc566) !important;
+  background-repeat: repeat-x !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fc566', endColorstr='#007b38',GradientType=0 ) !important; /* IE6-8 */
+
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #ffffff  !important;
+  text-decoration: none  !important;
+  outline: 0  !important;
+  background-color: #007b38  !important;
+  background-image: -moz-linear-gradient(top, #007b38, #7fc566)  !important;
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#007b38), to(#7fc566))  !important;
+  background-image: -webkit-linear-gradient(top, #007b38, #7fc566)  !important;
+  background-image: -o-linear-gradient(top, #007b38, #7fc566)  !important;
+  background-image: -ms-linear-gradient(top, #007b38, #7fc566)  !important;
+  background-image: linear-gradient(to bottom, #007b38, #7fc566)  !important;
+  background-repeat: repeat-x  !important;
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fc566', endColorstr='#007b38',GradientType=0 )  !important; /* IE6-8 */
+}
+
+
+.menu_secondary li .dropdown-menu > li,
+.menu_secondary li .dropdown-menu > li a,
+.menu_secondary li .dropdown-menu > li a.active,
+.menu_secondary li .dropdown-menu > li a:hover{
+  border: none;
+}
+
+
+/**
+7. BUTTONS & DROPDOWNS
+---------------------------------------------
+ */
+
+
+button {
+  text-align: left;
+  padding: 0;
+  border: none;
+  background-color: #FFF;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.button,
+.button:visited {
+  border: 1px solid #d1d1d1;
+  border-top-color: #e0e0e0;
+  border-left-color: #e0e0e0;
+  padding: 4px 12px;
+  color: #f2f2f2;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 0px;
+  line-height: 1.4em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #5d5a5a;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#6a6767), to(#5d5a5a));
+  background-image: -webkit-linear-gradient(top, #6a6767, #5d5a5a);
+  background-image: -moz-linear-gradient(top, #6a6767, #5d5a5a);
+  background-image: -o-linear-gradient(top, #6a6767, #5d5a5a);
+  background-image: linear-gradient(to bottom, #6a6767, #5d5a5a);
+}
+
+.button:hover,
+.button:visited:hover,
+.button:focus,
+.button:visited:focus {
+  color: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-top-color: #bfbfbf;
+  border-left-color: #bfbfbf;
+  background-color: #504e4e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5d5a5a), to(#504e4e));
+  background-image: -webkit-linear-gradient(top, #5d5a5a, #504e4e);
+  background-image: -moz-linear-gradient(top, #5d5a5a, #504e4e);
+  background-image: -o-linear-gradient(top, #5d5a5a, #504e4e);
+  background-image: linear-gradient(to bottom, #5d5a5a, #504e4e);
+  text-decoration: none;
+}
+.button:active,
+.button:visited:active {
+  background-color: #f2f2f2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e5e5e5), to(#f2f2f2));
+  background-image: -webkit-linear-gradient(top, #e5e5e5, #f2f2f2);
+  background-image: -moz-linear-gradient(top, #e5e5e5, #f2f2f2);
+  background-image: -o-linear-gradient(top, #e5e5e5, #f2f2f2);
+  background-image: linear-gradient(to bottom, #e5e5e5, #f2f2f2);
+}
+.blue-button,
+.blue-button:visited {
+  border-color: #1472ad;
+  text-shadow: 0 1px 1px #1472ad;
+  background-color: #1681c4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1990db), to(#1681c4));
+  background-image: -webkit-linear-gradient(top, #1990db, #1681c4);
+  background-image: -moz-linear-gradient(top, #1990db, #1681c4);
+  background-image: -o-linear-gradient(top, #1990db, #1681c4);
+  background-image: linear-gradient(to bottom, #1990db, #1681c4);
+  -webkit-box-shadow: inset 0 0 3px #59b3ec;
+  -moz-box-shadow: inset 0 0 3px #59b3ec;
+  box-shadow: inset 0 0 3px #59b3ec;
+}
+.blue-button:hover,
+.blue-button:visited:hover,
+.blue-button:focus,
+.blue-button:visited:focus {
+  border-color: #116396;
+  background-color: #1472ad;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1784c9), to(#1472ad));
+  background-image: -webkit-linear-gradient(top, #1784c9, #1472ad);
+  background-image: -moz-linear-gradient(top, #1784c9, #1472ad);
+  background-image: -o-linear-gradient(top, #1784c9, #1472ad);
+  background-image: linear-gradient(to bottom, #1784c9, #1472ad);
+}
+.blue-button:active,
+.blue-button:visited:active {
+  background-color: #1990db;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#1681c4), to(#1990db));
+  background-image: -webkit-linear-gradient(top, #1681c4, #1990db);
+  background-image: -moz-linear-gradient(top, #1681c4, #1990db);
+  background-image: -o-linear-gradient(top, #1681c4, #1990db);
+  background-image: linear-gradient(to bottom, #1681c4, #1990db);
+}
+
+.orangebutton,
+.orangebutton:visited {
+  border: 1px solid #cc4400;
+  border-top-color: #e55c17;
+  border-left-color: #e55c17;
+  padding: 4px 12px;
+  color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  margin-bottom: 0px;
+  line-height: 1.4em;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #e65b13;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#007b38), to(#e65b13));
+  background-image: -webkit-linear-gradient(top, #007b38, #e65b13);
+  background-image: -moz-linear-gradient(top, #007b38, #e65b13);
+  background-image: -o-linear-gradient(top, #007b38, #e65b13);
+  background-image: linear-gradient(to bottom, #007b38, #e65b13);
+}
+.orangebutton:hover,
+.orangebutton:visited:hover,
+.orangebutton:focus,
+.orangebutton:visited:focus {
+  color: #ffffff;
+  border: 1px solid #d1d1d1;
+  border-top-color: #bfbfbf;
+  border-left-color: #bfbfbf;
+  background-color: #504e4e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#5d5a5a), to(#504e4e));
+  background-image: -webkit-linear-gradient(top, #5d5a5a, #504e4e);
+  background-image: -moz-linear-gradient(top, #5d5a5a, #504e4e);
+  background-image: -o-linear-gradient(top, #5d5a5a, #504e4e);
+  background-image: linear-gradient(to bottom, #5d5a5a, #504e4e);
+}
+.orangebutton:active,
+.orangebutton:visited:active {
+  background-color: #007b38; 
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#e65b13), to(#007b38));
+  background-image: -webkit-linear-gradient(top, #e65b13, #007b38);
+  background-image: -moz-linear-gradient(top, #e65b13, #007b38);
+  background-image: -o-linear-gradient(top, #e65b13, #007b38);
+  background-image: linear-gradient(to bottom, #e65b13, #007b38);
+}
+
+.orangebutton a,
+.orangebutton a:hover,
+.orangebutton a:visited:hover,
+.orangebutton a:focus,
+.orangebutton:visited:focus a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/**
+8. QUICKTABS
+---------------------------------------------
+ */
+
+ ul.quicktabs-tbs li.active { 
+  background-color: #F7A233;
+}
+
+
+/**
+10. FOOTER
+---------------------------------------------
+ */
+
+.region-footer h3{
+  font-family: 'oleo_script_swash_capsregular';
+}
+
+
+/**
+11. LOG-IN / REGISTER PAGES
+---------------------------------------------
+ **/
+
+.not-logged-in .form-actions h3{
+  font-family: 'oleo_script_swash_capsregular';
+}
+
+.not-logged-in .form-actions input#edit-submit {
+    font-family: 'ralewaybold';
+}
+
+.ui-login-forms .form-actions input#edit-submit{
+  text-transform: capitalize;
+}
+
+
+/**
+12. LOGGED-IN HOME / DASHBOARD PAGE
+---------------------------------------------
+ **/
+
+/* Not logged in - homepage slider --------------*/
+
+.ui-slideshow-block,
+.views-slideshow-controls-bottom {
+  text-align: center;
+}
+
+.ui-slideshow-block {
+  position:relative;
+}
+
+.ui-slideshow-block .views-field-field-slide-caption { /* slide caption */
+  position: absolute;
+  width:70%;
+  top:40%;
+  margin:0 15%;
+  padding-top:10px;
+  padding-bottom:10px;
+  background:#fff; /*old browsers*/
+  background-color: rgba(255, 255, 255, 0.85);
+  color:#222;
+  font-family: 'ralewaybold'; 
+  font-size: 1.25em;
+  text-shadow: 0 1px 0 #FFF;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.ui-site-tagline {
+  color:#7fc566;
+  font-family: 'ralewaybold'; 
+  font-weight: normal;
+  text-align: center;
+  font-size: 1.25em;
+  text-shadow: 0 1px 0 #ffffff;
+  position: relative; /* makes the icons with absolute position work */
+}
+
+.ui-site-tagline div.content:before,
+.ui-site-tagline div.content:after{
+  color:#7fc566;
+  font-size: 2em;
+  font-family:'FontAwesome';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  position: absolute;
+
+}
+
+.ui-site-tagline div.content:before{
+  content:"\F10D"; /*Icon quote left*/
+  top:0;
+  left:0;
+}
+
+.ui-site-tagline div.content:after{
+  content:"\F10E"; /*Icon quote right*/
+  top:0;
+  right:0;
+}
+
+.ui-site-tagline p{
+  padding-left:3em;
+  padding-right: 3em;
+}
+
+/* Sidebar secondary navigation ------- */
+.sidebar .nav.user-navigation li.ui-navigation-menu.active a,
+.sidebar .nav.user-navigation li.ui-navigation-menu a:hover,
+.sidebar .nav.user-navigation li.ui-navigation-menu a:active,
+.sidebar .nav.user-navigation li.ui-navigation-menu a:focus{
+  background: #007b38; /*Green*/
+}
+
+
+/* News/Media/Blog blocks --------------*/
+
+.view-homepage-news-blocks h2{
+    font-family: 'oleo_script_swash_capsregular';
+}
+
+
+.ui-tactical-header{
+  background:#31733c;
+  color:#fff;
+  padding:20px;
+  min-height: 220px;
+}
+
+.ui-tactical-header h1,
+.ui-tactical-header h2,
+.ui-tactical-header h3,
+.ui-tactical-header h4,
+.ui-tactical-header h5,
+.ui-tactical-header h6,
+.ui-tactical-header a{
+  color:#fff;
+}
+
+.ui-tactical-header a:hover,
+.ui-tactical-header a:focus,
+.ui-tactical-header a:active{
+  color:#f8ec31; /* Fial yellow-lime */
+  text-decoration: none;
+  text-shadow: 0 1px 1px #163f1d;
+}
+
+.ui-tactical-footer{
+  border:1px solid #ddd;
+  padding:20px;
+}
+
+/* Logged in blocks --------------*/
+
+.notifications {
+  background-color: #dbfccf; /*Light green / yellow */
+}
+
+.notifications .views-field-title:before{
+  color:#007b38; /*Green*/
+}
+
+.dashboard h2 {
+  text-transform: capitalize;
+}
+
+
+/* News update --------------*/
+
+.news_update h2 {
+  font-family: 'ralewaybold';
+  color: #6a6767;
+  font-size: 26px;
+}
+
+.news_update h2:before{
+  padding-right: 0.25em;
+} 
+
+/* Activity stream --------------*/
+
+.home_activity h2 {
+  font-size: 16px;
+  color: #6a6767;
+}
+
+.home_activity h2 strong {
+  font-family: 'ralewaybold';
+  font-size: 26px;
+  font-weight: 400;
+}
+
+/* Hide page title --------*/
+
+.page-dashboard  #page-title{
+  display: none;
+}
+
+/* Dashboard --------------*/
+
+.dashboard { /*COLOR Specific - fial*/
+  background-color: #e0f3ff;
+  border-color: #b3d9f2;
+}
+
+.dashboard a { /*COLOR Specific - fial*/
+  color: #1874CD;
+}
+
+.dashboard h2 { /*COLOR Specific - fial*/
+  color: #1874CD;
+  border-color: #b3d9f2;
+  font-family: 'oleo_script_swash_capsbold';
+}
+
+.dashboard .span4 h4 {
+   /*Font Specific - fial*/
+}
+
+
+/* News Updates --------------*/
+
+.title_block {
+  color: #6a6767; /*Grey*/
+}
+
+.title_text {
+  color: #6a6767; /*Grey*/
+}
+
+.submitted-content-posted{ /*Post date*/
+  color:#9b9898; /*Light Grey*/
+}
+
+
+/** 13. TOPICS PAGE 
+---------------------------------------------
+ */
+
+ .index_item h3 a:hover { 
+  color:#007b38; /*Green*/
+}
+
+/* GENERIC HEADINGS */
+
+.header-icon i {
+  color:#999;
+}
+
+/* TOPICS INDEX */
+
+.topic_host .orangebutton a{ /*To be tidied once button styles are reviewed */
+    margin: auto;
+    display: block;
+    text-decoration: none;
+}
+
+.topic_host { /* Host a topic box */
+  background-color: #FBFBFB; /* Tweak as needed */
+}
+
+/* -- featured item */
+
+.topic_feature_right h3 { 
+  font-family: 'oleo_script_swash_capsregular';
+  font-size: 1.875em;
+}
+
+.topic_feature_right h3 a:hover,
+.index_item h3 a:hover {
+  color:#646161;
+}
+
+.topic_feature_left img{
+  border:1px solid #999; /* Customise border color*/
+}
+
+.topic_feature_title {
+  background: #999; /*Background matches border */
+}
+
+
+/* -- list items */
+
+.index_item h3{
+  font-family: 'oleo_script_swash_capsregular';
+  font-size: 1.5em;
+}
+
+
+/* Homepage - Your Feed nodes */
+
+.view-recent-activity .activity-details {
+  color:#888; /* Tweak as needed */
+}
+
+.view-recent-activity .activity-details a:nth-child(3){ /*Article label*/
+  color:#6a6767;
+  font-family: 'oleo_script_swash_capsregular';
+  font-size: 1.15em;
+}
+
+/**
+14. TOPIC COMMENTS
+---------------------------------------------
+ **/
+
+ul.inline li.active{/*Overwrites system menus*/
+  color:#007b38; /* Green */ 
+}
+
+ul.inline li.active a{ /*Overwrites system menus*/
+  color:#007b38; /* Green */
+}
+
+li.comment-add {
+}
+
+.form-item-notify, #edit-notify-type {
+  display: none !important;
+}
+
+
+/** 17. USER PROFILE
+---------------------------------------------
+ */
+
+/* User Profile page --------*/
+
+.profile-page-title {
+  color: #007b38; /*Green*/
+}
+
+.profile-page-title p {
+  font-family: 'oleo_script_swash_capsregular';
+}
+
+ /**
+25. HUBS
+---------------------------------------------
+ */
+
+.node-type-hub .topic_host{
+  background-color:#f2f2f2;
+}
+
+.hub-header h1 span.label {
+ /* tweak for H1 style applied to this label */
+}
+
+.ui-library-file h2 {
+  font-size: 1.15em;  /* Adjust size to deal with font differences */
+
+}
+
+.ui-library-file a {
+
+}
+
+/* Generic library item styling ------------ */
+
+.ui-library-file {
+  background-color:#dbfccf;
+  border:1px solid #c9f4ba !important; /* WTF is there a border:none on this element!??*/;
+}
+
+.ui-library-file:hover,
+.ui-library-file:focus,
+.ui-library-file:active{
+  background-color: #c9f4ba;
+}
+
+/* Sticky library item styling ------------ */
+
+.sticky .ui-library-file:before{
+  color:#0088cc; /*Blue icon*/
+}
+
+.sticky .ui-library-file {
+  border-color:#b3d9f2 !important;
+  background-color:#dbeef9;
+  color:#0088cc; 
+}
+
+.sticky .ui-library-file:hover,
+.sticky .ui-library-file:focus,
+.sticky .ui-library-file:active{
+  background-color: #b3d9f2;
+}
+
+
+/**
+27. RESPONSIVE - CONTENT SPECIFIC
+------------------------------------------------------------------
+/*  -------------*/
+
+@media (max-width: 767px) {
+  .page-node-261 h1#page-title,
+  .page-node-262 h1#page-title,
+  .page-node-263 h1#page-title,
+  .page-node-404 h1#page-title,
+  .page-node-14 h1#page-title,
+  .page-node-264 h1#page-title,
+  .page-node-265 h1#page-title,
+  .page-node-7 h1#page-title{
+    font-size: 2em;
+    height: 85px;
+  }
+  .ui-slideshow-block .views-field-field-slide-caption { /* slide caption */
+    top:20%;
+    font-size: 1em;
+  }
+}
+
+/**
+27. MOBILE RESPONSIVE MENU
+------------------------------------------------------------------
+/*  -------------*/
+
+ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
+  background:#007b38; /*Green highlight - tabs */
+}
+
+#tabs1-menu ul li a, 
+#tabs1-search ul li a, 
+#tabs1-profile ul li a{
+  font-family: 'ralewaybold';
+  font-weight: 400;
+  font-size: 1em;
+}
+
+#tabs1-menu ul li a:hover, #tabs1-menu ul li a:focus,  #tabs1-menu ul li a:active, 
+#tabs1-search ul li a:hover, #tabs1-search ul li a:focus, #tabs1-search ul li a:active, 
+#tabs1-profile ul li a:hover, #tabs1-profile ul li a:focus, #tabs1-profile ul li a:active{
+  background:#007b38; /*Green highlight - pages */
+}
+
+#tabs1-menu ul li a.active,
+#tabs1-search ul li a.active,  
+#tabs1-profile ul li a.active{   
+  text-decoration: underline; /*Tweak the 'current page' style as desired*/
+}
+
+#tabs1-menu ul li .dropdown-menu{
+  background-color: #999;
+  border:none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+#tabs1-menu ul li .dropdown-menu li{
+  border:none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
