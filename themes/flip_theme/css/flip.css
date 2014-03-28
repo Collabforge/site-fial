@@ -61,7 +61,7 @@ Fial Yellow: #f8ec31
 *****************************/
 
 body {
-  background-color: #fbfbfb;
+  background-color: #fff;
   background-image: none;
   color: #6a6767;
 }
@@ -119,62 +119,6 @@ table thead th {
   font-family: 'oleo_script_swash_capsregular';
 }
 
-/* Page header blocks - pretty pictures -------------*/
-
-.page-node-261 h1#page-title,
-.page-node-262 h1#page-title,
-.page-node-263 h1#page-title,
-.page-node-404 h1#page-title,
-.page-node-14 h1#page-title,
-.page-node-264 h1#page-title,
-.page-node-265 h1#page-title,
-.page-node-7 h1#page-title{
-  width:90%;
-  height: 110px;
-  padding: 0 5%;
-  color:#fff;
-  -webkit-border-radius: 5px;
-  border-radius: 5px;
-  font-size: 4em;
-  line-height: 1;
-  text-shadow:0 0 6px #222,  0 3px 0 #732626, 0 0 1px #732626;
-  background-color: #000;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-.page-node-261 h1#page-title:before,
-.page-node-262 h1#page-title:before,
-.page-node-263 h1#page-title:before,
-.page-node-404 h1#page-title:before,
-.page-node-14 h1#page-title:before, 
-.page-node-264 h1#page-title:before,
-.page-node-265 h1#page-title:before,
-.page-node-7 h1#page-title:before{
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-  margin-right: -0.25em; /* Adjusts for spacing */
-}
-
-.page-node-261 h1#page-title,
-.page-node-262 h1#page-title,
-.page-node-263 h1#page-title{
-  background-image:url('../img/fial_about.png');
-}
-
-.page-node-404 h1#page-title{
-  background-image: url('../img/fial_contact.png');
-}
-
-.page-node-14 h1#page-title,
-.page-node-264 h1#page-title,
-.page-node-265 h1#page-title,
-.page-node-7 h1#page-title{
-  background-image: url('../img/fial_member.png');
-}
-
 /* System alerts -------------*/
 
 .alert-success {
@@ -188,54 +132,6 @@ table thead th {
 ---------------------------------------------
  */
 
-
-@font-face {
-    font-family: 'ralewaybold';
-    src: url('../fonts/raleway-bold-webfont.eot');
-    src: url('../fonts/raleway-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-bold-webfont.woff') format('woff'),
-         url('../fonts/raleway-bold-webfont.ttf') format('truetype'),
-         url('../fonts/raleway-bold-webfont.svg#ralewaybold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'ralewayregular';
-    src: url('../fonts/raleway-regular-webfont.eot');
-    src: url('../fonts/raleway-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/raleway-regular-webfont.woff') format('woff'),
-         url('../fonts/raleway-regular-webfont.ttf') format('truetype'),
-         url('../fonts/raleway-regular-webfont.svg#ralewayregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'oleo_script_swash_capsbold';
-    src: url('../fonts/oleoscriptswashcaps-bold-webfont.eot');
-    src: url('../fonts/oleoscriptswashcaps-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/oleoscriptswashcaps-bold-webfont.woff') format('woff'),
-         url('../fonts/oleoscriptswashcaps-bold-webfont.ttf') format('truetype'),
-         url('../fonts/oleoscriptswashcaps-bold-webfont.svg#oleo_script_swash_capsbold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'oleo_script_swash_capsregular';
-    src: url('../fonts/oleoscriptswashcaps-regular-webfont.eot');
-    src: url('../fonts/oleoscriptswashcaps-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/oleoscriptswashcaps-regular-webfont.woff') format('woff'),
-         url('../fonts/oleoscriptswashcaps-regular-webfont.ttf') format('truetype'),
-         url('../fonts/oleoscriptswashcaps-regular-webfont.svg#oleo_script_swash_capsregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 
 h1, h2, h3, h4, h5, h6{
   text-rendering: antialiased;
@@ -277,7 +173,7 @@ h6 {
 
 #logo a,               /*generic pages*/
 .ui-footer .ui-logo a{ /*login page*/
-  background:url('../logo.png') no-repeat;
+  background:url('../img/project-leap-logo.svg') no-repeat;
   display:block;
   height:110px;
   width:189px;
@@ -285,7 +181,7 @@ h6 {
 
 /* Mobile logo */
 #tab-container .tab_logo.tab a{
-  background:url('../logo.png') no-repeat;
+  background:url('../img/project-leap-logo.svg') no-repeat;
   display:block;
   background-size:52px 30px;
   height:30px;
