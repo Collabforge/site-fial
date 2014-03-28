@@ -4,3 +4,5 @@ _build/*-db.sql.*
 themes/flip_theme
 themes/flip_theme/*
 themes/flip_theme/logo.png
+files/*
+private/*
