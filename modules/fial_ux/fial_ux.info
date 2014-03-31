@@ -1,0 +1,4 @@
+name = Custom Module for Fial UX changes.
+version = 1.0
+core = 7.x
+
