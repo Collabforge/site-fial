@@ -151,3 +151,41 @@ body {
 	text-transform:uppercase;
   	text-decoration: none;	
 }
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.dropdown-submenu:hover > a,
+.dropdown-submenu:focus > a {
+  text-decoration: none  !important;
+  color: #ffffff  !important;
+  background-color: none  !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
+
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  color: #ffffff  !important;
+  text-decoration: none  !important;
+  outline: 0  !important;
+  background-color: none  !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
+}
+
+
+.menu_secondary li .dropdown-menu > li,
+.menu_secondary li .dropdown-menu > li a,
+.menu_secondary li .dropdown-menu > li a.active,
+.menu_secondary li .dropdown-menu > li a:hover{
+  border: none;
+}
