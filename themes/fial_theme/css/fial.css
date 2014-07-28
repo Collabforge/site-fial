@@ -121,14 +121,12 @@ body {
 /* Secondary menu --------*/
 
 .nav .dropdown-toggle .caret {
-  border-top-color:#007b38;
-  border-bottom-color:#007b38;
+  display:none;
 }
 
 .nav .dropdown-toggle:hover .caret, 
 .nav .dropdown-toggle:focus .caret{
-  border-top-color:#007b38;
-  border-bottom-color:#007b38;
+  display:none;
 }
 
  /* DROPDOWN MENU HIGHLIGHTS - rewrites bootstrap.css - NB IMPORTANT required b/c css inheritance is wrong -----*/
