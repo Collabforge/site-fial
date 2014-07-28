@@ -70,6 +70,8 @@ body {
 .ui-footer .ui-logo a{ /*login page*/
   background:url('../img/logo.png') no-repeat;
   display:block;
+  width:268px;
+  height:53px;
 }
 
 /* Mobile logo */
