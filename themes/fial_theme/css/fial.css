@@ -37,25 +37,6 @@ FIAL Stylesheet - Please only change fonts, Fial-specific fonts sizes, images an
 27. MOBILE RESPONSIVE MENU
 
 
----------------------------------------------
-
- */
-
-
-/*****************************
-1. BODY COLOR & BACKGROUND
-
-COLOR GUIDE
-
-Light Grey: #f2f2f2
-Text grey: #6a6767
-Text light grey: #9b9898
-Text dark grey: #646161
-
-Fial Dark Green: #007b38
-Fial Medium Green: #7fc566
-Fial Yellow-Lime: #cadf5f
-Fial Yellow: #f8ec31
 
 
 *****************************/
@@ -66,13 +47,9 @@ body {
   color: #ffffff;
 }
 
-/* Text highlight ------------- */
-/* Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- */
 
 
-/* Global content styles -------------*/
+/* 1. Global content styles -------------*/
 
 a {
   color: #4a4a4a; /*grey - styleguide*/
@@ -86,3 +63,22 @@ a:hover, a:active {
   border: none;
 }
 
+/* 2. Logo -------------*/
+
+
+#logo a,               /*generic pages*/
+.ui-footer .ui-logo a{ /*login page*/
+  background:url('../img/logo.png') no-repeat;
+  display:block;
+  height:110px;
+  width:189px;
+}
+
+/* Mobile logo */
+#tab-container .tab_logo.tab a{
+  background:url('../img/logo.png') no-repeat;
+  display:block;
+  background-size:52px 30px;
+  height:30px;
+  width:52px;
+}
