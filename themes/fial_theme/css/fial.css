@@ -70,8 +70,6 @@ a:hover, a:active {
 .ui-footer .ui-logo a{ /*login page*/
   background:url('../img/logo.png') no-repeat;
   display:block;
-  height:110px;
-  width:189px;
 }
 
 /* Mobile logo */
