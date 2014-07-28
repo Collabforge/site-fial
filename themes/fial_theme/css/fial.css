@@ -158,7 +158,13 @@ body {
 .dropdown-submenu:focus > a {
   text-decoration: none  !important;
   color: #ffffff  !important;
-  background-color: #525252;
+  background-color: #525252  !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
 
 }
 .dropdown-menu > .active > a,
@@ -167,7 +173,13 @@ body {
   color: #ffffff  !important;
   text-decoration: none  !important;
   outline: 0  !important;
-  background-color: #525252;
+  background-color: #525252  !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
+  background-image: none !important;
 }
 
 
