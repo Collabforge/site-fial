@@ -101,7 +101,6 @@ body {
 
 .menu_primary a{
   color: #007b38; /*Green*/
-  font-family: 'ralewaybold'; 
   font-weight: normal;
   font-size: 20px;
   text-transform: capitalize;
@@ -113,8 +112,10 @@ body {
 }
 
 .menu_secondary a {
-  font-family: 'ralewaybold';
-  font-size: 1em;
+  color: #007b38; /*Green*/
+  font-weight: normal;
+  font-size: 20px;
+  text-transform: capitalize;
 }
 
 
