@@ -125,6 +125,15 @@ body {
   text-transform: uppercase;
 }
 
+.menu_secondary a:hover {
+  color: #007b38; /*Green*/
+  font-weight: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-bottom: 6px solid #007b38;
+}
+
+
 /* Secondary menu --------*/
 
 .nav .dropdown-toggle .caret {
