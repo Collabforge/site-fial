@@ -51,13 +51,13 @@ body {
 
 /* 1. Global content styles -------------*/
 
-a {
+#main-content a {
   color: #4a4a4a; /*grey - styleguide*/
   text-decoration: none;
   border-bottom: 1px dotted;
 }
 
-a:hover, a:active {
+#main-content a:hover, #main-content a:active {
   color: #4a4a4a;
   text-decoration: underline;
   border: none;
@@ -77,5 +77,5 @@ a:hover, a:active {
   background:url('../img/logo.png') no-repeat;
   display:block;
   background-size:52px 30px;
-  
+
 }
