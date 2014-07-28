@@ -146,6 +146,8 @@ body {
   padding: 0;
   width:100%;
   text-align: center;
+  background:#525252;
+  padding-left:15px
 }
 
 .ui-sidenav-buttons ul li a{
