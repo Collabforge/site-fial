@@ -129,7 +129,7 @@ jQuery(document).ready(function($) {
         <div id="logo" class="span4 site-logo visible-desktop hidden-phone"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> &nbsp; </a>
         </div>       
         <?php if ($page['header_top_middle']): ?>
-        <div id="header_top_middle" class="span6"> <?php print render($page['header_top_middle']); ?>
+        <div id="header_top_middle" class="span8 last"> <?php print render($page['header_top_middle']); ?>
         </div>
         <?php endif; ?>
         <?php if ($page['search_box']): ?>
