@@ -108,6 +108,8 @@ body {
   font-weight: normal;
   font-size: 20px;
   text-transform: uppercase;
+  padding-left:15px;
+  padding-right:15px;
 }
 
 .menu_secondary a:hover {
