@@ -109,7 +109,7 @@ body {
 
 /* Menu stylings for Fial -------------*/
 
-.menu_secondary a {
+.menu_secondary li a {
   color: #007b38; /*Green*/
   font-family:'HelveticaNeueW01-57Cn';
   font-weight: normal;
@@ -119,13 +119,23 @@ body {
   padding-right:10px;
 }
 
-.menu_secondary a:active {
+.menu_secondary li a:active {
   color: #007b38; /*Green*/
   font-weight: normal;
   font-size: 20px;
   text-transform: uppercase;
   padding-bottom:6px;
   border-bottom: 6px solid #007b38;
+}
+
+.menu_secondary li a.hover {
+  color: #007b38; /*Green*/
+  font-family:'HelveticaNeueW01-57Cn';
+  font-weight: normal;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding-left:10px;
+  padding-right:10px;
 }
 
 /* Secondary menu --------*/
