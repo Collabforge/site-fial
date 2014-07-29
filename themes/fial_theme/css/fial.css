@@ -183,7 +183,7 @@ body {
   	border-bottom: none;	
 }
 
-.dropdown-menu li a.hover{
+.dropdown-menu li a:hover{
 	color:#ffffff;
 	font-size:18px;
 	text-transform:uppercase;
