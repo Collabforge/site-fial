@@ -108,8 +108,8 @@ body {
   font-weight: normal;
   font-size: 20px;
   text-transform: uppercase;
-  padding-left:15px;
-  padding-right:15px;
+  padding-left:10px;
+  padding-right:10px;
 }
 
 .menu_secondary a:hover {
@@ -183,7 +183,6 @@ body {
 .dropdown-menu > .active > a:focus {
   color: #ffffff  !important;
   text-decoration: none  !important;
-  outline: 0  !important;
   background-color: #525252  !important;
   background-image: none !important;
   background-image: none !important;
