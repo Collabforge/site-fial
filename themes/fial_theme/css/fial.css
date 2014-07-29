@@ -153,7 +153,7 @@ body {
 	font-size:18px;
 	text-transform:uppercase;
   	text-decoration: none;
-  	border-bottom: 1px dotted;	
+  	border-bottom: 1px #ffffff dotted;	
 }
 
 .dropdown-menu li a:hover{
