@@ -151,12 +151,12 @@ body {
  /* DROPDOWN MENU HIGHLIGHTS - rewrites bootstrap.css - NB IMPORTANT required b/c css inheritance is wrong -----*/
 
 .dropdown-menu {
-	background:#525252;
+	background-color:#525252;
 	border:none;
 }
 
 .dropdown a{
-	font-family:'helveticaneue57condensed';
+	font-family:'helveticaneue57condensed' !important;
 }
 
 .dropdown-menu li a{
