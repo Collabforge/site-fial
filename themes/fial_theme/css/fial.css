@@ -180,7 +180,7 @@ body {
 	text-transform:uppercase;
   	text-decoration: none;
   	font-family:'HelveticaNeueW01-57Cn';
-  	border-bottom: none;	
+  	border-bottom: 1px #525252 dotted;	
 }
 
 .dropdown-menu li a:hover{
