@@ -119,23 +119,6 @@ body {
   padding-right:10px;
 }
 
-.menu_secondary a:hover {
-  color: #007b38; /*Green*/
-  font-weight: normal;
-  font-size: 20px;
-  text-transform: uppercase;
-  padding-bottom:6px;
-  border-bottom: 6px solid #007b38;
-}
-
-.menu_secondary a:active {
-  color: #007b38; /*Green*/
-  font-weight: normal;
-  font-size: 20px;
-  text-transform: uppercase;
-  padding-bottom:6px;
-  border-bottom: 6px solid #007b38;
-}
 
 /* Secondary menu --------*/
 
