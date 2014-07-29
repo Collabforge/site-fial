@@ -132,12 +132,12 @@ body {
 }
 
 .menu_secondary li a:active {
-  color: #007b38; /*Green*/
+  color: #007b38 !important; /*Green*/
   font-weight: normal;
   font-size: 20px;
   text-transform: uppercase;
   padding-bottom:6px;
-  border-bottom: 6px solid #007b38;
+  border-bottom: 6px solid #007b38 !important;
 }
 
 .menu_secondary li a:hover {
