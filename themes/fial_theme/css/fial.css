@@ -229,3 +229,7 @@ body {
 .menu_secondary li .dropdown-menu > li a:hover{
   
 }
+
+.dropdown .expanded {
+	background-color:#ffffff;
+}
