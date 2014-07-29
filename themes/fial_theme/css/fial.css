@@ -81,6 +81,14 @@ body {
   border: none;
 }
 
+::-moz-selection {
+  background: #ffffff; /* Change highlight color */
+}
+
+::selection {
+  background: #ffffff; /* Change highlight color */
+}
+
 /**
 2. LOGO
 ---------------------------------------------
