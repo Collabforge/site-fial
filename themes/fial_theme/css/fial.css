@@ -192,6 +192,10 @@ body {
   	text-decoration: none;	
 }
 
+.dropdown-menu > li > a {
+	background-color:#ffffff;
+}
+
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus,
 .dropdown-submenu:hover > a,
@@ -228,8 +232,4 @@ body {
 .menu_secondary li .dropdown-menu > li a.active,
 .menu_secondary li .dropdown-menu > li a:hover{
   
-}
-
-.dropdown .expanded {
-	background-color:#ffffff;
 }
