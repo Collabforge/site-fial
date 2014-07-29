@@ -38,6 +38,20 @@ FIAL Stylesheet - Please only change fonts, Fial-specific fonts sizes, images an
 
 
 
+FIAL Fonts:
+HELVETICA NEUE STD 45 Light: 			font-family:'HelveticaNeueW01-45Ligh';
+								or:		font-family:'helveticaneue45light';
+
+HELVETICA NEUE STD 57 Condensed: 		font-family:'HelveticaNeueW01-57Cn';
+								or:		font-family:'helveticaneue57condensed';
+
+HELVETICA NEUE STD 77 Bold Condensed: 	font-family:'HelveticaNeueW01-77BdCn 692722';
+								or:		font-family:'helveticaneue77condensedbold';
+
+FIAL Fonts Source:
+<script type="text/javascript" src="http://fast.fonts.net/jsapi/b23760be-4be4-4e65-b79d-771dcea8a674.js"></script>
+
+
 
 *****************************/
 
@@ -45,6 +59,7 @@ body {
   background-color: #ffffff;
   background-image: none;
   color: #4a4a4c;
+  font-family:'helveticaneue45light';
 }
 
 
@@ -94,17 +109,9 @@ body {
 
 /* Menu stylings for Fial -------------*/
 
-
-
 .menu_secondary a {
   color: #007b38; /*Green*/
-  font-weight: normal;
-  font-size: 20px;
-  text-transform: uppercase;
-}
-
-.menu_secondary a {
-  color: #007b38; /*Green*/
+  font-family:'HelveticaNeueW01-57Cn';
   font-weight: normal;
   font-size: 20px;
   text-transform: uppercase;
@@ -148,11 +155,16 @@ body {
 	border:none;
 }
 
+.dropdown a{
+	font-family:'helveticaneue57condensed';
+}
+
 .dropdown-menu li a{
 	color:#ffffff;
 	font-size:18px;
 	text-transform:uppercase;
   	text-decoration: none;
+  	font-family:'helveticaneue57condensed';
   	border-bottom: 1px #ffffff dotted;	
 }
 
