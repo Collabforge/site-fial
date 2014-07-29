@@ -163,7 +163,11 @@ body {
 
  /* DROPDOWN MENU HIGHLIGHTS - rewrites bootstrap.css - NB IMPORTANT required b/c css inheritance is wrong -----*/
 
-
+.dropdown-menu {
+	background-color:#525252;
+	border:none;
+	padding:25px 15px 25px 15px;
+}
 
 .dropdown a{
 	  font-family:'HelveticaNeueW01-57Cn' !important;
@@ -185,11 +189,6 @@ body {
   	text-decoration: none;
   	font-family:'HelveticaNeueW01-57Cn';
   	border-bottom: 1px #ffffff dotted;	
-}
-
-.dropdown-menu ul{
-	padding:25px 15px 25px 15px;
-	background-color:#525252 !important;
 }
 
 .dropdown-menu li a:hover{
