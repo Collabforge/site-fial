@@ -183,6 +183,7 @@ body {
 
 .dropdown-menu ul{
 	padding:25px 15px 25px 15px;
+	background-color:#525252 !important;
 }
 
 .dropdown-menu li a:hover{
