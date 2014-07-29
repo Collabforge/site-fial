@@ -140,7 +140,7 @@ body {
   border-bottom: 6px solid #007b38;
 }
 
-.menu_secondary li a.hover {
+.menu_secondary li a:hover {
   color: #007b38; /*Green*/
   font-family:'HelveticaNeueW01-57Cn';
   font-weight: normal;
@@ -193,7 +193,7 @@ body {
   	text-decoration: none;	
 }
 
-li.expanded.dropdown.open{
+li.expanded.dropdown.open {
 	background-color:#ffffff;
 }
 
