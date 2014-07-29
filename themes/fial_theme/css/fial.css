@@ -141,7 +141,7 @@ body {
 }
 
 
-.menu_secondary li a.hover {
+.menu_secondary > .dropdown-toggle li a:hover {
   color: #007b38; /*Green*/
   font-family:'HelveticaNeueW01-57Cn';
   font-weight: normal;
