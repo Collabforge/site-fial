@@ -147,7 +147,7 @@ body {
 }
 
 .dropdown a{
-	font-family:'helveticaneue57condensed' !important;
+	  font-family:'HelveticaNeueW01-57Cn' !important;
 }
 
 .dropdown-menu li a{
@@ -155,7 +155,7 @@ body {
 	font-size:18px;
 	text-transform:uppercase;
   	text-decoration: none;
-  	font-family:'helveticaneue57condensed';
+  	font-family:'HelveticaNeueW01-57Cn';
   	border-bottom: 1px #ffffff dotted;	
 }
 
