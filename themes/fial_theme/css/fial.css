@@ -232,3 +232,9 @@ li.expanded.dropdown.open {
 .menu_secondary li .dropdown-menu > li a:hover{
     background-color: #525252  !important;
 }
+
+
+
+.homepage_banner img {
+	width:100%;
+}
