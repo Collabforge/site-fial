@@ -141,15 +141,12 @@ body {
 }
 
 
-
 .menu_secondary li a:hover {
   color: #007b38; /*Green*/
   font-family:'HelveticaNeueW01-57Cn';
   font-weight: normal;
   font-size: 20px;
   text-transform: uppercase;
-  padding-left:10px;
-  padding-right:10px;
 }
 
 /* Secondary menu --------*/
