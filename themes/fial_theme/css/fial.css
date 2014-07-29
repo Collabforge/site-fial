@@ -202,7 +202,6 @@ li.expanded.dropdown.open {
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
   text-decoration: none  !important;
-  border-bottom: 1px #ffffff dotted;
   color: #ffffff  !important;
   background-color: #525252  !important;
   background-image: none !important;
@@ -232,5 +231,5 @@ li.expanded.dropdown.open {
 .menu_secondary li .dropdown-menu > li a,
 .menu_secondary li .dropdown-menu > li a.active,
 .menu_secondary li .dropdown-menu > li a:hover{
-  
+    background-color: #525252  !important;
 }
