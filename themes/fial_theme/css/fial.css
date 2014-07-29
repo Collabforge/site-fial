@@ -131,7 +131,7 @@ body {
   padding-right:10px;
 }
 
-.menu_secondary li a.active {
+.menu_secondary li a:active {
   color: #007b38 !important; /*Green*/
   font-weight: normal;
   font-size: 20px;
@@ -147,6 +147,7 @@ body {
   font-weight: normal;
   font-size: 20px;
   text-transform: uppercase;
+  background-color:#ffffff;
 }
 
 /* Secondary menu --------*/
@@ -172,6 +173,15 @@ body {
 }
 
 .dropdown-menu li a{
+	color:#ffffff;
+	font-size:18px;
+	text-transform:uppercase;
+  	text-decoration: none;
+  	font-family:'HelveticaNeueW01-57Cn';
+  	border-bottom: none;	
+}
+
+.dropdown-menu li a:hover{
 	color:#ffffff;
 	font-size:18px;
 	text-transform:uppercase;
