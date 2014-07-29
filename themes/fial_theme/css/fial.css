@@ -159,6 +159,10 @@ body {
   	border-bottom: 1px #ffffff dotted;	
 }
 
+.dropdown-menu ul{
+	padding:25px 15px 25px 15px;
+}
+
 .dropdown-menu li a:hover{
 	color:#ffffff;
 	font-size:18px;
@@ -171,6 +175,7 @@ body {
 .dropdown-submenu:hover > a,
 .dropdown-submenu:focus > a {
   text-decoration: none  !important;
+  border-bottom: 1px #ffffff dotted;
   color: #ffffff  !important;
   background-color: #525252  !important;
   background-image: none !important;
