@@ -237,6 +237,7 @@ li.expanded.dropdown.open {
 
 .homepage_banner img {
 	float:left;
+	max-width:none;
 	width:100%;
 	position: fixed;
 top: 0;
