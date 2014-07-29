@@ -193,7 +193,7 @@ body {
   	text-decoration: none;	
 }
 
-.dropdown-menu > li > a {
+li.expanded.dropdown.open{
 	background-color:#ffffff;
 }
 
