@@ -110,7 +110,7 @@ body {
   padding-right:10px;
 }
 
-.menu_secondary > li > a.active {
+.menu_secondary li a.active {
   color: #007b38 !important; /*Green*/
   font-weight: normal;
   font-size: 20px;
@@ -161,7 +161,7 @@ body {
 	text-transform:uppercase;
   	text-decoration: none;
   	font-family:'HelveticaNeueW01-57Cn';
-  	border-bottom: 1px #525252 dotted;	
+  	border-bottom: 1px #525252 dotted !important;	
 }
 
 .dropdown-menu li a:hover{
