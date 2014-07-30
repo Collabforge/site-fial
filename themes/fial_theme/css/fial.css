@@ -110,7 +110,7 @@ body {
 
 .menu_secondary li a {
   color: #007b38; /*Green*/
-  font-family:'HelveticaNeueW01-57Cn';
+  font-family:'HelveticaNeueW01-45Ligh';
   font-weight: normal;
   font-size: 20px;
   text-transform: uppercase;
@@ -157,7 +157,7 @@ body {
 /*Don't touch the above unless changing hover over effect!*/
 
 .dropdown a{
-	  font-family:'HelveticaNeueW01-57Cn' !important;
+	  font-family:'HelveticaNeueW01-45Ligh' !important;
 }
 
 .dropdown-menu li a{
@@ -165,7 +165,7 @@ body {
 	font-size:18px;
 	text-transform:uppercase;
   	text-decoration: none;
-  	font-family:'HelveticaNeueW01-57Cn';
+  	font-family:'HelveticaNeueW01-45Ligh';
   	border-bottom: 1px #525252 dotted;	
 }
 
@@ -174,7 +174,7 @@ body {
 	font-size:18px !important;
 	text-transform:uppercase;
   	text-decoration: none;
-  	font-family:'HelveticaNeueW01-57Cn';
+  	font-family:'HelveticaNeueW01-45Ligh';
   	border-bottom: 1px #525252 dotted !important;	
 }
 
@@ -183,7 +183,7 @@ body {
 	font-size:18px;
 	text-transform:uppercase;
   	text-decoration: none;
-  	font-family:'HelveticaNeueW01-57Cn';
+  	font-family:'HelveticaNeueW01-45Ligh';
   	border-bottom: 1px #525252 dotted !important;	
 }
 
@@ -192,7 +192,7 @@ body {
 	font-size:18px;
 	text-transform:uppercase;
   	text-decoration: none;
-  	font-family:'HelveticaNeueW01-57Cn';
+  	font-family:'HelveticaNeueW01-45Ligh';
   	border-bottom: 1px #ffffff dotted;	
 }
 
