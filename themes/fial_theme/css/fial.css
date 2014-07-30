@@ -142,6 +142,14 @@ body {
 }
 
 
+/* fixes bootstrap-responsive.css background color issue*/
+  .nav-collapse .nav > li > a:hover,
+  .nav-collapse .nav > li > a:focus,
+  .nav-collapse .dropdown-menu a:hover,
+  .nav-collapse .dropdown-menu a:focus {
+    background-color: none;
+}
+
 .dropdown a{
 	  font-family:'HelveticaNeueW01-57Cn' !important;
 }
@@ -157,7 +165,7 @@ body {
 
 .dropdown-menu a.active{
 	color:#ffffff !important;
-	font-size:18px;
+	font-size:18px !important;
 	text-transform:uppercase;
   	text-decoration: none;
   	font-family:'HelveticaNeueW01-57Cn';
