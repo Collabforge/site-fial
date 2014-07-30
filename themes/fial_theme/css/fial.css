@@ -110,7 +110,7 @@ body {
   padding-right:10px;
 }
 
-.menu_secondary li a.active {
+.menu_secondary > li > a.active {
   color: #007b38 !important; /*Green*/
   font-weight: normal;
   font-size: 20px;
