@@ -155,7 +155,7 @@ body {
   	border-bottom: 1px #525252 dotted;	
 }
 
-.dropdown-menu > .active > li > a{
+.dropdown-menu > .active-trail > .active{
 	color:#ffffff;
 	font-size:18px;
 	text-transform:uppercase;
