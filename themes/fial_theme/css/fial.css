@@ -62,8 +62,14 @@ body {
   background: #ffffff; /* Change highlight color */
 }
 
-#header, #header_container, #container{
+#header{
 	border-bottom: none;
+}
+
+#header_top {
+    border-bottom: none;
+    padding-bottom: 0px;
+    margin: 0px 0px 0px;
 }
 
 #content-wrapper {
