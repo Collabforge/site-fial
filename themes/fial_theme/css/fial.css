@@ -245,12 +245,12 @@ img#homepage_banner{
 }
 
 img#homepage_banner:empty{
-	left: 10%;
-	-webkit-transform: translate(-10%, 0%);
-	-moz-transform: translate(-10%, 0%);
-	-ms-transform: translate(-10%, 0%);
-	-o-transform: translate(-10%, 0%);
-	transform: translate(-10%, 0%);
+	left: 50%;
+	-webkit-transform: translate(-50%, 0%);
+	-moz-transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%);
+	-o-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
 }
 
 /*@TODO: Make the banner 50% or 180px high on mobile*/
