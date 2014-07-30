@@ -156,7 +156,7 @@ body {
 }
 
 .dropdown-menu a.active{
-	color:#ffffff;
+	color:#ffffff !important;
 	font-size:18px;
 	text-transform:uppercase;
   	text-decoration: none;
