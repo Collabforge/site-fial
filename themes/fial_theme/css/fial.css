@@ -93,6 +93,14 @@ body {
   background: #ffffff; /* Change highlight color */
 }
 
+#header {
+	border-bottom: none;
+}
+
+#content-wrapper {
+	padding: 0% !important;
+}
+
 /**
 2. LOGO
 ---------------------------------------------
@@ -236,7 +244,8 @@ li.expanded.dropdown.open {
 }
 
 .homepage_banner {
-    height:360px;
+height:360px !important;
+overflow:hidden !important;
 }
 
 img#homepage_banner{
@@ -256,9 +265,9 @@ img#homepage_banner:empty{
 }
 
 @media screen and (orientation: portrait) {
-  img#homepage_banner { max-width: 90%; }
+  img#homepage_banner { max-width: 150%; }
 }
 
 @media screen and (orientation: landscape) {
-  img#homepage_banner { max-height: 90%; }
+  img#homepage_banner { max-height: 120%; }
 }
