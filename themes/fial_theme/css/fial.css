@@ -50,17 +50,7 @@ body {
   border: none;
 }
 
-::-moz-selection {
-  background: #ffffff; /* Change highlight color */
-}
 
-*::-moz-selection {
-  background: #ffffff; /* Change highlight color */
-}
-
-::selection {
-  background: #ffffff; /* Change highlight color */
-}
 
 #header{
 	border-bottom: none;
