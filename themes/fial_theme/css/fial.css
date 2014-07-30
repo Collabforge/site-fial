@@ -237,8 +237,6 @@ li.expanded.dropdown.open {
 
 .homepage_banner {
     height:360px !important;
-    overflow:hidden;
-    display: inline-block;
 }
 
 img#homepage_banner{
