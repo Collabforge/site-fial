@@ -111,7 +111,9 @@ body {
 #tab-container .tab_logo.tab a{
   background:url('../img/logo.png') no-repeat;
   display:block;
-  background-size:52px 30px;
+  background-size:162px 32px;
+  width:162px;
+  height:32px;
 }
 
 /**
@@ -233,12 +235,34 @@ li.expanded.dropdown.open {
     background-color: #525252  !important;
 }
 
-
-
 .homepage_banner {
+	width:30px;
+    height:30px !important;
+    overflow:hidden;
+    display: inline-block;
+}
 
-	max-width:none !important;
+img#homepage_banner{
 	position: relative;
-top: 0;
-left: 0;
+	max-width: 150%;
+
+	left: 10%;
+
+}
+
+img#homepage_banner:empty{
+	left: 50%;
+	-webkit-transform: translate(-50%, 0%);
+	-moz-transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%);
+	-o-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+}
+
+@media screen and (orientation: portrait) {
+  img#homepage_banner { max-width: 90%; }
+}
+
+@media screen and (orientation: landscape) {
+  img#homepage_banner { max-height: 90%; }
 }

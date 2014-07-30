@@ -41,7 +41,10 @@ if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary
 <script type='text/javascript' src='http://os.alfajango.com/js/raptorize/jquery.raptorize.1.0.js'></script>
 <script type='text/javascript' src='http://os.alfajango.com/js/jquery.easing.1.3.js'></script>
 <script type="text/javascript" src="http://fast.fonts.net/jsapi/b23760be-4be4-4e65-b79d-771dcea8a674.js"></script>
+<script type="text/javascript">
 
+ $('#homepage_banner').css({height:$('#main').height()});
+</script>
 
 
 
@@ -53,7 +56,7 @@ if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary
     <ul class="etabs">
       <li class="tab"><a href="#tabs1-menu" class="icon-reorder icon-2x">&nbsp;</a></li>
       <li class="tab"><a href="#tabs1-search" class="icon-search icon-search icon-2x">&nbsp;</a></li>
-      <li class="tab"><a href="#tabs1-profile" class="icon-user icon-2x">&nbsp;</a></li>
+      <!--<li class="tab"><a href="#tabs1-profile" class="icon-user icon-2x">&nbsp;</a></li>-->
     </ul>
 
     <div class="ui-tab-content" id="tabs1-menu">
@@ -64,11 +67,11 @@ if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary
     <div class="ui-tab-content" id="tabs1-search">
       <?php echo $mobile['block_search']; ?>
     </div>
-
+<!--
      <div class="ui-tab-content" id="tabs1-profile">
-      <?php echo $mobile['block_profile']; ?>
+      <?php //echo $mobile['block_profile']; ?>
     </div>
-    
+   --> 
   
   </div>
 
