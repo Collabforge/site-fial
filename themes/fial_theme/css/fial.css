@@ -153,6 +153,11 @@ body {
   background-color: #fff !important;
 }
 
+.nav > li > a:focus {
+    text-decoration: none;
+   background-color: #fff;
+  }
+
 .dropdown a{
 	  font-family:'HelveticaNeueW01-57Cn' !important;
 }
