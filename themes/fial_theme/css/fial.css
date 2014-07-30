@@ -147,7 +147,7 @@ body {
   .nav-collapse .nav > li > a:focus,
   .nav-collapse .dropdown-menu a:hover,
   .nav-collapse .dropdown-menu a:focus {
-    background-color: none;
+    background-color: none !important;
 }
 
 .dropdown a{
