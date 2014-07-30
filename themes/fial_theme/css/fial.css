@@ -111,7 +111,7 @@ body {
 }
 
 .menu_secondary li a.active {
-  color: #007b38 !important; /*Green*/
+  color: #007b38; /*Green*/
   font-weight: normal;
   font-size: 20px;
   text-transform: uppercase;
