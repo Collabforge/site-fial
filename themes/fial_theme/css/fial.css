@@ -62,13 +62,15 @@ body {
   background: #ffffff; /* Change highlight color */
 }
 
-#header {
+#header, #header_container{
 	border-bottom: none;
 }
 
 #content-wrapper {
 	padding: 0% !important;
 }
+
+
 
 /**
 2. LOGO
@@ -143,20 +145,10 @@ body {
 
 
 /* fixes bootstrap-responsive.css background color issue*/
-  .nav-collapse .nav > li > a:hover,
-  .nav-collapse .nav > li > a:focus,
-  .nav-collapse .dropdown-menu a:hover,
-  .nav-collapse .dropdown-menu a:focus {
-    background-color: #fff !important;
-}
-#admin-menu li.highlight {
-  background-color: #fff !important;
-}
-
 .nav > li > a:focus {
-    text-decoration: none;
    background-color: #fff;
-  }
+}
+/*Don't touch the above unless changing hover over effect!*/
 
 .dropdown a{
 	  font-family:'HelveticaNeueW01-57Cn' !important;
