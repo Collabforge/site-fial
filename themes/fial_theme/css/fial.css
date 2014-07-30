@@ -38,6 +38,71 @@ body {
 ---------------------------------------------
  **/
 
+/*Use on GREEN background*/
+h1 {
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	font-size:54px;
+	text-transform:uppercase;
+	color:#ffffff;
+}
+
+h2 {
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	font-size:46px;
+	text-transform:uppercase;
+	color:#ffffff;
+}
+
+h3 {
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	font-size:40px;
+	text-transform:uppercase;
+	color:#ffffff;
+}
+
+h4 {
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	font-size:24px;
+	text-transform:uppercase;
+	color:#ffffff;
+}
+
+/*Use on WHITE background*/
+h5 {
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	font-size:34px;
+	text-transform:uppercase;
+	color:#007b38;
+}
+
+h6 {
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	font-size:28px;
+	text-transform:uppercase;
+	color:#007b38;
+}
+
+p {
+	font-family:'HelveticaNeueW01-45Ligh';
+	font-size:16px;
+	text-transform:uppercase;
+	color:#4a4a4c;
+}
+
+.quote p {
+	font-family:"Times New Roman", Times, serif;
+	font-size:22px;
+	font-style:italic;
+	color:#4a4a4c;
+}
+
+.subhead p {
+	font-family:"Times New Roman", Times, serif;
+	font-size:19px;
+	font-style:italic;
+	color:#ffffff;
+}
+
 #main-content a {
   color: #4a4a4a; /*grey - styleguide*/
   text-decoration: none;
