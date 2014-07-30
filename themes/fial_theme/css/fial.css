@@ -245,7 +245,7 @@ img#homepage_banner{
 }
 
 img#homepage_banner:empty{
-	left: 50%;
+	left: 10%;
 	-webkit-transform: translate(-10%, 0%);
 	-moz-transform: translate(-10%, 0%);
 	-ms-transform: translate(-10%, 0%);
