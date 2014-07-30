@@ -2,41 +2,10 @@
 
 FIAL Stylesheet - Please only change fonts, Fial-specific fonts sizes, images and background colors using this file
 
-1. BODY & BACKGROUND
-2. HEADER
-3. SEARCH
-4. FONTS & HEADERS
-5. LOGO, ICONS
-6. NAVIGATION & MENUS
-7. BUTTONS & DROPDOWNS
-8. QUICKTABS
-9. FORMS
-10. FOOTER
-
-~ page-specific  / templates ~
-
-11. LOG-IN / REGISTER PAGES
-12. LOGGED-IN HOME / DASHBOARD PAGE
-13. TOPICS PAGE
-14. TOPIC COMMENTS
-15. TOPIC DETAIL - ARTICLE & COMMENTS
-16. THREADED COMMENTS
-17. USER PROFILE
-18. MEMBER ORGANISATIONS
-19. MEMBER ORGANISATION PROFILES
-20. MEMBERS / THE COMMUNITY
-21. NEWS
-22. ADMIN LOGIN - HOME / DASHBOARD PAGE
-23. KNOWLEDGE FEATURE [UNUSED?]
-24. IE Fixes
-25. Hubs
-
-~ responsive ~
-
-26. RESPONSIVE - CONTENT-SPECIFIC
-27. MOBILE RESPONSIVE MENU
-
-
+1. GLOBAL STYLES
+2. LOGO
+3. NAVIGATION & MENUS
+4. HOMEPAGE
 
 FIAL Fonts:
 HELVETICA NEUE STD 45 Light: 			font-family:'HelveticaNeueW01-45Ligh';
@@ -151,14 +120,7 @@ body {
 }
 
 
-.menu_secondary .open li a:hover {
-  color: #007b38; /*Green*/
-  font-family:'HelveticaNeueW01-57Cn';
-  font-weight: normal;
-  font-size: 20px;
-  text-transform: uppercase;
-  background-color:#ffffff;
-}
+
 
 /* Secondary menu --------*/
 
@@ -243,6 +205,11 @@ li.expanded.dropdown.open {
     background-color: #525252  !important;
 }
 
+/**
+4. HOMEPAGE
+---------------------------------------------
+ **/
+
 .homepage_banner {
 height:360px !important;
 overflow:hidden !important;
@@ -263,6 +230,8 @@ img#homepage_banner:empty{
 	-o-transform: translate(-50%, 0%);
 	transform: translate(-50%, 0%);
 }
+
+/*@TODO: Make the banner 50% or 180px high on mobile*/
 
 @media screen and (orientation: portrait) {
   img#homepage_banner { max-width: 150%; }
