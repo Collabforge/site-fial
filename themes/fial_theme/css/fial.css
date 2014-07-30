@@ -149,6 +149,9 @@ body {
   .nav-collapse .dropdown-menu a:focus {
     background-color: none !important;
 }
+#admin-menu li.highlight {
+  background-color: none !important;
+}
 
 .dropdown a{
 	  font-family:'HelveticaNeueW01-57Cn' !important;
