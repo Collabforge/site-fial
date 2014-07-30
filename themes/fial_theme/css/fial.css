@@ -147,10 +147,10 @@ body {
   .nav-collapse .nav > li > a:focus,
   .nav-collapse .dropdown-menu a:hover,
   .nav-collapse .dropdown-menu a:focus {
-    background-color: none !important;
+    background-color: #fff !important;
 }
 #admin-menu li.highlight {
-  background-color: none !important;
+  background-color: #fff !important;
 }
 
 .dropdown a{
