@@ -62,7 +62,7 @@ body {
   background: #ffffff; /* Change highlight color */
 }
 
-#header, #header_container{
+#header, #header_container, #container{
 	border-bottom: none;
 }
 
