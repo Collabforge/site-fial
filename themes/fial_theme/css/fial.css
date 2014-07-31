@@ -108,6 +108,12 @@ p {
   border-bottom: 1px dotted;
 }
 
+#main-content a:hover {
+  color: #4a4a4a; /*grey - styleguide*/
+  text-decoration: none;
+  border-bottom: none;
+}
+
 
 
 
@@ -313,8 +319,8 @@ img#homepage_banner:empty{
 .lbutton-image {
 	min-width:90px;
 	height:41px;
-	border:1px #007b38 solid !important;
-	color:#007b38 !important;
+	border:1px #ffffff solid !important;
+	color:#ffffff !important;
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
@@ -331,10 +337,10 @@ img#homepage_banner:empty{
 }
 
 .sbutton-image {
-	min-width:90px;
-	height:41px;
-	border:1px #007b38 solid !important;
-	color:#007b38 !important;
+	min-width:75px;
+	height:34px;
+	border:1px #ffffff solid !important;
+	color:#ffffff !important;
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
@@ -373,8 +379,8 @@ img#homepage_banner:empty{
 }
 
 .sbutton-white {
-	min-width:90px;
-	height:41px;
+	min-width:75px;
+	height:34px;
 	border:1px #007b38 solid !important;
 	color:#007b38 !important;
 	font-family:'HelveticaNeueW01-77BdCn 692722';
@@ -396,8 +402,8 @@ img#homepage_banner:empty{
 .lbutton-colour {
 	min-width:90px;
 	height:41px;
-	border:1px #007b38 solid !important;
-	color:#007b38 !important;
+	border:1px #ffffff solid !important;
+	color:#ffffff !important;
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
@@ -408,16 +414,16 @@ img#homepage_banner:empty{
 }
 
 .lbutton-colour:hover {
-	background-color:#007b38  !important;
-	color:#ffffff !important;
+	background-color:#ffffff  !important;
+	color:#007b38 !important;
 	text-decoration:none !important;
 }
 
 .sbutton-colour {
-	min-width:90px;
-	height:41px;
-	border:1px #007b38 solid !important;
-	color:#007b38 !important;
+	min-width:75px;
+	height:34px;
+	border:1px #ffffff solid !important;
+	color:#ffffff !important;
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
@@ -428,7 +434,7 @@ img#homepage_banner:empty{
 }
 
 .sbutton-colour:hover {
-	background-color:#007b38  !important;
-	color:#ffffff !important;
+	background-color:#ffffff  !important;
+	color:#007b38 !important;
 	text-decoration:none !important;
 }
