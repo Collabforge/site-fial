@@ -162,7 +162,7 @@ jQuery(document).ready(function($) {
 
 <div id="main" class="clearfix main" role="main">
   <div class="container">
-    <?php if ($breadcrumb): ?>
+    <?php if ($breadcrumb): ?><?php echo $mobile['block_menu']; ?>
     <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
     
