@@ -382,7 +382,7 @@ a.sbutton-image:hover {
 }
 
 a.lbutton-white, a.lbutton-white:hover {
-	text-decoration:none;
+	text-decoration:none !important;
 }
 
 
