@@ -314,7 +314,7 @@ img#homepage_banner:empty{
 **/
 
 /* Buttons for images bg*/
-a.lbutton-image {
+.lbutton-image {
 	min-width:130px;
 	height:41px;
 	border:1px #ffffff solid;
@@ -327,20 +327,7 @@ a.lbutton-image {
     text-decoration:none;
 }
 
-a.sbutton-image {
-	min-width:115px;
-	height:34px;
-	border:1px #ffffff solid;
-	color:;
-	font-family:'HelveticaNeueW01-77BdCn 692722';
-	text-transform:uppercase;
-	text-align:center;
-    display: table-cell;
-    vertical-align: middle;
-    text-decoration:none;
-}
-
-a.lbutton-image:hover {
+.lbutton-image:hover {
 	min-width:130px;
 	height:41px;
 	border:1px #ffffff solid;
@@ -353,7 +340,20 @@ a.lbutton-image:hover {
     text-decoration:none;
 }
 
-a.sbutton-image:hover {
+.sbutton-image {
+	min-width:115px;
+	height:34px;
+	border:1px #ffffff solid;
+	color:;
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	text-transform:uppercase;
+	text-align:center;
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration:none;
+}
+
+.sbutton-image:hover {
 	min-width:115px;
 	height:34px;
 	border:1px #ffffff solid;
@@ -371,8 +371,8 @@ a.sbutton-image:hover {
 .lbutton-white {
 	width:130px;
 	height:41px;
-	border:1px #007b38 solid;
-	color:#007b38;
+	border:1px #007b38 solid !important;
+	color:#007b38 !important;
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
@@ -380,24 +380,10 @@ a.sbutton-image:hover {
     vertical-align: middle;
     text-decoration:none;
 }
-
-a.lbutton-white, a.lbutton-white:hover {
-	text-decoration:none !important;
-}
-
-
 
 .lbutton-white:hover {
-	min-width:130px;
-	height:41px;
-	background-color:#007b38;
-	color:#ffffff;
-	font-family:'HelveticaNeueW01-77BdCn 692722';
-	text-transform:uppercase;
-	text-align:center;
-	display: table-cell;
-    vertical-align: middle;
-    text-decoration:none;
+	background-color:#007b38  !important;
+	color:#ffffff !important;
 }
 
 .sbutton-white {
@@ -427,7 +413,7 @@ a.lbutton-white, a.lbutton-white:hover {
 }
 
 /* Buttons for colour*/
-a.lbutton-colour {
+.lbutton-colour {
 	min-width:130px;
 	height:41px;
 	border:1px #ffffff solid;
@@ -440,7 +426,20 @@ a.lbutton-colour {
     text-decoration:none;
 }
 
-a.sbutton-colour {
+.lbutton-colour:hover {
+	min-width:130px;
+	height:41px;
+	border:1px #ffffff solid;
+	color:;
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	text-transform:uppercase;
+	text-align:center;
+	display: table-cell;
+    vertical-align: middle;
+    text-decoration:none;
+}
+
+.sbutton-colour {
 	min-width:115px;
 	height:34px;
 	border:1px #ffffff solid;
@@ -453,20 +452,7 @@ a.sbutton-colour {
     text-decoration:none;
 }
 
-a.lbutton-colour:hover {
-	min-width:130px;
-	height:41px;
-	border:1px #ffffff solid;
-	color:;
-	font-family:'HelveticaNeueW01-77BdCn 692722';
-	text-transform:uppercase;
-	text-align:center;
-	display: table-cell;
-    vertical-align: middle;
-    text-decoration:none;
-}
-
-a.sbutton-colour:hover {
+.sbutton-colour:hover {
 	min-width:115px;
 	height:34px;
 	border:1px #ffffff solid;
