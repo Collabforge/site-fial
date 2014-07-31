@@ -314,7 +314,7 @@ img#homepage_banner:empty{
 **/
 
 /* Buttons for images bg*/
-.lbutton-image {
+a.lbutton-image {
 	min-width:130px;
 	height:41px;
 	border:1px #ffffff solid;
@@ -323,10 +323,11 @@ img#homepage_banner:empty{
 	text-transform:uppercase;
 	text-align:center;
     display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
+    text-decoration:none;
 }
 
-.sbutton-image {
+a.sbutton-image {
 	min-width:115px;
 	height:34px;
 	border:1px #ffffff solid;
@@ -335,10 +336,11 @@ img#homepage_banner:empty{
 	text-transform:uppercase;
 	text-align:center;
     display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
+    text-decoration:none;
 }
 
-.lbutton-image:hover {
+a.lbutton-image:hover {
 	min-width:130px;
 	height:41px;
 	border:1px #ffffff solid;
@@ -347,10 +349,11 @@ img#homepage_banner:empty{
 	text-transform:uppercase;
 	text-align:center;
 	display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
+    text-decoration:none;
 }
 
-.sbutton-image:hover {
+a.sbutton-image:hover {
 	min-width:115px;
 	height:34px;
 	border:1px #ffffff solid;
@@ -359,12 +362,13 @@ img#homepage_banner:empty{
 	text-transform:uppercase;
 	text-align:center;
 	display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
+    text-decoration:none;
 }
 
 
 /* Buttons for white bg*/
-.lbutton-white {
+a.lbutton-white {
 	width:130px;
 	height:41px;
 	border:1px #007b38 solid;
@@ -373,10 +377,11 @@ img#homepage_banner:empty{
 	text-transform:uppercase;
 	text-align:center;
 	display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
+    text-decoration:none;
 }
 
-.sbutton-white {
+a.sbutton-white {
 	min-width:115px;
 	height:34px;
 	border:1px #007b38 solid;
@@ -385,10 +390,11 @@ img#homepage_banner:empty{
 	text-transform:uppercase;
 	text-align:center;
 	display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
+    text-decoration:none;
 }
 
-.lbutton-white:hover {
+a.lbutton-white:hover {
 	min-width:130px;
 	height:41px;
 	background-color:#007b38;
@@ -397,10 +403,11 @@ img#homepage_banner:empty{
 	text-transform:uppercase;
 	text-align:center;
 	display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
+    text-decoration:none;
 }
 
-.sbutton-white:hover {
+a.sbutton-white:hover {
 	min-width:115px;
 	height:34px;
 	background-color:#007b38;
@@ -409,11 +416,12 @@ img#homepage_banner:empty{
 	text-transform:uppercase;
 	text-align:center;
 	display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
+    text-decoration:none;
 }
 
 /* Buttons for colour*/
-.lbutton-colour {
+a.lbutton-colour {
 	min-width:130px;
 	height:41px;
 	border:1px #ffffff solid;
@@ -422,10 +430,11 @@ img#homepage_banner:empty{
 	text-transform:uppercase;
 	text-align:center;
 	display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
+    text-decoration:none;
 }
 
-.sbutton-colour {
+a.sbutton-colour {
 	min-width:115px;
 	height:34px;
 	border:1px #ffffff solid;
@@ -434,10 +443,11 @@ img#homepage_banner:empty{
 	text-transform:uppercase;
 	text-align:center;
 	display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
+    text-decoration:none;
 }
 
-.lbutton-colour:hover {
+a.lbutton-colour:hover {
 	min-width:130px;
 	height:41px;
 	border:1px #ffffff solid;
@@ -446,10 +456,11 @@ img#homepage_banner:empty{
 	text-transform:uppercase;
 	text-align:center;
 	display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
+    text-decoration:none;
 }
 
-.sbutton-colour:hover {
+a.sbutton-colour:hover {
 	min-width:115px;
 	height:34px;
 	border:1px #ffffff solid;
@@ -458,5 +469,6 @@ img#homepage_banner:empty{
 	text-transform:uppercase;
 	text-align:center;
 	display: table-cell;
-    vertical-align: middle
+    vertical-align: middle;
+    text-decoration:none;
 }
