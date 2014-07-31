@@ -115,19 +115,27 @@ p {
 }
 
 .lbutton {
-
+	min-width:130px;
+	height:41px;
+	border:1px #ffffff solid;
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	text-transform:uppercase;
 }
 
 .sbutton {
-min-width:115px;
-height:34px;
-border:1px #ffffff solid;
-font-family:'HelveticaNeueW01-77BdCn 692722';
-text-transform:uppercase;
+	min-width:115px;
+	height:34px;
+	border:1px #ffffff solid;
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	text-transform:uppercase;
 }
 
-.lbutton-white {
-
+.lbutton-whitef {
+	min-width:115px;
+	height:34px;
+	border:1px #ffffff solid;
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	text-transform:uppercase;
 }
 
 #header{
@@ -262,8 +270,8 @@ text-transform:uppercase;
   background-image: none !important;
   background-image: none !important;
   border-bottom: 1px #ffffff dotted;
-
 }
+
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
