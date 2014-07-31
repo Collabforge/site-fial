@@ -353,15 +353,21 @@ img#homepage_banner:empty{
 
 /* Buttons for white bg*/
 .lbutton-white {
-	min-width:130px;
+	width:130px;
 	height:41px;
 	border:1px #007b38 solid;
 	color:#007b38;
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 }
-.lbutton-white p{
-	vertical-align:middle
+
+.lbutton-white-text {
+
+	color:#007b38;
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	text-transform:uppercase;
+	padding:20px 0px 20px 0px;
+	
 }
 
 .sbutton-white {
