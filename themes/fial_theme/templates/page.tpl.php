@@ -57,7 +57,8 @@ if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary
     </ul>
 
     <div class="ui-tab-content" id="tabs1-menu">
-      <?php echo $mobile['block_menu']; ?>
+      <?php //echo $mobile['block_menu'];
+      print drupal_render(menu_tree_output(menu_tree_all_data('menu-mobile-menu'))); ?>
     </div>
    
     
