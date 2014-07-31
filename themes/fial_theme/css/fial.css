@@ -108,11 +108,7 @@ p {
   border-bottom: 1px dotted;
 }
 
-#main-content a:hover, #main-content a:active {
-  color: #4a4a4a;
-  text-decoration: underline;
-  border: none;
-}
+
 
 
 
