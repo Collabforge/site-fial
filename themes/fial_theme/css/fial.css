@@ -322,6 +322,8 @@ img#homepage_banner:empty{
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
+    display: table-cell;
+    vertical-align: middle
 }
 
 .sbutton-image {
@@ -332,6 +334,8 @@ img#homepage_banner:empty{
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
+    display: table-cell;
+    vertical-align: middle
 }
 
 .lbutton-image:hover {
@@ -342,6 +346,8 @@ img#homepage_banner:empty{
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
+	display: table-cell;
+    vertical-align: middle
 }
 
 .sbutton-image:hover {
@@ -352,6 +358,8 @@ img#homepage_banner:empty{
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
+	display: table-cell;
+    vertical-align: middle
 }
 
 
@@ -364,6 +372,8 @@ img#homepage_banner:empty{
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
+	display: table-cell;
+    vertical-align: middle
 }
 
 .sbutton-white {
@@ -374,6 +384,8 @@ img#homepage_banner:empty{
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
+	display: table-cell;
+    vertical-align: middle
 }
 
 .lbutton-white:hover {
@@ -384,6 +396,8 @@ img#homepage_banner:empty{
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
+	display: table-cell;
+    vertical-align: middle
 }
 
 .sbutton-white:hover {
@@ -394,6 +408,8 @@ img#homepage_banner:empty{
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
+	display: table-cell;
+    vertical-align: middle
 }
 
 /* Buttons for colour*/
@@ -405,6 +421,8 @@ img#homepage_banner:empty{
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
+	display: table-cell;
+    vertical-align: middle
 }
 
 .sbutton-colour {
@@ -415,6 +433,8 @@ img#homepage_banner:empty{
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
+	display: table-cell;
+    vertical-align: middle
 }
 
 .lbutton-colour:hover {
@@ -425,6 +445,8 @@ img#homepage_banner:empty{
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
+	display: table-cell;
+    vertical-align: middle
 }
 
 .sbutton-colour:hover {
@@ -435,4 +457,6 @@ img#homepage_banner:empty{
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
+	display: table-cell;
+    vertical-align: middle
 }
