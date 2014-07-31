@@ -311,61 +311,7 @@ img#homepage_banner:empty{
 
 /* Buttons for images bg*/
 .lbutton-image {
-	min-width:130px;
-	height:41px;
-	border:1px #ffffff solid;
-	color:;
-	font-family:'HelveticaNeueW01-77BdCn 692722';
-	text-transform:uppercase;
-	text-align:center;
-    display: table-cell;
-    vertical-align: middle;
-    text-decoration:none;
-}
-
-.lbutton-image:hover {
-	min-width:130px;
-	height:41px;
-	border:1px #ffffff solid;
-	color:;
-	font-family:'HelveticaNeueW01-77BdCn 692722';
-	text-transform:uppercase;
-	text-align:center;
-	display: table-cell;
-    vertical-align: middle;
-    text-decoration:none;
-}
-
-.sbutton-image {
-	min-width:115px;
-	height:34px;
-	border:1px #ffffff solid;
-	color:;
-	font-family:'HelveticaNeueW01-77BdCn 692722';
-	text-transform:uppercase;
-	text-align:center;
-    display: table-cell;
-    vertical-align: middle;
-    text-decoration:none;
-}
-
-.sbutton-image:hover {
-	min-width:115px;
-	height:34px;
-	border:1px #ffffff solid;
-	color:;
-	font-family:'HelveticaNeueW01-77BdCn 692722';
-	text-transform:uppercase;
-	text-align:center;
-	display: table-cell;
-    vertical-align: middle;
-    text-decoration:none;
-}
-
-
-/* Buttons for white bg*/
-.lbutton-white {
-	width:130px;
+	min-width:90px;
 	height:41px;
 	border:1px #007b38 solid !important;
 	color:#007b38 !important;
@@ -375,6 +321,49 @@ img#homepage_banner:empty{
 	display: table-cell;
     vertical-align: middle;
     text-decoration:none;
+    padding: 0px 20px 0px 20px;
+}
+
+.lbutton-image:hover {
+	background-color:#007b38  !important;
+	color:#ffffff !important;
+	text-decoration:none !important;
+}
+
+.sbutton-image {
+	min-width:90px;
+	height:41px;
+	border:1px #007b38 solid !important;
+	color:#007b38 !important;
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	text-transform:uppercase;
+	text-align:center;
+	display: table-cell;
+    vertical-align: middle;
+    text-decoration:none;
+    padding: 0px 20px 0px 20px;
+}
+
+.sbutton-image:hover {
+	background-color:#007b38  !important;
+	color:#ffffff !important;
+	text-decoration:none !important;
+}
+
+
+/* Buttons for white bg*/
+.lbutton-white {
+	min-width:90px;
+	height:41px;
+	border:1px #007b38 solid !important;
+	color:#007b38 !important;
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	text-transform:uppercase;
+	text-align:center;
+	display: table-cell;
+    vertical-align: middle;
+    text-decoration:none;
+    padding: 0px 20px 0px 20px;
 }
 
 .lbutton-white:hover {
@@ -384,80 +373,62 @@ img#homepage_banner:empty{
 }
 
 .sbutton-white {
-	min-width:115px;
-	height:34px;
-	border:1px #007b38 solid;
-	color:#007b38;
+	min-width:90px;
+	height:41px;
+	border:1px #007b38 solid !important;
+	color:#007b38 !important;
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
 	display: table-cell;
     vertical-align: middle;
     text-decoration:none;
+    padding: 0px 20px 0px 20px;
 }
 
 .sbutton-white:hover {
-	min-width:115px;
-	height:34px;
-	background-color:#007b38;
-	color:#ffffff;
-	font-family:'HelveticaNeueW01-77BdCn 692722';
-	text-transform:uppercase;
-	text-align:center;
-	display: table-cell;
-    vertical-align: middle;
-    text-decoration:none;
+	background-color:#007b38  !important;
+	color:#ffffff !important;
+	text-decoration:none !important;
 }
 
 /* Buttons for colour*/
 .lbutton-colour {
-	min-width:130px;
+	min-width:90px;
 	height:41px;
-	border:1px #ffffff solid;
-	color:;
+	border:1px #007b38 solid !important;
+	color:#007b38 !important;
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
 	display: table-cell;
     vertical-align: middle;
     text-decoration:none;
+    padding: 0px 20px 0px 20px;
 }
 
 .lbutton-colour:hover {
-	min-width:130px;
-	height:41px;
-	border:1px #ffffff solid;
-	color:;
-	font-family:'HelveticaNeueW01-77BdCn 692722';
-	text-transform:uppercase;
-	text-align:center;
-	display: table-cell;
-    vertical-align: middle;
-    text-decoration:none;
+	background-color:#007b38  !important;
+	color:#ffffff !important;
+	text-decoration:none !important;
 }
 
 .sbutton-colour {
-	min-width:115px;
-	height:34px;
-	border:1px #ffffff solid;
-	color:;
+	min-width:90px;
+	height:41px;
+	border:1px #007b38 solid !important;
+	color:#007b38 !important;
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
 	display: table-cell;
     vertical-align: middle;
     text-decoration:none;
+    padding: 0px 20px 0px 20px;
 }
 
 .sbutton-colour:hover {
-	min-width:115px;
-	height:34px;
-	border:1px #ffffff solid;
-	color:;
-	font-family:'HelveticaNeueW01-77BdCn 692722';
-	text-transform:uppercase;
-	text-align:center;
-	display: table-cell;
-    vertical-align: middle;
-    text-decoration:none;
+	background-color:#007b38  !important;
+	color:#ffffff !important;
+	text-decoration:none !important;
 }
