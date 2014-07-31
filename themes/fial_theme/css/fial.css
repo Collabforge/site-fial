@@ -360,6 +360,9 @@ img#homepage_banner:empty{
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 }
+.lbutton-white p{
+	vertical-align:middle
+}
 
 .sbutton-white {
 	min-width:115px;
