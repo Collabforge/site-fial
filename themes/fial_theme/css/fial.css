@@ -384,6 +384,7 @@ img#homepage_banner:empty{
 .lbutton-white:hover {
 	background-color:#007b38  !important;
 	color:#ffffff !important;
+	text-decoration:none !important;
 }
 
 .sbutton-white {
