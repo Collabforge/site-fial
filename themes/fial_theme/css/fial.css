@@ -368,7 +368,7 @@ a.sbutton-image:hover {
 
 
 /* Buttons for white bg*/
-a.lbutton-white {
+.lbutton-white {
 	width:130px;
 	height:41px;
 	border:1px #007b38 solid;
@@ -381,20 +381,13 @@ a.lbutton-white {
     text-decoration:none;
 }
 
-a.sbutton-white {
-	min-width:115px;
-	height:34px;
-	border:1px #007b38 solid;
-	color:#007b38;
-	font-family:'HelveticaNeueW01-77BdCn 692722';
-	text-transform:uppercase;
-	text-align:center;
-	display: table-cell;
-    vertical-align: middle;
-    text-decoration:none;
+a.lbutton-white, a.lbutton-white:hover {
+	text-decoration:none;
 }
 
-a.lbutton-white:hover {
+
+
+.lbutton-white:hover {
 	min-width:130px;
 	height:41px;
 	background-color:#007b38;
@@ -407,7 +400,20 @@ a.lbutton-white:hover {
     text-decoration:none;
 }
 
-a.sbutton-white:hover {
+.sbutton-white {
+	min-width:115px;
+	height:34px;
+	border:1px #007b38 solid;
+	color:#007b38;
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	text-transform:uppercase;
+	text-align:center;
+	display: table-cell;
+    vertical-align: middle;
+    text-decoration:none;
+}
+
+.sbutton-white:hover {
 	min-width:115px;
 	height:34px;
 	background-color:#007b38;
