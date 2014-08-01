@@ -117,13 +117,13 @@ p {
 	color:#ffffff;
 }
 
-#main-content a {
+#main-content p a {
   color: #4a4a4a; /*grey - styleguide*/
   text-decoration: none;
   border-bottom: 1px dotted;
 }
 
-#main-content a:hover {
+#main-content p a:hover {
   color: #4a4a4a; /*grey - styleguide*/
   text-decoration: none;
   border-bottom: none;
