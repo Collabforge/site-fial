@@ -50,7 +50,7 @@ h1 {
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	font-size:54px;
 	text-transform:uppercase;
-	color:#ffffff;
+	color:#ffffff !important;
 }
 
 h2 {
