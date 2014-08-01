@@ -48,10 +48,6 @@ body {
 	margin-left: -10%; }
 }
 
-@media screen and (orientation: landscape) {
-  #page-title { min-width: 120%;
-margin-left: -10%; }
-}
 
 /**
 1. GLOBAL STYLES
