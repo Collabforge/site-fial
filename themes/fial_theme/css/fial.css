@@ -39,7 +39,9 @@ body {
     margin-left: -50%;
     margin-right: -50%;
 	line-height: 2.2 !important;
-	text-align: center !important;    
+	text-align: center !important;  
+	background-image: url('/sites/default/themes/fial_theme/img/fial_header.png') no-repeat;
+background-position: 70%;  
 }
 
 
