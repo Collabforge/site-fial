@@ -43,11 +43,14 @@ body {
 }
 
 @media screen and (orientation: portrait) {
-  #page-title { max-width: 100%; }
+  #page-title {
+  	min-width: 120%;
+	margin-left: -10%; }
 }
 
 @media screen and (orientation: landscape) {
-  #page-title { max-height: 100%; }
+  #page-title { min-width: 120%;
+margin-left: -10%; }
 }
 
 /**
