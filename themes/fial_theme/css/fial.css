@@ -514,10 +514,12 @@ border:3px #b4b4b4 solid;
 
 .views-row-odd > .views-field > .field-content img {
 	float:left;
+	padding: 0px 35px 0px;
 }
 
 .views-row-even > .views-field > .field-content img {
 	float:right;
+	padding: 0px 0px 35px 0px;
 }
 
 /**
