@@ -413,8 +413,8 @@ img#homepage_banner:empty{
 }
 
 .form-btn-success {
-	background-color:none;
-	text-shadow:none;
+	background-color:#ffffff !important;
+	text-shadow:none !important;
 }
 
 .sbutton-white:hover, .form-submit:hover {
