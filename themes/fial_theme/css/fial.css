@@ -40,7 +40,7 @@ body {
     min-width: 100%;
     margin-left: -50%;
     margin-right: -50%;
-	line-height: 2.2 !important;
+	line-height: 2.6 !important;
 	text-align: center !important;  
 	background-position: 70%;  
 }
@@ -399,6 +399,8 @@ img#homepage_banner:empty{
 	min-width:75px;
 	height:34px;
 	border:1px #007b38 solid !important;
+	background-color:#ffffff;
+	text-shadow:none;
 	color:#007b38 !important;
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
@@ -407,12 +409,14 @@ img#homepage_banner:empty{
     vertical-align: middle;
     text-decoration:none;
     padding: 0px 20px 0px 20px;
+    background-image: none !important;
 }
 
 .sbutton-white:hover, .form-submit:hover {
 	background-color:#007b38  !important;
 	color:#ffffff !important;
 	text-decoration:none !important;
+	background-image: none !important;
 }
 
 /* Buttons for colour*/
