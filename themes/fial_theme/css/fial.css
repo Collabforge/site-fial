@@ -508,7 +508,7 @@ padding:35px;
 
 .views-row-odd {
 background-color:#e6e6e6;
-border:3px #b4b4b4 solid;
+border:3px #b4b4b4 solid !important;
 
 }
 
