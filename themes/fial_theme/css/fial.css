@@ -33,7 +33,7 @@ body {
 
 #page-title {
 	line-height: none !important;
-	text-align: middle;
+	text-align: middle !important;
     background-color: #007B38;
     height: 140px;
     margin-bottom: 140px;
