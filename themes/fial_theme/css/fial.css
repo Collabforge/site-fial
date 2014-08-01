@@ -42,6 +42,14 @@ body {
 	text-align: center !important;    
 }
 
+@media screen and (orientation: portrait) {
+  img#page-title { max-width: 100%; }
+}
+
+@media screen and (orientation: landscape) {
+  img#page-title { max-height: 100%; }
+}
+
 /**
 1. GLOBAL STYLES
 ---------------------------------------------
