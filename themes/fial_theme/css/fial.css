@@ -42,12 +42,11 @@ body {
 	text-align: center !important;    
 }
 
-@media screen and (orientation: portrait) {
-  #page-title {
-  	min-width: 120%;
-	margin-left: -10%; }
-}
 
+@media (max-width: 767px) {
+.breadcrum h1, .node-type-basic-page h1#page-title {
+    max-width: none;
+}
 
 /**
 1. GLOBAL STYLES
