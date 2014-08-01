@@ -32,13 +32,8 @@ body {
 }
 
 #page-title {
-
     background-color: #007B38;
     height: 140px;
-    margin-bottom: 140px;
-    min-width: 100%;
-    margin-left: -50%;
-    margin-right: -50%;
 	line-height: 2.2 !important;
 	text-align: center !important;    
 }
