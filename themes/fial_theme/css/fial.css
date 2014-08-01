@@ -512,8 +512,13 @@ border:3px #b4b4b4 solid;
 
 }
 
+.views-row-odd > .views-field > .field-content img {
+	float:left;
+}
 
-
+.views-row-even > .views-field > .field-content img {
+	float:right;
+}
 
 /**
 7. CONTENT EDITOR EXPERIENCE
