@@ -32,8 +32,8 @@ body {
 }
 
 #page-title {
-	line-height: none;
-	text-align: none;
+	line-height: none !important;
+	text-align: middle;
     background-color: #007B38;
     height: 140px;
     margin-bottom: 140px;
