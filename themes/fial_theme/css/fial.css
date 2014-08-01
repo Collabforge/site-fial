@@ -31,7 +31,14 @@ body {
   font-family:'helveticaneue45light';
 }
 
-
+#page-title {
+    background-color: #007B38;
+    height: 140px;
+    margin-bottom: 140px;
+    min-width: 100%;
+    margin-left: -50%;
+    margin-right: -50%;
+}
 
 /**
 1. GLOBAL STYLES
@@ -310,6 +317,8 @@ img#homepage_banner:empty{
   img#homepage_banner { max-height: 120%; }
 }
 
+
+
 /**
 5. BUTTONS
 ---------------------------------------------
@@ -438,3 +447,17 @@ img#homepage_banner:empty{
 	color:#007b38 !important;
 	text-decoration:none !important;
 }
+
+
+
+/**
+6. PAGE FEATURES
+---------------------------------------------
+**/
+
+
+/**
+7. CONTENT EDITOR EXPERIENCE
+---------------------------------------------
+**/
+
