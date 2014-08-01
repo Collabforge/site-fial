@@ -34,21 +34,18 @@ body {
 
 #page-title {
     background-color: #007B38;
-    height: 140px;
+    height: 139px;
     min-width: 100%;
     margin-left: -50%;
     margin-right: -50%;
 	line-height: 2.2 !important;
 	text-align: center !important;  
 	background-image: url('/sites/default/themes/fial_theme/img/fial_header.png') no-repeat;
-background-position: 70%;  
+	background-position: 70%;  
 }
 
 
-@media (max-width: 767px) {
-.breadcrum h1, .node-type-basic-page h1#page-title {
-    max-width: none;
-}
+@media (max-width: 767px) {.breadcrum h1, .node-type-basic-page h1#page-title {max-width: none;}
 }
 /**
 1. GLOBAL STYLES
@@ -397,7 +394,7 @@ img#homepage_banner:empty{
 	text-decoration:none !important;
 }
 
-.sbutton-white {
+.sbutton-white, .form-submit {
 	min-width:75px;
 	height:34px;
 	border:1px #007b38 solid !important;
@@ -411,7 +408,7 @@ img#homepage_banner:empty{
     padding: 0px 20px 0px 20px;
 }
 
-.sbutton-white:hover {
+.sbutton-white:hover, .form-submit:hover {
 	background-color:#007b38  !important;
 	color:#ffffff !important;
 	text-decoration:none !important;
