@@ -466,7 +466,7 @@ img#homepage_banner:empty{
 	border:1px #007b38 solid !important;
 	background-color:#007b38;
 	text-shadow:none;
-	color:#007b38 !important;
+	color:#ffffff !important;
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	text-transform:uppercase;
 	text-align:center;
@@ -479,13 +479,13 @@ img#homepage_banner:empty{
 
  .form-submit:hover {
 	background-color:#ffffff  !important;
-	color:#ffffff !important;
+	color:#007b38 !important;
 	text-decoration:none !important;
 	background-image: none !important;
 }
 
 .form-btn-success {
-	background-color:#ffffff !important;
+	background-color:#007b38 !important;
 	text-shadow:none !important;
 }
 
