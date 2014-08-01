@@ -33,14 +33,13 @@ body {
 }
 
 #page-title {
-    background-color: #007B38;
+    background-image: url('/sites/default/themes/fial_theme/img/fial_header.png') #007B38 no-repeat;
     height: 139px;
     min-width: 100%;
     margin-left: -50%;
     margin-right: -50%;
 	line-height: 2.2 !important;
 	text-align: center !important;  
-	background-image: url('/sites/default/themes/fial_theme/img/fial_header.png') no-repeat;
 	background-position: 70%;  
 }
 
