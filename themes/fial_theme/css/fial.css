@@ -412,6 +412,11 @@ img#homepage_banner:empty{
     background-image: none !important;
 }
 
+.form-btn-success {
+	background-color:none;
+	text-shadow:none;
+}
+
 .sbutton-white:hover, .form-submit:hover {
 	background-color:#007b38  !important;
 	color:#ffffff !important;
