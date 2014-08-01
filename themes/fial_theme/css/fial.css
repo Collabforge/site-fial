@@ -395,7 +395,7 @@ img#homepage_banner:empty{
 	text-decoration:none !important;
 }
 
-.sbutton-white, .form-submit {
+.sbutton-white {
 	min-width:75px;
 	height:34px;
 	border:1px #007b38 solid !important;
@@ -412,12 +412,7 @@ img#homepage_banner:empty{
     background-image: none !important;
 }
 
-.form-btn-success {
-	background-color:#ffffff !important;
-	text-shadow:none !important;
-}
-
-.sbutton-white:hover, .form-submit:hover {
+.sbutton-white:hover {
 	background-color:#007b38  !important;
 	color:#ffffff !important;
 	text-decoration:none !important;
@@ -465,7 +460,34 @@ img#homepage_banner:empty{
 	text-decoration:none !important;
 }
 
+.form-submit {
+	min-width:75px;
+	height:34px;
+	border:1px #007b38 solid !important;
+	background-color:#007b38;
+	text-shadow:none;
+	color:#007b38 !important;
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	text-transform:uppercase;
+	text-align:center;
+	display: table-cell;
+    vertical-align: middle;
+    text-decoration:none;
+    padding: 0px 20px 0px 20px;
+    background-image: none !important;
+}
 
+ .form-submit:hover {
+	background-color:#ffffff  !important;
+	color:#ffffff !important;
+	text-decoration:none !important;
+	background-image: none !important;
+}
+
+.form-btn-success {
+	background-color:#ffffff !important;
+	text-shadow:none !important;
+}
 
 /**
 6. PAGE FEATURES
