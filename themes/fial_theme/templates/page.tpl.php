@@ -310,8 +310,8 @@ jQuery(document).ready(function($) {
   </div>
 </div>
 
-<div id="footer" class="site-footer" role="contentinfo">
-<div class="container">
+<div id="footer" class="clearfix site-footer" role="contentinfo">
+<div class="container" style="padding-top:-40px;">
 <img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="left"><img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="right">
 </div>
 </div>
