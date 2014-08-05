@@ -613,8 +613,7 @@ div[class*='front-block-']:hover .frontblocktitle{
 .fronttexthov {
   text-align: center;
   position: relative;
-  top: 22%;
-  transform: translateY(-22%);
+  transform: translateY(-10%);
 }
 
 .frontshadow {
@@ -630,4 +629,41 @@ div[class*='front-block-']:hover .frontblocktitle{
   font-size:20px;
   font-style:italic;
   color:#ffffff;
+}
+
+/**
+9. FOOTER
+---------------------------------------------
+**/
+
+
+.footer_banner {
+height:360px !important;
+overflow:hidden !important;
+}
+
+img#footer_banner {
+	position: relative;
+	max-width: 150%;
+	left: 10%;
+
+}
+
+img#footer_banner:empty{
+	left: 50%;
+	-webkit-transform: translate(-50%, 0%);
+	-moz-transform: translate(-50%, 0%);
+	-ms-transform: translate(-50%, 0%);
+	-o-transform: translate(-50%, 0%);
+	transform: translate(-50%, 0%);
+}
+
+/*@TODO: Make the banner 50% or 180px high on mobile*/
+
+@media screen and (orientation: portrait) {
+  img#footer_banner { max-width: 150%; }
+}
+
+@media screen and (orientation: landscape) {
+  img#footer_banner { max-height: 120%; }
 }
