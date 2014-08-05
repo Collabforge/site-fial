@@ -638,15 +638,14 @@ div[class*='front-block-']:hover .frontblocktitle{
 
 
 .footer_banner {
-height:360px !important;
-overflow:hidden !important;
+	height:487px !important;
+	overflow:hidden !important;
 }
 
 img#footer_banner {
 	position: relative;
 	max-width: 150%;
 	left: 10%;
-
 }
 
 img#footer_banner:empty{

@@ -307,7 +307,7 @@ jQuery(document).ready(function($) {
 <div id="footer" class="clearfix site-footer" role="contentinfo">
   <div class="container">
   <div id="footer-content" class="row-fluid footer-content"> <?php print render($page['footer']); ?><br>
-<img src="/sites/default/themes/fial_theme/img/footerbg.png" class="footer_banner">
+<img src="/sites/default/themes/fial_theme/img/footerbg.png" id="footer_banner">
   </div>
   </div>
 </div>
