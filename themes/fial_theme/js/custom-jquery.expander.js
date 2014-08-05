@@ -3,7 +3,7 @@ $.expander.defaults.slicePoint = 120;
 
 $(document).ready(function() {
   // simple example, using all default options unless overridden globally
-  $('div.expandable p').expander();
+  $('div.expandable').expander();
 
   // *** OR ***
 
