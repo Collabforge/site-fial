@@ -32,8 +32,8 @@ body {
     overflow-x: hidden;
 }
 
-#page-title {
-background: #007b38; /* Old browsers */
+.page-title2 {
+	background: #007b38; /* Old browsers */
 background: -moz-linear-gradient(left,  #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%); /* FF3.6+ */
 background: -webkit-gradient(linear, left top, right top, color-stop(0%,#007b38), color-stop(50%,#007b38), color-stop(53%,#f8ea47), color-stop(100%,#f8ea47)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(left,  #007b38 0%,#007b38 50%,#f8ea47 53%,#f8ea47 100%); /* Chrome10+,Safari5.1+ */
@@ -41,6 +41,9 @@ background: -o-linear-gradient(left,  #007b38 0%,#007b38 50%,#f8ea47 53%,#f8ea47
 background: -ms-linear-gradient(left,  #007b38 0%,#007b38 50%,#f8ea47 53%,#f8ea47 100%); /* IE10+ */
 background: linear-gradient(to right,  #007b38 0%,#007b38 50%,#f8ea47 53%,#f8ea47 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007b38', endColorstr='#f8ea47',GradientType=1 ); /* IE6-9 */
+}
+
+#page-title {
 	background-image: url('/sites/default/themes/fial_theme/img/fial_header.png');
 	background-repeat: no-repeat;
 	background-size: auto 139px;
