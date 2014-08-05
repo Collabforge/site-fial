@@ -41,7 +41,7 @@ if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary
 <script type='text/javascript' src='http://os.alfajango.com/js/raptorize/jquery.raptorize.1.0.js'></script>
 <script type='text/javascript' src='http://os.alfajango.com/js/jquery.easing.1.3.js'></script>
 <script type="text/javascript" src="http://fast.fonts.net/jsapi/b23760be-4be4-4e65-b79d-771dcea8a674.js"></script>
-<script type="text/javascript" src="http://fial.collabcoapp.com/profiles/collabco/libraries/jquery-expander/jquery-expander.js"></script>
+<script type="text/javascript" src="http://fial.collabcoapp.com/profiles/collabco/libraries/jquery-expander/jquery.expander.js"></script>
 <script type="text/javascript">
 // you can override default options globally, so they apply to every .expander() call
 $.expander.defaults.slicePoint = 120;
