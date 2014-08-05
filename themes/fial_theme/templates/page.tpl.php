@@ -307,9 +307,10 @@ jQuery(document).ready(function($) {
 <div id="footer" class="clearfix site-footer" role="contentinfo">
   <div class="container">
   <div id="footer-content" class="row-fluid footer-content"> <?php print render($page['footer']); ?></div>
-  </div>
-  <br>
+    <br>
 <img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="left"><img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="right">
+  </div>
+
 </div>
 
 <!-- /#footer -->
