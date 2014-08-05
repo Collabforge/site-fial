@@ -552,43 +552,43 @@ border:3px #b4b4b4 solid !important;
 
 
 .front-block-1 {
-  background: url('http://fial.collabcoapp.com/sites/default/themes/fial_theme/img/front1.png');
+  background: url('/sites/default/themes/fial_theme/img/front1.png');
   width:310px;
   height:310px;
 }
 
 .front-block-2 {
-  background: url('http://fial.collabcoapp.com/sites/default/themes/fial_theme/img/front2.png');
+  background: url('/sites/default/themes/fial_theme/img/front2.png');
   width:310px;
   height:310px;
 }
 
 .front-block-3 {
-  background: url('http://fial.collabcoapp.com/sites/default/themes/fial_theme/img/front3.png');
+  background: url('/sites/default/themes/fial_theme/img/front3.png');
   width:310px;
   height:310px;
 }
 
 .front-block-4 {
-  background: url('http://fial.collabcoapp.com/sites/default/themes/fial_theme/img/front4.png');
+  background: url('/sites/default/themes/fial_theme/img/front4.png');
   width:310px;
   height:310px;
 }
 
 .front-block-5 {
-  background: url('http://fial.collabcoapp.com/sites/default/themes/fial_theme/img/front5.png');
+  background: url('/sites/default/themes/fial_theme/img/front5.png');
   width:310px;
   height:310px;
 }
 
 .front-block-6 {
-  background: url('http://fial.collabcoapp.com/sites/default/themes/fial_theme/img/front6.png');
+  background: url('/sites/default/themes/fial_theme/img/front6.png');
   width:310px;
   height:310px;
 }
 
 div[class*='front-block-']:hover {
-  background: url('http://fial.collabcoapp.com/sites/default/themes/fial_theme/img/frontbg.png');
+  background: url('/sites/default/themes/fial_theme/img/frontbg.png');
 }
 
 .showme{ 
@@ -635,7 +635,11 @@ div[class*='front-block-']:hover .frontblocktitle{
 9. FOOTER
 ---------------------------------------------
 **/
-
+#footer {
+  background: url('/sites/default/themes/fial_theme/img/front6.png');
+  width:310px;
+  height:310px;
+}
 
 .footer_banner {
 	height:487px !important;
@@ -657,7 +661,7 @@ img#footer_banner:empty{
 	transform: translate(-50%, 0%);
 }
 #footer-content img {
-    height: 360px;
+	height:auto !important;
 }
 /*@TODO: Make the banner 50% or 180px high on mobile*/
 
