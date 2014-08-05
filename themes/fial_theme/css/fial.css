@@ -656,7 +656,9 @@ img#footer_banner:empty{
 	-o-transform: translate(-50%, 0%);
 	transform: translate(-50%, 0%);
 }
-
+#footer-content img {
+    height: 360px;
+}
 /*@TODO: Make the banner 50% or 180px high on mobile*/
 
 @media screen and (orientation: portrait) {
