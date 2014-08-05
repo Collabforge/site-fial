@@ -171,9 +171,16 @@ p {
 
 a.less-link {
 	color: #4A4A4A;
-text-decoration: none;
-border-bottom: medium none;
-text-transform:uppercase;
+	text-decoration: none;
+	border-bottom: 1px #000 dotted;
+	text-transform:uppercase;
+	font-family:'HelveticaNeueW01-45Ligh';
+	font-size:16px;
+	color:#4a4a4c;
+}
+
+a.less-link:hover {
+	border-bottom:none;
 }
 
 /**
