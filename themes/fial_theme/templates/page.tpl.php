@@ -309,5 +309,7 @@ jQuery(document).ready(function($) {
   <div id="footer-content" class="row-fluid footer-content"> <?php print render($page['footer']); ?></div>
   </div>
 </div>
+<br>
+<img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="left"><img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="right">
 <!-- /#footer -->
 <?php endif; ?>
