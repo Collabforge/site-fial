@@ -174,6 +174,13 @@ jQuery(document).ready(function($) {
     <?php if ($page['main_upper']): ?>
     <div id="main-upper" class="row-fluid main-upper"> <?php print render($page['main_upper']); ?> </div>
     <?php endif; ?>
+
+    <div id="footer" class="clearfix site-footer" role="contentinfo">
+      <!--<div class="container" style="margin-top:-40px;">-->
+      <h1 class="title" id="page-title"> <?php print $title; ?> </h1>
+      </div>
+    </div>
+
     <div id="main-content" class="row main-content">
       <?php if ($page['sidebar_first']): ?>
       <div id="sidebar-first" class="sidebar span3 site-sidebar-first">
@@ -187,7 +194,7 @@ jQuery(document).ready(function($) {
             <div id="highlighted" class="clearfix"><?php print render($page['highlighted']); ?></div>
             <?php print render($title_prefix); ?>
             <?php if ($title): ?>
-            <h1 class="title" id="page-title"> <?php print $title; ?> </h1>
+            <!--<h1 class="title" id="page-title"> <?php //print $title; ?> </h1>-->
             <?php endif; ?>
             <?php print render($title_suffix); ?>
             <?php if ($tabs): ?>
