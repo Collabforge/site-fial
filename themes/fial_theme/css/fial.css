@@ -169,7 +169,12 @@ p {
 	padding: 0% !important;
 }
 
-
+a.less-link {
+	color: #4A4A4A;
+text-decoration: none;
+border-bottom: medium none;
+text-transform:uppercase;
+}
 
 /**
 2. LOGO
