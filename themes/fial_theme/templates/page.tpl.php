@@ -304,13 +304,13 @@ jQuery(document).ready(function($) {
 </div>
 <!-- /#main, /#main-wrapper -->
 <?php if ($page['footer']): ?>
-<div id="footer" class="clearfix site-footer" role="contentinfo">
+<div id="footer footerbg" class="clearfix site-footer" role="contentinfo">
   <div class="container">
   <div id="footer-content" class="row-fluid footer-content"> <?php print render($page['footer']); ?></div>
   </div>
 </div>
 
-<div id="footer" class="clearfix site-footer footerbg" role="contentinfo">
+<div id="footer" class="clearfix site-footer" role="contentinfo">
 <div class="container">
 <img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="left"><img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="right">
 </div>
