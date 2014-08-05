@@ -635,7 +635,7 @@ div[class*='front-block-']:hover .frontblocktitle{
 9. FOOTER
 ---------------------------------------------
 **/
-.footerbg {
+#footerbg {
 	background: url('/sites/default/themes/fial_theme/img/footerbg.png');
 	background-repeat: no-repeat;
 	background-size: 1400px;
