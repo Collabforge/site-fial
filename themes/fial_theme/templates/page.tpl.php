@@ -161,14 +161,13 @@ jQuery(document).ready(function($) {
 <?php endif; ?>
 <!-- End of new Header Top block -->
 
-<?php if (!drupal_is_front_page()): print '?>
+<?php if (!drupal_is_front_page()): ?>
 <div id="footer" class="clearfix site-footer page-title2" role="contentinfo">
       <!--<div class="container" style="margin-top:-40px;">-->
       <h1 class="title" id="page-title">  </h1>
       <!--</div>-->
 </div>
-<?php ';}
-?>
+<?php endif; ?>
 
 <div id="main" class="clearfix main" role="main">
   <div class="container">
