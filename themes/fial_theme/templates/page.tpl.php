@@ -161,11 +161,14 @@ jQuery(document).ready(function($) {
 <?php endif; ?>
 <!-- End of new Header Top block -->
 
+<?php if(isset($front_page)) { echo "?>
 <div id="footer" class="clearfix site-footer page-title2" role="contentinfo">
       <!--<div class="container" style="margin-top:-40px;">-->
       <h1 class="title" id="page-title"> <?php print $title; ?> </h1>
       <!--</div>-->
 </div>
+<?php ";}
+?>
 
 <div id="main" class="clearfix main" role="main">
   <div class="container">

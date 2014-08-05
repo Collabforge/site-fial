@@ -23,6 +23,8 @@ FIAL Fonts Source:
 #F8EA47
 
 *****************************/
+/* Large desktop */
+@media (min-width: 1200px) {}
 
 body {
   background-color: #ffffff;
