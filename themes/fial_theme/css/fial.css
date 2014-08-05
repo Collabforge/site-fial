@@ -518,7 +518,7 @@ img#homepage_banner:empty{
 
 .views-row {
 padding:35px;
-
+min-height: 320px;
 }
 
 .views-row-odd {
