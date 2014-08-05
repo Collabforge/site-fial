@@ -636,13 +636,10 @@ div[class*='front-block-']:hover .frontblocktitle{
 ---------------------------------------------
 **/
 #footer {
-  background: url('/sites/default/themes/fial_theme/img/footerbg.png');
-}
-
-img#footer_banner {
-	position: relative;
-	max-width: 150%;
-	left: 10%;
+	background: url('/sites/default/themes/fial_theme/img/footerbg.png');
+	background-repeat: no-repeat;
+	background-size: 1400px;
+	background-position: center;
 }
 
 img#footer_banner:empty{
