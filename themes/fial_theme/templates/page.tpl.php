@@ -178,7 +178,7 @@ jQuery(document).ready(function($) {
     <div id="footer" class="clearfix site-footer" role="contentinfo">
       <!--<div class="container" style="margin-top:-40px;">-->
       <h1 class="title" id="page-title"> <?php print $title; ?> </h1>
-      </div>
+      <!--</div>-->
     </div>
 
     <div id="main-content" class="row main-content">
