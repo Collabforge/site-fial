@@ -35,7 +35,7 @@ body {
 #page-title {
 	background: url('/sites/default/themes/fial_theme/img/fial_header.png');
 	background-repeat: no-repeat;
-	background-size: auto 139px;
+
 	background-position: center;
 background: #007b38; /* Old browsers */
 background: -moz-linear-gradient(left,  #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%); /* FF3.6+ */
