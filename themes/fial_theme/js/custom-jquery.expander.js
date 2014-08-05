@@ -8,7 +8,7 @@ $(document).ready(function() {
   // *** OR ***
 
   // override default options (also overrides global overrides)
-  $('div.expandable p').expander({
+  $('div.expandable').expander({
     slicePoint:       80,  // default is 100
     expandPrefix:     ' ', // default is '... '
     expandText:       '[...]', // default is 'read more'
