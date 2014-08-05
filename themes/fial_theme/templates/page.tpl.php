@@ -304,7 +304,7 @@ jQuery(document).ready(function($) {
 </div>
 <!-- /#main, /#main-wrapper -->
 <?php if ($page['footer']): ?>
-<div id="footer footerbg" class="clearfix site-footer" role="contentinfo">
+<div id="footer" class="clearfix site-footer footerbg" role="contentinfo">
   <div class="container">
   <div id="footer-content" class="row-fluid footer-content"> <?php print render($page['footer']); ?></div>
   </div>
