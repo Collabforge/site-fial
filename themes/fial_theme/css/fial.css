@@ -672,6 +672,6 @@ div[class*='front-block-']:hover .frontblocktitle{
 	padding:35px 0px 35px 0px;
 }
 
-.region-footer > .span2 {
+.region.region-footer.clearfix > .span2 {
 	padding-left:20px;
 }
