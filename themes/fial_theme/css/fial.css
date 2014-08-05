@@ -642,17 +642,6 @@ div[class*='front-block-']:hover .frontblocktitle{
 	background-position: center;
 }
 
-img#footer_banner:empty{
-	left: 50%;
-	-webkit-transform: translate(-50%, 0%);
-	-moz-transform: translate(-50%, 0%);
-	-ms-transform: translate(-50%, 0%);
-	-o-transform: translate(-50%, 0%);
-	transform: translate(-50%, 0%);
-}
-#footer-content img {
-	height:auto !important;
-}
 /*@TODO: Make the banner 50% or 180px high on mobile*/
 
 @media screen and (orientation: portrait) {
