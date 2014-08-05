@@ -635,19 +635,11 @@ div[class*='front-block-']:hover .frontblocktitle{
 9. FOOTER
 ---------------------------------------------
 **/
-#footer {
+#footer-content {
 	background: url('/sites/default/themes/fial_theme/img/footerbg.png');
 	background-repeat: no-repeat;
 	background-size: 1400px;
 	background-position: center;
 }
 
-/*@TODO: Make the banner 50% or 180px high on mobile*/
 
-@media screen and (orientation: portrait) {
-  img#footer_banner { max-width: 150%; }
-}
-
-@media screen and (orientation: landscape) {
-  img#footer_banner { max-height: 120%; }
-}
