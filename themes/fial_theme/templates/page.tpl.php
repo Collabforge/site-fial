@@ -311,8 +311,8 @@ jQuery(document).ready(function($) {
 </div>
 
 <div id="footer" class="clearfix site-footer" role="contentinfo">
-<div class="container" style="padding-top:-40px;">
-<img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="left"><img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="right">
+<div class="container" style="margin-top:-40px;">
+<img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="left"><img src="/sites/default/themes/fial_theme/img/footer-right-linkedin.png" align="right">
 </div>
 </div>
 <!-- /#footer -->
