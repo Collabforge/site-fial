@@ -42,28 +42,7 @@ if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary
 <script type='text/javascript' src='http://os.alfajango.com/js/jquery.easing.1.3.js'></script>
 <script type="text/javascript" src="http://fast.fonts.net/jsapi/b23760be-4be4-4e65-b79d-771dcea8a674.js"></script>
 <script type="text/javascript" src="http://fial.collabcoapp.com/profiles/collabco/libraries/jquery-expander/jquery.expander.js"></script>
-<script type="text/javascript">
-// you can override default options globally, so they apply to every .expander() call
-$.expander.defaults.slicePoint = 120;
-
-$(document).ready(function() {
-  // simple example, using all default options unless overridden globally
-  $('div.expandable p').expander();
-
-  // *** OR ***
-
-  // override default options (also overrides global overrides)
-  $('div.expandable p').expander({
-    slicePoint:       80,  // default is 100
-    expandPrefix:     ' ', // default is '... '
-    expandText:       '[...]', // default is 'read more'
-    collapseTimer:    5000, // re-collapses after 5 seconds; default is 0, so no re-collapsing
-    userCollapseText: '[^]'  // default is 'read less'
-  });
-
-});
-
-</script>
+<script type="text/javascript" src="/sites/default/themes/fial_theme/js/custom-jquery.expander.js"></script>
 
 
 <div class="ui-mobile-menu visible-phone hidden-desktop">
