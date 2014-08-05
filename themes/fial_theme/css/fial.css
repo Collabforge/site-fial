@@ -20,7 +20,7 @@ HELVETICA NEUE STD 77 Bold Condensed: 	font-family:'HelveticaNeueW01-77BdCn 6927
 FIAL Fonts Source:
 <script type="text/javascript" src="http://fast.fonts.net/jsapi/b23760be-4be4-4e65-b79d-771dcea8a674.js"></script>
 
-
+#F8EA47
 
 *****************************/
 
@@ -37,7 +37,15 @@ body {
 	background-repeat: no-repeat;
 	background-size: 1400px;
 	background-position: center;
-	background-color: #007B38;
+	background: #007b38; /* Old browsers */
+background: -moz-linear-gradient(left,  #007b38 0%, #007b38 53%, #f8ea47 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,#007b38), color-stop(53%,#007b38), color-stop(100%,#f8ea47)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  #007b38 0%,#007b38 53%,#f8ea47 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  #007b38 0%,#007b38 53%,#f8ea47 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  #007b38 0%,#007b38 53%,#f8ea47 100%); /* IE10+ */
+background: linear-gradient(to right,  #007b38 0%,#007b38 53%,#f8ea47 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007b38', endColorstr='#f8ea47',GradientType=1 ); /* IE6-9 */
+
     height: 139px;
     min-width: 100%;
     margin-left: -50%;
