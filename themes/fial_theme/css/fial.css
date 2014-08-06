@@ -219,8 +219,6 @@ a.less-link:hover {
   font-weight: normal;
   font-size: 20px;
   text-transform: uppercase;
-  padding-left:5px;
-  padding-right:5px;
 }
 
 .menu_secondary li a.active {
