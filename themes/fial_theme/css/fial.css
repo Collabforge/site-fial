@@ -528,6 +528,8 @@ img#homepage_banner:empty{
 ---------------------------------------------
 **/
 
+
+/* Full Width Boxes */
 .views-row {
 padding:35px;
 min-height: 320px;
@@ -546,7 +548,7 @@ border:3px #b4b4b4 solid !important;
 
 .views-row-even > .views-field > .field-content img {
 	float:right;
-	padding: 0px 0px 35px 0px;
+	padding: 0px 0px 35px 35px;
 }
 
 
