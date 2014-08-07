@@ -326,7 +326,7 @@ jQuery(document).ready(function($) {
 
 <div id="footer" class="clearfix site-footer" role="contentinfo">
 <div class="container" style="margin-top:-40px;">
-<img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="left"><img src="/sites/default/themes/fial_theme/img/footer-right-linkedin.png" align="right">
+<img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="left"><a href="http://www.linkedin.com/groups/Food-Innovation-Australia-Ltd-Fial-6559274" target="_blank"><img src="/sites/default/themes/fial_theme/img/footer-right-linkedin.png" align="right"></a>
 </div>
 </div>
 <!-- /#footer -->
