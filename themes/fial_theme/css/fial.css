@@ -641,6 +641,9 @@ div[class*='front-block-']:hover .frontblocktitle{
   text-align: center;
   position: relative;
   transform: translateY(-10%);
+  -ms-transform: translateY(-10%);
+  -webkit-transform: translateY(-10%);
+  -moz-transform: translateY(-10%);
 }
 
 .frontshadow {
