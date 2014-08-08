@@ -50,9 +50,7 @@ if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary
 // Checks if current page is jquery-incompatible
 
 $current_path = current_path();
-echo $current_path;
-die;
-if ($current_path != "NODE/14") { ?>
+if ($current_path != "node/14") { ?>
 <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
 <script type="text/javascript" src="/sites/default/libraries/jquery-expander/jquery.expander.js"></script>
 <script type="text/javascript" src="/sites/default/libraries/custom-jquery-expander/custom-jquery.expander.js"></script>
