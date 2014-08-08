@@ -46,6 +46,7 @@ if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary
 
 
 <!--Custom Jquery (2.1)-->
+<script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 <script type="text/javascript" src="/sites/default/libraries/jquery-expander/jquery.expander.js"></script>
 <script type="text/javascript" src="/sites/default/libraries/custom-jquery-expander/custom-jquery.expander.js"></script>
 
