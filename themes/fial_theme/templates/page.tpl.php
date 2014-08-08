@@ -43,7 +43,7 @@ if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary
 <script type="text/javascript" src="http://fast.fonts.net/jsapi/b23760be-4be4-4e65-b79d-771dcea8a674.js"></script>
 
 <!--Drupal Jquery (1.8)-->
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+
 <script type="text/javascript" src="/sites/default/themes/fial_theme/js/jquery.infinitescroll.min.js"></script>
 <script type="text/javascript" src="/sites/default/themes/fial_theme/js/custom-jquery.autopager.js"></script>
 
