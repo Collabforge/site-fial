@@ -127,7 +127,7 @@ jQuery(document).ready(function($) {
 }
 
 </style>
-
+<h1><?php echo current_path(); ?></h1>
 <!-- new Header Top block -->
 <?php if (($page['header_top_middle']) || ($page['search_box']) || ($page['header_bottom_left']) || ($page['header_bottom_right'])): ?>
   <div id="header"  class="clearfix header visible-desktop hidden-phone" role="banner">
