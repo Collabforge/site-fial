@@ -549,6 +549,23 @@ border:3px #e6e6e6 solid !important;
 	padding: 0px 0px 35px 35px;
 }
 
+/* Founding Members */
+#infscr-loading {
+  position: fixed;
+  text-align: center;
+  bottom: 300px;
+  left: 42%;
+  z-index: 100;
+  background: white;
+  background: hsla( 0, 0%, 100%, 0.9 );
+  padding: 20px;
+  color: #222;
+  font-size: 15px;
+  font-weight: bold;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+}
 
 
 /**
