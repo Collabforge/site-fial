@@ -46,7 +46,6 @@ if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary
 
 
 <!--Custom Jquery (2.1)-->
-<script type="text/javascript" src="http://fial.collabcoapp.com/profiles/collabco/libraries/jquery-expander/jquery.expander.js"></script>
 <script type="text/javascript" src="/sites/default/themes/fial_theme/js/custom-jquery.expander.js"></script>
 
 
