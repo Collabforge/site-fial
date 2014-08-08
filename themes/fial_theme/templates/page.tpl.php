@@ -44,8 +44,6 @@ if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary
 
 <!--Drupal Jquery (1.8)-->
 
-<script type="text/javascript" src="/sites/default/themes/fial_theme/js/jquery.infinitescroll.min.js"></script>
-<script type="text/javascript" src="/sites/default/themes/fial_theme/js/custom-jquery.autopager.js"></script>
 
 <!--Custom Jquery (2.1)-->
 
