@@ -46,12 +46,7 @@ if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary
 
 
 <!--Custom Jquery (2.1)-->
-<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script>
-var jq211 = jQuery.noConflict();
-</script>
-<script type="text/javascript" src="http://fial.collabcoapp.com/profiles/collabco/libraries/jquery-expander/jquery.expander.js"></script>
-<script type="text/javascript" src="/sites/default/themes/fial_theme/js/custom-jquery.expander.js"></script>
+
 
 
 <div class="ui-mobile-menu visible-phone hidden-desktop">
@@ -337,5 +332,11 @@ jQuery(document).ready(function($) {
 <img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="left"><a href="http://www.linkedin.com/groups/Food-Innovation-Australia-Ltd-Fial-6559274" target="_blank"><img src="/sites/default/themes/fial_theme/img/footer-right-linkedin.png" align="right"></a>
 </div>
 </div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+<script>
+var jq211 = jQuery.noConflict();
+</script>
+<script type="text/javascript" src="http://fial.collabcoapp.com/profiles/collabco/libraries/jquery-expander/jquery.expander.js"></script>
+<script type="text/javascript" src="/sites/default/themes/fial_theme/js/custom-jquery.expander.js"></script>
 <!-- /#footer -->
 <?php endif; ?>
