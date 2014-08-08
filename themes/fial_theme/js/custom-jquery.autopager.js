@@ -22,9 +22,9 @@
 $('#body').infinitescroll({
       navSelector  : "a#next:last",
                      // selector for the paged navigation (it will be hidden)
-      nextSelector : "a#next:last",
+      nextSelector : ".pager-next a",
                      // selector for the NEXT link (to page 2)
-      itemSelector : "#body p"
+      itemSelector : ".ui-organisation-img"
                      // selector for all items you'll retrieve
     });
     // kill scroll binding
