@@ -32,6 +32,7 @@ body {
   color: #4a4a4c;
   font-family:'helveticaneue45light';
     overflow-x: hidden;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .page-title2 {
