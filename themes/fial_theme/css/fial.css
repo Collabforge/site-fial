@@ -358,6 +358,9 @@ img#homepage_banner:empty{
   img#homepage_banner { max-height: 120%; }
 }
 
+.homepage_text {
+	margin-top:-250px;
+}
 
 
 /**
@@ -679,9 +682,7 @@ div[class*='front-block-']:hover .frontblocktitle{
   color:#ffffff;
 }
 
-.homepage_text {
 
-}
 
 /**
 9. FOOTER
