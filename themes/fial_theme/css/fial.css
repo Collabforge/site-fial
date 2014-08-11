@@ -332,6 +332,7 @@ overflow:hidden !important;
 }
 
 img#homepage_banner{
+	z-index:-1;
 	position: relative;
 	max-width: 150%;
 	left: 10%;
@@ -676,6 +677,10 @@ div[class*='front-block-']:hover .frontblocktitle{
   font-size:20px;
   font-style:italic;
   color:#ffffff;
+}
+
+.homepage_text {
+
 }
 
 /**
