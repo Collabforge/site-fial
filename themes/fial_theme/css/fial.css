@@ -125,14 +125,14 @@ p {
 	color:#4a4a4c;
 }
 
-.subhead p {
+.subhead {
 	font-family:"Times New Roman", Times, serif;
 	font-size:19px;
 	font-style:italic;
 	color:#ffffff;
 }
 
-.subhead-white p {
+.subhead-white {
 	font-family:"Times New Roman", Times, serif;
 	font-size:19px;
 	font-style:italic;
