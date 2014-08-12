@@ -355,10 +355,11 @@ img#homepage_banner:empty{
 @media (max-width: 767px) {
 	h1 {font-size: 27px;}
 	.subhead {font-size: 20px;}
-	.front-block-1{margin-top: 50px;}
+	.front-block-1{margin-top: 30px;}
 	.front-blocks .span4 {padding:10px;}
 	div[class*='front-block-'] {width:260px; height:260px;}
     div[class*='front-block-'] h3 {font-size:20px;}
+    div[class*='front-block-'] .frontwhite {font-size:10px;}
 }
 
 .homepage_text {
