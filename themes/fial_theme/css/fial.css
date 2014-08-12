@@ -337,7 +337,8 @@ img#homepage_banner{
 	position: relative;
 	max-width: 150%;
 	left: 10%;
-
+	min-height:360px;
+	min-width:1400px;
 }
 
 img#homepage_banner:empty{
@@ -351,13 +352,7 @@ img#homepage_banner:empty{
 
 /*@TODO: Make the banner 50% or 180px high on mobile*/
 
-@media screen and (orientation: portrait) {
-  img#homepage_banner { max-width: 150%; }
-}
 
-@media screen and (orientation: landscape) {
-  img#homepage_banner { max-height: 120%; }
-}
 
 .homepage_text {
 margin-top: -320px;
