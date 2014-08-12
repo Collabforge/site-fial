@@ -99,10 +99,15 @@ h4 {
 }
 
 /*Use on WHITE background*/
-h5, h5 a {
+h5 {
 	font-family:'HelveticaNeueW01-77BdCn 692722';
 	font-size:34px;
 	text-transform:uppercase;
+	color:#007b38;
+}
+
+h5 a{
+	text-decoration:none;
 	color:#007b38;
 }
 
