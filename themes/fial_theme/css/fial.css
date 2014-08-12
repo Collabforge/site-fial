@@ -352,7 +352,10 @@ img#homepage_banner:empty{
 
 /*@TODO: Make the banner 50% or 180px high on mobile*/
 
-
+@media (max-width: 767px) {
+	h1 {font-size: 27px;}
+	.subhead {font-size: 20px;}
+}
 
 .homepage_text {
 margin-top: -320px;
