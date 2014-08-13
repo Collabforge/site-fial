@@ -175,7 +175,19 @@ jQuery(document).ready(function($) {
 <?php if (!drupal_is_front_page()): ?>
 <div id="footer" class="clearfix site-footer page-title2" role="contentinfo">
       <!--<div class="container" style="margin-top:-40px;">-->
-      <h1 class="title" id="page-title"> <?php print substr($title,0,10).'...'; ?> </h1>
+      <h1 class="title" id="page-title"> <?php
+function truncateTitle($string,$length=10,$append="&hellip;") {
+  $string = trim($string);
+
+  if(strlen($string) > $length) {
+    $string = wordwrap($string, $length);
+    $string = explode("\n",$string);
+    $string = array_shift($string) . $append;
+  }
+
+  return $string;
+}
+      print truncateTitle($title); ?> </h1>
       <!--</div>-->
 </div>
 <?php endif; ?>
