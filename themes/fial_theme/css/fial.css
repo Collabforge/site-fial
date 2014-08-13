@@ -703,10 +703,15 @@ div[class*='front-block-']:hover .frontblocktitle{
 
 /* Fixes tap/hover issue on mobile by forcing just the image */
 @media (max-width: 321px) {
-
-div[class*='front-block-'] .showme{
-  display : none;
-}
+	div[class*='front-block-'] .showme{
+	  display : none;
+	}
+	div[class*='front-block-']:hover .showme{
+	  display : none;
+	}
+	div[class*='front-block-']:hover .frontblocktitle{
+  		display : block;
+	}
 }
 
 /**
