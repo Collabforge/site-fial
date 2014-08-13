@@ -613,7 +613,7 @@ border:3px #e6e6e6 solid !important;
 
 
 .front-block-1 {
-  background: url('/sites/default/themes/fial_theme/img/front1.png');
+  background: url('/fial/sites/default/themes/fial_theme/img/front1.png');
   width:310px;
   height:310px;
 }
@@ -649,7 +649,7 @@ border:3px #e6e6e6 solid !important;
 }
 
 div[class*='front-block-']:hover {
-  background: url('/sites/default/themes/fial_theme/img/frontbg.png');
+  background: url('/fial/sites/default/themes/fial_theme/img/frontbg.png');
 }
 
 .showme{ 
@@ -695,6 +695,15 @@ div[class*='front-block-']:hover .frontblocktitle{
   color:#ffffff;
 }
 
+@media (max-width: 321px) {
+	div[class*='front-block-'] .showme{
+  display : block;
+}
+
+div[class*='front-block-'] .frontblocktitle{
+  display : none;
+}
+}
 
 
 /**
