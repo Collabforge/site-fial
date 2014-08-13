@@ -57,7 +57,7 @@ height: 139px;
     min-width: 100%;
     margin-left: -50%;
     margin-right: -50%;
-	line-height: 2.6 !important;
+	line-height: 3 !important;
 	text-align: center !important; 
 }
 
@@ -72,7 +72,7 @@ height: 139px;
 /*Use on GREEN background*/
 h1 {
 	font-family:'HelveticaNeueW01-77BdCn 692722';
-	font-size:54px;
+	font-size:46px;
 	text-transform:uppercase;
 	color:#ffffff !important;
 }
