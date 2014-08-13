@@ -541,7 +541,7 @@ img#homepage_banner:empty{
 
 /* Wide Load More button */
 
-.member_orgs .pager-load-more{
+.member_orgs .pager-load-more a{
 
 	min-width:90px;
 	height:41px;
@@ -556,7 +556,7 @@ img#homepage_banner:empty{
     padding: 0px 20px 0px 20px;
 }
 
-.member_orgs .pager-load-more:hover {
+.member_orgs .pager-load-more a:hover {
 	background-color:#007b38  !important;
 	color:#ffffff !important;
 	text-decoration:none !important;
