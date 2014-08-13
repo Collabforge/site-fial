@@ -336,6 +336,7 @@ a.less-link:hover {
 .homepage_banner {
 height:360px !important;
 overflow:hidden !important;
+overflow-x:hidden !important;
 }
 
 img#homepage_banner{
