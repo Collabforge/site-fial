@@ -538,6 +538,30 @@ img#homepage_banner:empty{
 	text-shadow:none !important;
 }
 
+
+/* Wide Load More button */
+
+.member_orgs .pager-load-more{
+
+	min-width:90px;
+	height:41px;
+	border:1px #007b38 solid !important;
+	color:#007b38 !important;
+	font-family:'HelveticaNeueW01-77BdCn 692722';
+	text-transform:uppercase;
+	text-align:center;
+	display: table-cell;
+    vertical-align: middle;
+    text-decoration:none;
+    padding: 0px 20px 0px 20px;
+}
+
+.member_orgs .pager-load-more:hover {
+	background-color:#007b38  !important;
+	color:#ffffff !important;
+	text-decoration:none !important;
+}
+
 /**
 6. PAGE FEATURES
 ---------------------------------------------
@@ -705,7 +729,7 @@ div[class*='front-block-']:hover .frontblocktitle{
 }
 
 /* Fixes tap/hover issue on mobile by forcing just the image */
-@media (max-width: 700px) {
+@media (max-width: 400px) {
 	div[class*='front-block-'] .showme{
 	  display : none;
 	  z-index:-10;
