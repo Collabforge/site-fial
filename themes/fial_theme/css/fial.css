@@ -33,6 +33,8 @@ body {
   font-family:'helveticaneue45light';
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
+    overflow:hidden !important;
+overflow-x:hidden !important;
 }
 
 .page-title2 {
