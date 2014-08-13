@@ -610,10 +610,11 @@ border:3px #e6e6e6 solid !important;
   border-radius: 10px;
 }
 
-.view-member-organisations .views-row .views-row-odd {
+.view-member-organisations {
 	background-color:#F1F1F1;
 }
-
+146x2
+53 - 35
 /**
 7. CONTENT EDITOR EXPERIENCE
 ---------------------------------------------
