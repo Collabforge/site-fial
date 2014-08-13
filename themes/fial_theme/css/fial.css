@@ -717,7 +717,6 @@ div[class*='front-block-']:hover .frontblocktitle{
   		display : block;
 	}
 	div[class*='front-block-'] {
-	  display : none;
 	  	  z-index:10;
 	}
 }
