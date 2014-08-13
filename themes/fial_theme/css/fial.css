@@ -708,12 +708,17 @@ div[class*='front-block-']:hover .frontblocktitle{
 @media (max-width: 700px) {
 	div[class*='front-block-'] .showme{
 	  display : none;
+	  z-index:-10;
 	}
 	div[class*='front-block-']:hover .showme{
 	  display : none;
 	}
 	div[class*='front-block-']:hover .frontblocktitle{
   		display : block;
+	}
+	div[class*='front-block-'] {
+	  display : none;
+	  	  z-index:10;
 	}
 }
 
