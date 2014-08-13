@@ -176,7 +176,7 @@ jQuery(document).ready(function($) {
 <div id="footer" class="clearfix site-footer page-title2" role="contentinfo">
       <!--<div class="container" style="margin-top:-40px;">-->
       <h1 class="title" id="page-title"> <?php
-function truncateTitle($string,$length=10,$append="&hellip;") {
+function truncateTitle($string,$length=40,$append="&hellip;") {
   $string = trim($string);
 
   if(strlen($string) > $length) {
