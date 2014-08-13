@@ -648,7 +648,7 @@ border:3px #e6e6e6 solid !important;
   height:310px;
 }
 
-div[class*='front-block-']:hover {
+div[class*='front-block-']:hover  {
   background: url('/sites/default/themes/fial_theme/img/frontbg.png');
 }
 
@@ -715,6 +715,7 @@ div[class*='front-block-']:hover .frontblocktitle{
 	}
 	div[class*='front-block-']:hover .frontblocktitle{
   		display : block;
+  		z-index:10;
 	}
 	div[class*='front-block-'] .frontblocktitle{
 	  	  z-index:10;
