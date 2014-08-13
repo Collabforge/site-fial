@@ -701,9 +701,16 @@ div[class*='front-block-']:hover .frontblocktitle{
   color:#ffffff;
 }
 
+/* Fixes tap/hover issue on mobile by forcing just the image */
+@media (max-width: 321px) {
+	div[class*='front-block-']:hover .showme{
+	  display : none;
+	}
 
-
-
+	div[class*='front-block-']:hover .frontblocktitle{
+	  display : block;
+	}
+}
 
 /**
 9. FOOTER
