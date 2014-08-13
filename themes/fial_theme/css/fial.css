@@ -571,23 +571,23 @@ img#homepage_banner:empty{
 
 
 /* Full Width Boxes */
-.views-row {
+.page-node-463 .views-row {
 padding:35px;
 min-height: 320px;
 }
 
-.views-row-odd {
+.page-node-463 .views-row-odd {
 background-color:#F1F1F1;
 border:3px #e6e6e6 solid !important;
 
 }
 
-.views-row-odd > .views-field > .field-content img {
+.page-node-463 .views-row-odd > .views-field > .field-content img {
 	float:left;
 	padding: 0px 35px 0px 0px;
 }
 
-.views-row-even > .views-field > .field-content img {
+.page-node-463 .views-row-even > .views-field > .field-content img {
 	float:right;
 	padding: 0px 0px 35px 35px;
 }
