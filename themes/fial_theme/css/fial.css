@@ -541,7 +541,7 @@ img#homepage_banner:empty{
 
 /* Wide Load More button */
 
-.pager li > a, .pager li > span {
+.pager li > a {
 
 	min-width:90px;
 	height:41px;
@@ -554,9 +554,11 @@ img#homepage_banner:empty{
     vertical-align: middle;
     text-decoration:none;
     padding: 0px 20px 0px 20px;
+    width:1000px;
+    border-radius:0px;
 }
 
-.pager li > a:hover, .pager li > span:hover {
+.pager li > a:hover {
 	background-color:#007b38  !important;
 	color:#ffffff !important;
 	text-decoration:none !important;
