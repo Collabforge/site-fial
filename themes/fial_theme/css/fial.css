@@ -649,10 +649,7 @@ border:3px #e6e6e6 solid !important;
 .view-news .views-view-grid > td {
 	width: 290px;
 }
-span.field-content {
-	width: 290px;
-	height:600px;
-}
+
 
 .views-field .field-content span {
 	width: 290px !important;
