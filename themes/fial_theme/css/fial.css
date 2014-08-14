@@ -650,6 +650,9 @@ border:3px #e6e6e6 solid !important;
 .view-news .views-view-grid > td {
 	width:300px !important;	
 }
+span.field-content {
+	width:300px !important;
+}
 
 /*146x2
 53 - 35*/
