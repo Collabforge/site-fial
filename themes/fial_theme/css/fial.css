@@ -31,10 +31,8 @@ body {
   background-image: none;
   color: #4a4a4c;
   font-family:'helveticaneue45light';
-    overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
-    overflow:hidden !important;
-overflow-x:hidden !important;
+    overflow-y: visible !important;
 }
 
 .page-title2 {
@@ -48,6 +46,7 @@ background: linear-gradient(to right,  #007b38 0%,#007b38 50%,#f8ea47 53%,#f8ea4
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007b38', endColorstr='#f8ea47',GradientType=1 ); /* IE6-9 */
 height: 139px;
 }
+
 
 #page-title {
 	background-image: url('/sites/default/themes/fial_theme/img/fial_header.png');
@@ -337,8 +336,6 @@ a.less-link:hover {
 
 .homepage_banner {
 height:360px !important;
-overflow:hidden !important;
-overflow-x:hidden !important;
 }
 
 img#homepage_banner{
