@@ -644,7 +644,19 @@ border:3px #e6e6e6 solid !important;
 
 .view-news .views-field .field-content {
 	width: 290px;
-	height:650px;
+	height:600px;
+}
+
+.view-news .body-news {
+	height:200px;
+}
+
+.view-news .title-news {
+	height:70px;
+}
+
+.view-news .date-news {
+	background-image: url('/sites/default/themes/fial_theme/img/hexagon_news.png');
 }
 
 /*146x2
