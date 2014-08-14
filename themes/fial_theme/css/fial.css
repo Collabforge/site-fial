@@ -642,6 +642,7 @@ border:3px #e6e6e6 solid !important;
 .view-news .views-field .field-content {
 	width: 290px;
 	height:600px;
+	background-color:#e6e6e6;
 }
 
 .view-news .body-news {
@@ -663,8 +664,7 @@ border:3px #e6e6e6 solid !important;
 	height: 68px;
 	float: left;
 	text-align: center;
-	padding-top: 14px;
-	padding-left: 3px;
+	padding-top: 12px;
 	color: #ffffff;
 	font-size: 20px;
 	line-height: 1;
