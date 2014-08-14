@@ -9,13 +9,10 @@ FIAL Stylesheet - Please only change fonts, Fial-specific fonts sizes, images an
 
 FIAL Fonts:
 HELVETICA NEUE STD 45 Light: 			font-family:'HelveticaNeueW01-45Ligh';
-								or:		font-family:'helveticaneue45light';
 
 HELVETICA NEUE STD 57 Condensed: 		font-family:'HelveticaNeueW01-57Cn';
-								or:		font-family:'helveticaneue57condensed';
 
 HELVETICA NEUE STD 77 Bold Condensed: 	font-family:'HelveticaNeueW01-77BdCn 692722';
-								or:		font-family:'helveticaneue77condensedbold';
 
 FIAL Fonts Source:
 <script type="text/javascript" src="http://fast.fonts.net/jsapi/b23760be-4be4-4e65-b79d-771dcea8a674.js"></script>
@@ -657,7 +654,21 @@ border:3px #e6e6e6 solid !important;
 
 .view-news .date-news {
 	background-image: url('/sites/default/themes/fial_theme/img/hexagon_news.png');
-
+	background-repeat: no-repeat;
+	margin-top: -50px;
+	margin-left: 10px;
+	z-index: 1 !important;
+	position: absolute;
+	width: 61px;
+	height: 68px;
+	float: left;
+	text-align: center;
+	padding-top: 14px;
+	padding-left: 3px;
+	color: #ffffff;
+	font-size: 20px;
+	line-height: 1;
+	font-family: 'HelveticaNeueW01-77BdCn 692722';
 }
 
 /*146x2
