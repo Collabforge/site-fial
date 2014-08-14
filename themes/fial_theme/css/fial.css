@@ -643,6 +643,7 @@ border:3px #e6e6e6 solid !important;
 	width: 290px;
 	height:620px;
 	background-color:#e6e6e6;
+	margin-right: 10px;
 }
 
 .view-news .body-news {
@@ -673,6 +674,8 @@ border:3px #e6e6e6 solid !important;
 .content-text-news {
 	margin: -25px 20px 0px 20px;
 }
+
+.view-news .field-content {}
 
 /*146x2
 53 - 35*/
