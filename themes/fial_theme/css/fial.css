@@ -564,6 +564,8 @@ img#homepage_banner:empty{
 	text-decoration:none !important;
 }
 
+/* Industry News page */
+
 .view-news .pager li > a {
 
 	min-width:90px;
@@ -639,8 +641,18 @@ border:3px #e6e6e6 solid !important;
 .view-member-organisations {
 	background-color:#F1F1F1;
 }
-146x2
-53 - 35
+
+.img-news img {
+	width:300px !important;
+	height:300px !important;
+}
+
+.view-news .field-content {
+	width:300px !important;	
+}
+
+/*146x2
+53 - 35*/
 /**
 7. CONTENT EDITOR EXPERIENCE
 ---------------------------------------------
