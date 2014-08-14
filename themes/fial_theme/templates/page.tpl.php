@@ -175,18 +175,7 @@ jQuery(document).ready(function($) {
 <?php if (!drupal_is_front_page()): ?>
 <div id="footer" class="clearfix site-footer page-title2" role="contentinfo">
       <!--<div class="container" style="margin-top:-40px;">-->
-      <h1 class="title" id="page-title"> <?php
-          function fialTruncateTitle($string,$length,$append) {
-            $string = trim($string);
-
-            if(strlen($string) > $length) {
-              $string = wordwrap($string, $length);
-              $string = explode("\n",$string);
-              $string = array_shift($string) . $append;
-            }
-            return $string;
-          }
-      print fialTruncateTitle($title,40,"&hellip;"); ?> </h1>
+      <h1 class="title" id="page-title">  </h1>
       <!--</div>-->
 </div>
 <?php endif; ?>
