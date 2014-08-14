@@ -656,9 +656,8 @@ border:3px #e6e6e6 solid !important;
 .view-news .date-news {
 	background-image: url('/sites/default/themes/fial_theme/img/hexagon_news.png');
 	background-repeat: no-repeat;
-	margin-top: -50px;
+	margin-top: -65px;
 	margin-left: 10px;
-	z-index: 1 !important;
 	position: absolute;
 	width: 61px;
 	height: 68px;
@@ -672,7 +671,7 @@ border:3px #e6e6e6 solid !important;
 }
 
 .content-text-news {
-	margin: 0px 20px 0px 20px;
+	margin: -25px 20px 0px 20px;
 }
 
 /*146x2
