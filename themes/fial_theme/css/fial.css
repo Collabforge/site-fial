@@ -654,7 +654,7 @@ span.field-content {
 	height:600px;
 }
 
-.views-field .field-content {
+.views-field .field-content span {
 	width: 290px !important;
 	height:600px !important;
 }
