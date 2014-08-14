@@ -642,16 +642,21 @@ border:3px #e6e6e6 solid !important;
 	background-color:#F1F1F1;
 }
 
-.img-news {
-	width:300px !important;
-	height:300px !important;
+.img-news img {
+	width: 290px;
 }
 
 .view-news .views-view-grid > td {
-	width:300px !important;	
+	width: 290px;
 }
 span.field-content {
-	width:300px !important;
+	width: 290px;
+	height:600px;
+}
+
+.views-field .field-content {
+	width: 290px !important;
+	height:600px !important;
 }
 
 /*146x2
