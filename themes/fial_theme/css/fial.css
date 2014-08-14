@@ -656,7 +656,8 @@ border:3px #e6e6e6 solid !important;
 }
 
 .view-news .date-news {
-	background-image: url('/sites/default/themes/fial_theme/img/hexagon_news.png') no-repeat;
+	background-image: url('/sites/default/themes/fial_theme/img/hexagon_news.png');
+
 }
 
 /*146x2
