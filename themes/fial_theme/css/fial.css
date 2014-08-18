@@ -258,37 +258,32 @@ img#homepage_banner {
   padding-bottom: 5px; }
 
 .front-block-1 {
-  background: url("/sites/default/themes/fial_theme/img/front1.png");
-  width: 310px;
-  height: 310px; }
+  background-image: url("/sites/default/themes/fial_theme/img/front1.jpg"); }
 
 .front-block-2 {
-  background: url("/sites/default/themes/fial_theme/img/front2.png");
-  width: 310px;
-  height: 310px; }
+  background-image: url("/sites/default/themes/fial_theme/img/front2.jpg"); }
 
 .front-block-3 {
-  background: url("/sites/default/themes/fial_theme/img/front3.png");
-  width: 310px;
-  height: 310px; }
+  background-image: url("/sites/default/themes/fial_theme/img/front3.jpg"); }
 
 .front-block-4 {
-  background: url("/sites/default/themes/fial_theme/img/front4.png");
-  width: 310px;
-  height: 310px; }
+  background-image: url("/sites/default/themes/fial_theme/img/front4.jpg"); }
 
 .front-block-5 {
-  background: url("/sites/default/themes/fial_theme/img/front5.png");
-  width: 310px;
-  height: 310px; }
+  background-image: url("/sites/default/themes/fial_theme/img/front5.jpg"); }
 
 .front-block-6 {
-  background: url("/sites/default/themes/fial_theme/img/front6.png");
+  background-image: url("/sites/default/themes/fial_theme/img/front6.jpg"); }
+
+div[class*='front-block-'] {
+  background-color: green;
   width: 310px;
-  height: 310px; }
+  height: 310px;
+  background-image: transparent;
+  background-size: 310px 310px; }
 
 div[class*='front-block-']:hover {
-  background: url("/sites/default/themes/fial_theme/img/frontbg.png"); }
+  background-image: url("/sites/default/themes/fial_theme/img/frontbg.png"); }
 
 .showme {
   display: none; }
