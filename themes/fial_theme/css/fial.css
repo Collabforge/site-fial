@@ -111,21 +111,30 @@ a.less-link {
   font-weight: normal;
   font-size: 18px;
   text-transform: uppercase; }
-  .menu_secondary li a.active {
+  .menu_secondary li a:focus, .menu_secondary li a:hover, .menu_secondary li a.active, .menu_secondary li a:active {
+    outline: 0;
     color: #007b38;
     font-weight: normal;
     font-size: 18px;
-    text-transform: uppercase;
+    text-transform: uppercase; }
+  .menu_secondary li a:hover, .menu_secondary li a.active, .menu_secondary li a:active {
     padding-bottom: 6px;
+    border-bottom: 6px solid #007b38; }
+.menu_secondary li.dropdown a.dropdown {
+  padding-bottom: 6px;
+  border-bottom: 6px solid transparent; }
+  .menu_secondary li.dropdown a.dropdown:hover, .menu_secondary li.dropdown a.dropdown:active, .menu_secondary li.dropdown a.dropdown.active {
+    color: #00ad00;
+    border-bottom: 6px solid #00ad00; }
+.menu_secondary li.dropdown.open a.dropdown {
+  color: #007b38;
+  border-bottom: 6px solid #007b38; }
+  .menu_secondary li.dropdown.open a.dropdown:hover, .menu_secondary li.dropdown.open a.dropdown:active, .menu_secondary li.dropdown.open a.dropdown.active {
+    color: #007b38;
     border-bottom: 6px solid #007b38; }
 
 .nav .dropdown-toggle .caret, .nav .dropdown-toggle:hover .caret, .nav .dropdown-toggle:focus .caret {
   display: none; }
-
-.dropdown-menu {
-  background-color: #525252;
-  border: none;
-  padding: 15px 10px 15px 10px; }
 
 .nav > li > a:focus {
   background-color: white; }
@@ -133,31 +142,41 @@ a.less-link {
 .dropdown a {
   font-family: "HelveticaNeueW01-57Cn" !important; }
 
-.dropdown-menu li a {
-  color: white;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: "HelveticaNeueW01-57Cn";
-  border-bottom: 1px #525252 dotted; }
-.dropdown-menu a.active {
-  color: white !important;
-  font-size: 18px !important;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: "HelveticaNeueW01-57Cn";
-  border-bottom: 1px #525252 dotted !important; }
-.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
-  text-decoration: none !important;
-  color: white !important;
-  background-color: #525252 !important;
-  background-image: none !important;
-  background-image: none !important;
-  background-image: none !important;
-  background-image: none !important;
-  background-image: none !important;
-  background-image: none !important;
-  border-bottom: 1px white dotted; }
+.dropdown-menu {
+  background-color: #525252;
+  border: none;
+  padding: 15px 20px 20px 20px;
+  margin-top: 10px;
+  margin-left: 5px; }
+  .dropdown-menu li a {
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "HelveticaNeueW01-57Cn";
+    border-bottom: 1px transparent dotted;
+    padding: 6px 0 0 0;
+    font-size: 16px;
+    display: inline-block; }
+    .dropdown-menu li a:hover, .dropdown-menu li a:focus, .dropdown-menu li a:active, .dropdown-menu li a.active {
+      padding: 6px 0 0 0;
+      font-size: 16px;
+      text-decoration: none !important;
+      color: white !important;
+      background-color: #525252 !important;
+      background-image: none !important;
+      background-image: none !important;
+      background-image: none !important;
+      background-image: none !important;
+      background-image: none !important;
+      background-image: none !important;
+      border-bottom: 1px white dotted; }
+  .dropdown-menu a.active {
+    color: white !important;
+    font-size: 16px !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: "HelveticaNeueW01-57Cn"; }
 
 .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
   text-decoration: none !important;
