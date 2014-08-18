@@ -260,7 +260,7 @@ img#homepage_banner {
 .homepage_text {
   margin-top: -320px;
   padding-bottom: 80px;
-  text-shadow: 0px 0px 10px black; }
+  text-shadow: 0px 0px 10px black, 0px 2px 1px black; }
 
 .fp-headers {
   font-size: 1rem;
@@ -369,11 +369,13 @@ div[class*='front-block-']:hover .frontblocktitle {
   display: table-cell;
   vertical-align: middle;
   text-decoration: none;
-  padding: 0px 20px 0px 20px; }
+  padding: 0px 20px 0px 20px;
+  text-shadow: 0px 2px 3px black; }
   .lbutton-image:hover {
     background-color: #007b38 !important;
     color: white !important;
-    text-decoration: none !important; }
+    text-decoration: none !important;
+    text-shadow: none; }
 
 .sbutton-image {
   min-width: 75px;
