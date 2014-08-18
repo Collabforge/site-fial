@@ -203,6 +203,7 @@ a.less-link {
   height: 360px !important; }
 
 img#homepage_banner {
+  background-color: #007b38;
   z-index: -1;
   position: relative;
   max-width: 150%;
@@ -276,7 +277,7 @@ img#homepage_banner {
   background-image: url("/sites/default/themes/fial_theme/img/front6.jpg"); }
 
 div[class*='front-block-'] {
-  background-color: green;
+  background-color: #007b38;
   width: 310px;
   height: 310px;
   background-image: transparent;
