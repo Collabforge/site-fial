@@ -1,0 +1,153 @@
+// 4. HOMEPAGE
+
+.homepage_banner
+  height: 360px !important
+
+// @TODO: Make the banner 50% or 180px high on mobile
+
+img#homepage_banner
+  z-index: -1
+  position: relative
+  max-width: 150%
+  left: 10%
+  min-height: 360px
+  min-width: 1400px
+  &:empty
+    left: 50%
+    -webkit-transform: translate(-50%, 0%)
+    -moz-transform: translate(-50%, 0%)
+    -ms-transform: translate(-50%, 0%)
+    -o-transform: translate(-50%, 0%)
+    transform: translate(-50%, 0%)
+
+@media all and (max-width: 767px)
+  h1
+    font-size: 27px
+  .subhead
+    font-size: 20px
+  .front-block-1
+    margin-top: 30px
+  .front-blocks .span4
+    padding: 10px
+  div[class*='front-block-']
+    width: 260px
+    height: 260px
+    h3
+      font-size: 20px
+    .frontwhite
+      font-size: 10px
+
+.homepage_text
+  margin-top: -320px
+  padding-bottom: 80px
+  text-shadow: 0px 0px 10px #000
+
+.fp-headers
+  font-size: 1rem
+  line-height: 32px
+  color: #FFF
+  background-color: #0F7A3C
+  margin: 0px !important
+  padding: 0px 2%
+  width: 96%
+
+.icon-fix
+  display: inline-block
+  text-align: center
+  vertical-align: bottom
+  padding-bottom: 5px
+
+.front-block-1
+  background: url('/sites/default/themes/fial_theme/img/front1.png')
+  width: 310px
+  height: 310px
+
+.front-block-2
+  background: url('/sites/default/themes/fial_theme/img/front2.png')
+  width: 310px
+  height: 310px
+
+.front-block-3
+  background: url('/sites/default/themes/fial_theme/img/front3.png')
+  width: 310px
+  height: 310px
+
+.front-block-4
+  background: url('/sites/default/themes/fial_theme/img/front4.png')
+  width: 310px
+  height: 310px
+
+.front-block-5
+  background: url('/sites/default/themes/fial_theme/img/front5.png')
+  width: 310px
+  height: 310px
+
+.front-block-6
+  background: url('/sites/default/themes/fial_theme/img/front6.png')
+  width: 310px
+  height: 310px
+
+div[class*='front-block-']:hover
+  background: url('/sites/default/themes/fial_theme/img/frontbg.png')
+
+.showme
+  display: none
+
+div[class*='front-block-']:hover
+  .showme
+    display: block
+  .frontblocktitle
+    display: none
+
+.fronttext
+  text-align: center
+  position: relative
+  top: 40%
+  transform: translateY(-40%)
+  -ms-transform: translateY(-40%)
+  -webkit-transform: translateY(-40%)
+  -moz-transform: translateY(-40%)
+
+.fronttexthov
+  text-align: center
+  position: relative
+  transform: translateY(-10%)
+  -ms-transform: translateY(-10%)
+  -webkit-transform: translateY(-10%)
+  -moz-transform: translateY(-10%)
+
+.frontshadow
+  text-shadow: 0px 0px 20px #000
+  text-decoration: none
+  a
+    text-decoration: none
+    color: #ffffff
+
+.frontblockspan
+  padding-right: 5px
+  padding-left: 5px
+
+.frontwhite
+  font-family: "Times New Roman", Times, serif
+  font-size: 20px
+  font-style: italic
+  color: #ffffff
+
+// Fixes tap/hover issue on mobile by forcing just the image
+@media (max-width: 400px)
+  div[class*='front-block-']
+    .showme
+      display: none
+      z-index: -10
+    &:hover
+      .showme
+        display: none
+      .frontblocktitle
+        display: block
+        z-index: 10
+    .frontblocktitle
+      z-index: 10
+
+
+
+      

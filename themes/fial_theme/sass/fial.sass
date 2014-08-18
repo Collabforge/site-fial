@@ -1,0 +1,159 @@
+// FIAL Stylesheet - Please only change fonts, Fial-specific fonts sizes, images and background colors
+
+// FIAL Fonts:
+// HELVETICA NEUE STD 45 Light:           font-family:'HelveticaNeueW01-45Ligh';
+// HELVETICA NEUE STD 57 Condensed:       font-family:'HelveticaNeueW01-57Cn';
+// HELVETICA NEUE STD 77 Bold Condensed:  font-family:'HelveticaNeueW01-77BdCn 692722';
+
+// FIAL Fonts Source:
+// <script type="text/javascript" src="http://fast.fonts.net/jsapi/b23760be-4be4-4e65-b79d-771dcea8a674.js"></script>
+
+
+@import 01._global.sass
+@import 02._logo.sass
+@import 03._nav.sass
+@import 04._home.sass
+@import 05._buttons.sass
+@import 09._footer.sass
+
+// Large desktop 
+body
+  background-color: #ffffff
+  background-image: none
+  color: #4a4a4c
+  font-family: 'helveticaneue45light'
+  -moz-osx-font-smoothing: grayscale
+  overflow-y: visible !important
+
+.page-title2
+  background: #007b38
+  // Old browsers
+  background: -moz-linear-gradient(left, #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%)
+  // FF3.6+
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #007b38), color-stop(50%, #007b38), color-stop(53%, #f8ea47), color-stop(100%, #f8ea47))
+  // Chrome,Safari4+
+  background: -webkit-linear-gradient(left, #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%)
+  // Chrome10+,Safari5.1+
+  background: -o-linear-gradient(left, #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%)
+  // Opera 11.10+
+  background: -ms-linear-gradient(left, #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%)
+  // IE10+
+  background: linear-gradient(to right, #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%)
+  // W3C
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007b38', endColorstr='#f8ea47',GradientType=1 )
+  // IE6-9
+  height: 139px
+
+
+//INNER PAGES
+
+#page-title
+  background-image: url('/sites/default/themes/fial_theme/img/fial_header.png')
+  background-repeat: no-repeat
+  background-size: auto 139px
+  background-position: center
+  margin-top: 0px
+  height: 139px
+  min-width: 100%
+  margin-left: -50%
+  margin-right: -50%
+  line-height: 3 !important
+  text-align: center !important
+
+// ipad & below 
+@media (max-width: 767px)
+  .breadcrum h1, .node-type-basic-page h1#page-title
+    max-width: none
+
+// Industry News page
+.view-news
+  .pager li > a
+    min-width: 90px
+    height: 41px
+    border: 1px #007b38 solid !important
+    color: #007b38 !important
+    font-family: 'HelveticaNeueW01-77BdCn 692722'
+    text-transform: uppercase
+    text-align: center
+    display: table-cell
+    vertical-align: middle
+    text-decoration: none
+    padding: 0px 20px 0px 20px
+    width: 1000px
+    border-radius: 0px
+    &:hover
+      background-color: #007b38  !important
+      color: #ffffff !important
+      text-decoration: none !important
+  th, td
+    border: none
+
+// 6. PAGE FEATURES
+
+// Full Width Boxes
+.page-node-463
+  .views-row
+    padding: 35px
+    min-height: 320px
+  .views-row-odd
+    background-color: #F1F1F1
+    border: 3px #e6e6e6 solid !important
+    > .views-field > .field-content img
+      float: left
+      padding: 0px 35px 0px 0px
+  .views-row-even > .views-field > .field-content img
+    float: right
+    padding: 0px 0px 35px 35px
+
+// Founding Members
+#infscr-loading
+  position: fixed
+  text-align: center
+  bottom: 300px
+  left: 42%
+  z-index: 100
+  background: white
+  background: hsla(0, 0%, 100%, 0.9)
+  padding: 20px
+  color: #222
+  font-size: 15px
+  font-weight: bold
+  -webkit-border-radius: 10px
+  -moz-border-radius: 10px
+  border-radius: 10px
+
+.view-member-organisations
+  background-color: #F1F1F1
+
+.view-news
+  .views-field .field-content
+    width: 290px
+    height: 620px
+    background-color: #e6e6e6
+    margin: 17px 20px
+  .body-news
+    height: 200px
+  .date-news
+    background-image: url('/sites/default/themes/fial_theme/img/hexagon_news.png')
+    background-repeat: no-repeat
+    margin-top: -65px
+    margin-left: 10px
+    position: absolute
+    width: 61px
+    height: 68px
+    float: left
+    text-align: center
+    padding-top: 12px
+    color: #ffffff
+    font-size: 20px
+    line-height: 1
+    font-family: 'HelveticaNeueW01-77BdCn 692722'
+
+.content-text-news
+  margin: -25px 20px 0px 20px
+
+
+
+
+
+
