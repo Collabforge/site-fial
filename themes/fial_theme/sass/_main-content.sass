@@ -1,0 +1,102 @@
+
+@import _mixins.sass
+// Generic content styling
+
+#main-content
+  h2, h3, h4, h5, h6
+    color: #007b38
+    font-family: 'HelveticaNeueW01-57Cn'
+
+  h4
+    font-size: 34px 
+  h5
+    font-size: 28px
+  h6
+    font-size: 21px
+
+  blockquote
+    border-left: none
+    padding: 0 15px
+    font-size: 20px
+    font-style: oblique
+    color: #666
+    font-family: Georgia, Times New Roman, Times, serif
+
+  p, ol, li, input, a, button, table
+    font-family: 'HelveticaNeueW01-45Ligh'
+    font-size: 16px
+    color: #444
+
+  table
+    margin-top: 2rem
+    margin-bottom: 1rem
+    width: 100%
+    &, & *
+      text-align: center
+    thead
+      th
+        background-color: white
+        font-family: 'HelveticaNeueW01-77BdCn 692722'
+        font-size: 120%
+        vertical-align: top
+    tbody
+      tr:nth-child(even)
+        td
+          background-color: white
+      tr:nth-child(odd)
+        td
+          background-color: #f2f2f2
+
+  aside
+    float: right
+    display: block
+    width: 30%
+    margin-left: 60px
+    margin-top: 20px
+    margin-bottom: 20px
+    padding: 20px 40px
+
+    &, & *
+      color: white
+      font-style: oblique
+      font-size: 32px
+      font-family: Georgia, Times New Roman, Times, serif
+
+    background: url('/sites/default/themes/fial_theme/img/aside-bg.svg')
+    background-repeat: no-repeat
+    background-size: 400px 400px
+    background-position: center -20px
+    background-color: #00a424
+
+    &.aside-left
+      float: left
+      margin-left: 0
+      margin-right: 60px
+
+    &.aside-img
+      background-color: transparent
+      padding: 0
+      margin-top: 0
+      img
+        background-position: center center 
+        -webkit-background-size: cover
+        -moz-background-size: cover
+        -o-background-size: cover
+        background-size: cover
+
+    
+    @media all and (max-width: 768px)
+      float: none
+      width: auto
+      margin-left: 0
+      margin-right: 0
+
+
+  .contentarticle img
+    margin: 0
+    @include box-shadow(none)
+    @include border-radius(0)
+
+
+
+
