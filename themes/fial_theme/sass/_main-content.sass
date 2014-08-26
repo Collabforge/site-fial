@@ -22,7 +22,7 @@
     color: #666
     font-family: Georgia, Times New Roman, Times, serif
 
-  p, ol, li, input, a, button, table
+  p, ol, li, input, button, table
     font-family: 'HelveticaNeueW01-45Ligh'
     font-size: 16px
     color: #444
@@ -65,8 +65,18 @@
   .right
     float: right
 
+  .contentarticle img
+    margin: 0
+    @include box-shadow(none)
+    @include border-radius(0)
+
+  span.clear-both
+    display: block
+    height: 0
+    width: 100%
+
   section
-    padding: 40px
+    padding: 20px
     margin-top: 2em
     margin-bottom: 2em
     &.section-grey
@@ -78,20 +88,14 @@
       background-color: #017b2e
       background-image: url('/sites/default/themes/fial_theme/img/green-bg.svg')
       background-repeat: no-repeat
-      background-size: 600px 600px
-      background-position: top -100px
+      background-position: -80px top
       &, & *
         color: white
 
-      &.aside-img
-        @media all and (max-width: 768px)
-          text-align: left
-          width: inherit
-
-    span.clear-both
-      display: block
-      height: 0
-      width: 100%
+    .left
+      @media all and (max-width: 768px)
+        float: none
+        display: block
 
   aside
     float: right
@@ -114,32 +118,49 @@
     background-position: center -20px
     background-color: #00a424
 
+    @media all and (max-width: 768px)
+      float: none
+      display: inline-block
+      margin-left: 0
+      margin-right: 0
+
     &.aside-left
       float: left
       margin-left: 0
       margin-right: 60px
+      @media all and (max-width: 768px)
+        float: none
+        margin-left: 0
+        margin-right: 0
 
     &.aside-img
-      background-color: white
+      background-color: transparent
       background-image: none
       padding: 0
       margin-top: 0
       @media all and (max-width: 768px)
-        text-align: center
+        width: auto
+        display: inline-block
         img
           max-height: 200px
+        &.white-border
+          background-color: white
+        &.grey-border
+          background-color: #ccc
     
-    @media all and (max-width: 768px)
-      float: none
-      width: auto
-      margin-left: 0
-      margin-right: 0
+    &.aside-quote
+      @media all and (max-width: 768px)
+        width: auto
+        display: block
+
+    &.aside-hide-small
+      @media all and (max-width: 768px)
+        display: none
+
+    
 
 
-  .contentarticle img
-    margin: 0
-    @include box-shadow(none)
-    @include border-radius(0)
+  
 
 
 
