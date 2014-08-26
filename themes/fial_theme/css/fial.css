@@ -301,6 +301,8 @@ div[class*='front-block-'] {
   height: 310px;
   background-image: transparent;
   background-size: 310px 310px; }
+  div[class*='front-block-'], div[class*='front-block-'] * {
+    color: white !important; }
 
 div[class*='front-block-']:hover {
   background-image: url("/sites/default/themes/fial_theme/img/frontbg.png"); }
@@ -375,7 +377,8 @@ div[class*='front-block-']:hover .frontblocktitle {
     background-color: #007b38 !important;
     color: white !important;
     text-decoration: none !important;
-    text-shadow: none; }
+    text-shadow: none;
+    border-color: transparent !important; }
 
 .sbutton-image {
   min-width: 75px;
@@ -565,7 +568,7 @@ div[class*='front-block-']:hover .frontblocktitle {
   font-style: oblique;
   color: #666666;
   font-family: Georgia, Times New Roman, Times, serif; }
-#main-content p, #main-content ol, #main-content li, #main-content input, #main-content a, #main-content button, #main-content table {
+#main-content p, #main-content ol, #main-content li, #main-content input, #main-content button, #main-content table {
   font-family: "HelveticaNeueW01-45Ligh";
   font-size: 16px;
   color: #444444; }
@@ -598,8 +601,19 @@ div[class*='front-block-']:hover .frontblocktitle {
   float: left; }
 #main-content .right {
   float: right; }
+#main-content .contentarticle img {
+  margin: 0;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+#main-content span.clear-both {
+  display: block;
+  height: 0;
+  width: 100%; }
 #main-content section {
-  padding: 40px;
+  padding: 20px;
   margin-top: 2em;
   margin-bottom: 2em; }
   #main-content section.section-grey {
@@ -610,18 +624,13 @@ div[class*='front-block-']:hover .frontblocktitle {
     background-color: #017b2e;
     background-image: url("/sites/default/themes/fial_theme/img/green-bg.svg");
     background-repeat: no-repeat;
-    background-size: 600px 600px;
-    background-position: top -100px; }
+    background-position: -80px top; }
     #main-content section.section-green, #main-content section.section-green * {
       color: white; }
-    @media all and (max-width: 768px) {
-      #main-content section.section-green.aside-img {
-        text-align: left;
-        width: inherit; } }
-  #main-content section span.clear-both {
-    display: block;
-    height: 0;
-    width: 100%; }
+  @media all and (max-width: 768px) {
+    #main-content section .left {
+      float: none;
+      display: block; } }
 #main-content aside {
   float: right;
   display: block;
@@ -640,33 +649,43 @@ div[class*='front-block-']:hover .frontblocktitle {
     font-style: oblique;
     font-size: 32px;
     font-family: Georgia, Times New Roman, Times, serif; }
+  @media all and (max-width: 768px) {
+    #main-content aside {
+      float: none;
+      display: inline-block;
+      margin-left: 0;
+      margin-right: 0; } }
   #main-content aside.aside-left {
     float: left;
     margin-left: 0;
     margin-right: 60px; }
+    @media all and (max-width: 768px) {
+      #main-content aside.aside-left {
+        float: none;
+        margin-left: 0;
+        margin-right: 0; } }
   #main-content aside.aside-img {
-    background-color: white;
+    background-color: transparent;
     background-image: none;
     padding: 0;
     margin-top: 0; }
     @media all and (max-width: 768px) {
       #main-content aside.aside-img {
-        text-align: center; }
+        width: auto;
+        display: inline-block; }
         #main-content aside.aside-img img {
-          max-height: 200px; } }
+          max-height: 200px; }
+        #main-content aside.aside-img.white-border {
+          background-color: white; }
+        #main-content aside.aside-img.grey-border {
+          background-color: #cccccc; } }
   @media all and (max-width: 768px) {
-    #main-content aside {
-      float: none;
+    #main-content aside.aside-quote {
       width: auto;
-      margin-left: 0;
-      margin-right: 0; } }
-#main-content .contentarticle img {
-  margin: 0;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  -webkit-border-radius: 0;
-  border-radius: 0; }
+      display: block; } }
+  @media all and (max-width: 768px) {
+    #main-content aside.aside-hide-small {
+      display: none; } }
 
 body {
   background-color: white;
