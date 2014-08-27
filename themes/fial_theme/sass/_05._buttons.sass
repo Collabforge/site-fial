@@ -1,3 +1,5 @@
+@import _fonts.sass
+
 // 5. BUTTONS
 
 // Generic button
@@ -7,54 +9,53 @@
   text-align: center
   text-shadow: none
   cursor: pointer
-  font-family: 'HelveticaNeueW01-77BdCn 692722', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif
+  font-family: $helv-cond
+  font-weight: 700
+  font-size: 16px
+  padding: 10px 20px
   border: 1px solid transparent
-  &:hover
+  &:hover, &:focus, &:active
     text-decoration: none
 
-// Buttons for images bg
+// Large button on image 
 .lbutton-image
   border: 1px #ffffff solid !important
   color: #ffffff !important  
-  padding: 10px 20px
-  &:hover
-    background-color: #007b38  !important
+  font-size: 18px
+  padding: 15px 30px
+  &:hover, &:focus, &:active
+    background-color: #007b38 !important
     color: #ffffff !important
     text-decoration: none !important
     border-color: transparent !important
 
+//  Small button on color block 
 .sbutton-image
-  min-width: 75px
-  height: 34px
   border: 1px #ffffff solid !important
   color: #ffffff !important
-  padding: 0px 20px 0px 20px
-  &:hover
-    background-color: #007b38  !important
-    color: #ffffff !important
+  font-size: 16px
+  &:hover, &:focus, &:active
+    background-color: #fff !important
+    color: #007b38 !important
 
-// Buttons for white bg
-
+// Large button on white
 .lbutton-white
-  min-width: 90px
-  height: 41px
   border: 1px #007b38 solid !important
   color: #007b38 !important
-  padding: 0px 20px 0px 20px
-  &:hover
+  font-size: 18px
+  padding: 15px 30px
+  &:hover, &:focus, &:active
     background-color: #007b38  !important
     color: #ffffff !important
 
+// Small button on white
 .sbutton-white
-  min-width: 75px
-  height: 34px
   border: 1px #007b38 solid !important
-  background-color: #ffffff
-  text-shadow: none
+  font-size: 16px
   color: #007b38 !important
-  padding: 0px 20px 0px 20px
+  background-color: transparent
   background-image: none !important
-  &:hover
+  &:hover, &:focus, &:active
     background-color: #007b38  !important
     color: #ffffff !important
     background-image: none !important
@@ -65,13 +66,7 @@
   height: 41px
   border: 1px #ffffff solid !important
   color: #ffffff !important
-  font-family: 'HelveticaNeueW01-77BdCn 692722', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif
-  text-align: center
-  display: table-cell
-  vertical-align: middle
-  text-decoration: none
-  padding: 0px 20px 0px 20px
-  &:hover
+  &:hover, &:focus, &:active
     background-color: #ffffff  !important
     color: #007b38 !important
     text-decoration: none !important
@@ -81,9 +76,7 @@
   height: 34px
   border: 1px #ffffff solid !important
   color: #ffffff !important
-  text-decoration: none
-  padding: 0px 20px 0px 20px
-  &:hover
+  &:hover, &:focus, &:active
     background-color: #ffffff  !important
     color: #007b38 !important
     text-decoration: none !important
@@ -96,7 +89,8 @@
   background-color: #007b38
   text-shadow: none
   color: #ffffff !important
-  font-family: 'HelveticaNeueW01-77BdCn 692722', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif
+  font-family: $helv-cond-bold
+  font-weight: 700
   text-transform: uppercase
   text-align: center
   display: table-cell
@@ -115,15 +109,14 @@
   text-shadow: none !important
 
 
-
-
 // Wide Load More button
 .page-node-14 .pager li > a
   min-width: 90px
   height: 41px
   border: 1px #007b38 solid !important
   color: #007b38 !important
-  font-family: 'HelveticaNeueW01-77BdCn 692722', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif
+  font-family: $helv-cond-bold
+  font-weight: 700
   text-transform: uppercase
   text-align: center
   display: table-cell

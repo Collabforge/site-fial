@@ -1,37 +1,37 @@
+@import _fonts.sass
 
 // 1. GLOBAL STYLES
 
-// Use on GREEN background
-h1
-  font-family: 'HelveticaNeueW01-77BdCn 692722', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif
-  font-size: 46px
+h1, h2, h3, h4, h5, h6
   text-transform: uppercase
+
+// Use on GREEN background
+
+h1, h2, h3, h4
+  font-family: $helv-cond-bold
+  font-weight: 700
+h1
+  font-size: 46px
   color: #ffffff !important
 
 h2
-  font-family: 'HelveticaNeueW01-77BdCn 692722', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif
   font-size: 46px
-  text-transform: uppercase
   color: #ffffff
 
 h3
-  font-family: 'HelveticaNeueW01-77BdCn 692722', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif
   font-size: 40px
-  text-transform: uppercase
   color: #ffffff
 
 h4
-  font-family: 'HelveticaNeueW01-77BdCn 692722', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif
   font-size: 21px
-  text-transform: uppercase
   color: #ffffff
 
 // Use on WHITE background
 
 h5
-  font-family: 'HelveticaNeueW01-77BdCn 692722', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif
+  font-family: $helv-cond-bold
+  font-weight: 700
   font-size: 34px
-  text-transform: uppercase
   color: #007b38
   a
     font-size: 21px
@@ -39,30 +39,31 @@ h5
     color: #007b38
 
 h6
-  font-family: 'HelveticaNeueW01-57Cn', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif
+  font-family: $helv-cond
+  font-weight: 400
   font-size: 28px
-  text-transform: uppercase
   color: #007b38
 
 p
-  font-family: 'HelveticaNeueW01-45Ligh', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif
+  font-family: $helv-light
+  font-weight: 300
   font-size: 16px
   color: #4a4a4c
 
 .quote p
-  font-family: "Times New Roman", Times, serif
+  font-family: $times
   font-size: 22px
   font-style: italic
   color: #4a4a4c
 
 .subhead
-  font-family: "Times New Roman", Times, serif
+  font-family: $times
   font-size: 21px
   font-style: italic
   color: #ffffff
 
 .subhead-white
-  font-family: "Times New Roman", Times, serif
+  font-family: $times
   font-size: 19px
   font-style: oblique
   color: #007b38
@@ -92,7 +93,8 @@ a.less-link
   text-decoration: none
   border-bottom: 1px #000 dotted
   text-transform: uppercase
-  font-family: 'HelveticaNeueW01-45Ligh', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif
+  font-family: $helv-light
+  font-weight: 300
   font-size: 12px
   color: #4a4a4c
   &:hover

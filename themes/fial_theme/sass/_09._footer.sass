@@ -1,3 +1,5 @@
+@import _fonts.sass
+
 // 9. FOOTER
 
 .footerbg
@@ -11,7 +13,8 @@
   a
     color: #ffffff !important
     text-decoration: none
-    font-family: "HelveticaNeueW01-45Ligh"
+    font-family: $helv-light
+    font-weight: 300
     line-height: 1.4em
     border-bottom: 1px #fff dotted
     &:hover
@@ -28,13 +31,3 @@
   background-position: center
   background-color: #007B38
 
-.footer-links
-  a
-    color: #ffffff !important
-    text-decoration: none
-    font-family: "HelveticaNeueW01-45Ligh"
-    line-height: 1.4em
-    border-bottom: 1px #fff dotted
-    &:hover
-      border-bottom: none
-  padding: 35px 0px 35px 0px

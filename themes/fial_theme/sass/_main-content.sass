@@ -1,12 +1,14 @@
 
 @import _mixins.sass
+@import _fonts.sass
+
 // Generic content styling
 
 #main-content
   h2, h3, h4, h5, h6
     color: #007b38
-    font-family: 'HelveticaNeueW01-57Cn', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif
-    text-transform: uppercase
+    font-family: $helv-cond-bold
+    font-weight: 700
     line-height: 1
 
   h4
@@ -34,10 +36,11 @@
     font-size: 20px
     font-style: oblique
     color: #666
-    font-family: Georgia, Times New Roman, Times, serif
+    font-family: $times
 
   p, ol, li, input, button, table
-    font-family: 'HelveticaNeueW01-45Ligh', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif
+    font-family: $helv-light
+    font-weight: 300
     font-size: 16px
     color: #444
 
@@ -50,7 +53,8 @@
     thead
       th
         background-color: white
-        font-family: 'HelveticaNeueW01-77BdCn 692722', 'Helvetica Neue', HelveticaNeue, Helvetica, Arial, sans-serif
+        font-family: $helv-cond-bold
+        font-weight: 700
         font-size: 120%
         vertical-align: top
     tbody
@@ -129,9 +133,6 @@
 
     &, & *
       color: white
-      font-style: oblique
-      font-size: 32px
-      font-family: Georgia, Times New Roman, Times, serif
 
     background-image: url('/sites/default/themes/fial_theme/img/aside-bg.svg')
     background-repeat: no-repeat
@@ -149,6 +150,8 @@
       float: left
       margin-left: 0
       margin-right: 60px
+      ol, ul
+        
       @media all and (max-width: 768px)
         float: none
         margin-left: 0
@@ -170,6 +173,10 @@
           background-color: #ccc
     
     &.aside-quote
+      &, & *
+        font-style: oblique
+        font-size: 32px
+        font-family: $times
       @media all and (max-width: 768px)
         width: auto
         display: block
