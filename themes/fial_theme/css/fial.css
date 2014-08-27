@@ -367,6 +367,8 @@ div[class*='front-block-']:hover .frontblocktitle {
   border: 1px solid transparent; }
   .button:hover, .button:focus, .button:active {
     text-decoration: none; }
+  .button.expand {
+    width: 100%; }
 
 .lbutton-image {
   border: 1px white solid !important;
@@ -407,25 +409,23 @@ div[class*='front-block-']:hover .frontblocktitle {
     color: white !important;
     background-image: none !important; }
 
-.lbutton-colour {
-  min-width: 90px;
-  height: 41px;
-  border: 1px white solid !important;
-  color: white !important; }
-  .lbutton-colour:hover, .lbutton-colour:focus, .lbutton-colour:active {
+.lbutton-green-white {
+  border: 1px #007b38 solid !important;
+  background-color: #007b38;
+  color: white !important;
+  font-size: 18px;
+  padding: 15px 30px; }
+  .lbutton-green-white:hover, .lbutton-green-white:focus, .lbutton-green-white:active {
     background-color: white !important;
-    color: #007b38 !important;
-    text-decoration: none !important; }
+    color: #007b38 !important; }
 
-.sbutton-colour {
-  min-width: 75px;
-  height: 34px;
-  border: 1px white solid !important;
+.sbutton-green-white {
+  border: 1px #007b38 solid !important;
+  background-color: #007b38;
   color: white !important; }
-  .sbutton-colour:hover, .sbutton-colour:focus, .sbutton-colour:active {
+  .sbutton-green-white:hover, .sbutton-green-white:focus, .sbutton-green-white:active {
     background-color: white !important;
-    color: #007b38 !important;
-    text-decoration: none !important; }
+    color: #007b38 !important; }
 
 .form-submit {
   min-width: 75px;
