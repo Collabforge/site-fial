@@ -26,39 +26,43 @@ body
   -moz-osx-font-smoothing: grayscale
   overflow-y: visible !important
 
-.page-title2
+.page-title
   background: #007b38
   // Old browsers
-  background: -moz-linear-gradient(left, #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%)
+  background: -moz-linear-gradient(left, #007b38 80%, #d9de47 100%)
   // FF3.6+
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #007b38), color-stop(50%, #007b38), color-stop(53%, #f8ea47), color-stop(100%, #f8ea47))
+  background: -webkit-gradient(linear, left top, right top, color-stop(80%,#007b38), color-stop(100%,#d9de47))
   // Chrome,Safari4+
-  background: -webkit-linear-gradient(left, #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%)
+  background: -webkit-linear-gradient(left, #007b38 80%,#d9de47 100%)
   // Chrome10+,Safari5.1+
-  background: -o-linear-gradient(left, #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%)
+  background: -o-linear-gradient(left, #007b38 80%,#d9de47 100%)
   // Opera 11.10+
-  background: -ms-linear-gradient(left, #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%)
+  background: -ms-linear-gradient(left, #007b38 80%,#d9de47 100%)
   // IE10+
-  background: linear-gradient(to right, #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%)
+  background: linear-gradient(to right, #007b38 80%,#d9de47 100%)
   // W3C
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007b38', endColorstr='#f8ea47',GradientType=1 )
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007b38', endColorstr='#d9de47',GradientType=1 )
   // IE6-9
-  height: 139px
+  height: 140px
+  display: table
+  width: 100%
+  margin-top: 20px
+  @media all and (max-width: 980px)
+    margin-top: 50px
+  @media all and (max-width: 768px)
+    margin-top: 80px
 
 
 //INNER PAGES
-
 #page-title
-  background-image: url('/sites/default/themes/fial_theme/img/fial_header.png')
-  background-repeat: no-repeat
-  background-size: auto 139px
-  background-position: center
-  margin-top: 0px
-  height: 139px
-  min-width: 100%
-  margin-left: -50%
-  margin-right: -50%
-  line-height: 3 !important
+  background-image: url('/sites/default/themes/fial_theme/img/banner-right.svg'), url('/sites/default/themes/fial_theme/img/banner-left.svg')
+  background-position: right -80px, -60px center
+  background-repeat: no-repeat, no-repeat
+  background-size: 212px 196px, 300px 314px
+  vertical-align: middle
+  display: table-cell
+  height: 140px
+  width: 100%
   text-align: center !important
 
 // ipad & below 
