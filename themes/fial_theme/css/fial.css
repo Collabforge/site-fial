@@ -608,6 +608,11 @@ div[class*='front-block-']:hover .frontblocktitle {
   box-shadow: none;
   -webkit-border-radius: 0;
   border-radius: 0; }
+#main-content .node-unpublished {
+  background-color: white !important;
+  background-image: url("/sites/default/themes/fial_theme/img/unpublished.png");
+  background-repeat: repeat-y;
+  background-position: center top; }
 #main-content span.clear-both {
   display: block;
   height: 0;
