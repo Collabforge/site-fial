@@ -133,7 +133,7 @@ jQuery(document).ready(function($) {
 </style>
 <!-- new Header Top block -->
 <?php if (($page['header_top_middle']) || ($page['search_box']) || ($page['header_bottom_left']) || ($page['header_bottom_right'])): ?>
-  <div id="header"  class="clearfix header visible-desktop hidden-phone" role="banner">
+  <div id="header" class="clearfix header visible-desktop hidden-phone" role="banner">
     <div class="container" id="header_container">
       <div class="row-fluid" id="header_top" >       
         <div id="logo" class="span4 site-logo visible-desktop hidden-phone"> <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"> &nbsp; </a>
@@ -173,7 +173,7 @@ jQuery(document).ready(function($) {
 
 
 <?php if (!drupal_is_front_page()): ?>
-<div id="footer" class="clearfix site-footer page-title2" role="contentinfo">
+<div class="clearfix main page-title" role="contentinfo">
       <!--<div class="container" style="margin-top:-40px;">-->
       <h1 class="title" id="page-title"> <?php
           function fialTruncateTitle($string,$length,$append) {
@@ -343,7 +343,7 @@ jQuery(document).ready(function($) {
   </div>
 </div>
 
-<div id="footer" class="clearfix site-footer" role="contentinfo">
+<div class="clearfix site-footer" role="contentinfo">
 <div class="container" style="margin-top:-40px;">
 <img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="left"><a href="http://www.linkedin.com/groups/Food-Innovation-Australia-Ltd-Fial-6559274" target="_blank"><img src="/sites/default/themes/fial_theme/img/footer-right-linkedin.png" align="right"></a>
 </div>
