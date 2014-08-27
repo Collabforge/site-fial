@@ -561,6 +561,17 @@ div[class*='front-block-']:hover .frontblocktitle {
   font-size: 28px; }
 #main-content h6 {
   font-size: 21px; }
+@media all and (max-width: 768px) {
+  #main-content h2 {
+    font-size: 32px; }
+  #main-content h3 {
+    font-size: 28px; }
+  #main-content h4 {
+    font-size: 24px; }
+  #main-content h5 {
+    font-size: 20px; }
+  #main-content h6 {
+    font-size: 18px; } }
 #main-content blockquote {
   border-left: none;
   padding: 0 15px;
@@ -700,28 +711,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
   overflow-y: visible !important; }
 
-.page-title2 {
+.page-title {
   background: #007b38;
-  background: -moz-linear-gradient(left, #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(0%, #007b38), color-stop(50%, #007b38), color-stop(53%, #f8ea47), color-stop(100%, #f8ea47));
-  background: -webkit-linear-gradient(left, #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%);
-  background: -o-linear-gradient(left, #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%);
-  background: -ms-linear-gradient(left, #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%);
-  background: linear-gradient(to right, #007b38 0%, #007b38 50%, #f8ea47 53%, #f8ea47 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007b38', endColorstr='#f8ea47',GradientType=1 );
-  height: 139px; }
+  background: -moz-linear-gradient(left, #007b38 80%, #d9de47 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(80%, #007b38), color-stop(100%, #d9de47));
+  background: -webkit-linear-gradient(left, #007b38 80%, #d9de47 100%);
+  background: -o-linear-gradient(left, #007b38 80%, #d9de47 100%);
+  background: -ms-linear-gradient(left, #007b38 80%, #d9de47 100%);
+  background: linear-gradient(to right, #007b38 80%, #d9de47 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#007b38', endColorstr='#d9de47',GradientType=1 );
+  height: 140px;
+  display: table;
+  width: 100%;
+  margin-top: 20px; }
+  @media all and (max-width: 980px) {
+    .page-title {
+      margin-top: 50px; } }
+  @media all and (max-width: 768px) {
+    .page-title {
+      margin-top: 80px; } }
 
 #page-title {
-  background-image: url("/sites/default/themes/fial_theme/img/fial_header.png");
-  background-repeat: no-repeat;
-  background-size: auto 139px;
-  background-position: center;
-  margin-top: 0px;
-  height: 139px;
-  min-width: 100%;
-  margin-left: -50%;
-  margin-right: -50%;
-  line-height: 3 !important;
+  background-image: url("/sites/default/themes/fial_theme/img/banner-right.svg"), url("/sites/default/themes/fial_theme/img/banner-left.svg");
+  background-position: right -80px, -60px center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 212px 196px, 300px 314px;
+  vertical-align: middle;
+  display: table-cell;
+  height: 140px;
+  width: 100%;
   text-align: center !important; }
 
 @media (max-width: 767px) {
