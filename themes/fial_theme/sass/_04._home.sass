@@ -58,6 +58,14 @@ img#homepage_banner
   vertical-align: bottom
   padding-bottom: 5px
 
+.front-blocks
+  display: block
+  margin-top: 40px
+
+.frontblockspan
+  display: table
+  margin-bottom: 20px
+
 .front-block-1
   background-image: url('/sites/default/themes/fial_theme/img/front1.jpg')
 
@@ -82,6 +90,9 @@ div[class*='front-block-']
   height: 310px
   background-image: transparent
   background-size: 310px 310px
+  display: table-cell
+  vertical-align: middle
+  text-align: center
   &, & *
     color: white !important
 
@@ -97,22 +108,8 @@ div[class*='front-block-']:hover
   .frontblocktitle
     display: none
 
-.fronttext
-  text-align: center
-  position: relative
-  top: 40%
-  transform: translateY(-40%)
-  -ms-transform: translateY(-40%)
-  -webkit-transform: translateY(-40%)
-  -moz-transform: translateY(-40%)
-
-.fronttexthov
-  text-align: center
-  position: relative
-  transform: translateY(-10%)
-  -ms-transform: translateY(-10%)
-  -webkit-transform: translateY(-10%)
-  -moz-transform: translateY(-10%)
+.fronttext, .fronttexthov
+  padding: 20px
 
 .frontshadow
   text-shadow: 0px 0px 20px #000
@@ -120,10 +117,6 @@ div[class*='front-block-']:hover
   a
     text-decoration: none
     color: #ffffff
-
-.frontblockspan
-  padding-right: 5px
-  padding-left: 5px
 
 .frontwhite
   font-family: "Times New Roman", Times, serif
