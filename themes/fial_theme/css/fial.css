@@ -1,29 +1,29 @@
 h1 {
-  font-family: "HelveticaNeueW01-77BdCn 692722";
+  font-family: "HelveticaNeueW01-77BdCn 692722", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
   font-size: 46px;
   text-transform: uppercase;
   color: white !important; }
 
 h2 {
-  font-family: "HelveticaNeueW01-77BdCn 692722";
+  font-family: "HelveticaNeueW01-77BdCn 692722", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
   font-size: 46px;
   text-transform: uppercase;
   color: white; }
 
 h3 {
-  font-family: "HelveticaNeueW01-77BdCn 692722";
+  font-family: "HelveticaNeueW01-77BdCn 692722", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
   font-size: 40px;
   text-transform: uppercase;
   color: white; }
 
 h4 {
-  font-family: "HelveticaNeueW01-77BdCn 692722";
+  font-family: "HelveticaNeueW01-77BdCn 692722", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
   font-size: 21px;
   text-transform: uppercase;
   color: white; }
 
 h5 {
-  font-family: "HelveticaNeueW01-77BdCn 692722";
+  font-family: "HelveticaNeueW01-77BdCn 692722", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
   font-size: 34px;
   text-transform: uppercase;
   color: #007b38; }
@@ -33,13 +33,13 @@ h5 {
     color: #007b38; }
 
 h6 {
-  font-family: "HelveticaNeueW01-57Cn";
+  font-family: "HelveticaNeueW01-57Cn", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
   font-size: 28px;
   text-transform: uppercase;
   color: #007b38; }
 
 p {
-  font-family: "HelveticaNeueW01-45Ligh";
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #4a4a4c; }
 
@@ -86,7 +86,7 @@ a.less-link {
   text-decoration: none;
   border-bottom: 1px black dotted;
   text-transform: uppercase;
-  font-family: "HelveticaNeueW01-45Ligh";
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
   font-size: 12px;
   color: #4a4a4c; }
   a.less-link:hover {
@@ -277,6 +277,14 @@ img#homepage_banner {
   vertical-align: bottom;
   padding-bottom: 5px; }
 
+.front-blocks {
+  display: block;
+  margin-top: 40px; }
+
+.frontblockspan {
+  display: table;
+  margin-bottom: 20px; }
+
 .front-block-1 {
   background-image: url("/sites/default/themes/fial_theme/img/front1.jpg"); }
 
@@ -300,7 +308,10 @@ div[class*='front-block-'] {
   width: 310px;
   height: 310px;
   background-image: transparent;
-  background-size: 310px 310px; }
+  background-size: 310px 310px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center; }
   div[class*='front-block-'], div[class*='front-block-'] * {
     color: white !important; }
 
@@ -315,22 +326,8 @@ div[class*='front-block-']:hover .showme {
 div[class*='front-block-']:hover .frontblocktitle {
   display: none; }
 
-.fronttext {
-  text-align: center;
-  position: relative;
-  top: 40%;
-  transform: translateY(-40%);
-  -ms-transform: translateY(-40%);
-  -webkit-transform: translateY(-40%);
-  -moz-transform: translateY(-40%); }
-
-.fronttexthov {
-  text-align: center;
-  position: relative;
-  transform: translateY(-10%);
-  -ms-transform: translateY(-10%);
-  -webkit-transform: translateY(-10%);
-  -moz-transform: translateY(-10%); }
+.fronttext, .fronttexthov {
+  padding: 20px; }
 
 .frontshadow {
   text-shadow: 0px 0px 20px black;
@@ -338,10 +335,6 @@ div[class*='front-block-']:hover .frontblocktitle {
   .frontshadow a {
     text-decoration: none;
     color: white; }
-
-.frontblockspan {
-  padding-right: 5px;
-  padding-left: 5px; }
 
 .frontwhite {
   font-family: "Times New Roman", Times, serif;
@@ -360,24 +353,25 @@ div[class*='front-block-']:hover .frontblocktitle {
     z-index: 10; }
   div[class*='front-block-'] .frontblocktitle {
     z-index: 10; } }
-.lbutton-image {
-  min-width: 90px;
-  height: 41px;
-  border: 1px white solid !important;
-  color: white !important;
-  font-family: "HelveticaNeueW01-77BdCn 692722";
+.button {
+  text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  text-decoration: none;
-  padding: 0px 20px 0px 20px;
-  text-shadow: 0px 2px 3px black; }
+  text-shadow: none;
+  cursor: pointer;
+  font-family: "HelveticaNeueW01-77BdCn 692722", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  border: 1px solid transparent; }
+  .button:hover {
+    text-decoration: none; }
+
+.lbutton-image {
+  border: 1px white solid !important;
+  color: white !important;
+  padding: 10px 20px; }
   .lbutton-image:hover {
     background-color: #007b38 !important;
     color: white !important;
     text-decoration: none !important;
-    text-shadow: none;
     border-color: transparent !important; }
 
 .sbutton-image {
@@ -385,34 +379,20 @@ div[class*='front-block-']:hover .frontblocktitle {
   height: 34px;
   border: 1px white solid !important;
   color: white !important;
-  font-family: "HelveticaNeueW01-77BdCn 692722";
-  text-transform: uppercase;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  text-decoration: none;
   padding: 0px 20px 0px 20px; }
   .sbutton-image:hover {
     background-color: #007b38 !important;
-    color: white !important;
-    text-decoration: none !important; }
+    color: white !important; }
 
 .lbutton-white {
   min-width: 90px;
   height: 41px;
   border: 1px #007b38 solid !important;
   color: #007b38 !important;
-  font-family: "HelveticaNeueW01-77BdCn 692722";
-  text-transform: uppercase;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  text-decoration: none;
   padding: 0px 20px 0px 20px; }
   .lbutton-white:hover {
     background-color: #007b38 !important;
-    color: white !important;
-    text-decoration: none !important; }
+    color: white !important; }
 
 .sbutton-white {
   min-width: 75px;
@@ -421,18 +401,11 @@ div[class*='front-block-']:hover .frontblocktitle {
   background-color: white;
   text-shadow: none;
   color: #007b38 !important;
-  font-family: "HelveticaNeueW01-77BdCn 692722";
-  text-transform: uppercase;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  text-decoration: none;
   padding: 0px 20px 0px 20px;
   background-image: none !important; }
   .sbutton-white:hover {
     background-color: #007b38 !important;
     color: white !important;
-    text-decoration: none !important;
     background-image: none !important; }
 
 .lbutton-colour {
@@ -440,8 +413,7 @@ div[class*='front-block-']:hover .frontblocktitle {
   height: 41px;
   border: 1px white solid !important;
   color: white !important;
-  font-family: "HelveticaNeueW01-77BdCn 692722";
-  text-transform: uppercase;
+  font-family: "HelveticaNeueW01-77BdCn 692722", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
@@ -457,11 +429,6 @@ div[class*='front-block-']:hover .frontblocktitle {
   height: 34px;
   border: 1px white solid !important;
   color: white !important;
-  font-family: "HelveticaNeueW01-77BdCn 692722";
-  text-transform: uppercase;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
   text-decoration: none;
   padding: 0px 20px 0px 20px; }
   .sbutton-colour:hover {
@@ -476,7 +443,7 @@ div[class*='front-block-']:hover .frontblocktitle {
   background-color: #007b38;
   text-shadow: none;
   color: white !important;
-  font-family: "HelveticaNeueW01-77BdCn 692722";
+  font-family: "HelveticaNeueW01-77BdCn 692722", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
   display: table-cell;
@@ -499,7 +466,7 @@ div[class*='front-block-']:hover .frontblocktitle {
   height: 41px;
   border: 1px #007b38 solid !important;
   color: #007b38 !important;
-  font-family: "HelveticaNeueW01-77BdCn 692722";
+  font-family: "HelveticaNeueW01-77BdCn 692722", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-align: center;
   display: table-cell;
@@ -554,7 +521,9 @@ div[class*='front-block-']:hover .frontblocktitle {
 
 #main-content h2, #main-content h3, #main-content h4, #main-content h5, #main-content h6 {
   color: #007b38;
-  font-family: "HelveticaNeueW01-57Cn"; }
+  font-family: "HelveticaNeueW01-57Cn", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  line-height: 1; }
 #main-content h4 {
   font-size: 34px; }
 #main-content h5 {
@@ -580,7 +549,7 @@ div[class*='front-block-']:hover .frontblocktitle {
   color: #666666;
   font-family: Georgia, Times New Roman, Times, serif; }
 #main-content p, #main-content ol, #main-content li, #main-content input, #main-content button, #main-content table {
-  font-family: "HelveticaNeueW01-45Ligh";
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
   font-size: 16px;
   color: #444444; }
 #main-content table {
@@ -591,7 +560,7 @@ div[class*='front-block-']:hover .frontblocktitle {
     text-align: center; }
   #main-content table thead th {
     background-color: white;
-    font-family: "HelveticaNeueW01-77BdCn 692722";
+    font-family: "HelveticaNeueW01-77BdCn 692722", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
     font-size: 120%;
     vertical-align: top; }
   #main-content table tbody tr:nth-child(even) td {
@@ -707,7 +676,7 @@ body {
   background-color: white;
   background-image: none;
   color: #4a4a4c;
-  font-family: "helveticaneue45light";
+  font-family: "HelveticaNeueW01-45Ligh", "Helvetica Neue", HelveticaNeue, Helvetica, Arial, sans-serif;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: visible !important; }
 
