@@ -548,11 +548,11 @@ div[class*='front-block-']:hover .frontblocktitle {
     background-color: white; }
   #main-content table tbody tr:nth-child(odd) td {
     background-color: #f2f2f2; }
-    #main-content table tbody tr:nth-child(odd) td.no-background {
-      background-color: transparent;
-      padding: 0; }
-      #main-content table tbody tr:nth-child(odd) td.no-background, #main-content table tbody tr:nth-child(odd) td.no-background * {
-        text-align: left; }
+  #main-content table tbody tr td.no-background {
+    background-color: transparent;
+    padding: 0; }
+    #main-content table tbody tr td.no-background, #main-content table tbody tr td.no-background * {
+      text-align: left; }
 #main-content .grey-border {
   border: 4px solid #cccccc; }
 #main-content .white-border {
