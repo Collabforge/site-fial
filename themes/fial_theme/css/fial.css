@@ -591,6 +591,13 @@ div[class*='front-block-']:hover .frontblocktitle {
     background-color: #e7e7e7; }
     #main-content section.section-grey, #main-content section.section-grey * {
       color: #333333; }
+    #main-content section.section-grey a {
+      color: #007b38;
+      text-decoration: none;
+      border-bottom: 1px dotted transparent; }
+      #main-content section.section-grey a:hover, #main-content section.section-grey a:focus, #main-content section.section-grey a:active {
+        border-bottom: 1px dotted #007b38;
+        text-decoration: none; }
   #main-content section.section-green {
     background-color: #017b2e;
     background-image: url("/sites/default/themes/fial_theme/img/green-bg.svg");
@@ -642,7 +649,8 @@ div[class*='front-block-']:hover .frontblocktitle {
         width: auto;
         display: inline-block; }
         #main-content aside.aside-img img {
-          max-height: 200px; }
+          max-height: 200px;
+          width: auto; }
         #main-content aside.aside-img.white-border {
           background-color: white; }
         #main-content aside.aside-img.grey-border {
