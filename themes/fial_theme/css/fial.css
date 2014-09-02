@@ -570,7 +570,7 @@ div[class*='front-block-']:hover .frontblocktitle {
 #main-content p, #main-content ol, #main-content li, #main-content input, #main-content button, #main-content table {
   font-family: "HelveticaNeueW01-45Ligh", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 18px;
   color: #444444; }
 #main-content table.content-table {
   margin-top: 2rem;
