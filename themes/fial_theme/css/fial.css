@@ -599,10 +599,11 @@ div[class*='front-block-']:hover .frontblocktitle {
   margin-top: 2em;
   margin-bottom: 2em; }
   #main-content section a {
-    color: #007b38;
+    color: #007b38 !important;
     text-decoration: none;
     border-bottom: 1px dotted transparent; }
     #main-content section a:hover, #main-content section a:focus, #main-content section a:active {
+      color: #007b38 !important;
       border-bottom: 1px dotted #007b38;
       text-decoration: none; }
   #main-content section h1 a, #main-content section h2 a, #main-content section h3 a, #main-content section h4 a, #main-content section h5 a, #main-content section h6 a {
@@ -618,10 +619,11 @@ div[class*='front-block-']:hover .frontblocktitle {
     #main-content section.section-grey, #main-content section.section-grey * {
       color: #333333; }
     #main-content section.section-grey a {
-      color: #007b38;
+      color: #007b38 !important;
       text-decoration: none;
       border-bottom: 1px dotted transparent; }
       #main-content section.section-grey a:hover, #main-content section.section-grey a:focus, #main-content section.section-grey a:active {
+        color: #007b38 !important;
         border-bottom: 1px dotted #007b38;
         text-decoration: none; }
     #main-content section.section-grey h1 a, #main-content section.section-grey h2 a, #main-content section.section-grey h3 a, #main-content section.section-grey h4 a, #main-content section.section-grey h5 a, #main-content section.section-grey h6 a {
@@ -700,7 +702,8 @@ div[class*='front-block-']:hover .frontblocktitle {
     @media all and (max-width: 768px) {
       #main-content aside.aside-img-sm {
         width: auto;
-        display: inline-block; }
+        display: inline-block;
+        margin-bottom: 10px; }
         #main-content aside.aside-img-sm img {
           width: 100px;
           height: 100px; } }
