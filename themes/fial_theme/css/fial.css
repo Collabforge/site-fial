@@ -522,7 +522,7 @@ div[class*='front-block-']:hover .frontblocktitle {
   background-color: #007b38; }
 
 #main-content .bulletin-node {
-  text-align: center !important; }
+  text-align: center; }
   #main-content .bulletin-node a {
     color: #007b38 !important;
     text-decoration: none;
@@ -536,6 +536,8 @@ div[class*='front-block-']:hover .frontblocktitle {
     #main-content .bulletin-node h1 a:hover, #main-content .bulletin-node h1 a:focus, #main-content .bulletin-node h1 a:active, #main-content .bulletin-node h2 a:hover, #main-content .bulletin-node h2 a:focus, #main-content .bulletin-node h2 a:active, #main-content .bulletin-node h3 a:hover, #main-content .bulletin-node h3 a:focus, #main-content .bulletin-node h3 a:active, #main-content .bulletin-node h4 a:hover, #main-content .bulletin-node h4 a:focus, #main-content .bulletin-node h4 a:active, #main-content .bulletin-node h5 a:hover, #main-content .bulletin-node h5 a:focus, #main-content .bulletin-node h5 a:active, #main-content .bulletin-node h6 a:hover, #main-content .bulletin-node h6 a:focus, #main-content .bulletin-node h6 a:active {
       border-bottom: none;
       text-decoration: underline; }
+#main-content .no-background .bulletin-node, #main-content .no-padding .bulletin-node {
+  text-align: center; }
 
 #main-content h2, #main-content h3, #main-content h4, #main-content h5, #main-content h6 {
   color: #007b38;
