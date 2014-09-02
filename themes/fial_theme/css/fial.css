@@ -567,11 +567,13 @@ div[class*='front-block-']:hover .frontblocktitle {
   font-style: oblique;
   color: #666666;
   font-family: Georgia, "Times New Roman", Times New Roman, Times, serif; }
-#main-content p, #main-content ol, #main-content li, #main-content input, #main-content button, #main-content table {
+#main-content p, #main-content ul, #main-content ol, #main-content li, #main-content input, #main-content button, #main-content table {
   font-family: "HelveticaNeueW01-45Ligh", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 300;
   font-size: 18px;
   color: #444444; }
+#main-content ol li, #main-content ul li {
+  margin-bottom: 10px; }
 #main-content table.content-table {
   margin-top: 2rem;
   margin-bottom: 1rem;
