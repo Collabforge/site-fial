@@ -554,29 +554,29 @@ div[class*='front-block-']:hover .frontblocktitle {
   font-weight: 300;
   font-size: 16px;
   color: #444444; }
-#main-content table {
+#main-content table.content-table {
   margin-top: 2rem;
   margin-bottom: 1rem;
   width: 100%; }
-  #main-content table, #main-content table * {
+  #main-content table.content-table, #main-content table.content-table * {
     text-align: center; }
-  #main-content table thead th {
+  #main-content table.content-table thead th {
     background-color: white;
     font-family: "HelveticaNeueW01-77BdCn 692722", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial, sans-serif;
     font-size: 120%;
     vertical-align: top; }
-  #main-content table tbody tr:nth-child(even) td {
+  #main-content table.content-table tbody tr:nth-child(even) td {
     background-color: white; }
-  #main-content table tbody tr:nth-child(odd) td {
+  #main-content table.content-table tbody tr:nth-child(odd) td {
     background-color: #f2f2f2; }
-  #main-content table tbody tr td.no-background {
+  #main-content table.content-table tbody tr td.no-background {
     background-color: transparent;
     padding: 0; }
-    #main-content table tbody tr td.no-background, #main-content table tbody tr td.no-background * {
+    #main-content table.content-table tbody tr td.no-background, #main-content table.content-table tbody tr td.no-background * {
       text-align: left; }
-  #main-content table tbody tr td.no-padding {
+  #main-content table.content-table tbody tr td.no-padding {
     padding: 0; }
-    #main-content table tbody tr td.no-padding, #main-content table tbody tr td.no-padding * {
+    #main-content table.content-table tbody tr td.no-padding, #main-content table.content-table tbody tr td.no-padding * {
       text-align: left; }
 #main-content .contentarticle img {
   margin: 0;
