@@ -59,6 +59,27 @@ p {
   font-style: oblique;
   color: #007b38; }
 
+.grey-border {
+  border: 4px solid #cccccc; }
+
+.white-border {
+  border: 6px solid white; }
+
+.clear-left {
+  clear: left; }
+
+.clear-right {
+  clear: right; }
+
+.clear-both {
+  clear: both; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
 #main-content p a {
   color: #4a4a4a;
   text-decoration: none;
@@ -557,20 +578,6 @@ div[class*='front-block-']:hover .frontblocktitle {
     padding: 0; }
     #main-content table tbody tr td.no-padding, #main-content table tbody tr td.no-padding * {
       text-align: left; }
-#main-content .grey-border {
-  border: 4px solid #cccccc; }
-#main-content .white-border {
-  border: 6px solid white; }
-#main-content .clear-left {
-  clear: left; }
-#main-content .clear-right {
-  clear: right; }
-#main-content .clear-both {
-  clear: both; }
-#main-content .left {
-  float: left; }
-#main-content .right {
-  float: right; }
 #main-content .contentarticle img {
   margin: 0;
   -webkit-box-shadow: none;
@@ -598,6 +605,11 @@ div[class*='front-block-']:hover .frontblocktitle {
     #main-content section a:hover, #main-content section a:focus, #main-content section a:active {
       border-bottom: 1px dotted #007b38;
       text-decoration: none; }
+  #main-content section h1 a, #main-content section h2 a, #main-content section h3 a, #main-content section h4 a, #main-content section h5 a, #main-content section h6 a {
+    border-bottom: none; }
+    #main-content section h1 a:hover, #main-content section h1 a:focus, #main-content section h1 a:active, #main-content section h2 a:hover, #main-content section h2 a:focus, #main-content section h2 a:active, #main-content section h3 a:hover, #main-content section h3 a:focus, #main-content section h3 a:active, #main-content section h4 a:hover, #main-content section h4 a:focus, #main-content section h4 a:active, #main-content section h5 a:hover, #main-content section h5 a:focus, #main-content section h5 a:active, #main-content section h6 a:hover, #main-content section h6 a:focus, #main-content section h6 a:active {
+      border-bottom: none;
+      text-decoration: underline; }
   #main-content section.section-sm {
     margin-top: 0;
     margin-bottom: 0; }
@@ -612,6 +624,11 @@ div[class*='front-block-']:hover .frontblocktitle {
       #main-content section.section-grey a:hover, #main-content section.section-grey a:focus, #main-content section.section-grey a:active {
         border-bottom: 1px dotted #007b38;
         text-decoration: none; }
+    #main-content section.section-grey h1 a, #main-content section.section-grey h2 a, #main-content section.section-grey h3 a, #main-content section.section-grey h4 a, #main-content section.section-grey h5 a, #main-content section.section-grey h6 a {
+      border-bottom: none; }
+      #main-content section.section-grey h1 a:hover, #main-content section.section-grey h1 a:focus, #main-content section.section-grey h1 a:active, #main-content section.section-grey h2 a:hover, #main-content section.section-grey h2 a:focus, #main-content section.section-grey h2 a:active, #main-content section.section-grey h3 a:hover, #main-content section.section-grey h3 a:focus, #main-content section.section-grey h3 a:active, #main-content section.section-grey h4 a:hover, #main-content section.section-grey h4 a:focus, #main-content section.section-grey h4 a:active, #main-content section.section-grey h5 a:hover, #main-content section.section-grey h5 a:focus, #main-content section.section-grey h5 a:active, #main-content section.section-grey h6 a:hover, #main-content section.section-grey h6 a:focus, #main-content section.section-grey h6 a:active {
+        border-bottom: none;
+        text-decoration: underline; }
   #main-content section.section-green {
     background-color: #017b2e;
     background-image: url("/sites/default/themes/fial_theme/img/green-bg.svg");
