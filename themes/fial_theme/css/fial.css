@@ -522,7 +522,7 @@ div[class*='front-block-']:hover .frontblocktitle {
   background-color: #007b38; }
 
 #main-content .bulletin-node {
-  text-align: center; }
+  text-align: center !important; }
   #main-content .bulletin-node a {
     color: #007b38 !important;
     text-decoration: none;
