@@ -10,3 +10,17 @@
   -moz-box-shadow: $box-shadow
   box-shadow: $box-shadow
 
+@mixin green-link
+  a
+    color: #007b38
+    text-decoration: none
+    border-bottom: 1px dotted transparent
+    &:hover, &:focus, &:active
+      border-bottom: 1px dotted #007b38
+      text-decoration: none
+
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+    border-bottom: none
+    &:hover, &:focus, &:active
+      border-bottom: none
+      text-decoration: underline
