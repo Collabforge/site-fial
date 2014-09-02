@@ -587,6 +587,13 @@ div[class*='front-block-']:hover .frontblocktitle {
   padding: 20px;
   margin-top: 2em;
   margin-bottom: 2em; }
+  #main-content section a {
+    color: #007b38;
+    text-decoration: none;
+    border-bottom: 1px dotted transparent; }
+    #main-content section a:hover, #main-content section a:focus, #main-content section a:active {
+      border-bottom: 1px dotted #007b38;
+      text-decoration: none; }
   #main-content section.section-grey {
     background-color: #e7e7e7; }
     #main-content section.section-grey, #main-content section.section-grey * {
@@ -656,20 +663,21 @@ div[class*='front-block-']:hover .frontblocktitle {
         #main-content aside.aside-img.grey-border {
           background-color: #cccccc; } }
   #main-content aside.aside-img-sm {
+    width: auto;
     background-color: transparent;
     background-image: none;
     padding: 0;
     margin-top: 0; }
     #main-content aside.aside-img-sm img {
-      max-height: 100px;
-      width: auto; }
+      width: 200px;
+      height: 200px; }
     @media all and (max-width: 768px) {
       #main-content aside.aside-img-sm {
         width: auto;
         display: inline-block; }
         #main-content aside.aside-img-sm img {
-          max-height: 50px;
-          width: auto; } }
+          width: 100px;
+          height: 100px; } }
   #main-content aside.aside-quote, #main-content aside.aside-quote * {
     font-style: oblique;
     font-size: 32px;
