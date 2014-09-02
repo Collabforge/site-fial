@@ -674,10 +674,12 @@ div[class*='front-block-']:hover .frontblocktitle {
     background-color: transparent;
     background-image: none;
     padding: 0;
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 40px; }
     #main-content aside.aside-img-sm img {
-      width: 200px;
-      height: 200px; }
+      width: 180px;
+      height: 180px; }
     @media all and (max-width: 768px) {
       #main-content aside.aside-img-sm {
         width: auto;
@@ -685,6 +687,9 @@ div[class*='front-block-']:hover .frontblocktitle {
         #main-content aside.aside-img-sm img {
           width: 100px;
           height: 100px; } }
+  #main-content aside.aside-img-sm.aside-left {
+    margin-left: 0;
+    margin-right: 40px; }
   #main-content aside.aside-quote, #main-content aside.aside-quote * {
     font-style: oblique;
     font-size: 32px;
