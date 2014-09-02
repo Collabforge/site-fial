@@ -569,14 +569,14 @@ div[class*='front-block-']:hover .frontblocktitle {
     background-color: white; }
   #main-content table.content-table tbody tr:nth-child(odd) td {
     background-color: #f2f2f2; }
-#main-content table.no-background {
+#main-content table tr .no-background, #main-content table th .no-background {
   background-color: transparent;
   padding: 0; }
-  #main-content table.no-background, #main-content table.no-background * {
+  #main-content table tr .no-background, #main-content table tr .no-background *, #main-content table th .no-background, #main-content table th .no-background * {
     text-align: left; }
-#main-content table.no-padding {
+#main-content table tr .no-padding, #main-content table th .no-padding {
   padding: 0; }
-  #main-content table.no-padding, #main-content table.no-padding * {
+  #main-content table tr .no-padding, #main-content table tr .no-padding *, #main-content table th .no-padding, #main-content table th .no-padding * {
     text-align: left; }
 #main-content .contentarticle img {
   margin: 0;

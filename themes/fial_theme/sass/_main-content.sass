@@ -62,15 +62,16 @@
         td
           background-color: #f2f2f2
   table    
-    &.no-background
-      background-color: transparent
-      padding: 0
-      &, & *
-        text-align: left
-    &.no-padding
-      padding: 0
-      &, & *
-        text-align: left
+    tr, th
+      .no-background
+        background-color: transparent
+        padding: 0
+        &, & *
+          text-align: left
+      .no-padding
+        padding: 0
+        &, & *
+          text-align: left
 
   .contentarticle img
     margin: 0
