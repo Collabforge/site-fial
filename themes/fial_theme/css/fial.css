@@ -521,6 +521,20 @@ div[class*='front-block-']:hover .frontblocktitle {
   background-position: center;
   background-color: #007b38; }
 
+#main-content .bulletin-node a {
+  color: #007b38 !important;
+  text-decoration: none;
+  border-bottom: 1px dotted transparent; }
+  #main-content .bulletin-node a:hover, #main-content .bulletin-node a:focus, #main-content .bulletin-node a:active {
+    color: #007b38 !important;
+    border-bottom: 1px dotted #007b38;
+    text-decoration: none; }
+#main-content .bulletin-node h1 a, #main-content .bulletin-node h2 a, #main-content .bulletin-node h3 a, #main-content .bulletin-node h4 a, #main-content .bulletin-node h5 a, #main-content .bulletin-node h6 a {
+  border-bottom: none; }
+  #main-content .bulletin-node h1 a:hover, #main-content .bulletin-node h1 a:focus, #main-content .bulletin-node h1 a:active, #main-content .bulletin-node h2 a:hover, #main-content .bulletin-node h2 a:focus, #main-content .bulletin-node h2 a:active, #main-content .bulletin-node h3 a:hover, #main-content .bulletin-node h3 a:focus, #main-content .bulletin-node h3 a:active, #main-content .bulletin-node h4 a:hover, #main-content .bulletin-node h4 a:focus, #main-content .bulletin-node h4 a:active, #main-content .bulletin-node h5 a:hover, #main-content .bulletin-node h5 a:focus, #main-content .bulletin-node h5 a:active, #main-content .bulletin-node h6 a:hover, #main-content .bulletin-node h6 a:focus, #main-content .bulletin-node h6 a:active {
+    border-bottom: none;
+    text-decoration: underline; }
+
 #main-content h2, #main-content h3, #main-content h4, #main-content h5, #main-content h6 {
   color: #007b38;
   font-family: "HelveticaNeueW01-77BdCn 692722", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial, sans-serif;
