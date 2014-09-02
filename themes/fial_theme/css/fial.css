@@ -565,18 +565,18 @@ div[class*='front-block-']:hover .frontblocktitle {
     font-family: "HelveticaNeueW01-77BdCn 692722", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial, sans-serif;
     font-size: 120%;
     vertical-align: top; }
-  #main-content table.content-table tbody tr:nth-child(even) td {
-    background-color: white; }
-  #main-content table.content-table tbody tr:nth-child(odd) td {
-    background-color: #f2f2f2; }
-#main-content table tr .no-background, #main-content table th .no-background {
+#main-content table tbody tr:nth-child(even) td {
+  background-color: white; }
+#main-content table tbody tr:nth-child(odd) td {
+  background-color: #f2f2f2; }
+#main-content table tbody tr .no-background, #main-content table tbody th .no-background {
   background-color: transparent;
   padding: 0; }
-  #main-content table tr .no-background, #main-content table tr .no-background *, #main-content table th .no-background, #main-content table th .no-background * {
+  #main-content table tbody tr .no-background, #main-content table tbody tr .no-background *, #main-content table tbody th .no-background, #main-content table tbody th .no-background * {
     text-align: left; }
-#main-content table tr .no-padding, #main-content table th .no-padding {
+#main-content table tbody tr .no-padding, #main-content table tbody th .no-padding {
   padding: 0; }
-  #main-content table tr .no-padding, #main-content table tr .no-padding *, #main-content table th .no-padding, #main-content table th .no-padding * {
+  #main-content table tbody tr .no-padding, #main-content table tbody tr .no-padding *, #main-content table tbody th .no-padding, #main-content table tbody th .no-padding * {
     text-align: left; }
 #main-content .contentarticle img {
   margin: 0;
