@@ -743,6 +743,9 @@ div[class*='front-block-']:hover .frontblocktitle {
   @media all and (max-width: 768px) {
     #main-content aside.aside-hide-small {
       display: none; } }
+@media all and (max-width: 768px) {
+  #main-content .hide-small {
+    display: none; } }
 
 body {
   background-color: white;
