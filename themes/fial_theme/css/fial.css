@@ -565,19 +565,21 @@ div[class*='front-block-']:hover .frontblocktitle {
     font-family: "HelveticaNeueW01-77BdCn 692722", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial, sans-serif;
     font-size: 120%;
     vertical-align: top; }
-#main-content table tbody tr:nth-child(even) td {
-  background-color: white; }
-#main-content table tbody tr:nth-child(odd) td {
-  background-color: #f2f2f2; }
-#main-content table tbody tr td.no-background, #main-content table tbody th td.no-background {
-  background-color: transparent;
-  padding: 0; }
-  #main-content table tbody tr td.no-background, #main-content table tbody tr td.no-background *, #main-content table tbody th td.no-background, #main-content table tbody th td.no-background * {
-    text-align: left; }
-#main-content table tbody tr td.no-padding, #main-content table tbody th td.no-padding {
-  padding: 0; }
-  #main-content table tbody tr td.no-padding, #main-content table tbody tr td.no-padding *, #main-content table tbody th td.no-padding, #main-content table tbody th td.no-padding * {
-    text-align: left; }
+#main-content table {
+  width: 100%; }
+  #main-content table tbody tr:nth-child(even) td {
+    background-color: white; }
+  #main-content table tbody tr:nth-child(odd) td {
+    background-color: #f2f2f2; }
+  #main-content table tbody tr td.no-background, #main-content table tbody th td.no-background {
+    background-color: transparent;
+    padding: 0; }
+    #main-content table tbody tr td.no-background, #main-content table tbody tr td.no-background *, #main-content table tbody th td.no-background, #main-content table tbody th td.no-background * {
+      text-align: left; }
+  #main-content table tbody tr td.no-padding, #main-content table tbody th td.no-padding {
+    padding: 0; }
+    #main-content table tbody tr td.no-padding, #main-content table tbody tr td.no-padding *, #main-content table tbody th td.no-padding, #main-content table tbody th td.no-padding * {
+      text-align: left; }
 #main-content .contentarticle img {
   margin: 0;
   -webkit-box-shadow: none;
