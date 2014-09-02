@@ -185,6 +185,21 @@
           background-color: white
         &.grey-border
           background-color: #ccc
+
+    &.aside-img-sm
+      background-color: transparent
+      background-image: none
+      padding: 0
+      margin-top: 0
+      img
+        max-height: 100px
+        width: auto
+      @media all and (max-width: 768px)
+        width: auto
+        display: inline-block
+        img
+          max-height: 50px
+          width: auto
     
     &.aside-quote
       &, & *
