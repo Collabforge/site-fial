@@ -598,6 +598,8 @@ div[class*='front-block-']:hover .frontblocktitle {
     padding: 0; }
     #main-content table tbody tr td.no-background, #main-content table tbody tr td.no-background *, #main-content table tbody th td.no-background, #main-content table tbody th td.no-background * {
       text-align: left; }
+  #main-content table tbody tr td.no-background-centered, #main-content table tbody th td.no-background-centered {
+    background-color: transparent; }
   #main-content table tbody tr td.no-padding, #main-content table tbody th td.no-padding {
     padding: 0; }
     #main-content table tbody tr td.no-padding, #main-content table tbody tr td.no-padding *, #main-content table tbody th td.no-padding, #main-content table tbody th td.no-padding * {
