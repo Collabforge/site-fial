@@ -574,6 +574,8 @@ div[class*='front-block-']:hover .frontblocktitle {
   color: #444444; }
 #main-content ol li, #main-content ul li {
   margin-bottom: 10px; }
+#main-content ul.list-restrict li, #main-content ol.list-restrict li {
+  max-width: 500px; }
 #main-content table.content-table {
   margin-top: 2rem;
   margin-bottom: 1rem;
