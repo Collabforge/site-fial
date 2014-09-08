@@ -54,11 +54,22 @@ p
   font-style: italic
   color: #4a4a4c
 
+  
+
 .subhead
   font-family: $times
   font-size: 21px
-  font-style: italic
+  font-style: oblique
+  font-weight: bold
+  max-width: 900px
   color: #ffffff
+  @media all and (max-width: 768px)
+    font-size: 18px
+    margin-top: 20px
+  @media all and (max-width: 480px)
+    font-size: 15px
+    margin-top: 40px
+
 
 .subhead-white
   font-family: $times
