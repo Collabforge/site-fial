@@ -1,17 +1,21 @@
-
 @import _mixins.sass
 @import _fonts.sass
 
 // Calendar style overrides
 
+#cboxWrapper
+  &, & *
+    @include green-link
+
 #main-content
 
-  .date-box, .view-item-calendar, #cboxWrapper, .calendar, .node-event-calendar, .templatedtitlestyle
+  // Overwrites calendar css
+  
+  .calendar-calendar
     &, & *
       text-decoration: none !important
       @include green-link
 
-  // Overwrites calendar css
   .calendar-calendar .month-view .full
   tr
     td.today, &.odd td.today, &.even td.today
@@ -30,11 +34,11 @@
         border-right: 2px solid #00c0dd
 
   .calendar-calendar .month-view .full td.multi-day div.monthview, .calendar-calendar .week-view .full td.multi-day div.weekview, .calendar-calendar .day-view .full td.multi-day div.dayview, .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues, .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff, .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues, .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff,   .calendar-calendar td .inner div.calendar div, .calendar-calendar td .inner div.calendar div a, .calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview 
+    text-decoration: none !important
     background: #dcf7c0
     &, & *
       color: #555
       text-decoration: none !important
-      @include green-link
       
   .view .date-nav-wrapper li.date-prev, .view .date-nav-wrapper li.date-next
     font-size: 12px
