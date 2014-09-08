@@ -481,7 +481,10 @@ div[class*='front-block-']:hover .frontblocktitle {
   text-shadow: none !important; }
 
 .view-news .pager li > a {
-  width: 100%; }
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-border-radius: 0px;
+  border-radius: 0px; }
 
 .footerbg {
   background: url("/sites/default/themes/fial_theme/img/footerbg.png");
@@ -840,6 +843,9 @@ body {
 @media (max-width: 767px) {
   .breadcrum h1, .node-type-basic-page h1#page-title {
     max-width: none; } }
+.view-news td, .view-news th, .view-news tr {
+  border: 0; }
+
 .page-node-463 .views-row {
   padding: 35px;
   min-height: 320px; }
