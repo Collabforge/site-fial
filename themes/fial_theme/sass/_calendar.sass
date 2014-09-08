@@ -6,7 +6,7 @@
 
 #main-content
 
-  .date-box, .view-item-calendar, #cboxWrapper, .calendar
+  .date-box, .view-item-calendar, #cboxWrapper, .calendar, .node-event-calendar
     &, & *
       @include green-link
 
@@ -15,31 +15,24 @@
   tr
     td.today, &.odd td.today, &.even td.today
       background: none
-      border-left: 2px solid #cde000
-      border-right: 2px solid #cde000
+      border-left: 2px solid #00c0dd
+      border-right: 2px solid #00c0dd
   td.date-box.today
-    border-color: #cde000
+    border-color: #00c0dd
   tr td
     &.single-day.today
-      border-bottom: 2px solid #cde000
+      border-bottom: 2px solid #00c0dd
     &.multi-day
       &.starts-today
-        border-left: 2px solid #cde000
+        border-left: 2px solid #00c0dd
       &.ends-today
-        border-right: 2px solid #cde000
+        border-right: 2px solid #00c0dd
 
-  .calendar-calendar .month-view .full td.multi-day div.monthview, .calendar-calendar .week-view .full td.multi-day div.weekview, .calendar-calendar .day-view .full td.multi-day div.dayview, .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues, .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff, .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues, .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff 
+  .calendar-calendar .month-view .full td.multi-day div.monthview, .calendar-calendar .week-view .full td.multi-day div.weekview, .calendar-calendar .day-view .full td.multi-day div.dayview, .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues, .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff, .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues, .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff,   .calendar-calendar td .inner div.calendar div, .calendar-calendar td .inner div.calendar div a, .calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview 
     background: #dcf7c0
     &, & *
       @include green-link
       color: #555
-
-  .calendar-calendar td .inner div.calendar div, .calendar-calendar td .inner div.calendar div a, .calendar-calendar .month-view .full td.single-day div.monthview, .calendar-calendar .week-view .full td.single-day div.weekview, .calendar-calendar .day-view .full td.single-day div.dayview
-    background: #dcf7c0
-    &, & *
-      @include green-link
-      color: #555
-
 
   .view .date-nav-wrapper li.date-prev, .view .date-nav-wrapper li.date-next
     font-size: 12px
