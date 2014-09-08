@@ -767,6 +767,34 @@ div[class*='front-block-']:hover .frontblocktitle {
   #main-content .hide-small {
     display: none; } }
 
+#main-content .date-box a, #main-content .view-item-calendar a, #main-content #cboxWrapper a {
+  color: #007b38 !important;
+  text-decoration: none;
+  border-bottom: 1px dotted transparent; }
+  #main-content .date-box a:hover, #main-content .date-box a:focus, #main-content .date-box a:active, #main-content .view-item-calendar a:hover, #main-content .view-item-calendar a:focus, #main-content .view-item-calendar a:active, #main-content #cboxWrapper a:hover, #main-content #cboxWrapper a:focus, #main-content #cboxWrapper a:active {
+    color: #007b38 !important;
+    border-bottom: 1px dotted #007b38;
+    text-decoration: none; }
+#main-content .date-box h1 a, #main-content .date-box h2 a, #main-content .date-box h3 a, #main-content .date-box h4 a, #main-content .date-box h5 a, #main-content .date-box h6 a, #main-content .view-item-calendar h1 a, #main-content .view-item-calendar h2 a, #main-content .view-item-calendar h3 a, #main-content .view-item-calendar h4 a, #main-content .view-item-calendar h5 a, #main-content .view-item-calendar h6 a, #main-content #cboxWrapper h1 a, #main-content #cboxWrapper h2 a, #main-content #cboxWrapper h3 a, #main-content #cboxWrapper h4 a, #main-content #cboxWrapper h5 a, #main-content #cboxWrapper h6 a {
+  border-bottom: none; }
+  #main-content .date-box h1 a:hover, #main-content .date-box h1 a:focus, #main-content .date-box h1 a:active, #main-content .date-box h2 a:hover, #main-content .date-box h2 a:focus, #main-content .date-box h2 a:active, #main-content .date-box h3 a:hover, #main-content .date-box h3 a:focus, #main-content .date-box h3 a:active, #main-content .date-box h4 a:hover, #main-content .date-box h4 a:focus, #main-content .date-box h4 a:active, #main-content .date-box h5 a:hover, #main-content .date-box h5 a:focus, #main-content .date-box h5 a:active, #main-content .date-box h6 a:hover, #main-content .date-box h6 a:focus, #main-content .date-box h6 a:active, #main-content .view-item-calendar h1 a:hover, #main-content .view-item-calendar h1 a:focus, #main-content .view-item-calendar h1 a:active, #main-content .view-item-calendar h2 a:hover, #main-content .view-item-calendar h2 a:focus, #main-content .view-item-calendar h2 a:active, #main-content .view-item-calendar h3 a:hover, #main-content .view-item-calendar h3 a:focus, #main-content .view-item-calendar h3 a:active, #main-content .view-item-calendar h4 a:hover, #main-content .view-item-calendar h4 a:focus, #main-content .view-item-calendar h4 a:active, #main-content .view-item-calendar h5 a:hover, #main-content .view-item-calendar h5 a:focus, #main-content .view-item-calendar h5 a:active, #main-content .view-item-calendar h6 a:hover, #main-content .view-item-calendar h6 a:focus, #main-content .view-item-calendar h6 a:active, #main-content #cboxWrapper h1 a:hover, #main-content #cboxWrapper h1 a:focus, #main-content #cboxWrapper h1 a:active, #main-content #cboxWrapper h2 a:hover, #main-content #cboxWrapper h2 a:focus, #main-content #cboxWrapper h2 a:active, #main-content #cboxWrapper h3 a:hover, #main-content #cboxWrapper h3 a:focus, #main-content #cboxWrapper h3 a:active, #main-content #cboxWrapper h4 a:hover, #main-content #cboxWrapper h4 a:focus, #main-content #cboxWrapper h4 a:active, #main-content #cboxWrapper h5 a:hover, #main-content #cboxWrapper h5 a:focus, #main-content #cboxWrapper h5 a:active, #main-content #cboxWrapper h6 a:hover, #main-content #cboxWrapper h6 a:focus, #main-content #cboxWrapper h6 a:active {
+    border-bottom: none;
+    text-decoration: underline; }
+#main-content tr td.today, #main-content tr.odd td.today, #main-content tr.even td.today {
+  background: none;
+  border-left: 2px solid #007b38;
+  border-right: 2px solid #007b38; }
+#main-content td.date-box.today {
+  border-color: #007b38; }
+#main-content tr td.single-day.today {
+  border-bottom: 2px solid #007b38; }
+#main-content tr td.multi-day.starts-today {
+  border-left: 2px solid #007b38; }
+#main-content tr td.multi-day.ends-today {
+  border-right: 2px solid #007b38; }
+#main-content .view .date-nav-wrapper li.date-prev, #main-content .view .date-nav-wrapper li.date-next {
+  font-size: 12px; }
+
 body {
   background-color: white;
   background-image: none;
