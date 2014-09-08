@@ -483,25 +483,6 @@ div[class*='front-block-']:hover .frontblocktitle {
 .view-news .pager li > a {
   width: 100%; }
 
-.page-node-14 .pager li > a {
-  min-width: 90px;
-  height: 41px;
-  border: 1px #007b38 solid !important;
-  color: #007b38 !important;
-  font-family: "HelveticaNeueW01-77BdCn 692722", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  text-decoration: none;
-  padding: 0px 20px 0px 20px;
-  width: 100%;
-  border-radius: 0px; }
-  .page-node-14 .pager li > a:hover {
-    background-color: #007b38 !important;
-    color: white !important;
-    text-decoration: none !important; }
-
 .footerbg {
   background: url("/sites/default/themes/fial_theme/img/footerbg.png");
   background-repeat: no-repeat;
