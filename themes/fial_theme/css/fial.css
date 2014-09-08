@@ -538,7 +538,7 @@ div[class*='front-block-']:hover .frontblocktitle {
 #main-content h2, #main-content h3, #main-content h4, #main-content h5, #main-content h6 {
   color: #007b38;
   font-family: "HelveticaNeueW01-77BdCn 692722", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial, sans-serif;
-  line-height: 1; }
+  line-height: 1.2; }
 #main-content h4 {
   font-size: 34px; }
 #main-content h5 {
