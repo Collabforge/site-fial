@@ -840,27 +840,6 @@ body {
 @media (max-width: 767px) {
   .breadcrum h1, .node-type-basic-page h1#page-title {
     max-width: none; } }
-.view-news .pager li > a {
-  min-width: 90px;
-  height: 41px;
-  border: 1px #007b38 solid !important;
-  color: #007b38 !important;
-  font-family: "HelveticaNeueW01-77BdCn 692722", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial, sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  text-decoration: none;
-  padding: 0px 20px 0px 20px;
-  width: 1000px;
-  border-radius: 0px; }
-  .view-news .pager li > a:hover {
-    background-color: #007b38 !important;
-    color: white !important;
-    text-decoration: none !important; }
-.view-news th, .view-news td {
-  border: none; }
-
 .page-node-463 .views-row {
   padding: 35px;
   min-height: 320px; }
