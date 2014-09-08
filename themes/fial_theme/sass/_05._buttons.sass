@@ -1,4 +1,5 @@
 @import _fonts.sass
+@import mixins.sass
 
 // 5. BUTTONS
 
@@ -108,11 +109,15 @@
   background-color: #007b38 !important
   text-shadow: none !important
 
-// Industry News - LOAD MORE button
-.view-news .pager li > a
-  @extend .button
-  @extend .lbutton-green-white
-  width: 100%
+// Industry News
+.view-news 
+  // LOAD MORE button
+  .pager li > a
+    @extend .button
+    @extend .lbutton-green-white
+    width: 100%
+    box-sizing: border-box
+    @include border-radius(0px)
 
 
 // Which page is this?!? 
