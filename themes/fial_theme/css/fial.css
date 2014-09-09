@@ -382,7 +382,7 @@ div[class*='front-block-']:hover .frontblocktitle {
     z-index: 10; }
   div[class*='front-block-'] .frontblocktitle {
     z-index: 10; } }
-.button, .view-news .pager li > a, #block-views-member-organisations-mem-block .pager li > a {
+.button, #block-views-member-organisations-mem-block .pager li > a, .view-news .pager li > a {
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -392,9 +392,9 @@ div[class*='front-block-']:hover .frontblocktitle {
   font-size: 16px;
   padding: 10px 20px;
   border: 1px solid transparent; }
-  .button:hover, .view-news .pager li > a:hover, #block-views-member-organisations-mem-block .pager li > a:hover, .button:focus, .view-news .pager li > a:focus, #block-views-member-organisations-mem-block .pager li > a:focus, .button:active, .view-news .pager li > a:active, #block-views-member-organisations-mem-block .pager li > a:active {
+  .button:hover, #block-views-member-organisations-mem-block .pager li > a:hover, .view-news .pager li > a:hover, .button:focus, #block-views-member-organisations-mem-block .pager li > a:focus, .view-news .pager li > a:focus, .button:active, #block-views-member-organisations-mem-block .pager li > a:active, .view-news .pager li > a:active {
     text-decoration: none; }
-  .button.expand, .view-news .pager li > a.expand, #block-views-member-organisations-mem-block .pager li > a.expand {
+  .button.expand, #block-views-member-organisations-mem-block .pager li > a.expand, .view-news .pager li > a.expand {
     width: 100%; }
 
 .lbutton-image {
@@ -436,13 +436,13 @@ div[class*='front-block-']:hover .frontblocktitle {
     color: white !important;
     background-image: none !important; }
 
-.lbutton-green-white, .view-news .pager li > a, #block-views-member-organisations-mem-block .pager li > a {
+.lbutton-green-white, #block-views-member-organisations-mem-block .pager li > a, .view-news .pager li > a {
   border: 1px #007b38 solid !important;
   background-color: #007b38;
   color: white !important;
   font-size: 18px;
   padding: 15px 30px; }
-  .lbutton-green-white:hover, .view-news .pager li > a:hover, #block-views-member-organisations-mem-block .pager li > a:hover, .lbutton-green-white:focus, .view-news .pager li > a:focus, #block-views-member-organisations-mem-block .pager li > a:focus, .lbutton-green-white:active, .view-news .pager li > a:active, #block-views-member-organisations-mem-block .pager li > a:active {
+  .lbutton-green-white:hover, #block-views-member-organisations-mem-block .pager li > a:hover, .view-news .pager li > a:hover, .lbutton-green-white:focus, #block-views-member-organisations-mem-block .pager li > a:focus, .view-news .pager li > a:focus, .lbutton-green-white:active, #block-views-member-organisations-mem-block .pager li > a:active, .view-news .pager li > a:active {
     background-color: white !important;
     color: #007b38 !important; }
 
@@ -479,13 +479,7 @@ div[class*='front-block-']:hover .frontblocktitle {
   background-color: #007b38 !important;
   text-shadow: none !important; }
 
-.view-news .pager li > a {
-  width: 100%;
-  box-sizing: border-box;
-  -webkit-border-radius: 0px;
-  border-radius: 0px; }
-
-#block-views-member-organisations-mem-block .pager li > a {
+#block-views-member-organisations-mem-block .pager li > a, .view-news .pager li > a {
   width: 100%;
   box-sizing: border-box;
   -webkit-border-radius: 0px;
