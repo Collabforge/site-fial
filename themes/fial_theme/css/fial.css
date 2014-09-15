@@ -921,3 +921,6 @@ body {
 
 .content-text-news {
   margin: -25px 20px 0px 20px; }
+
+.menu_secondary li a, .menu_secondary li a * {
+  font-family: "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial, sans-serif; }
