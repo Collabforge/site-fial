@@ -316,6 +316,9 @@ img#homepage_banner {
   .frontblockspan h1, .frontblockspan h2, .frontblockspan h3, .frontblockspan h4, .frontblockspan h5, .frontblockspan h6 {
     line-height: 1; }
 
+#main-content .frontblockspan h1, #main-content .frontblockspan h2, #main-content .frontblockspan h3, #main-content .frontblockspan h4, #main-content .frontblockspan h5, #main-content .frontblockspan h6 {
+  line-height: 1; }
+
 .front-block-1 {
   background-image: url("/sites/default/themes/fial_theme/img/front1.jpg"); }
 
