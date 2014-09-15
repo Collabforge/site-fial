@@ -313,6 +313,8 @@ img#homepage_banner {
 .frontblockspan {
   display: table;
   margin-bottom: 20px; }
+  .frontblockspan h1, .frontblockspan h2, .frontblockspan h3, .frontblockspan h4, .frontblockspan h5, .frontblockspan h6 {
+    line-height: 1; }
 
 .front-block-1 {
   background-image: url("/sites/default/themes/fial_theme/img/front1.jpg"); }
