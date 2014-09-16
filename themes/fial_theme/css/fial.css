@@ -524,7 +524,7 @@ div[class*='front-block-']:hover .frontblocktitle {
   background-color: #007b38; }
 
 #tab-container .ui-tab-content {
-  background: #00b611; }
+  background: #999999; }
 
 ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
   background: #00b611; }
@@ -544,13 +544,18 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
 #tabs1-menu ul li a:hover, #tabs1-menu ul li a:focus, #tabs1-menu ul li a:active, #tabs1-search ul li a:hover, #tabs1-search ul li a:focus, #tabs1-search ul li a:active, #tabs1-profile ul li a:hover, #tabs1-profile ul li a:focus, #tabs1-profile ul li a:active {
   background: #058532; }
 
+#tabs1-menu .dropdown-menu {
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none; }
+
 #tabs1-menu .dropdown-menu li a {
   border-bottom: 0;
-  background-color: #00cc3a !important;
+  background-color: #8a8a8a;
   padding: 10px !important;
   display: block; }
   #tabs1-menu .dropdown-menu li a.active, #tabs1-menu .dropdown-menu li a:hover, #tabs1-menu .dropdown-menu li a:focus {
-    background-color: #00cc3a !important;
+    background-color: #00b611 !important;
     padding: 10px !important; }
 
 #tabs1-menu ul li a.active {
