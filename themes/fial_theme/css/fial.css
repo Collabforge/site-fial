@@ -567,15 +567,17 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
 
 .mobile-sub-links a {
   display: block;
-  margin: 4px;
-  padding: 8px 10px 6px 10px;
+  margin: 0 0 10px 0;
+  padding: 10px 20px;
   color: white;
   background: #058532;
   text-transform: uppercase;
   font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 18px; }
   .mobile-sub-links a:hover, .mobile-sub-links a:focus, .mobile-sub-links a:active {
-    background: #00b611; }
+    background: #00b611;
+    text-decoration: none; }
 
 #main-content .bulletin-node a {
   color: #007b38 !important;
