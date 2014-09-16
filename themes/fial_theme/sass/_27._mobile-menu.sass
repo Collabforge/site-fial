@@ -1,0 +1,167 @@
+@import _fonts.sass
+
+// 27. Mobile menu
+
+// .ui-mobile-menu
+//   position: absolute
+//   top: 0
+//   left: 0
+//   width: 100%
+//   z-index: 1000
+//   ul
+//     list-style: none
+//   li
+//     float: right
+//     a
+//       display: block
+//       padding: 10px
+
+// .ui-tab-content
+//   background-color: gray
+
+// #tab-container, ul.etabs
+//   background: #fff
+//   height: 50px
+
+// #tab-container
+//   border-bottom: 1px solid #f2f2f2
+//   .tab_logo.tab
+//     float: left
+//     border: none
+//     padding: 10px
+//     a
+//       &:hover, &:active
+//         text-decoration: none
+//         opacity: 0.75
+
+// ul.etabs
+//   display: block
+//   list-style: none
+//   list-style-image: none
+//   width: 100%
+//   margin: 0
+//   padding: 0
+
+// #tabs1-menu, #tabs1-search, #tabs1-profile
+//   display: block
+//   list-style: none
+//   list-style-image: none
+//   width: 100%
+//   margin: 0
+//   padding: 0
+//   ul
+//     display: block
+//     list-style: none
+//     list-style-image: none
+//     width: 100%
+//     margin: 0
+//     padding: 0
+//     li
+//       display: block
+//       list-style: none
+//       list-style-image: none
+//       width: 100%
+//       margin: 0
+//       padding: 0
+
+// ul.etabs li
+//   display: block
+//   list-style: none
+//   list-style-image: none
+//   margin: 0
+//   padding: 0
+//   border-left: 1px solid #F2F2F2
+//   &.collapsed, &.expanded
+//     display: block
+//     list-style: none
+//     list-style-image: none
+//     margin: 0
+//     padding: 0
+//     border-left: 1px solid #F2F2F2
+//   a
+//     color: #999
+//     width: auto
+//     padding: 10px 10px 10px 14px
+//     margin: 0
+//     min-height: 30px
+//     line-height: 30px
+
+#tab-container .ui-tab-content
+  background: #00b611 // Fial Bright Green
+
+ul.etabs li
+  a
+    &:hover, &:focus, &:active
+      background: #00b611 // Fial Bright Green
+
+#tabs1-menu ul li a
+  font-family: $helv-cond
+  font-weight: 300
+  &:hover, &:focus, &:active
+    background: #00b611 // Fial Bright Green
+
+#tabs1-menu ul li a.primary_item
+  background: white
+
+
+#tabs1-menu ul li a.primary_item
+  background: #058532 // Fial Logo Green
+
+#tabs1-menu ul li a:hover, #tabs1-menu ul li a:focus,  #tabs1-menu ul li a:active, #tabs1-search ul li a:hover, #tabs1-search ul li a:focus, #tabs1-search ul li a:active, #tabs1-profile ul li a:hover, #tabs1-profile ul li a:focus, #tabs1-profile ul li a:active
+  background: #058532 // Fial Logo Green
+
+#tabs1-menu .dropdown-menu li a
+  border-bottom: 0
+  background-color: #00cc3a !important // Fial Light Green
+  // outline: 1px solid red
+  padding: 10px !important
+  display: block
+  &.active, &:hover, &:focus
+    background-color: #00cc3a !important // Fial Light Green
+    padding: 10px !important
+
+
+// .menu_secondary li .dropdown-menu > li
+//   background-color: #525252  !important
+//   a
+//     background-color: #525252  !important
+//     &.active, &:hover
+//       background-color: #525252  !important
+
+#tabs1-menu ul li a.active // Current selected page
+  text-decoration: none
+  font-family: $helv-cond-bold
+  font-weight: 700
+
+#tabs1-menu ul li a
+  // &:hover, &:focus
+    // -webkit-box-shadow: none
+    // box-shadow: none
+  // &.primary_item
+  //   &:hover, &:focus
+      // -webkit-box-shadow: none
+      // box-shadow: none
+
+#search-block-form--2
+  // margin: 0 10px
+  // padding: 10px 0
+
+#tabs1-search
+  // .form-item-search-block-form
+  //   // float: left
+  // input.search-query
+    // -webkit-border-radius: 15px 0 0 15px
+    // border-radius: 15px 0 0 15px
+    // padding-top: 5px
+    // padding-bottom: 5px
+
+html.js #tabs1-search input.search-query
+  // background-image: none
+
+#tabs1-search input.btn-search
+  // float: left
+  // height: 22px
+  // margin: 1em 0
+  // -webkit-border-radius: 0 15px 15px 0
+  // border-radius: 0 15px 15px 0
+
