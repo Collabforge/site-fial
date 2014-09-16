@@ -554,7 +554,9 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
   background-color: #8a8a8a;
   padding: 10px !important;
   display: block; }
-  #tabs1-menu .dropdown-menu li a.active, #tabs1-menu .dropdown-menu li a:hover, #tabs1-menu .dropdown-menu li a:focus {
+  #tabs1-menu .dropdown-menu li a.active {
+    background-color: #525252 !important; }
+  #tabs1-menu .dropdown-menu li a:hover, #tabs1-menu .dropdown-menu li a:focus {
     background-color: #00b611 !important;
     padding: 10px !important; }
 
