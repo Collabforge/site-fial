@@ -565,6 +565,18 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
   font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif;
   font-weight: 700; }
 
+.mobile-sub-links a {
+  display: block;
+  margin: 4px;
+  padding: 8px 10px 6px 10px;
+  color: white;
+  background: #058532;
+  text-transform: uppercase;
+  font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif;
+  font-weight: 700; }
+  .mobile-sub-links a:hover, .mobile-sub-links a:focus, .mobile-sub-links a:active {
+    background: #00b611; }
+
 #main-content .bulletin-node a {
   color: #007b38 !important;
   text-decoration: none;
