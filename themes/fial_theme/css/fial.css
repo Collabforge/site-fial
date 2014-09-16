@@ -523,6 +523,41 @@ div[class*='front-block-']:hover .frontblocktitle {
   background-position: center;
   background-color: #007b38; }
 
+#tab-container .ui-tab-content {
+  background: #00b611; }
+
+ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
+  background: #00b611; }
+
+#tabs1-menu ul li a {
+  font-family: "Open Sans Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "Arial Narrow", Arial Narrow, "Arial", sans-serif;
+  font-weight: 300; }
+  #tabs1-menu ul li a:hover, #tabs1-menu ul li a:focus, #tabs1-menu ul li a:active {
+    background: #00b611; }
+
+#tabs1-menu ul li a.primary_item {
+  background: white; }
+
+#tabs1-menu ul li a.primary_item {
+  background: #058532; }
+
+#tabs1-menu ul li a:hover, #tabs1-menu ul li a:focus, #tabs1-menu ul li a:active, #tabs1-search ul li a:hover, #tabs1-search ul li a:focus, #tabs1-search ul li a:active, #tabs1-profile ul li a:hover, #tabs1-profile ul li a:focus, #tabs1-profile ul li a:active {
+  background: #058532; }
+
+#tabs1-menu .dropdown-menu li a {
+  border-bottom: 0;
+  background-color: #00cc3a !important;
+  padding: 10px !important;
+  display: block; }
+  #tabs1-menu .dropdown-menu li a.active, #tabs1-menu .dropdown-menu li a:hover, #tabs1-menu .dropdown-menu li a:focus {
+    background-color: #00cc3a !important;
+    padding: 10px !important; }
+
+#tabs1-menu ul li a.active {
+  text-decoration: none;
+  font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif;
+  font-weight: 700; }
+
 #main-content .bulletin-node a {
   color: #007b38 !important;
   text-decoration: none;
