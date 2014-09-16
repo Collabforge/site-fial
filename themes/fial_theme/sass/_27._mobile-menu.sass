@@ -55,7 +55,22 @@ ul.etabs li
   font-family: $helv-cond-bold
   font-weight: 700
 
-#tabs1-menu ul li a
+// Mobile menu sub pages
+.mobile-sub-links
+  a
+    display: block
+    margin: 4px
+    padding: 8px 10px 6px 10px
+    color: white
+    background: #058532 // Fial Logo Green
+    text-transform: uppercase
+    font-family: $helv-cond-bold
+    font-weight: 700
+    &:hover, &:focus, &:active
+      background: #00b611 // Fial Bright Green
+
+
+// #tabs1-menu ul li a
   // &:hover, &:focus
     // -webkit-box-shadow: none
     // box-shadow: none
@@ -64,11 +79,11 @@ ul.etabs li
       // -webkit-box-shadow: none
       // box-shadow: none
 
-#search-block-form--2
+// #search-block-form--2
   // margin: 0 10px
   // padding: 10px 0
 
-#tabs1-search
+// #tabs1-search
   // .form-item-search-block-form
   //   // float: left
   // input.search-query
@@ -77,10 +92,10 @@ ul.etabs li
     // padding-top: 5px
     // padding-bottom: 5px
 
-html.js #tabs1-search input.search-query
+// html.js #tabs1-search input.search-query
   // background-image: none
 
-#tabs1-search input.btn-search
+// #tabs1-search input.btn-search
   // float: left
   // height: 22px
   // margin: 1em 0
