@@ -48,14 +48,7 @@ if ((($user->uid) && ($page['admin_shortcuts'])) || (($user->uid) && ($secondary
 <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300' rel='stylesheet' type='text/css'>
 
 <!--Custom Jquery, needs manual adding due to Drupal hooks-->
-<?php
-// Checks if current page is jquery-incompatible
-//echo current_path();
-if (current_path() == "node/463") { ?>
-<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
-<script type="text/javascript" src="/sites/default/themes/fial_theme/js/jquery.expander.js"></script>
-<script type="text/javascript" src="/sites/default/themes/fial_theme/js/custom-jquery.expander.js"></script>
-<?php } ?>
+
 
 <div class="ui-mobile-menu visible-phone hidden-desktop">
 
@@ -84,7 +77,14 @@ if (current_path() == "node/463") { ?>
   </div>
 
 </div>
-
+<?php
+// Checks if current page is jquery-incompatible
+//echo current_path();
+if (current_path() == "node/463") { ?>
+<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="/sites/default/themes/fial_theme/js/jquery.expander.js"></script>
+<script type="text/javascript" src="/sites/default/themes/fial_theme/js/custom-jquery.expander.js"></script>
+<?php } ?>
 <script type="text/javascript">
 
 jQuery(document).ready(function($) {
