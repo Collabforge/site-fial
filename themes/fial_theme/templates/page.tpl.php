@@ -68,7 +68,7 @@ if (current_path() == "node/463") { ?>
 
     <div class="ui-tab-content" id="tabs1-menu">
       <?php //echo $mobile['block_menu'];
-      print drupal_render(menu_tree_output(menu_tree_all_data('menu-meta-secondary-menu'))); ?>
+      print drupal_render(menu_tree_output(menu_tree_all_data('menu-mobile-menu'))); ?>
     </div>
    
 <!--    
