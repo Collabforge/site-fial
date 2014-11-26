@@ -32,7 +32,7 @@ h5 {
     color: #007b38; }
 
 h6 {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Open Sans Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "Arial Narrow", Arial Narrow, "Arial", sans-serif;
   font-weight: 300;
   font-size: 28px;
   color: #007b38; }
@@ -138,7 +138,7 @@ a.less-link {
 
 .menu_secondary li a {
   color: #007b38;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Open Sans Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "Arial Narrow", Arial Narrow, "Arial", sans-serif;
   font-weight: 300;
   font-size: 18px;
   text-transform: uppercase; }
@@ -185,7 +185,7 @@ a.less-link {
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Open Sans Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "Arial Narrow", Arial Narrow, "Arial", sans-serif;
     font-weight: 300;
     border-bottom: 1px transparent dotted;
     padding: 6px 0 0 0;
@@ -209,7 +209,7 @@ a.less-link {
     font-size: 16px !important;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Open Sans Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "Arial Narrow", Arial Narrow, "Arial", sans-serif;
     font-weight: 300; }
 
 .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
@@ -531,7 +531,7 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
   background: #00b611; }
 
 #tabs1-menu ul li a {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Open Sans Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "Arial Narrow", Arial Narrow, "Arial", sans-serif;
   font-weight: 300; }
   #tabs1-menu ul li a:hover, #tabs1-menu ul li a:focus, #tabs1-menu ul li a:active {
     background: #00b611; }
