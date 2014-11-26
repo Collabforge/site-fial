@@ -2,19 +2,19 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase; }
 
 h1, h2, h3, h4 {
-  font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
 h1 {
-  font-size: 46px;
+  font-size: 36px;
   color: white !important; }
 
 h2 {
-  font-size: 46px;
+  font-size: 32px;
   color: white; }
 
 h3 {
-  font-size: 40px;
+  font-size: 28px;
   color: white; }
 
 h4 {
@@ -22,7 +22,7 @@ h4 {
   color: white; }
 
 h5 {
-  font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 34px;
   color: #007b38; }
@@ -32,25 +32,25 @@ h5 {
     color: #007b38; }
 
 h6 {
-  font-family: "Open Sans Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "Arial Narrow", Arial Narrow, "Arial", sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 28px;
   color: #007b38; }
 
 p {
-  font-family: "Open Sans", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 16px;
   color: #4a4a4c; }
 
 .quote p {
-  font-family: Georgia, "Times New Roman", Times New Roman, Times, serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 22px;
   font-style: italic;
   color: #4a4a4c; }
 
 .subhead {
-  font-family: Georgia, "Times New Roman", Times New Roman, Times, serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 21px;
   font-style: oblique;
   font-weight: bold;
@@ -65,7 +65,7 @@ p {
       margin-top: 40px; } }
 
 .subhead-white {
-  font-family: Georgia, "Times New Roman", Times New Roman, Times, serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 19px;
   font-style: oblique;
   color: #007b38; }
@@ -116,7 +116,7 @@ a.less-link {
   text-decoration: none;
   border-bottom: 1px black dotted;
   text-transform: uppercase;
-  font-family: "Open Sans", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 12px;
   color: #4a4a4c; }
@@ -138,7 +138,7 @@ a.less-link {
 
 .menu_secondary li a {
   color: #007b38;
-  font-family: "Open Sans Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "Arial Narrow", Arial Narrow, "Arial", sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 18px;
   text-transform: uppercase; }
@@ -171,7 +171,7 @@ a.less-link {
   background-color: white; }
 
 .dropdown a {
-  font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif !important;
+  font-family: Helvetica, Arial, sans-serif !important;
   font-weight: 700; }
 
 .dropdown-menu {
@@ -185,7 +185,7 @@ a.less-link {
     font-size: 18px;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: "Open Sans Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "Arial Narrow", Arial Narrow, "Arial", sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 300;
     border-bottom: 1px transparent dotted;
     padding: 6px 0 0 0;
@@ -209,7 +209,7 @@ a.less-link {
     font-size: 16px !important;
     text-transform: uppercase;
     text-decoration: none;
-    font-family: "Open Sans Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "Arial Narrow", Arial Narrow, "Arial", sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 300; }
 
 .dropdown-submenu:hover > a, .dropdown-submenu:focus > a {
@@ -321,7 +321,23 @@ img#homepage_banner {
 #main-content .frontblockspan h1, #main-content .frontblockspan h2, #main-content .frontblockspan h3, #main-content .frontblockspan h4, #main-content .frontblockspan h5, #main-content .frontblockspan h6 {
   line-height: 1; }
 
+.front-block-1 {
+  background-image: url("/sites/default/themes/fial_theme/img/front1.jpg"); }
 
+.front-block-2 {
+  background-image: url("/sites/default/themes/fial_theme/img/front2.jpg"); }
+
+.front-block-3 {
+  background-image: url("/sites/default/themes/fial_theme/img/front3.jpg"); }
+
+.front-block-4 {
+  background-image: url("/sites/default/themes/fial_theme/img/front4.jpg"); }
+
+.front-block-5 {
+  background-image: url("/sites/default/themes/fial_theme/img/front5.jpg"); }
+
+.front-block-6 {
+  background-image: url("/sites/default/themes/fial_theme/img/front6.jpg"); }
 
 div[class*='front-block-'] {
   background-color: #007b38;
@@ -357,7 +373,7 @@ div[class*='front-block-']:hover .frontblocktitle {
     color: white; }
 
 .frontwhite {
-  font-family: Georgia, "Times New Roman", Times New Roman, Times, serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
   font-style: italic;
   color: white; }
@@ -379,10 +395,11 @@ div[class*='front-block-']:hover .frontblocktitle {
   text-align: center;
   text-shadow: none;
   cursor: pointer;
-  font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
-  padding: 10px 20px;
+  border-radius: 3px;
+  padding: 10px 10px;
   border: 1px solid transparent; }
   .button:hover, #block-views-member-organisations-mem-block .pager li > a:hover, .view-news .pager li > a:hover, .button:focus, #block-views-member-organisations-mem-block .pager li > a:focus, .view-news .pager li > a:focus, .button:active, #block-views-member-organisations-mem-block .pager li > a:active, .view-news .pager li > a:active {
     text-decoration: none; }
@@ -453,7 +470,7 @@ div[class*='front-block-']:hover .frontblocktitle {
   background-color: #007b38;
   text-shadow: none;
   color: white !important;
-  font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -490,7 +507,7 @@ div[class*='front-block-']:hover .frontblocktitle {
   .footer-links a {
     color: white !important;
     text-decoration: none;
-    font-family: "Open Sans", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 300;
     line-height: 1.4em;
     border-bottom: 1px white dotted; }
@@ -514,7 +531,7 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
   background: #00b611; }
 
 #tabs1-menu ul li a {
-  font-family: "Open Sans Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "Arial Narrow", Arial Narrow, "Arial", sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 300; }
   #tabs1-menu ul li a:hover, #tabs1-menu ul li a:focus, #tabs1-menu ul li a:active {
     background: #00b611; }
@@ -546,7 +563,7 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
 
 #tabs1-menu ul li a.active {
   text-decoration: none;
-  font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
 .mobile-sub-links a {
@@ -556,7 +573,7 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
   color: white;
   background: #058532;
   text-transform: uppercase;
-  font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 700;
   font-size: 18px; }
   .mobile-sub-links a:hover, .mobile-sub-links a:focus, .mobile-sub-links a:active {
@@ -585,35 +602,40 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
 
 #main-content h2, #main-content h3, #main-content h4, #main-content h5, #main-content h6 {
   color: #007b38;
-  font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 700;
   line-height: 1.2; }
+#main-content h1 {
+  font-size: 30px !important; }
 #main-content h4 {
-  font-size: 34px; }
+  font-size: 24px; }
 #main-content h5 {
-  font-size: 28px; }
+  font-size: 18px; }
 #main-content h6 {
-  font-size: 21px; }
+  font-size: 16px; }
 @media all and (max-width: 768px) {
+  #main-content h1 {
+    font-size: 30px !important; }
   #main-content h2 {
-    font-size: 32px; }
-  #main-content h3 {
     font-size: 28px; }
+  #main-content h3 {
+    font-size: 26px; }
   #main-content h4 {
     font-size: 24px; }
   #main-content h5 {
-    font-size: 20px; }
+    font-size: 18px; }
   #main-content h6 {
-    font-size: 18px; } }
+    font-size: 16px; } }
 #main-content blockquote {
   border-left: none;
+  padding: 0 15px;
   padding: 0 15px;
   font-size: 22px;
   font-style: oblique;
   color: #666666;
-  font-family: Georgia, "Times New Roman", Times New Roman, Times, serif; }
+  font-family: Helvetica, Arial, sans-serif; }
 #main-content p, #main-content ul, #main-content ol, #main-content li, #main-content input, #main-content button, #main-content table {
-  font-family: "Open Sans", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-size: 17px;
   color: #444444; }
@@ -629,7 +651,7 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
     text-align: center; }
   #main-content table.content-table thead th {
     background-color: white;
-    font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-weight: 700;
     font-size: 120%;
     vertical-align: top; }
@@ -789,7 +811,7 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
   #main-content aside.aside-quote, #main-content aside.aside-quote * {
     font-style: oblique;
     font-size: 32px;
-    font-family: Georgia, "Times New Roman", Times New Roman, Times, serif; }
+    font-family: Helvetica, Arial, sans-serif; }
   @media all and (max-width: 768px) {
     #main-content aside.aside-quote {
       width: auto;
@@ -859,7 +881,6 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
   text-decoration: none !important;
   background: #dcf7c0; }
   #main-content .calendar-calendar .month-view .full td.multi-day div.monthview, #main-content .calendar-calendar .month-view .full td.multi-day div.monthview *, #main-content .calendar-calendar .week-view .full td.multi-day div.weekview, #main-content .calendar-calendar .week-view .full td.multi-day div.weekview *, #main-content .calendar-calendar .day-view .full td.multi-day div.dayview, #main-content .calendar-calendar .day-view .full td.multi-day div.dayview *, #main-content .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues, #main-content .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues *, #main-content .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff, #main-content .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff *, #main-content .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues, #main-content .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues *, #main-content .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff, #main-content .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff *, #main-content .calendar-calendar td .inner div.calendar div, #main-content .calendar-calendar td .inner div.calendar div *, #main-content .calendar-calendar td .inner div.calendar div a, #main-content .calendar-calendar td .inner div.calendar div a *, #main-content .calendar-calendar .month-view .full td.single-day div.monthview, #main-content .calendar-calendar .month-view .full td.single-day div.monthview *, #main-content .calendar-calendar .week-view .full td.single-day div.weekview, #main-content .calendar-calendar .week-view .full td.single-day div.weekview *, #main-content .calendar-calendar .day-view .full td.single-day div.dayview, #main-content .calendar-calendar .day-view .full td.single-day div.dayview * {
-    font-size: 12px;
     color: #555555;
     text-decoration: none !important; }
 #main-content .view .date-nav-wrapper li.date-prev, #main-content .view .date-nav-wrapper li.date-next {
@@ -869,7 +890,7 @@ body {
   background-color: white;
   background-image: none;
   color: #4a4a4c;
-  font-family: "Open Sans", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 300;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: visible !important; }
@@ -964,12 +985,12 @@ body {
   color: white;
   font-size: 20px;
   line-height: 1;
-  font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
 .content-text-news {
   margin: -25px 20px 0px 20px; }
 
 .menu_secondary li a, .menu_secondary li a:hover, .menu_secondary li a:active, .menu_secondary li a:focus, .menu_secondary li a *, .menu_secondary li a.active, .menu_secondary li a.active:hover, .menu_secondary li a.active:active, .menu_secondary li a.active:focus, .menu_secondary li a.active * {
-  font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-weight: 700; }
