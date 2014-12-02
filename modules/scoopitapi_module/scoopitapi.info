@@ -1,0 +1,5 @@
+name = Scoopit API Module
+description = "Connects to Scoopit to get the posts"
+core = 7.x
+
+configure = admin/config/scoopit
