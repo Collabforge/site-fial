@@ -84,8 +84,7 @@ function scoopitapi_cron(){
     insert_all_posts_from_topic($scoop,$topicOne);
     insert_all_posts_from_topic($scoop,$topicTwo);
   }else
-  {
-      echo "record exists";
+  { 
       $postIds = getExistingPosts();
       insert_posts_from_topic($scoop,$topicOne,$postIds);
       insert_posts_from_topic($scoop,$topicTwo,$postIds);
@@ -171,6 +170,23 @@ function create_a_scoopitpost_node($post,$topic_name) {
         echo $post->topicId;
         echo $post->id;
         echo $post->url. " ".$post->curationDate."</li>";
+
+        $host = @parse_url($post->url, PHP_URL_HOST);
+
+    // If the URL can't be parsed, use the original URL
+    // Change to "return false" if you don't want that
+       if (!$host)
+          $host = $post->url;
+
+    // The "www." prefix isn't really needed if you're just using
+    // this to display the domain to the user
+    // if (substr($host, 0, 4) == "www.")
+    //     $host = substr($host, 4);
+
+    // You might also want to limit the length if screen space is limited
+      if (strlen($host) > 50)
+        $host = substr($host, 0, 47) . '...';
+
       // entity_create replaces the procedural steps in the first example of
       // creating a new object $node and setting its 'type' and uid property
       $values = array(
@@ -195,7 +211,9 @@ function create_a_scoopitpost_node($post,$topic_name) {
       // because the body can have both its complete value and its
       // summary
       $my_body_content = $post->htmlContent;
-      $ewrapper->body->set(array('value' => $my_body_content));
+      $ewrapper->body->set(array('value' => $my_body_content,'format'=>'full_html'));
+      
+
      // $ewrapper->body->summary->set('Things that interest me');
 
       $ewrapper->field_image_url->set($post->mediumImageUrl);
@@ -204,16 +222,19 @@ function create_a_scoopitpost_node($post,$topic_name) {
       $ewrapper->field_post_external_url_->set($post->url);
       $ewrapper->field_topic_name->set($topic_name);
       $ewrapper->field_topic_id->set($post->topicId);
+      $ewrapper->field_source->set($host);
 
 
       // Entity API cannot set date field values so the 'old' method must
       // be used
-      // $my_date = new DateTime($post->curationDate);
-      // $entity->field_curation_date[LANGUAGE_NONE][0] = array(
-      //    'value' => date_format($my_date, 'Y-m-d'),
-      //    'timezone' => 'UTC',
-      //    'timezone_db' => 'UTC',
-      //  );
+       $my_date = new DateTime();
+       $my_date->setTimestamp(intval($post->curationDate)/1000);
+      // $post->curationDate
+       $entity->field_curation_date[LANGUAGE_NONE][0] = array(
+          'value' => date_format($my_date, 'Y-m-d'),
+          'timezone' => 'UTC',
+          'timezone_db' => 'UTC',
+        );
 
       // Now just save the wrapper and the entity
       // There is some suggestion that the 'true' argument is necessary to
