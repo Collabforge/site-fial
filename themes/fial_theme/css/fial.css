@@ -141,6 +141,16 @@ a.less-link {
 .aside-small-grey h6 {
   font-size: 16px !important; }
 
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* border-radius: 3px; */
+  /* box-shadow: 1px 1px 5px grey; */
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 3px; }
+
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
