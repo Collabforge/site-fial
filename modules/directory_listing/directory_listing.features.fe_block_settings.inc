@@ -12,11 +12,10 @@ function directory_listing_default_fe_block_settings() {
 
   $export['version'] = '2.0';
 
-  $export['views-directory_listing-block'] = array(
+  $export['views-directory_listing_search-block'] = array(
     'cache' => -1,
     'css_class' => '',
-    'custom' => 0,
-    'delta' => 'directory_listing-block',
+    'delta' => 'directory_listing_search-block',
     'module' => 'views',
     'node_types' => array(),
     'pages' => '',
@@ -47,8 +46,6 @@ function directory_listing_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
-    'title' => '',
-    'visibility' => 0,
   );
 
   return $export;
