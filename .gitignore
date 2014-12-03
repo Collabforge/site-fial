@@ -1,9 +1,1 @@
 settings.php
-files/*
-private/*
-_build/*-db.sql.*
-themes/flip_theme
-themes/flip_theme/*
-themes/flip_theme/logo.png
-deploy.php
-.DS_Store

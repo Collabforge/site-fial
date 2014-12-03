@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Scoopit Post feature.
+ */
+
+include_once 'scoopit_post.features.inc';
