@@ -416,6 +416,7 @@ div[class*='front-block-']:hover .frontblocktitle {
   font-family: "Open Sans Condensed", "HelveticaNeueCondensedBold", "HelveticaNeue-CondensedBold", "Helvetica Neue Condensed Bold", "Arial Narrow", Arial Narrow, Arial, sans-serif;
   font-weight: 700;
   font-size: 16px;
+  border-radius: 3px;
   padding: 10px 20px;
   border: 1px solid transparent; }
   .button:hover, #block-views-member-organisations-mem-block .pager li > a:hover, .view-news .pager li > a:hover, .button:focus, #block-views-member-organisations-mem-block .pager li > a:focus, .view-news .pager li > a:focus, .button:active, #block-views-member-organisations-mem-block .pager li > a:active, .view-news .pager li > a:active {
