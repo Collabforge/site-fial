@@ -187,12 +187,12 @@ a.less-link {
 .page-node-514 ul.quicktabs-tabs li a {
   color: gray;
   text-decoration: none;
-  font-weight: 700; }
+  font-weight: 700;
+  font-size: 14px; }
 
 .page-node-514 ul.quicktabs-tabs li.active {
-  background-color: green !important;
-  color: whitesmoke;
-  font-weight: 700; }
+  color: whitesmoke !important;
+  border-bottom: 2px solid green; }
 
 .page-node-514 .pager-current {
   font-weight: bold;
