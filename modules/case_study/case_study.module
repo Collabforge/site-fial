@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the case study feature.
+ */
+
+include_once 'case_study.features.inc';
