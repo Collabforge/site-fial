@@ -210,6 +210,12 @@ a.less-link {
 .si-news-read-more {
   float: left; }
 
+.si-news-read-more a {
+  color: green;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 14px; }
+
 .si-news-date {
   font-size: 14px;
   margin-bottom: -15px;
