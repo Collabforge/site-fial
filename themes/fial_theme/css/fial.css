@@ -171,7 +171,7 @@ a.less-link {
 
 .page-node-514 .quicktabs-tabs {
   margin-left: 0px !important;
-  margin-bottom: -70px;
+  margin-bottom: -73px;
   margin-top: 30px; }
 
 .page-node-514 ul.quicktabs-tabs li {
@@ -264,7 +264,8 @@ a.less-link {
   padding: 0px; }
 
 .page-node-514 .views-exposed-form {
-  float: right; }
+  float: right;
+  margin-bottom: -17px; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
