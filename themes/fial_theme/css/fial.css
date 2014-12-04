@@ -178,7 +178,8 @@ a.less-link {
   list-style-type: none;
   padding: 2px 5px 2px 5px;
   white-space: nowrap;
-  border-radius: 3px; }
+  border-radius: 3px;
+  margin-bottom: -80px; }
 
 .page-node-514 ul.quicktabs-tabs li a {
   color: whitesmoke;
@@ -196,6 +197,9 @@ a.less-link {
   border-radius: 15px;
   color: white !important;
   font-weight: 900 !important; }
+
+.si-news-img {
+  float: left; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
