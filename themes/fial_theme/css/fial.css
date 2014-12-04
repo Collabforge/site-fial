@@ -157,6 +157,9 @@ a.less-link {
 .page-node-514 .col-1 {
   width: 50% !important; }
 
+.page-node-514 h2 {
+  display: none; }
+
 .page-node-514 .views-view-grid {
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
