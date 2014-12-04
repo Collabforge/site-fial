@@ -201,6 +201,12 @@ a.less-link {
 .si-news-img {
   float: left; }
 
+.si-news-read-more {
+  float: right; }
+
+si-news-date {
+  font-size: 14px; }
+
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
