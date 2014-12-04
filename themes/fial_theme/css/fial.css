@@ -160,10 +160,10 @@ a.less-link {
 .page-node-514 img {
   padding: 10px 10px 10px 0px; }
 
-.page-node-514 views-exposed-widgets {
+.page-node-514 .views-exposed-widgets {
   float: right; }
 
-.views-view-grid {
+.page-node-514 .views-view-grid {
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2); }
@@ -181,16 +181,20 @@ a.less-link {
   border-radius: 3px;
   margin-bottom: -80px; }
 
-ul.quicktabs-tabs li a {
+.page-node-514 ul.quicktabs-tabs li a {
   color: whitesmoke;
   text-decoration: none;
   font-weight: 900; }
 
+.page-node-514 .active li {
+  background-color: green; }
+
 .page-node-514 .pager-current {
   font-weight: bold;
   background-color: green;
-  padding: 10px;
-  border-radius: 10px;
+  /* padding: 10px; */
+  padding: 5px 14px;
+  border-radius: 15px;
   color: white !important;
   font-weight: 900 !important; }
 
