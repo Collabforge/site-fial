@@ -168,7 +168,8 @@ a.less-link {
 
 .page-node-514 .quicktabs-tabs {
   margin-left: 0px !important;
-  margin-bottom: -70px; }
+  margin-bottom: -70px;
+  margin-top: 50px; }
 
 .page-node-514 ul.quicktabs-tabs li {
   display: inline !important;
