@@ -205,7 +205,7 @@ a.less-link {
   min-width: 150px;
   max-width: 150px;
   overflow: hidden;
-  padding: 10px 10px 10px 0px; }
+  padding: 10px 20px 10px 0px; }
 
 .si-news-read-more {
   float: left; }
@@ -217,7 +217,8 @@ a.less-link {
 
 .si-news-body {
   font-size: 16px;
-  padding: 10px; }
+  padding: 10px;
+  margin-top: -5px; }
 
 .si-news-tag {
   font-size: 14px; }
