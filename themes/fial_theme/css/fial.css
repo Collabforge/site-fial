@@ -157,9 +157,6 @@ a.less-link {
 .page-node-514 .col-1 {
   width: 50% !important; }
 
-.page-node-514 .views-exposed-widgets {
-  float: right; }
-
 .page-node-514 .views-view-grid {
   -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
@@ -175,8 +172,7 @@ a.less-link {
   list-style-type: none;
   padding: 2px 5px 2px 5px;
   white-space: nowrap;
-  border-radius: 3px;
-  margin-bottom: -80px; }
+  border-radius: 3px; }
 
 .page-node-514 ul.quicktabs-tabs li a {
   color: whitesmoke;
@@ -211,7 +207,8 @@ a.less-link {
   font-size: 14px; }
 
 .si-news-body {
-  font-size: 16px; }
+  font-size: 16px;
+  padding: 10px; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
