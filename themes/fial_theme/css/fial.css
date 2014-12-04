@@ -186,8 +186,8 @@ a.less-link {
   text-decoration: none;
   font-weight: 900; }
 
-.page-node-514 .active li {
-  background-color: green; }
+.page-node-514 ul.quicktabs-tabs li.active {
+  background-color: green !important; }
 
 .page-node-514 .pager-current {
   font-weight: bold;
