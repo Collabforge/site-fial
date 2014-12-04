@@ -229,6 +229,13 @@ a.less-link {
   text-shadow: none;
   border-radius: 3px; }
 
+.page-node-514 .views-exposed-form {
+  float: left;
+  padding: 0px; }
+
+.page-node-514 .views-exposed-widget {
+  float: right; }
+
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
