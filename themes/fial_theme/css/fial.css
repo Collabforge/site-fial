@@ -171,11 +171,12 @@ a.less-link {
 .page-node-514 ul.quicktabs-tabs li {
   display: inline !important;
   padding: 3px 10px 3px 10px;
-  background: none;
+  background: #6ead3f;
   list-style-type: none;
   padding: 2px 5px 2px 5px;
   white-space: nowrap;
-  border-radius: 3px; }
+  border-radius: 3px;
+  border: none !important; }
 
 .page-node-514 ul.quicktabs-tabs li a {
   color: whitesmoke;
@@ -194,6 +195,9 @@ a.less-link {
   color: white !important;
   font-weight: 900 !important; }
 
+.page-node-514 img {
+  border-radius: 3px; }
+
 .si-news-img {
   float: left;
   min-height: 150px;
@@ -207,11 +211,16 @@ a.less-link {
   float: left; }
 
 .si-news-date {
-  font-size: 14px; }
+  font-size: 14px;
+  margin-bottom: -15px;
+  font-style: oblique; }
 
 .si-news-body {
   font-size: 16px;
   padding: 10px; }
+
+.si-news-tag {
+  font-size: 14px; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
