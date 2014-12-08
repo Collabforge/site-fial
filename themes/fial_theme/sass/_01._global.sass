@@ -186,42 +186,48 @@ a.less-link
     
 .page-node-514 .quicktabs-tabs 
   margin-left: 0px !important
-  margin-bottom: -73px
   margin-top: 30px
+  margin-bottom: -45px
 
 .page-node-514 ul.quicktabs-tabs li
   display: inline !important
   padding: 3px 10px 3px 10px
-  background: white
   list-style-type: none
   padding: 2px 5px 2px 5px
   white-space: nowrap
   border-radius: 3px
   border: 1px solid #ddd
+  text-transform: lowercase
 
+.page-node-514 ul.quicktabs-tabs li:hover
+  background-color: white
+    
 .page-node-514 ul.quicktabs-tabs li a
   color: grey
   text-decoration: none
   font-weight: 700
   font-size: 14px
 
-.page-node-514 ul.quicktabs-tabs li.active
-  color: whitesmoke !important
-  background-color: green
+.page-node-514 .first li.active
+  color: white
 
 .page-node-514 .pager-current 
   font-weight: bold
-  background-color: green
+  background-color: #007b38
   /* padding: 10px; */
   padding: 5px 10px
   border-radius: 3px
-  color: white !important
+  color: whitesmoke !important
+  border: 1px solid #ddd
   font-weight: 700 !important
+
+.page-node-514 .pager li >a:hover
+  background-color: white !important
 
 .page-node-514 .pager li > a, .pager li > span
   display: inline-block
   padding: 5px 10px
-  background-color: white
+  background-color: #f2f2f2
   border: 1px solid #ddd
   -webkit-border-radius: 3px
   -moz-border-radius: 3px
@@ -232,6 +238,10 @@ a.less-link
 .page-node-514 img
   border-radius: 3px
 
+.page-node-514 .views-exposed-form label
+  font-weight: bold
+  display: none
+
 .si-news-img
   float: left
   min-height: 150px
@@ -241,18 +251,18 @@ a.less-link
   overflow: hidden
   padding: 10px 20px 10px 0px
   margin-top: -10px
-    
+
 .si-news-read-more
   float: left
     
 .si-news-read-more a
-  color: green
+  color: #007b38
   text-decoration: none
   font-weight: 900
   font-size: 14px
 
 .si-news-read-more a:hover
-  color: green
+  border-bottom: 2px solid #007b38
   text-decoration: none
   font-weight: 900
   font-size: 14px
@@ -274,8 +284,18 @@ a.less-link
   height: auto
   padding: 3px
   text-shadow: none
-  border-radius: 3px
-  font-size: 14px
+  border-radius: 4px
+  border: 1px solid #dddddd !important
+  color: whitesmoke !important
+  background-color: #007b38
+  font-size: 14px !important
+  margin-top: 0px !important
+  text-transform: lowercase
+  font-weight: 700 !important
+
+.page-node-514 input.form-submit:hover
+  background-color: white !important
+  color: grey !important
 
 .page-node-514 .views-exposed-widget
   float: left
@@ -283,4 +303,73 @@ a.less-link
 
 .page-node-514 .views-exposed-form
   float: right
-  margin-bottom: -10px
+    
+// directory //
+
+.directory-capabilities-container
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2)
+  padding: 30px
+  border: 1px solid #ddd
+    
+.page-node-735 h2
+  font-size: 18px
+  background-color: #007b38
+  padding: 5px
+  color: white !important
+  border-radius: 3px
+  margin-bottom: -1px
+  text-transform: capitalize
+  margin-top: -20px
+  padding-left: 25px
+  box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.2)
+    
+.page-node-735 .views-widget-filter-field_capabilities_tid_selective 
+  padding-right: 30px
+
+.page-node-735 .form-submit
+  text-transform: lowercase
+  margin-top: 25px !important
+  font-size: 14px !important
+  text-transform: lowercase
+  font-weight: 300 !important
+
+.dir-title
+  font-size: 14px
+  font-weight: 700
+  padding-bottom: 5px
+
+.dir-body
+  margin-bottom: -15px !important
+  padding-left: 18px
+
+.dir-body p
+  font-size: 16px !important
+
+.dir-website a
+  font-size: 14px
+  color: #007b38
+  font-weight: 600
+  text-decoration: underline
+  font-style: italic
+  padding-left: 18px
+
+.dir-capabilities
+  /* width: 150px; */
+  /* border: 2px solid green; */
+  float: right
+  /* background: #ddd; */
+  font-weight: 700
+  font-size: 12px
+
+.dir-capabilities a
+  color: #007b38
+
+.page-node-735 .views-exposed-form label
+  font-weight: bold
+  /* font-weight: 100; */
+  font-size: 14px
+
+.page-node-735 select
+  border-radius: 3px !important
+  width: 380px
+  border: 3px double #ddd
