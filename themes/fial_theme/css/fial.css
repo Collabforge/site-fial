@@ -152,22 +152,21 @@ a.less-link {
   border-radius: 3px; }
 
 .page-node-514 td {
-  padding: 20px;
+  padding: 30px;
   border: 1px solid #eeeeee; }
 
 .page-node-514 content table tbody tr:nth-child(odd) td {
-  background-color: #f6f6f6; }
+  background-color: white !important; }
+
+.page-node-514 table {
+  border-collapse: separate;
+  border-spacing: 10px; }
 
 .page-node-514 .col-1 {
   width: 50% !important; }
 
 .page-node-514 h2 {
   display: none; }
-
-.page-node-514 .views-view-grid {
-  -webkit-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.2); }
 
 .page-node-514 .quicktabs-tabs {
   margin-left: 0px !important;
@@ -230,9 +229,7 @@ a.less-link {
 .si-news-img {
   float: left;
   min-height: 150px;
-  max-height: 150px;
   min-width: 150px;
-  max-width: 150px;
   overflow: hidden;
   padding: 10px 20px 10px 0px;
   margin-top: -10px; }
