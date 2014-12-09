@@ -178,7 +178,10 @@ a.less-link {
   border-radius: 3px; }
 
 .page-node-514 ul.quicktabs-tabs li:hover {
-  background-color: #dddddd; }
+  background-color: white; }
+
+.page-node-514 ul.quicktabs-tabs li a:hover {
+  color: gray !important; }
 
 .page-node-514 ul.quicktabs-tabs li a {
   color: white;
