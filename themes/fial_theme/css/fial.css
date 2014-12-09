@@ -166,20 +166,21 @@ a.less-link {
 
 .page-node-514 ul.quicktabs-tabs li {
   display: inline !important;
-  background: white;
+  background: #007b37;
   padding: 3px 10px 3px 10px;
   list-style-type: none;
   padding: 2px 5px 2px 5px;
   white-space: nowrap;
   border-radius: 3px;
   border: 1px solid #dddddd;
+  font-weight: 900;
   text-transform: lowercase; }
 
 .page-node-514 ul.quicktabs-tabs li:hover {
   background-color: #dddddd; }
 
 .page-node-514 ul.quicktabs-tabs li a {
-  color: gray;
+  color: white;
   text-decoration: none;
   font-weight: 700;
   font-size: 14px; }
