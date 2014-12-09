@@ -166,20 +166,16 @@ a.less-link
 // scoopit news //
 
 .page-node-514 td
-  padding: 30px
-  border: 1px solid #eee
-  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2)
-
-.page-node-514 content table tbody tr:nth-child(odd) td
-  background-color: white !important
+  border: none
 
 .page-node-514 table
   border-collapse: separate
   border-spacing: 10px
-  padding-top: 20px
 
 .page-node-514 .col-1
   width: 50% !important
+    
+.page-node-514 .col-2
 
 //search bar //
 .page-node-514 h2
@@ -236,24 +232,27 @@ a.less-link
   color: grey
   font-weight: 700
 
-.page-node-514 img
-  border-radius: 3px
+.si-news-img img
+  min-width: 100%
+  min-height: 250px
+  max-height: 250px
 
 .page-node-514 .views-exposed-form label
   font-weight: bold
   display: none
 
-.si-news-img
-  float: left
-  min-height: 150px
-  min-width: 150px
-  overflow: hidden
-  padding: 20px 20px 20px 0px
-  margin-top: -10px
-
-.si-news-read-more
-  float: left
+.si-img-body
+  padding: 30px
+  margin-top: 20px
     
+.si-news-img
+  z-index: -999
+  overflow: hidden
+  margin-bottom: -20px
+  min-width: 100%
+  max-height: 250px
+  min-height: 250px
+
 .si-news-read-more a
   color: #007b38
   text-decoration: none
@@ -267,16 +266,43 @@ a.less-link
   font-size: 14px
     
 .si-news-date
-  font-size: 14px
-  margin-bottom: -15px
+  font-size: 12px
+  font-weight: 900
+  /* margin-left: -25px; */
+  margin-top: 10px
+  color: white !important
+  padding: 5px 5px 5px 20px
+  color: white
+  margin-bottom: -10px
+  border-radius: 10px
+  text-align: center
 
 .si-news-body
-  font-size: 16px
-  padding: 20px
-  margin-top: -15px
+  font-size: 14px
+  font-weight: 900
+
+.si-news-title
+  font-weight: 900
+  font-size: 18px
+  font-style: normal
+  line-height: 22px
+  text-align: center
+
+.si-title-date
+  padding: 10px 20px 20px 20px
+  color: white
+  font-weight: 900
+  background: linear-gradient(#007b38 , darkgreen)
+  border-top: 5px solid #66AA3F
+  border-left: 2px solid #66aa3f
+  border-right: 2px solid #66aa3f
 
 .si-news-tag
   font-size: 14px
+
+.si-lower-content
+  border-left: 2px solid #66AA3F
+  border-right: 2px solid #66AA3F
 
 .page-node-514 .form-submit
   height: auto
@@ -302,7 +328,10 @@ a.less-link
 .page-node-514 .views-exposed-form
   float: right
   padding-right: 30px
-    
+
+.page-node-514 #main-content table
+  width: 87%
+  margin-left: 55px
 // directory //
 
 .directory-capabilities-container
@@ -372,3 +401,25 @@ a.less-link
   border-radius: 3px !important
   width: 380px
   border: 3px double #ddd
+    
+.no-background table tbody tr:nth-child(odd) td
+  background-color: transparent !important
+  background: none !important
+    
+.no-table-padding td
+  padding: 0em !important
+
+.social-bar
+  width: auto
+  height: 20px
+  padding: 5px
+  text-align: center
+  background-color: darkgreen
+  border-top: 5px solid #66AA3F
+  background: linear-gradient(#007b38 , darkgreen)
+    
+.page-node-514 .fb_iframe_widget
+  display: inline-flex
+  margin-right: 10px
+  /* position: initial; */
+
