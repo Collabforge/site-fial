@@ -158,7 +158,6 @@ a.less-link {
   display: none; }
 
 .page-node-514 .quicktabs-tabs {
-  background: darkgreen;
   width: 81%;
   margin-left: 73px;
   padding: 20px;
@@ -167,6 +166,7 @@ a.less-link {
 
 .page-node-514 ul.quicktabs-tabs li {
   display: inline !important;
+  background: white;
   padding: 3px 10px 3px 10px;
   list-style-type: none;
   padding: 2px 5px 2px 5px;
@@ -176,7 +176,7 @@ a.less-link {
   text-transform: lowercase; }
 
 .page-node-514 ul.quicktabs-tabs li:hover {
-  background-color: white; }
+  background-color: #dddddd; }
 
 .page-node-514 ul.quicktabs-tabs li a {
   color: gray;
@@ -185,7 +185,7 @@ a.less-link {
   font-size: 14px; }
 
 .page-node-514 .first li.active {
-  color: white; }
+  color: #dddddd; }
 
 .page-node-514 .pager-current {
   font-weight: bold;
@@ -300,7 +300,8 @@ a.less-link {
   background: linear-gradient(darkgreen, #007b38);
   border-left: 2px solid green;
   border-right: 2px solid green;
-  border-radius: 3px 3px 0px 0px; }
+  border-radius: 3px 3px 0px 0px;
+  border-bottom: 1px dashed lightgray; }
 
 .si-news-tag {
   font-size: 12px;
@@ -336,7 +337,7 @@ a.less-link {
   float: right;
   margin-right: 80px;
   padding-bottom: 10px;
-  margin-top: -57px;
+  margin-top: -60px;
   padding-right: 10px; }
 
 .directory-capabilities-container {
