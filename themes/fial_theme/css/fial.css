@@ -298,16 +298,29 @@ a.less-link {
   font-style: normal;
   line-height: 22px; }
 
+/* .si-title-date
+ * padding: 20px 20px 30px 30px
+ * color: white
+ * font-weight: 900
+ * background: linear-gradient(darkgreen , #007b38)
+ * border-left: 2px solid green
+ * border-right: 2px solid green
+ * border-radius: 3px 3px 0px 0px
+ * border-bottom: 1px dashed lightgrey
+ * box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2) */
 .si-title-date {
   padding: 20px 20px 30px 30px;
   color: white;
   font-weight: 900;
-  background: linear-gradient(darkgreen, #007b38);
+  background-color: #007b37;
   border-left: 2px solid green;
   border-right: 2px solid green;
   border-radius: 3px 3px 0px 0px;
   border-bottom: 1px dashed lightgray;
-  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
+  background-image: url("/sites/default/themes/fial_theme/img/banner-right.svg"), url("/sites/default/themes/fial_theme/img/banner-left.svg");
+  background-position: right -80px, -60px center;
+  background-repeat: no-repeat, no-repeat; }
 
 .si-news-tag {
   font-size: 12px;
@@ -354,8 +367,8 @@ a.less-link {
 
 .page-node-735 h2 {
   font-size: 20px;
-  /* background-color: #007b38; */
-  background: linear-gradient(darkgreen, #007b38);
+  background-color: #007b38;
+  /* background: linear-gradient(darkgreen, #007b38); */
   padding: 25px;
   color: white !important;
   border-radius: 3px;
@@ -364,7 +377,12 @@ a.less-link {
   text-transform: capitalize;
   margin-top: -20px;
   padding-left: 25px;
-  box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.2); }
+  box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.2);
+  background-image: url("/sites/default/themes/fial_theme/img/banner-right.svg"), url("/sites/default/themes/fial_theme/img/banner-left.svg");
+  background-position: right -80px, -60px center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 212px 196px, 300px 314px;
+  vertical-align: middle; }
 
 .page-node-735 .views-widget-filter-field_capabilities_tid_selective {
   padding-right: 30px; }
