@@ -218,7 +218,8 @@ a.less-link {
   display: none; }
 
 .si-img-body {
-  padding: 40px 30px 40px 30px; }
+  padding: 40px 30px 40px 30px;
+  background: #f2f1ef; }
 
 .si-news-img {
   z-index: -999;
