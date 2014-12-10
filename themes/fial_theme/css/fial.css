@@ -303,7 +303,7 @@ a.less-link {
  * border-bottom: 1px dashed lightgrey
  * box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2) */
 .si-title-date {
-  padding: 20px 20px 30px 30px;
+  padding: 20px 20px 20px 30px;
   color: white;
   font-weight: 900;
   background-color: #007b37;
@@ -315,7 +315,7 @@ a.less-link {
   background-position: right -105px, -110px center;
   background-repeat: no-repeat, no-repeat;
   background-size: 90px 180px, 200px 200px;
-  border-bottom: 2px solid darkgreen; }
+  border-top: 3px solid darkgreen; }
 
 .si-news-tag {
   font-size: 12px;
