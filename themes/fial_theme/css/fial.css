@@ -219,16 +219,14 @@ a.less-link {
   display: none; }
 
 .si-img-body {
-  padding: 35px 20px 25px 32px;
+  padding: 15px 20px 25px 30px;
   background: #f2f1ef; }
 
 .si-news-img {
   z-index: -999;
   overflow: hidden;
-  margin-bottom: -20px;
-  min-width: 317px;
-  max-height: 190px;
-  min-height: 190px; }
+  min-width: 190px;
+  max-height: 190px; }
 
 .si-news-read-more {
   float: right;
