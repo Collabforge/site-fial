@@ -174,7 +174,7 @@ a.less-link {
   background-color: white; }
 
 .page-node-514 ul.quicktabs-tabs li a:hover {
-  color: gray !important; }
+  color: gray; }
 
 .page-node-514 ul.quicktabs-tabs li a {
   color: white;
@@ -543,9 +543,10 @@ a.less-link {
     display: block;
     width: 100%; } }
 @media all and (max-width: 560px) and (min-width: 1px) {
-  ul.quicktabs-tabs li a.active, ul.quicktabs-tabs li a:hover {
-    background: #007b38;
-    border: none; } }
+  ul.quicktabs-tabs li a:hover {
+    background: white;
+    border: none;
+    color: gray !important; } }
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
