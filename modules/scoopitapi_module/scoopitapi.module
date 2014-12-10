@@ -166,7 +166,7 @@ function create_a_scoopitpost_node($post,$topic_name) {
      
         echo "<li>".$post->title."<br>";
         echo $post->htmlContent;
-        echo "<img src=".$post->mediumImageUrl." />";
+        echo "<img src=".$post->largeImageUrl." />";
         echo $post->topicId;
         echo $post->id;
         echo $post->url. " ".$post->curationDate."</li>";
