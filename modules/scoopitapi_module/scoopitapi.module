@@ -216,13 +216,14 @@ function create_a_scoopitpost_node($post,$topic_name) {
 
      // $ewrapper->body->summary->set('Things that interest me');
 
-      $ewrapper->field_image_url->set($post->mediumImageUrl);
+      $ewrapper->field_image_url->set($post->largeImageUrl);
       $ewrapper->field_post_id->set($post->id);
 
       $ewrapper->field_post_external_url_->set($post->url);
       $ewrapper->field_topic_name->set($topic_name);
       $ewrapper->field_topic_id->set($post->topicId);
       $ewrapper->field_source->set($host);
+
 
 
       // Entity API cannot set date field values so the 'old' method must
@@ -251,7 +252,7 @@ function get_posts_from_topic($scoop, $topic_name){
      foreach ($posts as $post) {
       echo "<li>".$post->title."<br>";
       echo $post->htmlContent;
-      echo "<img src=".$post->mediumImageUrl." />";
+      echo "<img src=".$post->largeImageUrl." />";
       echo $post->topicId;
       echo $post->id;
       echo $post->url. " ".$post->curationDate."</li>";
