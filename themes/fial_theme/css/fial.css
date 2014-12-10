@@ -231,7 +231,8 @@ a.less-link {
   min-height: 190px; }
 
 .si-news-read-more {
-  float: right; }
+  float: right;
+  margin-top: -5px; }
 
 .si-news-read-more a {
   color: inherit;
