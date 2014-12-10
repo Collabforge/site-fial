@@ -347,9 +347,8 @@ a.less-link {
 
 .page-node-514 .views-exposed-form {
   float: right;
-  margin-right: 63px;
   padding-bottom: 10px;
-  margin-top: -60px;
+  margin-bottom: -15px;
   padding-right: 10px; }
 
 .directory-capabilities-container {
@@ -482,11 +481,10 @@ a.less-link {
   padding-right: 10px; }
 
 .page-node-514 .quicktabs-tabs {
-  width: 81%;
   margin-left: -20px;
   padding: 20px;
   border-radius: 2px;
-  margin-bottom: -10px; }
+  margin-bottom: -70px; }
 
 .views-column-1 {
   width: 32.5%;
