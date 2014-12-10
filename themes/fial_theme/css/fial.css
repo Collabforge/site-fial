@@ -529,6 +529,9 @@ a.less-link {
   .page-node-514 .views-exposed-form {
     float: left;
     margin-top: -25px; } }
+@media all and (max-width: 560px) and (min-width: 1px) {
+  .form-item {
+    width: 150px; } }
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
