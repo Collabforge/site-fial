@@ -281,14 +281,14 @@ a.less-link {
   color: white;
   text-decoration: none;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 19px;
   font-style: normal;
   line-height: 22px; }
 
 .si-news-title a:hover {
   text-decoration: underline;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 19px;
   font-style: normal;
   line-height: 22px; }
 
@@ -512,6 +512,10 @@ a.less-link {
 
 .twitter-share-button {
   width: 85px !important; }
+
+.icon-asterisk:before {
+  content: "\f069";
+  color: #34495e; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
