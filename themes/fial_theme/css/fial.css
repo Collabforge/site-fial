@@ -313,7 +313,8 @@ a.less-link {
   background-image: url("/sites/default/themes/fial_theme/img/banner-right.svg"), url("/sites/default/themes/fial_theme/img/banner-left.svg");
   background-position: right -105px, -110px center;
   background-repeat: no-repeat, no-repeat;
-  background-size: 90px 180px, 200px 200px; }
+  background-size: 90px 180px, 200px 200px;
+  border-bottom: 2px solid darkgreen; }
 
 .si-news-tag {
   font-size: 12px;
