@@ -518,6 +518,10 @@ a.less-link {
   content: "\f069";
   color: #34495e; }
 
+.pager {
+  padding-top: 460px;
+  margin-bottom: -20px; }
+
 @media all and (max-width: 615px) and (min-width: 1px) {
   .views-column-1 {
     width: 100%; } }
