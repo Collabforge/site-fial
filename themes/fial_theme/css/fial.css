@@ -557,9 +557,15 @@ a.less-link {
     background: white !important;
     color: gray !important; } }
 @media all and (max-width: 615px) and (min-width: 1px) {
-  .social-bar {
-    width: auto;
-    height: auto; } }
+  .twitter-share-button {
+    margin-left: -10px;
+    margin-right: -10px; } }
+@media all and (max-width: 615px) and (min-width: 1px) {
+  .fb_iframe_widget {
+    display: inline-flex;
+    margin-right: -1px;
+    /* position: initial; */
+    margin-left: 0px; } }
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
