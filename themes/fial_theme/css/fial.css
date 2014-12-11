@@ -545,7 +545,7 @@ a.less-link {
     width: 100%;
     border: none; } }
 @media all and (max-width: 560px) and (min-width: 1px) {
-  ul.quicktabs-tabs li a:hover {
+  ul.quicktabs-tabs li:hover {
     background: white !important;
     border: none;
     color: white !important; } }
