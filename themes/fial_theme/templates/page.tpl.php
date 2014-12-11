@@ -40,23 +40,27 @@ if (current_path() == "node/463") { ?>
 // Checks if current page is jquery-incompatible
 //echo current_path();
 if (current_path() == "node/514") { ?>
-<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.8.0.min.js">
+  $( document ).ajaxStart(function() {
+  stButtons.locateElements();
+});
+
+</script>
 <script type="text/javascript" src="/sites/default/themes/fial_theme/js/jquery.expander.js"></script>
 <script type="text/javascript" src="/sites/default/themes/fial_theme/js/custom-jquery.expander.js"></script>
 <?php } ?>
 
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 <script type="text/javascript">
-window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
+(function(){
+   var f = function() {
+     stButtons.locateElements();
+   };
+   window.setInterval(f, 2000);
+   f();
+})();
+
 </script>
 
 <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
