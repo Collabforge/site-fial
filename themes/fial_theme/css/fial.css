@@ -547,7 +547,7 @@ a.less-link {
     border: none; } }
 @media all and (max-width: 560px) and (min-width: 1px) {
   ul.quicktabs-tabs li a:hover {
-    background: white;
+    background: white !important;
     border: none;
     color: gray !important; } }
 #logo a, .ui-footer .ui-logo a {
