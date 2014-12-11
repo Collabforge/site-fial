@@ -540,6 +540,7 @@ a.less-link {
     border: none; } }
 @media all and (max-width: 560px) and (min-width: 1px) {
   .page-node-514 ul.quicktabs-tabs li {
+    background: #007b38;
     display: block;
     width: 100%; } }
 @media all and (max-width: 560px) and (min-width: 1px) {
