@@ -541,9 +541,10 @@ a.less-link {
     border: none; } }
 @media all and (max-width: 560px) and (min-width: 1px) {
   .page-node-514 ul.quicktabs-tabs li {
-    background: #007b38;
+    background: #007b38 !important;
     display: block;
-    width: 100%; } }
+    width: 100%;
+    border: none; } }
 @media all and (max-width: 560px) and (min-width: 1px) {
   ul.quicktabs-tabs li a:hover {
     background: white;
