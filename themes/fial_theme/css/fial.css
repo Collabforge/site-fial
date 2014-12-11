@@ -540,7 +540,8 @@ a.less-link {
     width: 180px; } }
 @media all and (max-width: 615px) and (min-width: 1px) {
   #block-block-23 {
-    margin-top: -55px; } }
+    margin-top: -55px;
+    margin-bottom: 0px; } }
 @media all and (max-width: 615px) and (min-width: 1px) {
   .page-node-514 .quicktabs-tabs {
     margin-top: -10px; } }
