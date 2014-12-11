@@ -535,6 +535,13 @@ a.less-link {
   input {
     width: 180px; } }
 @media all and (max-width: 615px) and (min-width: 1px) {
+  #block-block-23 {
+    margin-top: -55px; } }
+@media all and (max-width: 615px) and (min-width: 1px) {
+  .page-node-514 .quicktabs-tabs {
+    margin-top: -35px;
+    margin-bottom: -10px; } }
+@media all and (max-width: 615px) and (min-width: 1px) {
   .page-node-514 ul.quicktabs-tabs li a {
     background: #007b38;
     display: block;
