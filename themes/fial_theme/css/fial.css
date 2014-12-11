@@ -558,8 +558,8 @@ a.less-link {
     color: gray !important; } }
 @media all and (max-width: 615px) and (min-width: 1px) {
   .twitter-share-button {
-    margin-left: -10px;
-    margin-right: -10px; } }
+    margin-left: -20px;
+    margin-right: -15px; } }
 @media all and (max-width: 615px) and (min-width: 1px) {
   .fb_iframe_widget {
     display: inline-flex;
