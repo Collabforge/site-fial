@@ -36,6 +36,16 @@ if (current_path() == "node/463") { ?>
 <script type="text/javascript" src="/sites/default/themes/fial_theme/js/custom-jquery.expander.js"></script>
 <?php } ?>
 
+<?php
+// Checks if current page is jquery-incompatible
+//echo current_path();
+if (current_path() == "news") { ?>
+<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="/sites/default/themes/fial_theme/js/jquery.expander.js"></script>
+<script type="text/javascript" src="/sites/default/themes/fial_theme/js/custom-jquery.expander.js"></script>
+<?php } ?>
+
+
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
