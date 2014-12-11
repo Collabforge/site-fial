@@ -1,0 +1,19 @@
+@charset "UTF-8";
+.table {
+}
+
+body{
+	margin: 0 auto;	
+}
+
+table{
+	background-color: #67ac44;
+	max-width: 640px;
+	margin: 0;
+	padding: 0;
+}
+
+td{
+	margin: 0;
+	padding: 0;
+}
