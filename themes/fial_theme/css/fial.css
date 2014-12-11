@@ -558,19 +558,19 @@ a.less-link {
     color: gray !important; } }
 @media all and (max-width: 615px) and (min-width: 1px) {
   .pluginCountButton {
-    padding: 0px;
-    line-height: none; } }
+    padding: 0px !important;
+    line-height: none !important; } }
 @media all and (max-width: 615px) and (min-width: 1px) {
   .fb_iframe_widget {
-    margin-left: 0px; } }
+    margin-left: 0px !important; } }
 @media all and (max-width: 615px) and (min-width: 1px) {
   .IN-widget {
     display: compact;
-    margin-left: -30px; } }
+    margin-left: -30px !important; } }
 @media all and (max-width: 615px) and (min-width: 1px) {
   .twitter-share-button {
-    margin-left: -12px;
-    margin-right: 18px; } }
+    margin-left: -12px !important;
+    margin-right: 18px !important; } }
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
