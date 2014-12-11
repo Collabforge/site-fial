@@ -556,6 +556,10 @@ a.less-link {
   ul.quicktabs-tabs li a:hover {
     background: white !important;
     color: gray !important; } }
+@media all and (max-width: 615px) and (min-width: 1px) {
+  .social-bar {
+    width: auto;
+    height: auto; } }
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
