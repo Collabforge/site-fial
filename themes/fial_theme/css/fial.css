@@ -530,7 +530,8 @@ a.less-link {
 @media all and (max-width: 615px) and (min-width: 1px) {
   .page-node-514 .views-exposed-form {
     float: left;
-    margin-top: -25px; } }
+    margin-top: -25px;
+    margin-bottom: 0px; } }
 @media all and (max-width: 615px) and (min-width: 1px) {
   input {
     width: 180px; } }
