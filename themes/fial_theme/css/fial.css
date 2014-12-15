@@ -576,7 +576,8 @@ a.less-link {
   border-radius: 3px;
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
   margin-bottom: -5px;
-  border: 1px solid #dddddd; }
+  border: 1px solid #dddddd;
+  overflow: hidden; }
 
 .cs-img {
   height: 150px;
