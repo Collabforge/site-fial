@@ -603,7 +603,8 @@ a.less-link {
 
 .cs-body p {
   font-size: 13px !important;
-  font-weight: 700 !important; }
+  font-weight: 700 !important;
+  margin-bottom: 0px !important; }
 
 .cs-body-download {
   height: auto; }
