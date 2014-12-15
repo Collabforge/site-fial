@@ -617,16 +617,23 @@ a.less-link {
 
 .page-node-736 .view-filters {
   float: right;
-  margin-bottom: -20px;
-  margin-top: -20px; }
+  margin-bottom: -15px;
+  margin-right: -13px; }
 
 .page-node-736 .views-widget-filter-combine {
   margin-top: 25px; }
 
 .page-node-736 .form-submit {
+  font-size: 14px !important;
   text-transform: lowercase;
   margin-left: -5px;
-  margin-top: 25px; }
+  margin-top: 25px !important; }
+
+.page-node-736 .form-text {
+  border: 1px solid #dddddd; }
+
+.page-node-736 #block-block-25 {
+  margin-bottom: -20px; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
