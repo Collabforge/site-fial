@@ -581,7 +581,8 @@ a.less-link {
   height: 100px;
   width: 100px;
   float: left;
-  padding-right: 30px; }
+  margin-right: 30px;
+  border: 2px solid #dddddd; }
 
 .cs-img img {
   width: 100%;
@@ -593,10 +594,14 @@ a.less-link {
   color: darkgreen; }
 
 .cs-calendar {
-  color: gray; }
+  color: gray;
+  padding: 3px;
+  margin-bottom: -3px; }
 
 .cs-body p {
-  font-size: 16px; }
+  font-size: 14px;
+  font-size: 14px;
+  padding-right: 100px; }
 
 .cs-download a {
   float: right;
@@ -607,8 +612,8 @@ a.less-link {
   padding: 10px;
   border-radius: 3px;
   margin-top: -55px;
-  border-right: 3px solid #dddddd;
-  margin-right: -26px; }
+  border-right: 3px solid #f2f1ef;
+  margin-right: -35px; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
