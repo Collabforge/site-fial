@@ -49,6 +49,9 @@ p {
   font-style: italic;
   color: #4a4a4c; }
 
+li {
+  font-size: 16px !important; }
+
 .subhead {
   font-family: Georgia, "Times New Roman", Times New Roman, Times, serif;
   font-size: 21px;
