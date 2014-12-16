@@ -40,7 +40,7 @@ h6 {
 p {
   font-family: "Open Sans", "HelveticaNeueLight", "HelveticaNeue-Light", "Helvetica Neue Light", "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   font-weight: 300;
-  font-size: 16px !important;
+  font-size: 16px;
   color: #4a4a4c; }
 
 .quote p {
@@ -50,7 +50,7 @@ p {
   color: #4a4a4c; }
 
 li {
-  font-size: 16px !important; }
+  font-size: 16px; }
 
 .subhead {
   font-family: Georgia, "Times New Roman", Times New Roman, Times, serif;
