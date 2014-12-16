@@ -419,7 +419,7 @@ a.less-link {
 
 .page-node-735 select {
   border-radius: 3px !important;
-  width: 380px;
+  width: 330px;
   border: 3px double #dddddd; }
 
 .no-background table tbody tr:nth-child(odd) td {
@@ -635,6 +635,10 @@ a.less-link {
 
 .page-node-736 #block-block-25 {
   margin-bottom: -20px; }
+
+#edit-reset a {
+  background: white;
+  color: gray; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
