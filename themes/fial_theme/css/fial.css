@@ -648,7 +648,10 @@ a.less-link {
   color: gray; }
 
 .block-block-24 {
-  margin-bottom: none; }
+  margin-bottom: 0px; }
+
+.page-node-735 .block-views {
+  margin-top: 30px; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
