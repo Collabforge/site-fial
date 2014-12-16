@@ -345,7 +345,9 @@ a.less-link {
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
   padding: 30px;
   border: 1px solid #dddddd;
-  background: #f2f1ef; }
+  background: #f2f1ef;
+  width: 90%;
+  margin-left: 9px; }
 
 .page-node-735 h2 {
   font-size: 20px;
@@ -364,7 +366,9 @@ a.less-link {
   background-position: right -152px, -170px center;
   background-repeat: no-repeat, no-repeat;
   background-size: 212px 196px, 300px 314px;
-  vertical-align: middle; }
+  vertical-align: middle;
+  width: 91.1%;
+  margin-left: 10px; }
 
 .page-node-735 .views-widget-filter-field_capabilities_tid_selective {
   padding-right: 30px; }
@@ -419,7 +423,7 @@ a.less-link {
 
 .page-node-735 select {
   border-radius: 3px !important;
-  width: 330px;
+  width: 315px;
   border: 3px double #dddddd; }
 
 .no-background table tbody tr:nth-child(odd) td {
@@ -639,6 +643,9 @@ a.less-link {
 #edit-reset a {
   background: white;
   color: gray; }
+
+block-block-24 {
+  margin-bottom: none; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
