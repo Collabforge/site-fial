@@ -413,7 +413,8 @@ a.less-link {
 
 .dir-all {
   margin-top: 30px;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  padding-right: 15px; }
 
 .dir-capabilities {
   font-weight: 700;
