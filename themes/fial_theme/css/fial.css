@@ -406,22 +406,20 @@ a.less-link {
   padding-left: 18px; }
 
 .dir-website {
-  margin-top: 4px;
-  margin-left: 1px;
-  float: right; }
+  margin-top: 10px;
+  float: right;
+  margin-bottom: 30px; }
 
 .dir-all {
   margin-top: 30px;
   margin-bottom: 30px; }
 
 .dir-capabilities {
-  /* width: 150px; */
-  /* border: 2px solid green; */
-  float: right;
-  /* background: #ddd; */
   font-weight: 700;
-  font-size: 12px;
-  color: gray; }
+  font-size: 10px;
+  color: gray;
+  margin-top: 10px;
+  margin-left: 18px; }
 
 .dir-capabilities a {
   color: gray; }
