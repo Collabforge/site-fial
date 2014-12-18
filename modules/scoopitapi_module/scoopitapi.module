@@ -66,17 +66,17 @@ function scoopitapi_init() {
 
 function scoopitapi_cron(){
 
-  watchdog('scoopit', 'My cron running');
+  //watchdog('scoopit', 'My cron running');
 
   $consumerKey = variable_get('scoopitconsumer_key');
   $consumerSecret = variable_get('scoopitconsumersecret_key');
   $topicOne = variable_get('scoopittopicnameone');
   $topicTwo = variable_get('scoopittopicnametwo');
 
-  watchdog('scoopit', 'consumerKey: %action', array('%action' => $consumerKey));
-  watchdog('scoopit', 'consumerSecret : %actionone ', array('%actionone' => $consumerSecret));
-  watchdog('scoopit', 'Topic One  : %actionone ', array('%actionone' => $topicOne));
-  watchdog('scoopit', 'Topic Two : %actionone', array('%actionone' => $topicTwo));
+  //watchdog('scoopit', 'consumerKey: %action', array('%action' => $consumerKey));
+  //watchdog('scoopit', 'consumerSecret : %actionone ', array('%actionone' => $consumerSecret));
+  //watchdog('scoopit', 'Topic One  : %actionone ', array('%actionone' => $topicOne));
+  //watchdog('scoopit', 'Topic Two : %actionone', array('%actionone' => $topicTwo));
   
   // Construct scoop var, which handle API communication
   $scoop = new ScoopIt(new SessionTokenStore(), "", $consumerKey, $consumerSecret);
@@ -97,7 +97,7 @@ function scoopitapi_cron(){
 
 function getExistingPosts(){
     $postIds = array();
-   echo "In existing Code ";
+   //echo "In existing Code ";
     $query = new EntityFieldQuery();
 
     $query->entityCondition('entity_type', 'node')
@@ -115,7 +115,7 @@ function getExistingPosts(){
         if ($fieldinfo) {
           $post_id = check_plain($fieldinfo[0]['value']);
         }
-        echo $post_id." : ";
+     //   echo $post_id." : ";
         $postIds[] = $post_id;
       }
 
@@ -132,7 +132,7 @@ function checkifPostsExists(){
      $result = $query->execute();
 
      if (empty($result['node'])) {   
-         echo "No Records exists";       
+       //  echo "No Records exists";       
          return false;
      }    
      return true;
@@ -140,13 +140,13 @@ function checkifPostsExists(){
 
 function insert_posts_from_topic($scoop, $topic_name,$postIds){
 
-     echo "Getting the results from".$topic_name; 
+     //echo "Getting the results from".$topic_name; 
      $topic = $scoop->resolveTopicFromItsShortName($topic_name);
      $posts = $topic->curatedPosts;
      foreach ($posts as $post) {
-        echo $post->id." : ";
+       // echo $post->id." : ";
           if (!in_array($post->id, $postIds)) {
-              echo "does not exists";
+         //     echo "does not exists";
               create_a_scoopitpost_node($post,$topic_name);   
           }
           
@@ -154,7 +154,7 @@ function insert_posts_from_topic($scoop, $topic_name,$postIds){
 }
 
 function insert_all_posts_from_topic($scoop, $topic_name){
-     echo "Getting the results from".$topic_name; 
+     //echo "Getting the results from".$topic_name; 
      $topic = $scoop->resolveTopicFromItsShortName($topic_name);
      $posts = $topic->curatedPosts;
      foreach ($posts as $post) {
@@ -164,12 +164,12 @@ function insert_all_posts_from_topic($scoop, $topic_name){
 
 function create_a_scoopitpost_node($post,$topic_name) {
      
-        echo "<li>".$post->title."<br>";
-        echo $post->htmlContent;
-        echo "<img src=".$post->largeImageUrl." />";
-        echo $post->topicId;
-        echo $post->id;
-        echo $post->url. " ".$post->curationDate."</li>";
+       // echo "<li>".$post->title."<br>";
+        //echo $post->htmlContent;
+       // echo "<img src=".$post->largeImageUrl." />";
+       // echo $post->topicId;
+       // echo $post->id;
+       // echo $post->url. " ".$post->curationDate."</li>";
 
         $host = @parse_url($post->url, PHP_URL_HOST);
 
@@ -246,7 +246,7 @@ function create_a_scoopitpost_node($post,$topic_name) {
 
 function get_posts_from_topic($scoop, $topic_name){
 
-     echo "Getting the results from".$topic_name; 
+     //echo "Getting the results from".$topic_name; 
      $topic = $scoop->resolveTopicFromItsShortName($topic_name);
      $posts = $topic->curatedPosts;
      foreach ($posts as $post) {
