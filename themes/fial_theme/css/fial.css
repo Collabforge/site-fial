@@ -661,7 +661,7 @@ a.less-link {
   color: gray; }
 
 .block-block-24 {
-  margin-bottom: 0px; }
+  margin-bottom: -25px !important; }
 
 .page-node-735 .block-views {
   margin-top: 30px; }
