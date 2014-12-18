@@ -633,9 +633,13 @@ a.less-link {
   font-size: 14px; }
 
 .page-node-736 .view-filters {
+  float: right;
+  margin-bottom: -15px;
+  margin-right: -13px; }
+
+.views-exposed-widgets {
   padding: 30px;
-  margin-bottom: -20px;
-  margin-left: 10px; }
+  margin-bottom: -20px; }
 
 .page-node-736 .views-widget-filter-combine {
   margin-top: 25px; }
