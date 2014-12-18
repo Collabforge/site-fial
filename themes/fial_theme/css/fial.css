@@ -666,8 +666,9 @@ a.less-link {
   margin-left: 17px;
   font-weight: 600;
   font-size: 13px;
-  text-decoration: underline;
-  margin-top: 7px; }
+  margin-top: 10px;
+  font-style: italic;
+  margin-bottom: 5px; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
