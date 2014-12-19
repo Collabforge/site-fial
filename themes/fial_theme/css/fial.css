@@ -673,7 +673,7 @@ a.less-link {
 
 .page-node-735 .pager {
   margin-bottom: 0px;
-  padding: 10px;
+  padding: 15px;
   border-top: 1px solid #dddddd;
   background: white; }
 
@@ -688,6 +688,12 @@ a.less-link {
   box-shadow: 0px 2px 0px 1px #dddddd;
   border-radius: 15px;
   font-size: 12px; }
+
+.page-node-735 .pager li > a:hover {
+  background-color: green;
+  -webkit-border-radius: 15px;
+  font-weight: 900;
+  color: white; }
 
 .page-node-735 .pager-current {
   font-weight: 900 !important;
