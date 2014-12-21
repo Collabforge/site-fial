@@ -15,10 +15,11 @@ function case_study_default_fe_block_settings() {
   $export['views-case_studies-block'] = array(
     'cache' => -1,
     'css_class' => '',
+    'custom' => 0,
     'delta' => 'case_studies-block',
     'module' => 'views',
     'node_types' => array(),
-    'pages' => '',
+    'pages' => 'case-studies',
     'roles' => array(),
     'themes' => array(
       'bartik' => array(
@@ -34,10 +35,10 @@ function case_study_default_fe_block_settings() {
         'weight' => 0,
       ),
       'fial_theme' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'content_upper',
+        'status' => 1,
         'theme' => 'fial_theme',
-        'weight' => 0,
+        'weight' => -50,
       ),
       'seven' => array(
         'region' => '',
@@ -46,6 +47,8 @@ function case_study_default_fe_block_settings() {
         'weight' => 0,
       ),
     ),
+    'title' => '',
+    'visibility' => 1,
   );
 
   return $export;

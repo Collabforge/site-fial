@@ -83,7 +83,7 @@ function directory_listing_field_default_field_instances() {
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
-      'weight' => 1,
+      'weight' => 2,
     ),
   );
 
@@ -122,8 +122,8 @@ function directory_listing_field_default_field_instances() {
         'autocomplete_path' => 'taxonomy/autocomplete',
         'size' => 60,
       ),
-      'type' => 'options_select',
-      'weight' => 4,
+      'type' => 'options_buttons',
+      'weight' => 5,
     ),
   );
 
@@ -177,7 +177,7 @@ function directory_listing_field_default_field_instances() {
       'module' => 'link',
       'settings' => array(),
       'type' => 'link_field',
-      'weight' => 3,
+      'weight' => 4,
     ),
   );
 
@@ -214,7 +214,46 @@ function directory_listing_field_default_field_instances() {
       'module' => 'options',
       'settings' => array(),
       'type' => 'options_select',
-      'weight' => 2,
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance: 'node-directory_item-field_sub_title'
+  $field_instances['node-directory_item-field_sub_title'] = array(
+    'bundle' => 'directory_item',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'module' => 'text',
+        'settings' => array(),
+        'type' => 'text_default',
+        'weight' => 5,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_sub_title',
+    'label' => 'Sub title',
+    'required' => FALSE,
+    'settings' => array(
+      'text_processing' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'module' => 'text',
+      'settings' => array(
+        'rows' => 5,
+      ),
+      'type' => 'text_textarea',
+      'weight' => 1,
     ),
   );
 
@@ -226,6 +265,7 @@ function directory_listing_field_default_field_instances() {
   t('Company Website');
   t('Separate multiple items with a comma.');
   t('State');
+  t('Sub title');
 
   return $field_instances;
 }
