@@ -23,13 +23,14 @@ function scoopit_post_views_default_views() {
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
   $handler->display->display_options['title'] = 'All Posts';
+  $handler->display->display_options['css_class'] = 'no-background no-table-padding';
   $handler->display->display_options['use_ajax'] = TRUE;
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['exposed_form']['type'] = 'better_exposed_filters';
-  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'Go';
+  $handler->display->display_options['exposed_form']['options']['submit_button'] = 'search';
   $handler->display->display_options['exposed_form']['options']['bef'] = array(
     'general' => array(
       'allow_secondary' => 0,
@@ -55,7 +56,7 @@ function scoopit_post_views_default_views() {
   $handler->display->display_options['exposed_form']['options']['input_required'] = 0;
   $handler->display->display_options['exposed_form']['options']['text_input_required_format'] = 'full_html';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '4';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '18';
   $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['quantity'] = '5';
@@ -63,8 +64,8 @@ function scoopit_post_views_default_views() {
   $handler->display->display_options['pager']['options']['tags']['previous'] = '‹ ';
   $handler->display->display_options['pager']['options']['tags']['next'] = '›';
   $handler->display->display_options['pager']['options']['tags']['last'] = '››';
-  $handler->display->display_options['style_plugin'] = 'grid';
-  $handler->display->display_options['style_options']['columns'] = '2';
+  $handler->display->display_options['style_plugin'] = 'responsive_grid';
+  $handler->display->display_options['style_options']['columns'] = '3';
   $handler->display->display_options['row_plugin'] = 'fields';
   /* No results behavior: Global: Text area */
   $handler->display->display_options['empty']['area']['id'] = 'area';
@@ -92,7 +93,10 @@ function scoopit_post_views_default_views() {
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '120';
+  $handler->display->display_options['fields']['body']['alter']['word_boundary'] = FALSE;
   $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
   /* Field: Content: Curation Date */
   $handler->display->display_options['fields']['field_curation_date']['id'] = 'field_curation_date';
@@ -163,11 +167,13 @@ function scoopit_post_views_default_views() {
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
   $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['label'] = '';
-  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<b>[title]</b><br>
-[field_source]  / [field_curation_date] <br>
-<img src=[field_image_url] /> [body] <br>
-[views_conditional] <br>
-<a href=[field_post_external_url_] target="_blank" >Read more >> </a>';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="si-title-date">
+<div class="si-news-title"><b>[title]</b></div>
+<div class="si-news-date">[field_curation_date]  / [field_source] </div></div>
+<div class="si-img-body">
+<div class="si-news-img"><img src=[field_image_url] /></div><div class="si-news-body"> [body] <br>
+<div class="si-news-tag"><i class="icon-bookmark-empty"></i> [views_conditional]</div> </div>
+<div class="si-news-read-more"><a href=[field_post_external_url_] target="_blank" >Read more <i class="icon-double-angle-right"></i> </a></div></div>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Curation Date (field_curation_date) */
   $handler->display->display_options['sorts']['field_curation_date_value']['id'] = 'field_curation_date_value';
@@ -213,11 +219,275 @@ function scoopit_post_views_default_views() {
 
   /* Display: All posts */
   $handler = $view->new_display('block', 'All posts', 'scoopit_all_posts');
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'no-background no-table-padding';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_rel'] = '';
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '85';
+  $handler->display->display_options['fields']['body']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['empty'] = 'Please click through to read the full article.';
+  $handler->display->display_options['fields']['body']['hide_alter_empty'] = FALSE;
+  /* Field: Content: Curation Date */
+  $handler->display->display_options['fields']['field_curation_date']['id'] = 'field_curation_date';
+  $handler->display->display_options['fields']['field_curation_date']['table'] = 'field_data_field_curation_date';
+  $handler->display->display_options['fields']['field_curation_date']['field'] = 'field_curation_date';
+  $handler->display->display_options['fields']['field_curation_date']['label'] = '';
+  $handler->display->display_options['fields']['field_curation_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_curation_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_curation_date']['settings'] = array(
+    'format_type' => 'date_only_shortform',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
+  /* Field: Content: Image Url */
+  $handler->display->display_options['fields']['field_image_url']['id'] = 'field_image_url';
+  $handler->display->display_options['fields']['field_image_url']['table'] = 'field_data_field_image_url';
+  $handler->display->display_options['fields']['field_image_url']['field'] = 'field_image_url';
+  $handler->display->display_options['fields']['field_image_url']['label'] = '';
+  $handler->display->display_options['fields']['field_image_url']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_image_url']['alter']['text'] = '<img src=[field_image_url]  />';
+  $handler->display->display_options['fields']['field_image_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image_url']['empty'] = '/sites/default/themes/fial_theme/img/news_image_not_found.png';
+  /* Field: Content: Post external URL  */
+  $handler->display->display_options['fields']['field_post_external_url_']['id'] = 'field_post_external_url_';
+  $handler->display->display_options['fields']['field_post_external_url_']['table'] = 'field_data_field_post_external_url_';
+  $handler->display->display_options['fields']['field_post_external_url_']['field'] = 'field_post_external_url_';
+  $handler->display->display_options['fields']['field_post_external_url_']['label'] = '';
+  $handler->display->display_options['fields']['field_post_external_url_']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_post_external_url_']['element_label_colon'] = FALSE;
+  /* Field: Content: Topic ID */
+  $handler->display->display_options['fields']['field_topic_id']['id'] = 'field_topic_id';
+  $handler->display->display_options['fields']['field_topic_id']['table'] = 'field_data_field_topic_id';
+  $handler->display->display_options['fields']['field_topic_id']['field'] = 'field_topic_id';
+  $handler->display->display_options['fields']['field_topic_id']['label'] = '';
+  $handler->display->display_options['fields']['field_topic_id']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_topic_id']['element_label_colon'] = FALSE;
+  /* Field: Content: Topic Name */
+  $handler->display->display_options['fields']['field_topic_name']['id'] = 'field_topic_name';
+  $handler->display->display_options['fields']['field_topic_name']['table'] = 'field_data_field_topic_name';
+  $handler->display->display_options['fields']['field_topic_name']['field'] = 'field_topic_name';
+  $handler->display->display_options['fields']['field_topic_name']['label'] = '';
+  $handler->display->display_options['fields']['field_topic_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_topic_name']['element_label_colon'] = FALSE;
+  /* Field: Content: source */
+  $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
+  $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
+  $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
+  $handler->display->display_options['fields']['field_source']['label'] = '';
+  $handler->display->display_options['fields']['field_source']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_source']['alter']['max_length'] = '18';
+  $handler->display->display_options['fields']['field_source']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['field_source']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['field_source']['element_label_colon'] = FALSE;
+  /* Field: Raw URL */
+  $handler->display->display_options['fields']['field_post_external_url__1']['id'] = 'field_post_external_url__1';
+  $handler->display->display_options['fields']['field_post_external_url__1']['table'] = 'field_data_field_post_external_url_';
+  $handler->display->display_options['fields']['field_post_external_url__1']['field'] = 'field_post_external_url_';
+  $handler->display->display_options['fields']['field_post_external_url__1']['ui_name'] = 'Raw URL';
+  $handler->display->display_options['fields']['field_post_external_url__1']['label'] = '';
+  $handler->display->display_options['fields']['field_post_external_url__1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_post_external_url__1']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_post_external_url__1']['type'] = 'text_plain';
+  /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['views_conditional']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional']['if'] = 'field_topic_name';
+  $handler->display->display_options['fields']['views_conditional']['condition'] = '1';
+  $handler->display->display_options['fields']['views_conditional']['equalto'] = 'food-innovation-by-a-4071';
+  $handler->display->display_options['fields']['views_conditional']['then'] = 'innovation';
+  $handler->display->display_options['fields']['views_conditional']['or'] = 'export';
+  $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
+  /* Field: Content: ShareThis Link */
+  $handler->display->display_options['fields']['sharethis']['id'] = 'sharethis';
+  $handler->display->display_options['fields']['sharethis']['table'] = 'node';
+  $handler->display->display_options['fields']['sharethis']['field'] = 'sharethis';
+  $handler->display->display_options['fields']['sharethis']['label'] = '';
+  $handler->display->display_options['fields']['sharethis']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['sharethis']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="si-title-date">
+<div class="si-news-title"><b><a href="[field_post_external_url__1]" target="_blank" >[title]</a></b></div>
+<div class="si-news-date"><i class="icon-calendar"></i> [field_curation_date]   <i class="icon-external-link-sign"></i> <a href="[field_post_external_url__1]" target="_blank" >[field_source]</a> </div></div>
+<div class="si-lower-content">
+<div class="si-news-img"><a href="[field_post_external_url__1]" target="_blank" ><img src=[field_image_url] /></a></div>
+<div class="si-img-body">
+<div class="si-news-body"> [body] <br>
+<div class="si-news-tag"><i class="icon-tags"></i> [views_conditional]</div> </div>
+<div class="si-news-read-more"><a href=[field_post_external_url_] target="_blank" >Read more <i class="icon-double-angle-right"></i> </a></div></div></div>
+<div class="social-bar">
+[sharethis]
+</div>
+';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
 
   /* Display: Innovation Topic posts */
   $handler = $view->new_display('block', 'Innovation Topic posts', 'innovation_scoopit_topic');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Innovation';
+  $handler->display->display_options['defaults']['css_class'] = FALSE;
+  $handler->display->display_options['css_class'] = 'no-background no-table-padding';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_rel'] = '';
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '85';
+  $handler->display->display_options['fields']['body']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['empty'] = 'Please click through to read the full article.';
+  $handler->display->display_options['fields']['body']['hide_alter_empty'] = FALSE;
+  /* Field: Content: Curation Date */
+  $handler->display->display_options['fields']['field_curation_date']['id'] = 'field_curation_date';
+  $handler->display->display_options['fields']['field_curation_date']['table'] = 'field_data_field_curation_date';
+  $handler->display->display_options['fields']['field_curation_date']['field'] = 'field_curation_date';
+  $handler->display->display_options['fields']['field_curation_date']['label'] = '';
+  $handler->display->display_options['fields']['field_curation_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_curation_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_curation_date']['settings'] = array(
+    'format_type' => 'date_only_shortform',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
+  /* Field: Content: Image Url */
+  $handler->display->display_options['fields']['field_image_url']['id'] = 'field_image_url';
+  $handler->display->display_options['fields']['field_image_url']['table'] = 'field_data_field_image_url';
+  $handler->display->display_options['fields']['field_image_url']['field'] = 'field_image_url';
+  $handler->display->display_options['fields']['field_image_url']['label'] = '';
+  $handler->display->display_options['fields']['field_image_url']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_image_url']['alter']['text'] = '<img src=[field_image_url]  />';
+  $handler->display->display_options['fields']['field_image_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image_url']['empty'] = '/sites/default/themes/fial_theme/img/news_image_not_found.png';
+  /* Field: Content: Post external URL  */
+  $handler->display->display_options['fields']['field_post_external_url_']['id'] = 'field_post_external_url_';
+  $handler->display->display_options['fields']['field_post_external_url_']['table'] = 'field_data_field_post_external_url_';
+  $handler->display->display_options['fields']['field_post_external_url_']['field'] = 'field_post_external_url_';
+  $handler->display->display_options['fields']['field_post_external_url_']['label'] = '';
+  $handler->display->display_options['fields']['field_post_external_url_']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_post_external_url_']['element_label_colon'] = FALSE;
+  /* Field: Content: Topic ID */
+  $handler->display->display_options['fields']['field_topic_id']['id'] = 'field_topic_id';
+  $handler->display->display_options['fields']['field_topic_id']['table'] = 'field_data_field_topic_id';
+  $handler->display->display_options['fields']['field_topic_id']['field'] = 'field_topic_id';
+  $handler->display->display_options['fields']['field_topic_id']['label'] = '';
+  $handler->display->display_options['fields']['field_topic_id']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_topic_id']['element_label_colon'] = FALSE;
+  /* Field: Content: Topic Name */
+  $handler->display->display_options['fields']['field_topic_name']['id'] = 'field_topic_name';
+  $handler->display->display_options['fields']['field_topic_name']['table'] = 'field_data_field_topic_name';
+  $handler->display->display_options['fields']['field_topic_name']['field'] = 'field_topic_name';
+  $handler->display->display_options['fields']['field_topic_name']['label'] = '';
+  $handler->display->display_options['fields']['field_topic_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_topic_name']['element_label_colon'] = FALSE;
+  /* Field: Content: source */
+  $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
+  $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
+  $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
+  $handler->display->display_options['fields']['field_source']['label'] = '';
+  $handler->display->display_options['fields']['field_source']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_source']['alter']['max_length'] = '18';
+  $handler->display->display_options['fields']['field_source']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['field_source']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['field_source']['element_label_colon'] = FALSE;
+  /* Field: raw URL */
+  $handler->display->display_options['fields']['field_post_external_url__1']['id'] = 'field_post_external_url__1';
+  $handler->display->display_options['fields']['field_post_external_url__1']['table'] = 'field_data_field_post_external_url_';
+  $handler->display->display_options['fields']['field_post_external_url__1']['field'] = 'field_post_external_url_';
+  $handler->display->display_options['fields']['field_post_external_url__1']['ui_name'] = 'raw URL';
+  $handler->display->display_options['fields']['field_post_external_url__1']['label'] = '';
+  $handler->display->display_options['fields']['field_post_external_url__1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_post_external_url__1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_post_external_url__1']['alter']['text'] = '[field_post_external_url__1-value]';
+  $handler->display->display_options['fields']['field_post_external_url__1']['element_label_colon'] = FALSE;
+  /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['views_conditional']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional']['if'] = 'field_topic_name';
+  $handler->display->display_options['fields']['views_conditional']['condition'] = '1';
+  $handler->display->display_options['fields']['views_conditional']['equalto'] = 'food-innovation-by-a-4071';
+  $handler->display->display_options['fields']['views_conditional']['then'] = 'innovation';
+  $handler->display->display_options['fields']['views_conditional']['or'] = 'export';
+  $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
+  /* Field: Content: ShareThis Link */
+  $handler->display->display_options['fields']['sharethis']['id'] = 'sharethis';
+  $handler->display->display_options['fields']['sharethis']['table'] = 'node';
+  $handler->display->display_options['fields']['sharethis']['field'] = 'sharethis';
+  $handler->display->display_options['fields']['sharethis']['label'] = '';
+  $handler->display->display_options['fields']['sharethis']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['sharethis']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="si-title-date">
+<div class="si-news-title"><b><a href="[field_post_external_url__1]" target="_blank" >[title]</a></b></div>
+<div class="si-news-date"><i class="icon-calendar"></i> [field_curation_date]   <i class="icon-external-link-sign"></i> <a href="[field_post_external_url__1]" target="_blank" >[field_source]</a> </div></div>
+<div class="si-lower-content">
+<div class="si-news-img"><a href="[field_post_external_url__1]" target="_blank" ><img src=[field_image_url] /></a></div>
+<div class="si-img-body">
+<div class="si-news-body"> [body] <br>
+<div class="si-news-tag"><i class="icon-tags"></i> [views_conditional]</div> </div>
+<div class="si-news-read-more"><a href=[field_post_external_url_] target="_blank" >Read more <i class="icon-double-angle-right"></i> </a></div></div></div>
+<div class="social-bar">
+[sharethis]
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -266,6 +536,136 @@ function scoopit_post_views_default_views() {
   $handler = $view->new_display('block', 'export topic posts', 'export_scoopit_topic');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Export';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_rel'] = '';
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['max_length'] = '85';
+  $handler->display->display_options['fields']['body']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['body']['alter']['strip_tags'] = TRUE;
+  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['empty'] = 'Please click through to read the full article.';
+  $handler->display->display_options['fields']['body']['hide_alter_empty'] = FALSE;
+  /* Field: Content: Curation Date */
+  $handler->display->display_options['fields']['field_curation_date']['id'] = 'field_curation_date';
+  $handler->display->display_options['fields']['field_curation_date']['table'] = 'field_data_field_curation_date';
+  $handler->display->display_options['fields']['field_curation_date']['field'] = 'field_curation_date';
+  $handler->display->display_options['fields']['field_curation_date']['label'] = '';
+  $handler->display->display_options['fields']['field_curation_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_curation_date']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_curation_date']['settings'] = array(
+    'format_type' => 'date_only_shortform',
+    'fromto' => 'both',
+    'multiple_number' => '',
+    'multiple_from' => '',
+    'multiple_to' => '',
+    'show_repeat_rule' => 'show',
+  );
+  /* Field: Content: Image Url */
+  $handler->display->display_options['fields']['field_image_url']['id'] = 'field_image_url';
+  $handler->display->display_options['fields']['field_image_url']['table'] = 'field_data_field_image_url';
+  $handler->display->display_options['fields']['field_image_url']['field'] = 'field_image_url';
+  $handler->display->display_options['fields']['field_image_url']['label'] = '';
+  $handler->display->display_options['fields']['field_image_url']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_image_url']['alter']['text'] = '<img src=[field_image_url]  />';
+  $handler->display->display_options['fields']['field_image_url']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image_url']['empty'] = '/sites/default/themes/fial_theme/img/news_image_not_found.png';
+  /* Field: Content: Post external URL  */
+  $handler->display->display_options['fields']['field_post_external_url_']['id'] = 'field_post_external_url_';
+  $handler->display->display_options['fields']['field_post_external_url_']['table'] = 'field_data_field_post_external_url_';
+  $handler->display->display_options['fields']['field_post_external_url_']['field'] = 'field_post_external_url_';
+  $handler->display->display_options['fields']['field_post_external_url_']['label'] = '';
+  $handler->display->display_options['fields']['field_post_external_url_']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_post_external_url_']['element_label_colon'] = FALSE;
+  /* Field: Content: Topic ID */
+  $handler->display->display_options['fields']['field_topic_id']['id'] = 'field_topic_id';
+  $handler->display->display_options['fields']['field_topic_id']['table'] = 'field_data_field_topic_id';
+  $handler->display->display_options['fields']['field_topic_id']['field'] = 'field_topic_id';
+  $handler->display->display_options['fields']['field_topic_id']['label'] = '';
+  $handler->display->display_options['fields']['field_topic_id']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_topic_id']['element_label_colon'] = FALSE;
+  /* Field: Content: Topic Name */
+  $handler->display->display_options['fields']['field_topic_name']['id'] = 'field_topic_name';
+  $handler->display->display_options['fields']['field_topic_name']['table'] = 'field_data_field_topic_name';
+  $handler->display->display_options['fields']['field_topic_name']['field'] = 'field_topic_name';
+  $handler->display->display_options['fields']['field_topic_name']['label'] = '';
+  $handler->display->display_options['fields']['field_topic_name']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_topic_name']['element_label_colon'] = FALSE;
+  /* Field: Content: source */
+  $handler->display->display_options['fields']['field_source']['id'] = 'field_source';
+  $handler->display->display_options['fields']['field_source']['table'] = 'field_data_field_source';
+  $handler->display->display_options['fields']['field_source']['field'] = 'field_source';
+  $handler->display->display_options['fields']['field_source']['label'] = '';
+  $handler->display->display_options['fields']['field_source']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_source']['alter']['max_length'] = '18';
+  $handler->display->display_options['fields']['field_source']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['field_source']['alter']['trim'] = TRUE;
+  $handler->display->display_options['fields']['field_source']['element_label_colon'] = FALSE;
+  /* Field: raw URL */
+  $handler->display->display_options['fields']['field_post_external_url__1']['id'] = 'field_post_external_url__1';
+  $handler->display->display_options['fields']['field_post_external_url__1']['table'] = 'field_data_field_post_external_url_';
+  $handler->display->display_options['fields']['field_post_external_url__1']['field'] = 'field_post_external_url_';
+  $handler->display->display_options['fields']['field_post_external_url__1']['ui_name'] = 'raw URL';
+  $handler->display->display_options['fields']['field_post_external_url__1']['label'] = '';
+  $handler->display->display_options['fields']['field_post_external_url__1']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_post_external_url__1']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_post_external_url__1']['alter']['text'] = '[field_post_external_url__1-value]';
+  $handler->display->display_options['fields']['field_post_external_url__1']['element_label_colon'] = FALSE;
+  /* Field: Views: Views Conditional */
+  $handler->display->display_options['fields']['views_conditional']['id'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['table'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['field'] = 'views_conditional';
+  $handler->display->display_options['fields']['views_conditional']['label'] = '';
+  $handler->display->display_options['fields']['views_conditional']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['views_conditional']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['views_conditional']['if'] = 'field_topic_name';
+  $handler->display->display_options['fields']['views_conditional']['condition'] = '1';
+  $handler->display->display_options['fields']['views_conditional']['equalto'] = 'food-innovation-by-a-4071';
+  $handler->display->display_options['fields']['views_conditional']['then'] = 'innovation';
+  $handler->display->display_options['fields']['views_conditional']['or'] = 'export';
+  $handler->display->display_options['fields']['views_conditional']['strip_tags'] = 0;
+  /* Field: Content: ShareThis Link */
+  $handler->display->display_options['fields']['sharethis']['id'] = 'sharethis';
+  $handler->display->display_options['fields']['sharethis']['table'] = 'node';
+  $handler->display->display_options['fields']['sharethis']['field'] = 'sharethis';
+  $handler->display->display_options['fields']['sharethis']['label'] = '';
+  $handler->display->display_options['fields']['sharethis']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['sharethis']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="si-title-date">
+<div class="si-news-title"><b><a href="[field_post_external_url__1]" target="_blank" >[title]</a></b></div>
+<div class="si-news-date"><i class="icon-calendar"></i> [field_curation_date]   <i class="icon-external-link-sign"></i> <a href="[field_post_external_url__1]" target="_blank" >[field_source]</a> </div></div>
+<div class="si-lower-content">
+<div class="si-news-img"><a href="[field_post_external_url__1]" target="_blank" ><img src=[field_image_url] /></a></div>
+<div class="si-img-body">
+<div class="si-news-body"> [body] <br>
+<div class="si-news-tag"><i class="icon-tags"></i> [views_conditional]</div> </div>
+<div class="si-news-read-more"><a href=[field_post_external_url_] target="_blank" >Read more <i class="icon-double-angle-right"></i> </a></div></div></div>
+<div class="social-bar">
+[sharethis]
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -386,7 +786,7 @@ function scoopit_post_views_default_views() {
     t('Master'),
     t('All Posts'),
     t('more'),
-    t('Go'),
+    t('search'),
     t('Reset'),
     t('Sort by'),
     t('Asc'),
@@ -401,19 +801,49 @@ function scoopit_post_views_default_views() {
     t('››'),
     t('No results found.'),
     t('<img src=[field_image_url]  />'),
-    t('<b>[title]</b><br>
-[field_source]  / [field_curation_date] <br>
-<img src=[field_image_url] /> [body] <br>
-[views_conditional] <br>
-<a href=[field_post_external_url_] target="_blank" >Read more >> </a>'),
-    t('search'),
+    t('<div class="si-title-date">
+<div class="si-news-title"><b>[title]</b></div>
+<div class="si-news-date">[field_curation_date]  / [field_source] </div></div>
+<div class="si-img-body">
+<div class="si-news-img"><img src=[field_image_url] /></div><div class="si-news-body"> [body] <br>
+<div class="si-news-tag"><i class="icon-bookmark-empty"></i> [views_conditional]</div> </div>
+<div class="si-news-read-more"><a href=[field_post_external_url_] target="_blank" >Read more <i class="icon-double-angle-right"></i> </a></div></div>'),
     t('All posts'),
+    t('Please click through to read the full article.'),
+    t('/sites/default/themes/fial_theme/img/news_image_not_found.png'),
+    t('<div class="si-title-date">
+<div class="si-news-title"><b><a href="[field_post_external_url__1]" target="_blank" >[title]</a></b></div>
+<div class="si-news-date"><i class="icon-calendar"></i> [field_curation_date]   <i class="icon-external-link-sign"></i> <a href="[field_post_external_url__1]" target="_blank" >[field_source]</a> </div></div>
+<div class="si-lower-content">
+<div class="si-news-img"><a href="[field_post_external_url__1]" target="_blank" ><img src=[field_image_url] /></a></div>
+<div class="si-img-body">
+<div class="si-news-body"> [body] <br>
+<div class="si-news-tag"><i class="icon-tags"></i> [views_conditional]</div> </div>
+<div class="si-news-read-more"><a href=[field_post_external_url_] target="_blank" >Read more <i class="icon-double-angle-right"></i> </a></div></div></div>
+<div class="social-bar">
+[sharethis]
+</div>
+'),
     t('Innovation Topic posts'),
     t('Innovation'),
+    t('[field_post_external_url__1-value]'),
+    t('<div class="si-title-date">
+<div class="si-news-title"><b><a href="[field_post_external_url__1]" target="_blank" >[title]</a></b></div>
+<div class="si-news-date"><i class="icon-calendar"></i> [field_curation_date]   <i class="icon-external-link-sign"></i> <a href="[field_post_external_url__1]" target="_blank" >[field_source]</a> </div></div>
+<div class="si-lower-content">
+<div class="si-news-img"><a href="[field_post_external_url__1]" target="_blank" ><img src=[field_image_url] /></a></div>
+<div class="si-img-body">
+<div class="si-news-body"> [body] <br>
+<div class="si-news-tag"><i class="icon-tags"></i> [views_conditional]</div> </div>
+<div class="si-news-read-more"><a href=[field_post_external_url_] target="_blank" >Read more <i class="icon-double-angle-right"></i> </a></div></div></div>
+<div class="social-bar">
+[sharethis]
+</div>'),
     t('export topic posts'),
     t('Export'),
     t('Search scoopit posts'),
     t('Search Posts'),
+    t('Go'),
   );
   $export['clone_of_scoopit_posts'] = $view;
 

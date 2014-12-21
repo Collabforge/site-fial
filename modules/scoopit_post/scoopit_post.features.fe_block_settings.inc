@@ -113,10 +113,10 @@ function scoopit_post_default_fe_block_settings() {
         'weight' => 0,
       ),
       'fial_theme' => array(
-        'region' => '',
-        'status' => 0,
+        'region' => 'content_upper',
+        'status' => 1,
         'theme' => 'fial_theme',
-        'weight' => 0,
+        'weight' => -49,
       ),
       'seven' => array(
         'region' => '',
@@ -126,7 +126,7 @@ function scoopit_post_default_fe_block_settings() {
       ),
     ),
     'title' => '',
-    'visibility' => 0,
+    'visibility' => 1,
   );
 
   $export['views-ea985ad1e80463183ac612e3e3777c76'] = array(
