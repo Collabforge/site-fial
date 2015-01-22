@@ -157,6 +157,82 @@ function member_calendar_views_default_views() {
     4 => 0,
     6 => 0,
   );
+  /* Filter criterion: Content: Lead (field_lead) */
+  $handler->display->display_options['filters']['field_lead_value']['id'] = 'field_lead_value';
+  $handler->display->display_options['filters']['field_lead_value']['table'] = 'field_data_field_lead';
+  $handler->display->display_options['filters']['field_lead_value']['field'] = 'field_lead_value';
+  $handler->display->display_options['filters']['field_lead_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_lead_value']['expose']['operator_id'] = 'field_lead_value_op';
+  $handler->display->display_options['filters']['field_lead_value']['expose']['label'] = 'Lead ';
+  $handler->display->display_options['filters']['field_lead_value']['expose']['operator'] = 'field_lead_value_op';
+  $handler->display->display_options['filters']['field_lead_value']['expose']['identifier'] = 'field_lead_value';
+  $handler->display->display_options['filters']['field_lead_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    5 => 0,
+    4 => 0,
+    6 => 0,
+  );
+  $handler->display->display_options['filters']['field_lead_value']['group_info']['label'] = 'Lead (field_lead)';
+  $handler->display->display_options['filters']['field_lead_value']['group_info']['identifier'] = 'field_lead_value';
+  $handler->display->display_options['filters']['field_lead_value']['group_info']['remember'] = FALSE;
+  $handler->display->display_options['filters']['field_lead_value']['group_info']['group_items'] = array(
+    1 => array(),
+    2 => array(),
+    3 => array(),
+  );
+  /* Filter criterion: Content: Government level (field_government_level) */
+  $handler->display->display_options['filters']['field_government_level_value']['id'] = 'field_government_level_value';
+  $handler->display->display_options['filters']['field_government_level_value']['table'] = 'field_data_field_government_level';
+  $handler->display->display_options['filters']['field_government_level_value']['field'] = 'field_government_level_value';
+  $handler->display->display_options['filters']['field_government_level_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_government_level_value']['expose']['operator_id'] = 'field_government_level_value_op';
+  $handler->display->display_options['filters']['field_government_level_value']['expose']['label'] = 'Government level';
+  $handler->display->display_options['filters']['field_government_level_value']['expose']['operator'] = 'field_government_level_value_op';
+  $handler->display->display_options['filters']['field_government_level_value']['expose']['identifier'] = 'field_government_level_value';
+  $handler->display->display_options['filters']['field_government_level_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    5 => 0,
+    4 => 0,
+    6 => 0,
+  );
+  /* Filter criterion: Content: Sector (field_sector) */
+  $handler->display->display_options['filters']['field_sector_value']['id'] = 'field_sector_value';
+  $handler->display->display_options['filters']['field_sector_value']['table'] = 'field_data_field_sector';
+  $handler->display->display_options['filters']['field_sector_value']['field'] = 'field_sector_value';
+  $handler->display->display_options['filters']['field_sector_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_sector_value']['expose']['operator_id'] = 'field_sector_value_op';
+  $handler->display->display_options['filters']['field_sector_value']['expose']['label'] = 'Sector';
+  $handler->display->display_options['filters']['field_sector_value']['expose']['operator'] = 'field_sector_value_op';
+  $handler->display->display_options['filters']['field_sector_value']['expose']['identifier'] = 'field_sector_value';
+  $handler->display->display_options['filters']['field_sector_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    5 => 0,
+    4 => 0,
+    6 => 0,
+  );
+  /* Filter criterion: Content: Status (field_custom_event_status) */
+  $handler->display->display_options['filters']['field_custom_event_status_value']['id'] = 'field_custom_event_status_value';
+  $handler->display->display_options['filters']['field_custom_event_status_value']['table'] = 'field_data_field_custom_event_status';
+  $handler->display->display_options['filters']['field_custom_event_status_value']['field'] = 'field_custom_event_status_value';
+  $handler->display->display_options['filters']['field_custom_event_status_value']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_custom_event_status_value']['expose']['operator_id'] = 'field_custom_event_status_value_op';
+  $handler->display->display_options['filters']['field_custom_event_status_value']['expose']['label'] = 'Status';
+  $handler->display->display_options['filters']['field_custom_event_status_value']['expose']['operator'] = 'field_custom_event_status_value_op';
+  $handler->display->display_options['filters']['field_custom_event_status_value']['expose']['identifier'] = 'field_custom_event_status_value';
+  $handler->display->display_options['filters']['field_custom_event_status_value']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    5 => 0,
+    4 => 0,
+    6 => 0,
+  );
 
   /* Display: Month */
   $handler = $view->new_display('page', 'Month', 'calendar_events');
@@ -432,6 +508,11 @@ function member_calendar_views_default_views() {
     t('<div class=[field_activity_type-value]></div>'),
     t('Activity type '),
     t('Market'),
+    t('Lead '),
+    t('Lead (field_lead)'),
+    t('Government level'),
+    t('Sector'),
+    t('Status'),
     t('Month'),
     t('All'),
     t('Week'),
@@ -442,6 +523,149 @@ function member_calendar_views_default_views() {
     t('Upcoming events block'),
   );
   $export['custom_events'] = $view;
+
+  $view = new view();
+  $view->name = 'member_events_admin';
+  $view->description = '';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Member Events Admin interface';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Member Events Admin interface';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    3 => '3',
+    2 => '2',
+    4 => '4',
+    5 => '5',
+    6 => '6',
+  );
+  $handler->display->display_options['cache']['type'] = 'none';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'title' => 'title',
+    'name' => 'name',
+    'status' => 'status',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'title' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '|',
+      'empty_column' => 0,
+    ),
+    'name' => array(
+      'align' => '',
+      'separator' => '|',
+      'empty_column' => 0,
+    ),
+    'status' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '|',
+      'empty_column' => 0,
+    ),
+  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_rel'] = '';
+  /* Field: Content: Published */
+  $handler->display->display_options['fields']['status']['id'] = 'status';
+  $handler->display->display_options['fields']['status']['table'] = 'node';
+  $handler->display->display_options['fields']['status']['field'] = 'status';
+  $handler->display->display_options['fields']['status']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['status']['type'] = 'published-notpublished';
+  $handler->display->display_options['fields']['status']['not'] = 0;
+  /* Field: Content: Updated date */
+  $handler->display->display_options['fields']['changed']['id'] = 'changed';
+  $handler->display->display_options['fields']['changed']['table'] = 'node';
+  $handler->display->display_options['fields']['changed']['field'] = 'changed';
+  $handler->display->display_options['fields']['changed']['label'] = 'Updated Date';
+  $handler->display->display_options['fields']['changed']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['changed']['date_format'] = 'fial_format';
+  $handler->display->display_options['fields']['changed']['second_date_format'] = 'long';
+  /* Field: Content: Delete link */
+  $handler->display->display_options['fields']['delete_node']['id'] = 'delete_node';
+  $handler->display->display_options['fields']['delete_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['delete_node']['field'] = 'delete_node';
+  $handler->display->display_options['fields']['delete_node']['label'] = 'Delete';
+  $handler->display->display_options['fields']['delete_node']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['delete_node']['text'] = 'Delete';
+  /* Field: Content: Edit link */
+  $handler->display->display_options['fields']['edit_node']['id'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['table'] = 'views_entity_node';
+  $handler->display->display_options['fields']['edit_node']['field'] = 'edit_node';
+  $handler->display->display_options['fields']['edit_node']['label'] = 'Edit';
+  $handler->display->display_options['fields']['edit_node']['text'] = 'Edit';
+  /* Sort criterion: Content: Post date */
+  $handler->display->display_options['sorts']['created']['id'] = 'created';
+  $handler->display->display_options['sorts']['created']['table'] = 'node';
+  $handler->display->display_options['sorts']['created']['field'] = 'created';
+  $handler->display->display_options['sorts']['created']['order'] = 'DESC';
+  /* Contextual filter: Content: Author uid */
+  $handler->display->display_options['arguments']['uid']['id'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['table'] = 'node';
+  $handler->display->display_options['arguments']['uid']['field'] = 'uid';
+  $handler->display->display_options['arguments']['uid']['default_action'] = 'default';
+  $handler->display->display_options['arguments']['uid']['default_argument_type'] = 'current_user';
+  $handler->display->display_options['arguments']['uid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['uid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['uid']['summary_options']['items_per_page'] = '25';
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'custom_event' => 'custom_event',
+  );
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['path'] = 'member-events-admin-interface';
+  $translatables['member_events_admin'] = array(
+    t('Master'),
+    t('Member Events Admin interface'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('Title'),
+    t('Published'),
+    t('Updated Date'),
+    t('Delete'),
+    t('Edit'),
+    t('All'),
+    t('Page'),
+  );
+  $export['member_events_admin'] = $view;
 
   return $export;
 }
