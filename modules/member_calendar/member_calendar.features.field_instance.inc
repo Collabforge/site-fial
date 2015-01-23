@@ -13,7 +13,13 @@ function member_calendar_field_default_field_instances() {
   // Exported field_instance: 'node-custom_event-body'
   $field_instances['node-custom_event-body'] = array(
     'bundle' => 'custom_event',
-    'default_value' => NULL,
+    'default_value' => array(
+      0 => array(
+        'summary' => '',
+        'value' => '',
+        'format' => 'full_html',
+      ),
+    ),
     'deleted' => 0,
     'description' => '',
     'display' => array(
@@ -36,14 +42,37 @@ function member_calendar_field_default_field_instances() {
     ),
     'entity_type' => 'node',
     'field_name' => 'body',
-    'label' => 'Body',
-    'required' => FALSE,
+    'label' => 'Event Description',
+    'required' => 0,
     'settings' => array(
-      'display_summary' => TRUE,
+      'better_formats' => array(
+        'allowed_formats' => array(
+          'filtered_content_html' => 'filtered_content_html',
+          'full_html' => 'full_html',
+          'plain_text' => 'plain_text',
+        ),
+        'allowed_formats_toggle' => 0,
+        'default_order_toggle' => 0,
+        'default_order_wrapper' => array(
+          'formats' => array(
+            'filtered_content_html' => array(
+              'weight' => 0,
+            ),
+            'full_html' => array(
+              'weight' => 0,
+            ),
+            'plain_text' => array(
+              'weight' => 10,
+            ),
+          ),
+        ),
+      ),
+      'display_summary' => 1,
       'text_processing' => 1,
       'user_register_form' => FALSE,
     ),
     'widget' => array(
+      'active' => 1,
       'module' => 'text',
       'settings' => array(
         'rows' => 20,
@@ -466,7 +495,7 @@ function member_calendar_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
-        'size' => 60,
+        'size' => 255,
       ),
       'type' => 'text_textfield',
       'weight' => 12,
@@ -514,9 +543,9 @@ function member_calendar_field_default_field_instances() {
   // Included for use with string extractors like potx.
   t('Activity Name');
   t('Activity type');
-  t('Body');
   t('Cut-off Date');
   t('Date');
+  t('Event Description');
   t('Government level');
   t('Lead');
   t('Market');
