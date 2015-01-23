@@ -163,6 +163,37 @@ function member_calendar_field_default_field_bases() {
     'type' => 'datetime',
   );
 
+  // Exported field_base: 'field_event_file_attachment'
+  $field_bases['field_event_file_attachment'] = array(
+    'active' => 1,
+    'cardinality' => 1,
+    'deleted' => 0,
+    'entity_types' => array(),
+    'field_name' => 'field_event_file_attachment',
+    'foreign keys' => array(
+      'fid' => array(
+        'columns' => array(
+          'fid' => 'fid',
+        ),
+        'table' => 'file_managed',
+      ),
+    ),
+    'indexes' => array(
+      'fid' => array(
+        0 => 'fid',
+      ),
+    ),
+    'locked' => 0,
+    'module' => 'file',
+    'settings' => array(
+      'display_default' => 0,
+      'display_field' => 0,
+      'uri_scheme' => 'private',
+    ),
+    'translatable' => 0,
+    'type' => 'file',
+  );
+
   // Exported field_base: 'field_government_level'
   $field_bases['field_government_level'] = array(
     'active' => 1,
@@ -240,6 +271,7 @@ function member_calendar_field_default_field_bases() {
     'module' => 'list',
     'settings' => array(
       'allowed_values' => array(
+        'australia' => 'Australia',
         'hong-kong' => 'Hong Kong',
         'china' => 'China',
         'india' => 'India',
@@ -263,13 +295,13 @@ function member_calendar_field_default_field_bases() {
     'type' => 'list_text',
   );
 
-  // Exported field_base: 'field_prep_activity'
-  $field_bases['field_prep_activity'] = array(
+  // Exported field_base: 'field_prep_activity_long'
+  $field_bases['field_prep_activity_long'] = array(
     'active' => 1,
     'cardinality' => 1,
     'deleted' => 0,
     'entity_types' => array(),
-    'field_name' => 'field_prep_activity',
+    'field_name' => 'field_prep_activity_long',
     'foreign keys' => array(
       'format' => array(
         'columns' => array(
@@ -285,11 +317,9 @@ function member_calendar_field_default_field_bases() {
     ),
     'locked' => 0,
     'module' => 'text',
-    'settings' => array(
-      'max_length' => 255,
-    ),
+    'settings' => array(),
     'translatable' => 0,
-    'type' => 'text',
+    'type' => 'text_long',
   );
 
   // Exported field_base: 'field_sector'

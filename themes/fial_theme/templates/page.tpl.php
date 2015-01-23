@@ -51,6 +51,42 @@ if (current_path() == "node/514") { ?>
 <?php } ?>
 
 
+<?php
+// to add multiselect option to add node of Member event
+if (current_path() == "members" || current_path() == "node/add/custom-event") { ?>
+
+<link rel="stylesheet" type="text/css" href="/sites/default/themes/fial_theme/css/jquery.multiselect.css" />
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="/sites/default/themes/fial_theme/js/jquery.multiselect.js"></script>
+<script type="text/javascript">
+$(function(){
+
+//  $("#edit-field-activity-type-und").multiselect({
+//      header: false,
+//   });  
+// $("#edit-field-market-und").multiselect({
+//      header: false,
+//   });
+
+// $("#edit-field-sector-und").multiselect({
+//      header: false,
+//   });
+
+$("#edit-field-activity-type-und,#edit-field-market-und,#edit-field-sector-und").each(function(){
+    $(this).multiselect({
+     header: false,
+  });
+});
+
+});
+</script>
+
+<?php } ?>
+
+
+
 
 <script type="text/javascript">
 (function(){
