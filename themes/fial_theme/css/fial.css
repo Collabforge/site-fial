@@ -703,6 +703,60 @@ a.less-link {
   padding: 30px;
   margin-bottom: -20px; }
 
+.out-trade-mission {
+  width: 10px;
+  height: 10px;
+  background: #00aff4;
+  border-radius: 100px; }
+
+.in-trade-mission {
+  width: 10px;
+  height: 10px;
+  background: #006ac3;
+  border-radius: 100px; }
+
+.out-ministerial-delegation {
+  width: 10px;
+  height: 10px;
+  background: #74d94f;
+  border-radius: 100px; }
+
+.in-ministerial-delegation {
+  width: 10px;
+  height: 10px;
+  background: #00bb53;
+  border-radius: 100px; }
+
+.domestic-trade-show {
+  width: 10px;
+  height: 10px;
+  background: #7f00a1;
+  border-radius: 100px; }
+
+.international-trade-show {
+  width: 10px;
+  height: 10px;
+  background: #c505fb;
+  border-radius: 100px; }
+
+.in-store-promotion {
+  width: 10px;
+  height: 10px;
+  background: #ff7100;
+  border-radius: 100px; }
+
+.food-service-promotion {
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 100px; }
+
+.market-webinar {
+  width: 10px;
+  height: 10px;
+  background: #f20bbe;
+  border-radius: 100px; }
+
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
