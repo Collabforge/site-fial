@@ -703,6 +703,9 @@ a.less-link {
   padding: 30px;
   margin-bottom: -20px; }
 
+.activity-type {
+  display: inline-block; }
+
 .out-trade-mission {
   width: 10px;
   height: 10px;
