@@ -800,6 +800,9 @@ a.less-link {
 ui-multiselect-menu {
   width: auto !important; }
 
+.ui-state-active {
+  border: 1px solid #cccccc !important; }
+
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
