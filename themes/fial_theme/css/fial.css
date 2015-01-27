@@ -803,6 +803,9 @@ ui-multiselect-menu {
 .ui-state-active {
   border: 1px solid #cccccc !important; }
 
+.ui-state-hover {
+  border: 1px solid #cccccc !important; }
+
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
