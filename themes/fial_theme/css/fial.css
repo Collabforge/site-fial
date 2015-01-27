@@ -710,55 +710,73 @@ a.less-link {
   width: 10px;
   height: 10px;
   background: #00aff4 !important;
-  border-radius: 100px; }
+  border-radius: 100px;
+  margin-right: 5px !important;
+  margin-top: 3px !important; }
 
 .in-trade-mission {
   width: 10px;
   height: 10px;
   background: #006ac3 !important;
-  border-radius: 100px; }
+  border-radius: 100px;
+  margin-right: 5px !important;
+  margin-top: 3px !important; }
 
 .out-ministerial-delegation {
   width: 10px;
   height: 10px;
   background: #74d94f !important;
-  border-radius: 100px; }
+  border-radius: 100px;
+  margin-right: 5px !important;
+  margin-top: 3px !important; }
 
 .in-ministerial-delegation {
   width: 10px;
   height: 10px;
   background: #00bb53 !important;
-  border-radius: 100px; }
+  border-radius: 100px;
+  margin-right: 5px !important;
+  margin-top: 3px !important; }
 
 .domestic-trade-show {
   width: 10px;
   height: 10px;
   background: #7f00a1 !important;
-  border-radius: 100px; }
+  border-radius: 100px;
+  margin-right: 5px !important;
+  margin-top: 3px !important; }
 
 .international-trade-show {
   width: 10px;
   height: 10px;
   background: #c505fb !important;
-  border-radius: 100px; }
+  border-radius: 100px;
+  margin-right: 5px !important;
+  margin-top: 3px !important; }
 
 .in-store-promotion {
   width: 10px;
   height: 10px;
   background: #ff7100 !important;
-  border-radius: 100px; }
+  border-radius: 100px;
+  margin-right: 5px !important;
+  margin-top: 3px !important; }
 
 .food-service-promotion {
   width: 10px;
   height: 10px;
   background: red !important;
-  border-radius: 100px; }
+  border-radius: 100px;
+  margin-right: 5px !important;
+  margin-top: 3px !important; }
 
 .market-webinar {
   width: 10px;
   height: 10px;
   background: #f20bbe !important;
-  border-radius: 100px; }
+  border-radius: 100px;
+  margin-right: 5px !important;
+  margin-top: 3px !important; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
