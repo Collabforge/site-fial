@@ -778,13 +778,14 @@ a.less-link {
   margin-right: 5px !important;
   margin-top: 3px !important; }
 
+.ui-state-default {
+  background: white !important; }
+
 .ui-state-active {
-  background: transparent; }
+  background: white !important; }
 
 .ui-widget-content {
-  background: white; }
-  .ui-widget-content input[type="checkbox"] {
-    margin-right: 7px; }
+  background: white !important; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
