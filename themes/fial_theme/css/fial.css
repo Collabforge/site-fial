@@ -806,6 +806,9 @@ ui-multiselect-menu {
 .ui-state-hover {
   border: 1px solid #cccccc !important; }
 
+#views-exposed-form-custom-events-calendar-events {
+  font-size: 10px; }
+
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
