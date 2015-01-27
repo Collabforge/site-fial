@@ -797,6 +797,9 @@ a.less-link {
   font-weight: bold;
   color: inherit !important; }
 
+ui-multiselect-menu {
+  width: auto !important; }
+
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
