@@ -787,6 +787,16 @@ a.less-link {
 .ui-widget-content {
   background: white !important; }
 
+.ui-multiselect-checkboxes label input {
+  margin-right: 7px;
+  margin-bottom: 5px; }
+
+.ui-state-hover, .ui-widget-content .ui-state-hover {
+  border: none;
+  background: #f2f2f2;
+  font-weight: bold;
+  color: green; }
+
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
