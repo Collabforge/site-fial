@@ -1568,6 +1568,11 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
 #main-content .view .date-nav-wrapper li.date-prev, #main-content .view .date-nav-wrapper li.date-next {
   font-size: 12px; }
 
+.calendar .monthview {
+  font-size: 12px;
+  padding-bottom: 9px;
+  line-height: 2; }
+
 body {
   background-color: white;
   background-image: none;
