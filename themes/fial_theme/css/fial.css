@@ -1568,7 +1568,7 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
 #main-content .view .date-nav-wrapper li.date-prev, #main-content .view .date-nav-wrapper li.date-next {
   font-size: 12px; }
 
-.calendar .monthview {
+.calendar-calendar .month-view .full td.multi-day div.monthview {
   font-size: 12px !important;
   padding-bottom: 9px !important;
   line-height: 2 !important; }
