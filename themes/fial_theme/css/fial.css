@@ -1569,9 +1569,9 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
   font-size: 12px; }
 
 .calendar .monthview {
-  font-size: 12px;
-  padding-bottom: 9px;
-  line-height: 2; }
+  font-size: 12px !important;
+  padding-bottom: 9px !important;
+  line-height: 2 !important; }
 
 body {
   background-color: white;
