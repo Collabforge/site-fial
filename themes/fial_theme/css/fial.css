@@ -1561,17 +1561,15 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
   border-right: 2px solid #00c0dd; }
 #main-content .calendar-calendar .month-view .full td.multi-day div.monthview, #main-content .calendar-calendar .week-view .full td.multi-day div.weekview, #main-content .calendar-calendar .day-view .full td.multi-day div.dayview, #main-content .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues, #main-content .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff, #main-content .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues, #main-content .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff, #main-content .calendar-calendar td .inner div.calendar div, #main-content .calendar-calendar td .inner div.calendar div a, #main-content .calendar-calendar .month-view .full td.single-day div.monthview, #main-content .calendar-calendar .week-view .full td.single-day div.weekview, #main-content .calendar-calendar .day-view .full td.single-day div.dayview {
   text-decoration: none !important;
-  background: #dcf7c0; }
+  background: #dcf7c0;
+  font-size: 12px !important;
+  padding-bottom: 9px !important;
+  line-height: 2 !important; }
   #main-content .calendar-calendar .month-view .full td.multi-day div.monthview, #main-content .calendar-calendar .month-view .full td.multi-day div.monthview *, #main-content .calendar-calendar .week-view .full td.multi-day div.weekview, #main-content .calendar-calendar .week-view .full td.multi-day div.weekview *, #main-content .calendar-calendar .day-view .full td.multi-day div.dayview, #main-content .calendar-calendar .day-view .full td.multi-day div.dayview *, #main-content .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues, #main-content .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues *, #main-content .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff, #main-content .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff *, #main-content .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues, #main-content .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues *, #main-content .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff, #main-content .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff *, #main-content .calendar-calendar td .inner div.calendar div, #main-content .calendar-calendar td .inner div.calendar div *, #main-content .calendar-calendar td .inner div.calendar div a, #main-content .calendar-calendar td .inner div.calendar div a *, #main-content .calendar-calendar .month-view .full td.single-day div.monthview, #main-content .calendar-calendar .month-view .full td.single-day div.monthview *, #main-content .calendar-calendar .week-view .full td.single-day div.weekview, #main-content .calendar-calendar .week-view .full td.single-day div.weekview *, #main-content .calendar-calendar .day-view .full td.single-day div.dayview, #main-content .calendar-calendar .day-view .full td.single-day div.dayview * {
     color: #555555;
     text-decoration: none !important; }
 #main-content .view .date-nav-wrapper li.date-prev, #main-content .view .date-nav-wrapper li.date-next {
   font-size: 12px; }
-
-.calendar-calendar .month-view .full td.multi-day div.monthview {
-  font-size: 12px !important;
-  padding-bottom: 9px !important;
-  line-height: 2 !important; }
 
 body {
   background-color: white;
