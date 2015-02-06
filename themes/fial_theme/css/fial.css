@@ -828,7 +828,10 @@ ui-multiselect-menu {
   vertical-align: middle;
   opacity: 0.8;
   width: 43.1%;
-  margin-left: 6px; }
+  margin-left: 6px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none; }
 .page-node-721 ul.quicktabs-tabs li.first:hover {
   opacity: 0.9; }
 .page-node-721 ul.quicktabs-tabs li.active:hover {
@@ -856,7 +859,10 @@ ui-multiselect-menu {
   vertical-align: middle;
   width: 43.1%;
   opacity: 0.8;
-  margin-left: 6px; }
+  margin-left: 6px;
+  border-left: none;
+  border-right: none;
+  border-bottom: none; }
 .page-node-721 ul.quicktabs-tabs li.last:hover {
   opacity: 0.9; }
 .page-node-721 ul.quicktabs-tabs li.active:hover {
