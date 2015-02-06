@@ -816,7 +816,8 @@ ui-multiselect-menu {
   margin-left: 6px;
   border-left: none;
   border-right: none;
-  border-bottom: none; }
+  border-bottom: none;
+  text-decoration: line-through; }
 .page-node-721 ul.quicktabs-tabs li.first:hover {
   opacity: 0.8; }
 .page-node-721 ul.quicktabs-tabs li.active:hover {
@@ -825,7 +826,8 @@ ui-multiselect-menu {
   background-image: url("/sites/default/themes/fial_theme/img/banner-right.svg"), url("/sites/default/themes/fial_theme/img/banner-left.svg");
   opacity: 1;
   border-top: 5px solid darkgreen;
-  background-color: #007b38; }
+  background-color: #007b38;
+  text-decoration: none; }
   .page-node-721 ul.quicktabs-tabs li.active a {
     opacity: 1;
     text-shadow: 2px 2px 1px darkgreen; }
@@ -852,7 +854,8 @@ ui-multiselect-menu {
   margin-left: 6px;
   border-left: none;
   border-right: none;
-  border-bottom: none; }
+  border-bottom: none;
+  text-decoration: line-through; }
 .page-node-721 ul.quicktabs-tabs li.last:hover {
   opacity: 0.8; }
 .page-node-721 ul.quicktabs-tabs li.active:hover {
@@ -861,7 +864,8 @@ ui-multiselect-menu {
   opacity: 1;
   border-top: 5px solid darkgreen;
   background-color: #007b38;
-  background-image: url("/sites/default/themes/fial_theme/img/banner-right.svg"), url("/sites/default/themes/fial_theme/img/banner-left.svg"); }
+  background-image: url("/sites/default/themes/fial_theme/img/banner-right.svg"), url("/sites/default/themes/fial_theme/img/banner-left.svg");
+  text-decoration: none; }
   .page-node-721 ul.quicktabs-tabs li.active a {
     opacity: 1;
     text-shadow: 2px 2px 1px darkgreen; }
