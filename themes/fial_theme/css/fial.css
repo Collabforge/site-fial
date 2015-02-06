@@ -823,7 +823,8 @@ ui-multiselect-menu {
   opacity: 1; }
 .page-node-721 ul.quicktabs-tabs li.active {
   opacity: 1;
-  border-top: 5px solid darkgreen; }
+  border-top: 5px solid darkgreen;
+  background-color: #007b38; }
 
 .page-node-721 ul.quicktabs-tabs li.last {
   border-top: 5px solid darkgreen;
@@ -854,7 +855,8 @@ ui-multiselect-menu {
   opacity: 1; }
 .page-node-721 ul.quicktabs-tabs li.active {
   opacity: 1;
-  border-top: 5px solid darkgreen; }
+  border-top: 5px solid darkgreen;
+  background-color: #007b38; }
 
 .dir-all-packaging {
   padding: 30px 30px 30px 30px;
