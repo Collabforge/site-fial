@@ -844,7 +844,6 @@ ui-multiselect-menu {
   padding: 25px;
   color: white !important;
   border-radius: 0px;
-  border-top: 2px solid darkgreen;
   border: none;
   margin-bottom: -1px;
   text-transform: capitalize;
@@ -864,6 +863,11 @@ ui-multiselect-menu {
   opacity: 1; }
 .page-node-721 ul.quicktabs-tabs li.active {
   opacity: 1; }
+
+.page-node-721 ul.quicktabs-tabs li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 900; }
 
 .view-id-packaging_directory {
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
