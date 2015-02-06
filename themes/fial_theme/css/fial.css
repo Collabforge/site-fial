@@ -797,7 +797,7 @@ ui-multiselect-menu {
 .page-node-721 ul.quicktabs-tabs li.first {
   border-top: 5px solid darkgreen;
   font-size: 20px;
-  background-color: #007b38;
+  background-color: black;
   /* background: linear-gradient(darkgreen, #007b38); */
   padding: 25px;
   color: white !important;
@@ -818,7 +818,7 @@ ui-multiselect-menu {
   border-right: none;
   border-bottom: none; }
 .page-node-721 ul.quicktabs-tabs li.first:hover {
-  opacity: 0.9; }
+  opacity: 0.8; }
 .page-node-721 ul.quicktabs-tabs li.active:hover {
   opacity: 1; }
 .page-node-721 ul.quicktabs-tabs li.active {
@@ -828,7 +828,7 @@ ui-multiselect-menu {
 .page-node-721 ul.quicktabs-tabs li.last {
   border-top: 5px solid darkgreen;
   font-size: 20px;
-  background-color: #007b38;
+  background-color: black;
   /* background: linear-gradient(darkgreen, #007b38); */
   padding: 25px;
   color: white !important;
@@ -849,7 +849,7 @@ ui-multiselect-menu {
   border-right: none;
   border-bottom: none; }
 .page-node-721 ul.quicktabs-tabs li.last:hover {
-  opacity: 0.9; }
+  opacity: 0.8; }
 .page-node-721 ul.quicktabs-tabs li.active:hover {
   opacity: 1; }
 .page-node-721 ul.quicktabs-tabs li.active {
