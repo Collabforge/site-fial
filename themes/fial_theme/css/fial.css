@@ -823,13 +823,14 @@ ui-multiselect-menu {
   margin-top: -20px;
   padding-left: 25px;
   box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.2);
-  background-image: url("/sites/default/themes/fial_theme/img/banner-right.svg"), url("/sites/default/themes/fial_theme/img/banner-left.svg");
   background-position: right -152px, -170px center;
   background-repeat: no-repeat, no-repeat;
   background-size: 212px 196px, 300px 314px;
   vertical-align: middle;
   width: 43.1%;
   margin-left: 6px; }
+  .page-node-721 ul.quicktabs-tabs li.first .active {
+    background-image: url("/sites/default/themes/fial_theme/img/banner-right.svg"), url("/sites/default/themes/fial_theme/img/banner-left.svg"); }
 
 .page-node-721 ul.quicktabs-tabs li.last {
   font-size: 20px;
@@ -845,13 +846,14 @@ ui-multiselect-menu {
   margin-top: -20px;
   padding-left: 25px;
   box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.2);
-  background-image: url("/sites/default/themes/fial_theme/img/banner-right.svg"), url("/sites/default/themes/fial_theme/img/banner-left.svg");
   background-position: right -152px, -170px center;
   background-repeat: no-repeat, no-repeat;
   background-size: 212px 196px, 300px 314px;
   vertical-align: middle;
   width: 43.1%;
   margin-left: 6px; }
+  .page-node-721 ul.quicktabs-tabs li.last .active {
+    background-image: url("/sites/default/themes/fial_theme/img/banner-right.svg"), url("/sites/default/themes/fial_theme/img/banner-left.svg"); }
 
 .view-id-packaging_directory {
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
