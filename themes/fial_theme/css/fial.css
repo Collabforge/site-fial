@@ -354,6 +354,9 @@ a.less-link {
 .page-node-721 h2 {
   display: none; }
 
+.page-node-721 .views-exposed-form label {
+  text-transform: lowercase; }
+
 .page-node-721 .form-submit {
   text-transform: lowercase;
   margin-top: 25px !important;
