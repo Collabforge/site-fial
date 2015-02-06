@@ -809,6 +809,33 @@ ui-multiselect-menu {
 #views-exposed-form-custom-events-calendar-events .views-exposed-widgets {
   font-size: 10px !important; }
 
+.page-node-721 ul.quicktabs-tabs li {
+  display: inline-block;
+  background-color: #f2f2f2;
+  border: 1px solid #cccccc;
+  border-radius: 0px;
+  /* margin: 9px 6px 40px 0; */
+  padding: 14px 8px 14px 8px;
+  /* min-width: 100px; */
+  text-align: center;
+  box-shadow: 2px -1px 2px #dddddd;
+  border: 0px;
+  /* border-radius: 5px; */
+  width: 46.2%;
+  margin-left: 5px;
+  /* margin-right: -5px; */ }
+
+.page-node-721 ul.quicktabs-tabs {
+  margin-left: 0px; }
+
+.page-node-721 ul {
+  padding: 0;
+  margin: 0px; }
+
+.page-node-721 #main-content ul li {
+  margin-bottom: 0px;
+  margin-right: -5px; }
+
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
