@@ -810,20 +810,25 @@ ui-multiselect-menu {
   font-size: 10px !important; }
 
 .page-node-721 ul.quicktabs-tabs li {
-  display: inline-block;
-  background-color: #f2f2f2;
-  border: 1px solid #cccccc;
-  border-radius: 0px;
-  /* margin: 9px 6px 40px 0; */
-  padding: 14px 8px 14px 8px;
-  /* min-width: 100px; */
-  text-align: center;
-  box-shadow: 2px -1px 2px #dddddd;
-  border: 0px;
-  /* border-radius: 5px; */
-  width: 46.2%;
-  margin-left: 5px;
-  /* margin-right: -5px; */ }
+  font-size: 20px;
+  background-color: #007b38;
+  /* background: linear-gradient(darkgreen, #007b38); */
+  padding: 25px;
+  color: white !important;
+  border-radius: 3px;
+  border-top: 4px solid darkgreen;
+  margin-bottom: -1px;
+  text-transform: capitalize;
+  margin-top: -20px;
+  padding-left: 25px;
+  box-shadow: 1px 0px 4px 0px rgba(0, 0, 0, 0.2);
+  background-image: url("/sites/default/themes/fial_theme/img/banner-right.svg"), url("/sites/default/themes/fial_theme/img/banner-left.svg");
+  background-position: right -152px, -170px center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 212px 196px, 300px 314px;
+  vertical-align: middle;
+  width: 40%;
+  margin-left: 6px; }
 
 .page-node-721 ul.quicktabs-tabs {
   margin-left: 0px; }
