@@ -856,6 +856,11 @@ ui-multiselect-menu {
   opacity: 1;
   border-top: 4px solid yellowgreen; }
 
+.dir-all-packaging {
+  padding: 30px 30px 30px 30px;
+  margin-top: -20px;
+  margin-bottom: -20px; }
+
 .page-node-721 ul.quicktabs-tabs li a {
   color: white;
   text-decoration: none;
