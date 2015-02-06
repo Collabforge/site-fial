@@ -832,6 +832,8 @@ ui-multiselect-menu {
   margin-left: 6px; }
 .page-node-721 ul.quicktabs-tabs li.first:hover {
   opacity: 0.8; }
+.page-node-721 ul.quicktabs-tabs li.active:hover {
+  opacity: 1; }
 .page-node-721 ul.quicktabs-tabs li.active {
   opacity: 1; }
 
@@ -858,6 +860,8 @@ ui-multiselect-menu {
   margin-left: 6px; }
 .page-node-721 ul.quicktabs-tabs li.last:hover {
   opacity: 0.8; }
+.page-node-721 ul.quicktabs-tabs li.active:hover {
+  opacity: 1; }
 .page-node-721 ul.quicktabs-tabs li.active {
   opacity: 1; }
 
