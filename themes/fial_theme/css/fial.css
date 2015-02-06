@@ -795,7 +795,7 @@ ui-multiselect-menu {
   font-size: 10px !important; }
 
 .page-node-721 ul.quicktabs-tabs li.first {
-  border-top: 5px solid darkgreen;
+  border-top: 5px solid black;
   font-size: 20px;
   background-color: black;
   /* background: linear-gradient(darkgreen, #007b38); */
@@ -830,7 +830,7 @@ ui-multiselect-menu {
     text-shadow: 2px 2px 1px darkgreen; }
 
 .page-node-721 ul.quicktabs-tabs li.last {
-  border-top: 5px solid darkgreen;
+  border-top: 5px solid black;
   font-size: 20px;
   background-color: black;
   /* background: linear-gradient(darkgreen, #007b38); */
