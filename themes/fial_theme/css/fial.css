@@ -861,6 +861,9 @@ ui-multiselect-menu {
   margin-top: -20px;
   margin-bottom: -20px; }
 
+.dir-all-packaging:hover {
+  background: white; }
+
 .page-node-721 ul.quicktabs-tabs li a {
   color: white;
   text-decoration: none;
