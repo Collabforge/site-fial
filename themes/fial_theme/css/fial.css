@@ -818,6 +818,7 @@ ui-multiselect-menu {
   border-right: none;
   border-bottom: none; }
 .page-node-721 ul.quicktabs-tabs li.first:hover {
+  transition: all 0.3s ease;
   opacity: 0.8; }
 .page-node-721 ul.quicktabs-tabs li.active:hover {
   opacity: 1; }
@@ -856,6 +857,7 @@ ui-multiselect-menu {
   border-right: none;
   border-bottom: none; }
 .page-node-721 ul.quicktabs-tabs li.last:hover {
+  transition: all 0.3s ease;
   opacity: 0.8; }
 .page-node-721 ul.quicktabs-tabs li.active:hover {
   opacity: 1; }
