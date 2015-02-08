@@ -825,10 +825,8 @@ ui-multiselect-menu {
   background-image: url("/sites/default/themes/fial_theme/img/banner-right.svg"), url("/sites/default/themes/fial_theme/img/banner-left.svg");
   opacity: 1;
   border-top: 5px solid darkgreen;
-  border-left: 5px solid darkgreen;
-  border-right: 5px solid darkgreen;
   background-color: #007b38;
-  width: 50.1%;
+  width: 51.1%;
   text-decoration: none; }
   .page-node-721 ul.quicktabs-tabs li.active a {
     opacity: 1;
@@ -864,9 +862,7 @@ ui-multiselect-menu {
 .page-node-721 ul.quicktabs-tabs li.active {
   opacity: 1;
   border-top: 5px solid darkgreen;
-  border-left: 5px solid darkgreen;
-  border-right: 5px solid darkgreen;
-  width: 50.1%;
+  width: 51.1%;
   background-color: #007b38;
   background-image: url("/sites/default/themes/fial_theme/img/banner-right.svg"), url("/sites/default/themes/fial_theme/img/banner-left.svg");
   text-decoration: none; }
