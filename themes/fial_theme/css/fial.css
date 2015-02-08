@@ -678,7 +678,8 @@ a.less-link {
   font-size: 12px !important; }
 
 .dir-all:hover {
-  background: white; }
+  background: white;
+  transition: 0.3s ease; }
 
 .dir-all {
   padding: 30px 30px 0px 30px;
@@ -884,7 +885,8 @@ ui-multiselect-menu {
   text-decoration: none;
   font-weight: 900;
   font-size: 20px;
-  opacity: 0.6; }
+  opacity: 0.6;
+  transition: 0.3s ease; }
 
 .view-id-packaging_directory {
   box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.2);
