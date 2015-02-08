@@ -863,7 +863,7 @@ ui-multiselect-menu {
 .page-node-721 ul.quicktabs-tabs li.active {
   opacity: 1;
   border-top: 5px solid darkgreen;
-  width: 51.1%;
+  width: 50.8%;
   background-color: #007b38;
   background-image: url("/sites/default/themes/fial_theme/img/banner-right.svg"), url("/sites/default/themes/fial_theme/img/banner-left.svg");
   text-decoration: none; }
@@ -908,7 +908,7 @@ ui-multiselect-menu {
 
 .page-node-721 #main-content ul li {
   margin-bottom: 0px;
-  margin-right: -12px; }
+  margin-right: -10px; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
