@@ -913,9 +913,12 @@ ui-multiselect-menu {
 .page-members .pager {
   display: none; }
 .page-members .view-header {
-  margin-bottom: -90px;
+  margin-bottom: -110px;
   z-index: -999;
   position: relative; }
+.page-members .views-exposed-form {
+  float: right;
+  margin-bottom: 10px; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
