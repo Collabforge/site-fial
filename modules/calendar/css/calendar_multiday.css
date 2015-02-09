@@ -787,7 +787,6 @@ table.calendar-legend tr.even .stripe {
   width: auto;
   z-index: 1;
   font-size: 12px;
-  margin-right: 15px;
 }
 
 .block-views .view .date-nav-wrapper .date-prev {
