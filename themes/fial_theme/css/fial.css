@@ -920,10 +920,15 @@ ui-multiselect-menu {
   display: none; }
 .page-members .views-exposed-form label {
   font-size: 12px; }
+.page-members .views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 25px;
+  margin-left: 0px;
+  font-size: 14px !important;
+  font-weight: 900 !important; }
 .page-members #views-exposed-form-custom-events-calendar-events .views-exposed-widgets {
   font-size: 10px !important;
   border: 1px solid #f2f2f2;
-  padding: 19px;
+  padding: 25px 0px 25px 35px;
   margin-bottom: -21px;
   position: relative; }
 .page-members select {
