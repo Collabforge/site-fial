@@ -937,6 +937,8 @@ ui-multiselect-menu {
 .page-members input[type="text"] {
   width: 115px; }
 .page-members #calendar-months {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
   display: inline-flex; }
   .page-members #calendar-months a {
     margin-right: 20px;
