@@ -913,6 +913,13 @@ ui-multiselect-menu {
 .page-members .pager {
   display: none; }
 
+.views-exposed-widget views-widget-filter-field_activity_type_value .views-exposed-form label {
+  font-size: 12px; }
+.views-exposed-widget views-widget-filter-field_activity_type_value select {
+  width: 100px; }
+.views-exposed-widget views-widget-filter-field_activity_type_value input[type="text"] {
+  width: 165px; }
+
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
