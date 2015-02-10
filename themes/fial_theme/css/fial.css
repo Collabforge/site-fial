@@ -918,6 +918,10 @@ ui-multiselect-menu {
   width: 100px; }
 .page-members input[type="text"] {
   width: 165px; }
+.page-members #calendar-months {
+  display: inline-flex; }
+  .page-members #calendar-months a {
+    margin-right: 20px; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
