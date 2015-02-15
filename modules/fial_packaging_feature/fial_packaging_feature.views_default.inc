@@ -215,6 +215,101 @@ function fial_packaging_feature_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'packaging_directory_block');
+  $handler->display->display_options['defaults']['pager'] = FALSE;
+  $handler->display->display_options['pager']['type'] = 'mini';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['title']['link_to_node'] = FALSE;
+  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
+  $handler->display->display_options['fields']['title']['node_in_colorbox_rel'] = '';
+  /* Field: Content: Address */
+  $handler->display->display_options['fields']['field_packaging_address']['id'] = 'field_packaging_address';
+  $handler->display->display_options['fields']['field_packaging_address']['table'] = 'field_data_field_packaging_address';
+  $handler->display->display_options['fields']['field_packaging_address']['field'] = 'field_packaging_address';
+  $handler->display->display_options['fields']['field_packaging_address']['label'] = '';
+  $handler->display->display_options['fields']['field_packaging_address']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_packaging_address']['element_label_colon'] = FALSE;
+  /* Field: Content: Email */
+  $handler->display->display_options['fields']['field_packaging_email']['id'] = 'field_packaging_email';
+  $handler->display->display_options['fields']['field_packaging_email']['table'] = 'field_data_field_packaging_email';
+  $handler->display->display_options['fields']['field_packaging_email']['field'] = 'field_packaging_email';
+  $handler->display->display_options['fields']['field_packaging_email']['label'] = '';
+  $handler->display->display_options['fields']['field_packaging_email']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_packaging_email']['element_label_colon'] = FALSE;
+  /* Field: Content: Packaging Type */
+  $handler->display->display_options['fields']['field_packaging_type']['id'] = 'field_packaging_type';
+  $handler->display->display_options['fields']['field_packaging_type']['table'] = 'field_data_field_packaging_type';
+  $handler->display->display_options['fields']['field_packaging_type']['field'] = 'field_packaging_type';
+  $handler->display->display_options['fields']['field_packaging_type']['label'] = '';
+  $handler->display->display_options['fields']['field_packaging_type']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_packaging_type']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_packaging_type']['delta_offset'] = '0';
+  /* Field: Content: Phone */
+  $handler->display->display_options['fields']['field_packaging_phone']['id'] = 'field_packaging_phone';
+  $handler->display->display_options['fields']['field_packaging_phone']['table'] = 'field_data_field_packaging_phone';
+  $handler->display->display_options['fields']['field_packaging_phone']['field'] = 'field_packaging_phone';
+  $handler->display->display_options['fields']['field_packaging_phone']['label'] = '';
+  $handler->display->display_options['fields']['field_packaging_phone']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_packaging_phone']['element_label_colon'] = FALSE;
+  /* Field: Content: State */
+  $handler->display->display_options['fields']['field_packaging_states']['id'] = 'field_packaging_states';
+  $handler->display->display_options['fields']['field_packaging_states']['table'] = 'field_data_field_packaging_states';
+  $handler->display->display_options['fields']['field_packaging_states']['field'] = 'field_packaging_states';
+  $handler->display->display_options['fields']['field_packaging_states']['label'] = '';
+  $handler->display->display_options['fields']['field_packaging_states']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_packaging_states']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_packaging_states']['delta_offset'] = '0';
+  /* Field: Content: website */
+  $handler->display->display_options['fields']['field_packaging_website']['id'] = 'field_packaging_website';
+  $handler->display->display_options['fields']['field_packaging_website']['table'] = 'field_data_field_packaging_website';
+  $handler->display->display_options['fields']['field_packaging_website']['field'] = 'field_packaging_website';
+  $handler->display->display_options['fields']['field_packaging_website']['label'] = '';
+  $handler->display->display_options['fields']['field_packaging_website']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_packaging_website']['alter']['make_link'] = TRUE;
+  $handler->display->display_options['fields']['field_packaging_website']['alter']['path'] = '[field_packaging_website]';
+  $handler->display->display_options['fields']['field_packaging_website']['alter']['absolute'] = TRUE;
+  $handler->display->display_options['fields']['field_packaging_website']['alter']['external'] = TRUE;
+  $handler->display->display_options['fields']['field_packaging_website']['alter']['target'] = '_blank';
+  $handler->display->display_options['fields']['field_packaging_website']['element_label_colon'] = FALSE;
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<hr>
+<div class="dir-all">
+<div class="dir-title"> <i class="icon-asterisk"></i> [title] <br></div>
+<div class="dir-body">
+<ul>
+<li style="font-size: 14px !important;
+margin-left: 10px !important;"> <b>Address:</b> [field_packaging_address] <br></li>
+<li style="font-size: 14px;
+margin-left: 10px;"> <b>Email:</b> [field_packaging_email] <br></li>
+<li style="font-size: 14px;
+margin-left: 10px;"> <b>Phone:</b> [field_packaging_phone] <br></li>
+<li style="font-size: 14px;
+margin-left: 10px;"> <b>State:</b> [field_packaging_states] </li>
+</ul>
+</div>
+<div class="dir-capabilities"> 
+<i class="icon-tags"></i> tags: [field_packaging_type] <br>
+<div class="dir-website">
+<i class="icon-external-link"></i>[field_packaging_website]</div>
+</div>
+</div>';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['block_description'] = 'Packaging directory block';
   $translatables['packaging_directory'] = array(
     t('Master'),
@@ -244,6 +339,27 @@ function fial_packaging_feature_views_default_views() {
     t('Select Packaging type'),
     t('Select State'),
     t('Block'),
+    t('<hr>
+<div class="dir-all">
+<div class="dir-title"> <i class="icon-asterisk"></i> [title] <br></div>
+<div class="dir-body">
+<ul>
+<li style="font-size: 14px !important;
+margin-left: 10px !important;"> <b>Address:</b> [field_packaging_address] <br></li>
+<li style="font-size: 14px;
+margin-left: 10px;"> <b>Email:</b> [field_packaging_email] <br></li>
+<li style="font-size: 14px;
+margin-left: 10px;"> <b>Phone:</b> [field_packaging_phone] <br></li>
+<li style="font-size: 14px;
+margin-left: 10px;"> <b>State:</b> [field_packaging_states] </li>
+</ul>
+</div>
+<div class="dir-capabilities"> 
+<i class="icon-tags"></i> tags: [field_packaging_type] <br>
+<div class="dir-website">
+<i class="icon-external-link"></i>[field_packaging_website]</div>
+</div>
+</div>'),
     t('Packaging directory block'),
   );
   $export['packaging_directory'] = $view;
