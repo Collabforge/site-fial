@@ -1687,7 +1687,7 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
       border-bottom: none;
       text-decoration: underline !important; }
 #main-content .calendar-calendar .year-view table tbody tr:nth-child(odd) td {
-  background-color: none;
+  background-color: white !important;
   border: 1px solid #f2f2f2; }
 #main-content tr td.today, #main-content tr.odd td.today, #main-content tr.even td.today {
   background: none;
