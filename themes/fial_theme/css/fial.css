@@ -1669,7 +1669,8 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
     text-decoration: underline !important; }
 
 #main-content .calendar-calendar, #main-content .calendar-calendar * {
-  text-decoration: none !important; }
+  text-decoration: none !important;
+  text-align: center; }
   #main-content .calendar-calendar a, #main-content .calendar-calendar * a {
     color: #007b38 !important;
     text-decoration: none;
