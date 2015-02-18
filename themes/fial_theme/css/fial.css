@@ -1698,7 +1698,7 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
 #main-content .calendar-calendar .year-view .mini-day-off {
   font-weight: 900; }
 
-.year-view .date-nav {
+.year-view div.month-view div.date-nav {
   margin-bottom: 0px; }
 .year-view tr td.today, .year-view tr.odd td.today, .year-view tr.even td.today {
   background: none;
