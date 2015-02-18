@@ -1689,6 +1689,16 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
 #main-content .calendar-calendar .year-view table tbody tr:nth-child(odd) td {
   background-color: white !important;
   border: 1px solid #f2f2f2; }
+#main-content .calendar-calendar .year-view .mini-day-on {
+  background: #2ecc71; }
+  #main-content .calendar-calendar .year-view .mini-day-on a {
+    color: white !important;
+    font-weight: 900;
+    text-shadow: 1px 1px gray; }
+#main-content .calendar-calendar .year-view .mini-day-off {
+  font-weight: 900; }
+  #main-content .calendar-calendar .year-view .mini-day-off .date-nav {
+    margin-bottom: 0px; }
 #main-content tr td.today, #main-content tr.odd td.today, #main-content tr.even td.today {
   background: none;
   border-left: 2px solid #00c0dd;
