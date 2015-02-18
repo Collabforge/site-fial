@@ -1689,6 +1689,8 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
 #main-content .calendar-calendar .year-view table tbody tr:nth-child(odd) td {
   background-color: white !important;
   border: none; }
+#main-content .calendar-calendar .year-view td {
+  padding: 10px; }
 #main-content .calendar-calendar .year-view .mini-day-on {
   background: #2ecc71; }
   #main-content .calendar-calendar .year-view .mini-day-on a {
