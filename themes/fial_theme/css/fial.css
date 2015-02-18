@@ -988,6 +988,10 @@ ui-multiselect-menu {
     color: #007b38;
     border-bottom: 6px solid #007b38; }
 
+.region-header-bottom-left {
+  width: 600px;
+  margin-bottom: -10px; }
+
 .nav .dropdown-toggle .caret, .nav .dropdown-toggle:hover .caret, .nav .dropdown-toggle:focus .caret {
   display: none; }
 
