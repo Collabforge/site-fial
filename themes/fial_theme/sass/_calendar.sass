@@ -8,33 +8,40 @@
     @include green-link
 
 #main-content
-
-  // Overwrites calendar css
-  
-  .calendar-calendar
-    &, & *
-      text-decoration: none !important
-      text-align: center
-      @include green-link
-    .year-view
-      table tbody tr:nth-child(odd) td
-        background-color: white !important
-        border: none
-      .mini-day-on
-        background: #2ecc71
-        a
-          color: white !important
+  .page-year-calendar 
+    .calendar-calendar
+      &, & *
+        text-decoration: none !important
+        text-align: center
+        @include green-link
+      .year-view
+        table tbody tr:nth-child(odd) td
+          background-color: white !important
+          border: none
+        .mini-day-on
+          background: #2ecc71
+          a
+            color: white !important
+            font-weight: 900
+            text-shadow: 1px 1px grey
+        .mini-day-off
           font-weight: 900
-          text-shadow: 1px 1px grey
-      .mini-day-off
-        font-weight: 900
-        
+
 .year-view
   div.month-view div.date-nav
     margin-bottom: 0px
   .calendar-calendar
     .month-view
       padding: 10px
+        
+#main-content
+
+  // Overwrites calendar css
+  
+  .calendar-calendar
+    &, & *
+      text-decoration: none !important
+      @include green-link
 
   .calendar-calendar .month-view .full
   tr
