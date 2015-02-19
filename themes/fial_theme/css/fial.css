@@ -1694,15 +1694,14 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
   background-color: white !important;
   border: none; }
 .page-year-calendar #main-content .calendar-calendar .year-view .mini-day-on {
-  background: #2ecc71; }
+  background: #2ecc71;
+  border: 2px solid transparent; }
   .page-year-calendar #main-content .calendar-calendar .year-view .mini-day-on a {
     color: white !important;
     font-weight: 900;
     text-shadow: 1px 1px gray; }
 .page-year-calendar #main-content .calendar-calendar .has-multi-events .mini-day-on {
-  border: 2px solid red;
-  margin-bottom: -2px;
-  margin-top: -3px; }
+  background: green; }
 .page-year-calendar #main-content .calendar-calendar .has-multi-events .mini-day-off {
   font-weight: 900; }
 
