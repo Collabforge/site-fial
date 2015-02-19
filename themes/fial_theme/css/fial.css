@@ -1699,11 +1699,11 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
     color: white !important;
     font-weight: 900;
     text-shadow: 1px 1px gray; }
-.page-year-calendar #main-content .calendar-calendar .year-view .has-events .has-multi-events .mini-day-on {
+.page-year-calendar #main-content .calendar-calendar .has-multi-events .mini-day-on {
   border: 2px solid red;
   margin-bottom: -2px;
   margin-top: -3px; }
-.page-year-calendar #main-content .calendar-calendar .year-view .mini-day-off {
+.page-year-calendar #main-content .calendar-calendar .has-multi-events .mini-day-off {
   font-weight: 900; }
 
 .year-view div.month-view div.date-nav {
