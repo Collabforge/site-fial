@@ -1693,16 +1693,16 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
 .page-year-calendar #main-content .calendar-calendar .year-view table tbody tr:nth-child(odd) td {
   background-color: white !important;
   border: none; }
-.page-year-calendar #main-content .calendar-calendar .has-events .has-multi-events {
+.page-year-calendar #main-content .calendar-calendar .year-view .mini-day-on {
+  background: #2ecc71; }
+  .page-year-calendar #main-content .calendar-calendar .year-view .mini-day-on a {
+    color: white !important;
+    font-weight: 900;
+    text-shadow: 1px 1px gray; }
+.page-year-calendar #main-content .calendar-calendar .year-view .has-events .has-multi-events {
   border: 2px solid red; }
-  .page-year-calendar #main-content .calendar-calendar .has-events .has-multi-events .mini-day-on {
-    background: #2ecc71; }
-    .page-year-calendar #main-content .calendar-calendar .has-events .has-multi-events .mini-day-on a {
-      color: white !important;
-      font-weight: 900;
-      text-shadow: 1px 1px gray; }
-  .page-year-calendar #main-content .calendar-calendar .has-events .has-multi-events .mini-day-off {
-    font-weight: 900; }
+.page-year-calendar #main-content .calendar-calendar .year-view .mini-day-off {
+  font-weight: 900; }
 
 .year-view div.month-view div.date-nav {
   margin-bottom: 0px; }
