@@ -952,7 +952,8 @@ ui-multiselect-menu {
   #webform-component-register-your-expression-of-interest-to-participate legend {
     border-bottom: 0px solid transparent; }
   #webform-component-register-your-expression-of-interest-to-participate .fieldset-legend {
-    border-bottom: 1px solid #dddddd; }
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 5px; }
 
 #webform-component-stakeholder-type {
   margin-left: 50px; }
@@ -971,7 +972,8 @@ ui-multiselect-menu {
   #webform-component-company-details legend {
     border-bottom: 0px solid transparent; }
   #webform-component-company-details .fieldset-legend {
-    border-bottom: 1px solid #dddddd; }
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 5px; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
