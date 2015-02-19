@@ -962,12 +962,22 @@ class calendar_plugin_style extends views_plugin_style {
           'items' => array(),
           );
       }
-      else {
+      else { 
+        $has_multi_events ="";
+        if (!empty($this->items[$curday_date])){
+            $listof = $this->items[$curday_date];          
+            $first_value = reset($listof);
+            if (sizeof($first_value)>1) {
+              $has_multi_events = ' has-multi-events';
+            }
+        }       
         $content = $this->calendar_build_day();
         $class .= ($curday_date == $today ? ' today' : '') .
           ($curday_date < $today ? ' past' : '') .
           ($curday_date > $today ? ' future' : '') .
-          (empty($this->items[$curday_date]) ? ' has-no-events' : ' has-events');
+          (empty($this->items[$curday_date]) ? ' has-no-events' : ' has-events') .
+          $has_multi_events;
+          
       }
       $rows[$week][] = array(
         'data' => $content,
