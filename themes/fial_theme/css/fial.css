@@ -1747,6 +1747,9 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
 #main-content .view .date-nav-wrapper li.date-prev, #main-content .view .date-nav-wrapper li.date-next {
   font-size: 12px; }
 
+.has-multi-events {
+  border: 2px solid red; }
+
 body {
   background-color: white;
   background-image: none;
