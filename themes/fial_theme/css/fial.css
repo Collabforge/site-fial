@@ -1003,6 +1003,42 @@ ui-multiselect-menu {
 .page-node-2380 table.views-table.sticky-enabled.cols-4.tableheader-processed.sticky-table {
   table-layout: fixed; }
 
+#wa {
+  padding-top: 40px;
+  margin-top: -40px; }
+
+#sa {
+  padding-top: 40px;
+  margin-top: -40px; }
+
+#vic {
+  padding-top: 40px;
+  margin-top: -40px; }
+
+#qld {
+  padding-top: 40px;
+  margin-top: -40px; }
+
+#nt {
+  padding-top: 40px;
+  margin-top: -40px; }
+
+#tas {
+  padding-top: 40px;
+  margin-top: -40px; }
+
+#act {
+  padding-top: 40px;
+  margin-top: -40px; }
+
+#nsw {
+  padding-top: 40px;
+  margin-top: -40px; }
+
+#dis {
+  padding-top: 40px;
+  margin-top: -40px; }
+
 .menu_secondary li a {
   color: #007b38;
   font-family: "Open Sans Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "Arial Narrow", Arial Narrow, "Arial", sans-serif;
