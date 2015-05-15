@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Agriculture Map Feature feature.
+ */
+
+include_once 'agriculture_map_feature.features.inc';
