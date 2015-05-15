@@ -991,6 +991,18 @@ ui-multiselect-menu {
   width: 162px;
   height: 32px; }
 
+.page-node-2947 thead th {
+  background: red;
+  width: 25%;
+  background-color: #007b38 !important;
+  color: white;
+  font-weight: 900;
+  border: 1px solid #007b38;
+  font-size: 14px;
+  text-transform: initial !important; }
+.page-node-2947 table.views-table.sticky-enabled.cols-4.tableheader-processed.sticky-table {
+  table-layout: fixed; }
+
 .menu_secondary li a {
   color: #007b38;
   font-family: "Open Sans Condensed", "HelveticaNeueCondensed", "HelveticaNeue-Condensed", "Helvetica Neue Condensed", "HelveticaNeueRomanCondensed", "HelveticaNeue-Roman-Condensed", "Helvetica Neue Roman Condensed", "Arial Narrow", Arial Narrow, "Arial", sans-serif;
