@@ -992,16 +992,16 @@ ui-multiselect-menu {
   height: 32px; }
 
 article#node-2380 {
-  background-image: url("/sites/default/themes/flip_theme/img/Australia-Map-Colour2.jpg");
+  background-image: url("../img/Australia-Map-Colour2.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/sites/default/themes/flip_theme/img/Australia-Map-Colour2.jpg',sizingMethod='scale')"; }
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/Australia-Map-Colour2.jpg',sizingMethod='scale')"; }
 
 article#node-2947 {
-  background-image: url("/sites/default/themes/flip_theme/img/Australia-Map-Colour2.jpg");
+  background-image: url("../img/Australia-Map-Colour2.jpg");
   background-size: contain;
   background-repeat: no-repeat;
-  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/sites/default/themes/flip_theme/img/Australia-Map-Colour2.jpg',sizingMethod='scale')"; }
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/Australia-Map-Colour2.jpg',sizingMethod='scale')"; }
 
 .page-node-2380 thead th {
   background: red;
