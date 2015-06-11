@@ -56,12 +56,10 @@ if (current_path() == "node/514") { ?>
 if (current_path() == "node/add/custom-event") { ?>
 
 <link rel="stylesheet" type="text/css" href="/sites/default/themes/fial_theme/css/jquery.multiselect.css" />
-<link href="//cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.css" type="text/css" rel="stylesheet" title="Featherlight Styles" />
 <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/ui-lightness/jquery-ui.css" />
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/sites/default/themes/fial_theme/js/jquery.multiselect.js"></script>
-<script src="//cdn.rawgit.com/noelboss/featherlight/1.2.3/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
 <script type="text/javascript">
 $(function(){
 
