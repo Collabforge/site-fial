@@ -1003,7 +1003,7 @@ ui-multiselect-menu {
 
   #block-views-c9f578b6f94aaf91fb13ad928569f60f {
     position: relative;
-    margin-top: 20px; }
+    margin-top: 20px !important; }
 
   .accordion-content {
     margin-bottom: 0px !important; } }
