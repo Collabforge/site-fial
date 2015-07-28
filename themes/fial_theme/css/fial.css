@@ -1006,7 +1006,14 @@ ui-multiselect-menu {
     margin-top: 20px !important; }
 
   .accordion-content {
-    margin-bottom: 0px !important; } }
+    margin-bottom: 0px !important; }
+
+  a.scrollToTop {
+    z-index: 99999;
+    margin-top: 30px;
+    right: 20px;
+    background-color: red !important;
+    color: white !important; } }
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
