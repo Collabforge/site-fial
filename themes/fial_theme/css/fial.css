@@ -989,14 +989,24 @@ ui-multiselect-menu {
     position: relative !important; }
 
   article#node-2380 {
-    background-image: none; }
+    background-image: none !important; }
 
   article#node-2865 {
-    background-image: none; }
+    background-image: none !important; }
 
   .fullwidth .sub-content {
     padding-left: 20px;
-    padding-right: 20px; } }
+    padding-right: 20px; }
+
+  td.views-field.views-field-nothing {
+    overflow: hidden; }
+
+  #block-views-c9f578b6f94aaf91fb13ad928569f60f {
+    position: relative;
+    margin-top: 20px; }
+
+  .accordion-content {
+    margin-bottom: 0px !important; } }
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
