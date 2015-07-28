@@ -1072,6 +1072,19 @@ ui-multiselect-menu {
 
   .fullwidth {
     margin-top: -90px; } }
+.KEY:before {
+  content: "\f08d";
+  font-family: fontawesome;
+  display: block;
+  position: absolute;
+  padding-top: 0px;
+  font-size: 24px;
+  margin-left: -11px;
+  margin-top: -24px;
+  color: #333333;
+  text-align: center;
+  transform: rotate(-25deg); }
+
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
