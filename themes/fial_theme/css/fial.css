@@ -1068,7 +1068,10 @@ ui-multiselect-menu {
     margin-top: 0px;
     right: 20px;
     background-color: red !important;
-    color: white !important; } }
+    color: white !important; }
+
+  .fullwidth {
+    margin-top: -90px; } }
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
