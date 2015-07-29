@@ -1090,10 +1090,12 @@ ui-multiselect-menu {
   color: #333333;
   text-align: center;
   transform: rotate(-25deg); }
-  .KEY:before #block-views-73d5c2c6207b14322b2deb1d7021b126 {
-    margin-top: 40px; }
-  .KEY:before #block-views-73d5c2c6207b14322b2deb1d7021b126 h2 {
-    display: none; }
+
+#block-views-73d5c2c6207b14322b2deb1d7021b126 {
+  margin-top: 40px; }
+
+#block-views-73d5c2c6207b14322b2deb1d7021b126 h2 {
+  display: none; }
 
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
