@@ -1019,10 +1019,7 @@ ui-multiselect-menu {
     margin-top: 0px !important; }
 
   .side-box-acc {
-    background-color: transparent !important;
-    box-shadow: none !important;
-    margin-bottom: 30px;
-    border-bottom: 1px solid #cccccc; } }
+    margin-bottom: 30px; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .WA.state {
     margin-left: 140px !important;
