@@ -1026,7 +1026,14 @@ ui-multiselect-menu {
     margin-bottom: 30px; }
 
   .side-box-acc-main {
-    padding-left: 0px !important; } }
+    padding-left: 0px !important; }
+
+  .invitation {
+    margin-left: 0px !important;
+    width: 100% !important; }
+
+  iframe {
+    width: 100%; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .WA.state {
     margin-left: 140px !important;
@@ -1095,7 +1102,14 @@ ui-multiselect-menu {
     margin-bottom: 30px; }
 
   .side-box-acc-main {
-    padding-left: 0px !important; } }
+    padding-left: 0px !important; }
+
+  .invitation {
+    margin-left: 0px !important;
+    width: 100% !important; }
+
+  iframe {
+    width: 100%; } }
 .KEY:before {
   font-family: fontawesome;
   display: block;
