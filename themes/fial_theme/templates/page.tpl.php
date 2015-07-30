@@ -34,6 +34,7 @@ if (current_path() == "node/463") { ?>
 <script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
 <script type="text/javascript" src="/sites/default/themes/fial_theme/js/jquery.expander.js"></script>
 <script type="text/javascript" src="/sites/default/themes/fial_theme/js/custom-jquery.expander.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <?php } ?>
 
 <?php
@@ -48,6 +49,7 @@ if (current_path() == "node/514") { ?>
 </script>
 <script type="text/javascript" src="/sites/default/themes/fial_theme/js/jquery.expander.js"></script>
 <script type="text/javascript" src="/sites/default/themes/fial_theme/js/custom-jquery.expander.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <?php } ?>
 
 
@@ -60,6 +62,7 @@ if (current_path() == "node/add/custom-event") { ?>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/sites/default/themes/fial_theme/js/jquery.multiselect.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 <script type="text/javascript">
 $(function(){
 
@@ -89,6 +92,7 @@ $("#edit-field-activity-type-und,#edit-field-market-und,#edit-field-sector-und")
 </script>
 
 <script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
 
 <!--Drupal Jquery (1.8)-->
 <!--
