@@ -1019,6 +1019,7 @@ ui-multiselect-menu {
 
   .fullwidth {
     margin-top: -90px;
+    margin-bottom: 40px;
     background-image: none !important;
     padding-bottom: 40px !important; }
 
