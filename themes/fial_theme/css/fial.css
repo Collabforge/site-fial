@@ -996,7 +996,8 @@ ui-multiselect-menu {
 
   .fullwidth .sub-content {
     padding-left: 20px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    padding-top: 50px; }
 
   td.views-field.views-field-nothing {
     overflow: hidden; }
@@ -1016,8 +1017,8 @@ ui-multiselect-menu {
     color: white !important; }
 
   .fullwidth {
-    background-image: none !important;
-    margin-bottom: 0px !important; }
+    margin-top: -90px;
+    background-image: none !important; }
 
   #block-views-73d5c2c6207b14322b2deb1d7021b126 {
     margin-top: 0px !important; }
