@@ -1381,6 +1381,9 @@ article#node-2947 {
     .menu_secondary li .dropdown-menu > li a.active, .menu_secondary li .dropdown-menu > li a:hover {
       background-color: #525252 !important; }
 
+body {
+  overflow-x: hidden; }
+
 .homepage_banner {
   height: 360px !important; }
 
