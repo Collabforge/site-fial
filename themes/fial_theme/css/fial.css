@@ -1037,7 +1037,7 @@ ui-multiselect-menu {
     width: 100%; }
 
   .key {
-    display: none; } }
+    display: none !important; } }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .WA.state {
     margin-left: 140px !important;
@@ -1115,10 +1115,7 @@ ui-multiselect-menu {
     width: 100% !important; }
 
   iframe {
-    width: 100%; }
-
-  .key {
-    display: none; } }
+    width: 100%; } }
 .KEY:before {
   font-family: fontawesome;
   display: block;
