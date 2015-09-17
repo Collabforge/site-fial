@@ -2061,7 +2061,8 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
 
 #colorbox {
   width: 800px !important;
-  height: 100% !important; }
+  height: 100% !important;
+  left: 25% !important; }
 
 #cboxLoadedContent {
   width: 800px !important;
