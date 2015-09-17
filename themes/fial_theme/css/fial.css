@@ -2059,6 +2059,14 @@ ul.etabs li a:hover, ul.etabs li a:focus, ul.etabs li a:active {
 #main-content .view .date-nav-wrapper li.date-prev, #main-content .view .date-nav-wrapper li.date-next {
   font-size: 12px; }
 
+#colorbox {
+  width: 800px !important;
+  height: 100% !important; }
+
+#cboxLoadedContent {
+  width: 800px !important;
+  height: 100% !important; }
+
 body {
   background-color: white;
   background-image: none;
