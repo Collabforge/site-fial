@@ -1148,6 +1148,19 @@ ui-multiselect-menu {
 #block-views-73d5c2c6207b14322b2deb1d7021b126 h2 {
   display: none; }
 
+.page-node-3296 .views-row {
+  padding: 35px;
+  min-height: 320px; }
+.page-node-3296 .views-row-odd {
+  background-color: #f1f1f1;
+  border: 3px #e6e6e6 solid !important; }
+  .page-node-3296 .views-row-odd > .views-field > .field-content img {
+    float: left;
+    padding: 0px 35px 0px 0px; }
+.page-node-3296 .views-row-even > .views-field > .field-content img {
+  float: right;
+  padding: 0px 0px 35px 35px; }
+
 #logo a, .ui-footer .ui-logo a {
   background: url("../img/logo.png") no-repeat;
   display: block;
