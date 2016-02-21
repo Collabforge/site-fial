@@ -408,7 +408,7 @@ jQuery(document).ready(function($) {
 
 <div class="clearfix site-footer" role="contentinfo">
 <div class="container" style="margin-top:-40px;">
-<img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="left"><a href="http://www.linkedin.com/groups/Food-Innovation-Australia-Ltd-Fial-6559274" target="_blank"><img src="/sites/default/themes/fial_theme/img/footer-right-linkedin.png" align="right"></a>
+<img src="/sites/default/themes/fial_theme/img/footer-left-crest.png" align="left"><a href="http://www.linkedin.com/company/6417119?trk=tyah&trkInfo=clickedVertical%3Acompany%2CclickedEntityId%3A6417119%2Cidx%3A3-1-3%2CtarId%3A1455769918231%2Ctas%3Afood%20innovation%20austra" target="_blank"><img src="/sites/default/themes/fial_theme/img/footer-right-linkedin.png" align="right"></a>
 </div>
 </div>
 <!-- /#footer -->
